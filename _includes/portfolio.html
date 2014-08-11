@@ -1,0 +1,83 @@
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Portfolio</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+    {% for item in site.portfolio %}
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolio-{{ item.title|downcase|replace:' ','-' }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="/img/portfolio/thumbs/{{ item.image }}" class="img-responsive" alt="{{ item.title }}" />
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% for item in site.portfolio %}
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolio-{{ item.title|downcase|replace:' ','-' }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ item.title }}</h2>
+            <hr class="star-primary">
+            {% if item.embed %}
+            {{ item.embed }}
+            {% else %}
+            <img src="/img/portfolio/{{ item.image }}" class="img-responsive img-centered" alt="{{ item.title }}">
+            {% endif %}
+            {{ item.output }}
+            <ul class="list-inline item-details">
+              {% if item.client %}
+              <li>
+                Klant:
+                <strong>{{ item.client }}</strong>
+              </li>
+              {% endif %}
+              {% if item.date %}
+              <li>
+                Datum:
+                <strong>{{ item.date }}</strong>
+              </li>
+              {% endif %}
+              {% if item.tags %}
+              <li>
+                Tags:
+                <strong>{{ item.tags }}</strong>
+              </li>
+              {% endif %}
+            </ul>
+            {% if item.website %}
+            <a href="{{ item.website }}" class="btn btn-default">
+              <span class="fa fa-external-link"></span>
+              Ga naar {{ item.title }}
+            </a>
+            {% endif %}
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <span class="fa fa-times"></span>
+              Sluiten
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

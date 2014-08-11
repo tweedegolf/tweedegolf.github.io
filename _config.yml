@@ -1,0 +1,14 @@
+name: tweede golf
+
+# Dependencies
+markdown: kramdown
+
+# Permalinks
+permalink: pretty
+
+# Server
+destination: ./_site
+exclude: ['.gitignore', 'README.md', 'bower.json', '.bowerrc', 'Gemfile', 'Gemfile.lock']
+
+collections:
+  - portfolio

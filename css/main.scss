@@ -1,0 +1,10 @@
+
+$brand-primary: #A6482E;
+$brand-success: #5DB181;
+$brand-dark-success: #075941;
+$gray-lighter: lighten(#000, 93.5%);
+$fa-font-path: "../vendor/fontawesome/fonts";
+
+@import "vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap.scss";
+@import "vendor/fontawesome/scss/font-awesome.scss";
+@import "_theme.scss";
