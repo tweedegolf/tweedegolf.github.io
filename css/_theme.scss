@@ -416,7 +416,6 @@ footer {
 }
 
 .portfolio-modal {
-    background-color: #CCCCCC;
     .modal-content {
         border-radius: 0;
         background-clip: border-box;
@@ -478,6 +477,7 @@ footer {
 }
 
 .modal-body {
+    background-color: white;
     h3 {
         text-align: left;
         margin: 60px 0 20px;
