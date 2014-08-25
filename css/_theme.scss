@@ -432,6 +432,7 @@ footer {
         }
         img {
             margin-bottom: 30px;
+            max-width: 100%;
         }
         .item-details {
             margin: 30px 0;
@@ -445,13 +446,15 @@ footer {
         top: 25px;
         right: 25px;
         cursor: pointer;
+        z-index: 9999;
+        border-radius: 100%;
         &:hover {
             opacity: 0.3;
         }
         .lr {
             height:75px;
             width:1px;
-            margin-left:35px;
+            margin-left:37px;
             background-color:#000000;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
