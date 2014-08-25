@@ -17,6 +17,6 @@ Dankzij slimme integratie is de stap van 2D-ontwerp naar 3D snel gemaakt. Het fr
 
 Voor tekenjetuin ontwikkelden we op basis van ons framework een tuinontwerp-applicatie. Consumenten tekenen in een paar minuten een tuin en wandelen er direct doorheen:
 
-<iframe src="//player.vimeo.com/video/92336174?portrait=0&title=0&badge=0&byline=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/92336174?portrait=0&title=0&badge=0&byline=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Geïnteresseerd? [Neem contact met ons op.](#contact)

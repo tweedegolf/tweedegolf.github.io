@@ -34,12 +34,12 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-md-8 col-md-offset-2">
           <div class="modal-body">
             <h2>{{ item.title }}</h2>
-            <hr class="star-primary">
+            <hr class="star-success">
             {% if item.embed %}
-            {{ item.embed }}
+              <iframe src="//player.vimeo.com/video/{{ item.embed }}?portrait=0&title=0&badge=0&byline=0" width="100%" height="400" frameborder="0"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             {% else %}
             <img src="/img/portfolio/{{ item.image }}" class="img-responsive img-centered" alt="{{ item.title }}">
             {% endif %}
@@ -65,12 +65,12 @@
               {% endif %}
             </ul>
             {% if item.website %}
-            <a href="{{ item.website }}" class="btn btn-default">
+            <a href="{{ item.website }}" class="btn btn-success" target="_blank">
               <span class="fa fa-external-link"></span>
               Ga naar {{ item.title }}
             </a>
             {% endif %}
-            <button type="button" class="btn btn-default" data-dismiss="modal">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
               <span class="fa fa-times"></span>
               Sluiten
             </button>
