@@ -1,7 +1,7 @@
 ---
 layout: static
 title: 3D Framework
-permalink: 3d-framework
+permalink: 3d-framework/
 ---
 
 **Online tekenen en ontwerpen, gecombineerd met krachtige 3D-weergave.**

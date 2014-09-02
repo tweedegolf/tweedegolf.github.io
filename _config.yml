@@ -11,4 +11,7 @@ destination: ./_site
 exclude: ['.gitignore', 'README.md', 'bower.json', '.bowerrc', 'Gemfile', 'Gemfile.lock']
 
 collections:
-  - portfolio
+    portfolio:
+        output: false
+    static:
+        output: true
