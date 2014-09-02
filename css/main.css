@@ -6860,6 +6860,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 700; }
 
+strong {
+  font-weight: 700; }
+
 hr.star-light,
 hr.star-primary,
 hr.star-success {
@@ -7153,11 +7156,14 @@ footer {
   .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em; }
-  .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-    max-width: 100%; }
   .portfolio-modal .modal-content .item-details {
     margin: 30px 0; }
+  .portfolio-modal .modal-content .screen {
+    border: 8px solid #CCC;
+    padding: 8px;
+    margin: 30px 0; }
+    .portfolio-modal .modal-content .screen img {
+      max-width: 100%; }
 .portfolio-modal .close-modal {
   position: fixed;
   width: 75px;

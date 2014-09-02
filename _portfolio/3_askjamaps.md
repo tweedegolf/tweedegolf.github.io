@@ -1,7 +1,8 @@
 ---
 title: Askja Maps
-image: askjamaps.jpg
+thumb: askjamaps.jpg
 client: Askja Reizen
 date: 2014
 tags: map editor
+screen1: askjamaps.jpg
 ---
