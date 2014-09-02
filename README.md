@@ -34,8 +34,8 @@ Site content updates are performed by editing the site source directly.
 
 Static pages are added by creating .md files in the /_posts folder. These files MUST be named according to the format YEAR-MONTH-DAY-title. See [Jekyll post documentation](http://jekyllrb.com/docs/posts/) for more information. We always use the `static` layout for static pages. Other information which may be provided: 
 
-	* title
-	* permalink
+* title
+* permalink
 
 Ordinary text may be added simpy by writing in the file itself, below all variables. Markup may be added through using Markdown. 
 
@@ -43,15 +43,15 @@ Ordinary text may be added simpy by writing in the file itself, below all variab
 
 Portfolio items are added by creating .md files in the /_portfolio folder. These files MUST be named with a leading number pointing to its location in the portfolio section, e.g. "1_askja.md". In such a file, the following information may be provided: 
 
-	* title
-	* date
-	* client 
-	* tags
-	* vimeo
-	* youtube
-	* screen1
-	* screen2
-	* screen4
-	* website
+* title
+* date
+* client 
+* tags
+* vimeo
+* youtube
+* screen1
+* screen2
+* screen4
+* website
 
 Screenshots are to be placed in /img/portfolio and may have any size, but a width of 700px is forced through the styling. Ordinary text may be added simpy by writing in the file itself, below all variables. Markup may be added through using Markdown. 
