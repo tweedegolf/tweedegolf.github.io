@@ -32,7 +32,7 @@ Site content updates are performed by editing the site source directly.
 
 #### Static pages
 
-Static pages are added by creating .md files in the /_posts folder. These files MUST be named according to the format YEAR-MONTH-DAY-title. See [Jekyll post documentation](http://jekyllrb.com/docs/posts/) for more information. We always use the `static` layout for static pages. Other information which may be provided: 
+Static pages are added by creating .md files in the /_static folder. We always use the `static` layout for static pages. Other information which may be provided: 
 
 * title
 * permalink
