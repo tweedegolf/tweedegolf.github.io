@@ -6985,8 +6985,8 @@ section#about p {
 
   section.first {
     padding-top: 75px; } }
-#page {
-  padding-top: 100px; }
+section#static {
+  padding: 200px 100px 100px 100px; }
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;

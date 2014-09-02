@@ -25,3 +25,7 @@ To install the new fontawesome fonts run:
 After updating the [sass](http://sass-lang.com/) stylesheet in the folder `css`, or after updating *bootstrap* or *fontawesome*, run the following command to generate the stylesheet:
 
     sass css/main.scss css/main.css
+
+## Static pages
+
+Static pages are added by creating .md files in the /_posts folder. These files MUST be named according to the format YEAR-MONTH-DAY-title. See `http://jekyllrb.com/docs/posts/` for more information. 

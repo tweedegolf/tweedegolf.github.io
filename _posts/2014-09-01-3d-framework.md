@@ -1,3 +1,9 @@
+---
+layout: static
+title: 3D Framework
+permalink: 3d-framework
+---
+
 **Online tekenen en ontwerpen, gecombineerd met krachtige 3D-weergave.**
 
 Met het framework én onze expertise kunnen we snel en efficiënt ontwerp- en tekenapplicaties ontwikkelen voor elke dienst of product. In tegenstelling tot oude technieken met browser-plugins werkt het framework - zonder vervelende installatie - in alle moderne browsers, óók op tablets.
