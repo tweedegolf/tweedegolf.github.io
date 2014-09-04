@@ -1,28 +1,51 @@
+$.easing.easeCustom = function (x, t, b, c, d) {
+    if (t==0) return b;
+    if (t==d) return b+c;
+    if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+    return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+};
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+$('.page-scroll a').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 800, 'easeCustom');
+    event.preventDefault();
 });
 
+
 // Floating label headings for the contact form
-$(function() {
-    $('body').on('input propertychange', '.floating-label-form-group', function(e) {
-        $(this).toggleClass('floating-label-form-group-with-value', !! $(e.target).val());
-    }).on('focus', '.floating-label-form-group', function() {
-        $(this).addClass('floating-label-form-group-with-focus');
-    }).on('blur', '.floating-label-form-group', function() {
-        $(this).removeClass('floating-label-form-group-with-focus');
-    });
+$('body').on('input propertychange', '.floating-label-form-group', function(e) {
+    $(this).toggleClass('floating-label-form-group-with-value', !! $(e.target).val());
+}).on('focus', '.floating-label-form-group', function() {
+    $(this).addClass('floating-label-form-group-with-focus');
+}).on('blur', '.floating-label-form-group', function() {
+    $(this).removeClass('floating-label-form-group-with-focus');
 });
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
+});
+
+// collapse menu
+var didScroll = false;
+$(window).on('scroll', function (e) {
+    if (!didScroll) {
+        didScroll = true;
+        setTimeout(function () {
+            if (didScroll) {
+                didScroll = false;
+                var top = $(window).scrollTop();
+                if (top > 200) {
+                    $('.navbar-fixed-top').addClass('navbar-shrink');
+                } else {
+                    $('.navbar-fixed-top').removeClass('navbar-shrink');
+                }
+            }
+        }, 250);
+    }
 });
 
 // Direct modal links
