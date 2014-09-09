@@ -44,8 +44,13 @@ Ordinary text may be added simpy by writing in the file itself, below all variab
 Portfolio items are added by creating .md files in the /_portfolio folder. These files MUST be named with a leading number pointing to its location in the portfolio section, e.g. "1_askja.md". In such a file, the following information may be provided: 
 
 * title
+* thumb
 * date
 * client 
+* partner
+* partnerurl
+* case
+* caseurl
 * tags
 * vimeo
 * youtube
