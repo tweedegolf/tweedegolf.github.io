@@ -39,25 +39,40 @@
             <h2>{{ item.title }}</h2>
             <hr class="star-success">
             <ul class="list-inline item-details">
-              {% if item.client %}
-              <li>
-                Klant: 
-                <strong>{{ item.client }}</strong>
-              </li>
-              {% endif %}
               {% if item.date %}
               <li>
-                Datum: 
+                <span>Datum: </span>
                 <strong>{{ item.date }}</strong>
               </li>
               {% endif %}
-              {% if item.tags %}
+              {% if item.client %}
               <li>
-                Tags: 
-                <strong>{{ item.tags }}</strong>
+                <span>Klant: </span>
+                <strong>{{ item.client }}</strong>
+              </li>
+              {% endif %}
+              {% if item.partner %}
+              <li>
+                <span>Partner: </span>
+                <strong>{{ item.partner }}</strong>
+                {% if item.partnerurl %}<a href="{{ item.partnerurl }}" target="_blank"><span class="fa fa-external-link"></span></a>{% endif %}
               </li>
               {% endif %}
             </ul>
+            {% if item.tags %}
+            <div class="item-details tags">
+                <span class="fa fa-tags"></span>
+                <strong>{{ item.tags }}</strong>
+                {% if item.case %}
+                <span class="case">
+                  <span class="separator"> | </span> 
+                  <span class="fa fa-paperclip"></span>
+                  Case: <strong>Interesse opwekkende titel</strong>
+                  {% if item.caseurl %}<a href="{{ item.caseurl }}" target="_blank"><span class="fa fa-external-link"></span></a>{% endif %}
+                </span>
+                {% endif %}
+            </div>
+            {% endif %}
             {{ item.output }}
             {% if item.vimeo %}
               <iframe src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0" width="100%" height="400" frameborder="0"></iframe>
