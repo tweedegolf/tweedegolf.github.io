@@ -6,6 +6,6 @@ client: Gemeente Landerd
 partner: LaVerbe
 partnerurl: http://laverbe.nl
 tags: kavelverkoop, gemeente
-screen1: landerd.jpg
+screens: landerd.jpg
 website: http://kavelsinlanderd.nl/
 ---
