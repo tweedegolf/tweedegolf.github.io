@@ -7098,6 +7098,14 @@ form .row:first-child .floating-label-form-group {
 
 footer {
   color: white; }
+  footer h2 {
+    color: #333333; }
+  footer hr.star-primary {
+    border-top: 4px #A6482E solid; }
+  footer hr.star-primary:after {
+    background-color: #EEEEEE;
+    content: "\f121";
+    font-size: 1.8em; }
   footer h3 {
     margin-bottom: 30px; }
   footer a {
