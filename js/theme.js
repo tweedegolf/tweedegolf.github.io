@@ -14,6 +14,23 @@ $('.page-scroll a').bind('click', function(event) {
     event.preventDefault();
 });
 
+// add contact form authentiocation hash
+$('#contact form').on('submit', function (e) {
+    var form = $(this),
+        name = form.find('[name=name]').val(),
+        email = form.find('[name=email]').val(),
+        message = form.find('[name=message]').val(),
+        payload = email + '|' + name + '|' + message,
+        hash = Sha1.hash(payload);
+
+    $('<input>', {
+        'type': 'hidden',
+        'name': 'hash',
+        'value': hash
+    }).appendTo(form);
+
+    return true;
+});
 
 // Floating label headings for the contact form
 $('body').on('input propertychange', '.floating-label-form-group', function(e) {
