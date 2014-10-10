@@ -1,9 +1,9 @@
 ---
 title: BiblioPlus
-thumb: biblio.png
+thumb: biblio1.png
 date: 2014
 client: BiblioPlus
-tags: bibliotheek, ebooks
-screens: biblio.png,biblio2.png,biblio3.png 
+tags: biblioplus, webshop, activiteiten, onderwijs
+screens: biblio1.png,biblio3.png,biblio2.png 
 website: http://biblioplus.nl/
 ---
