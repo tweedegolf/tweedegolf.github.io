@@ -5,17 +5,19 @@ layout: default
 {% include navbar.html %}
 
 <section id="static">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <h2>{{ page.title }}</h2>
-      <hr class="star-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>{{ page.title }}</h2>
+        <hr class="star-primary">
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="row">
+      <div class="col-md-12">
 
-      {{ content }}
+        {{ content }}
 
+      </div>
     </div>
   </div>
 </section>

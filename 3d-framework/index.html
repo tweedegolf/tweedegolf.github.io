@@ -1,0 +1,96 @@
+---
+layout: default
+title: 3D Framework
+---
+
+{% include navbar.html %}
+
+
+<section id="cases">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>{{ page.title }}</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="cases-body center-block">
+          <p>Met het framework én onze expertise kunnen we snel en efficiënt ontwerp- en tekenapplicaties ontwikkelen voor elke dienst of product. In tegenstelling tot oude technieken met browser-plugins werkt het framework - zonder vervelende installatie - in alle moderne browsers, óók op tablets.</p>
+          <hr class="separator"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    {% for item in site.cases %}
+      <div class="col-sm-4 portfolio-item">
+        <a href="#{{ item.title|downcase|replace:' ','-' }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="/img/cases/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
+        </a>
+        <h3>{{ item.title }}</h3>
+        <p class="intro">{{ item.intro }}</p>
+      </div>
+    {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="cases-body center-block">
+          <hr class="separator"/>
+          <p class="one-liner">Online tekenen en ontwerpen, gecombineerd met krachtige 3D-weergave.</p>
+          <a class="btn btn-lg btn-success" href="/#contact">Meer informatie</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% for item in site.cases %}
+<!-- Cases Modals -->
+<div class="portfolio-modal modal fade" id="{{ item.title|downcase|replace:' ','-' }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="modal-body">
+            <h2>{{ item.title }}</h2>
+            <hr class="star-success">
+            {% if item.vimeo %}
+              <iframe src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0" width="100%" height="400" frameborder="0"></iframe>
+            {% endif %}
+            {% if item.youtube %}
+              <iframe src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.vimeo }}" frameborder="0"></iframe>" width="100%" height="400" frameborder="0"></iframe>
+            {% endif %}
+            {% if item.img %}
+                <img src="/img/cases/{{ item.img }}" class="img-responsive img-centered" alt="{{ item.title }}">
+            {% endif %}
+            {{ item.output }}
+            {% if item.website %}
+            <a href="{{ item.website }}" class="btn btn-success" target="_blank">
+              <span class="fa fa-external-link"></span>
+              Ga naar {{ item.title }}
+            </a>
+            {% endif %}
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <span class="fa fa-times"></span>
+              Sluiten
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% include footer.html %}
