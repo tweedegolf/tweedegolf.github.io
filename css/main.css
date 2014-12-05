@@ -7041,6 +7041,9 @@ section#cases {
     max-width: 820px;
     margin-top: 60px;
     margin-bottom: 60px; }
+    section#cases .cases-body.one-liner p {
+      margin-bottom: 22px;
+      font-size: 20px; }
   section#cases h3 {
     color: #333;
     font-weight: 400;
@@ -7055,9 +7058,6 @@ section#cases {
     section#cases p.intro {
       max-width: 360px;
       margin: 0 auto 60px; } }
-  section#cases p.one-liner {
-    margin-bottom: 22px;
-    font-size: 20px; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {

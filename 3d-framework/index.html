@@ -17,7 +17,8 @@ title: 3D Framework
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="cases-body center-block">
-          <p>Met het framework én onze expertise kunnen we snel en efficiënt ontwerp- en tekenapplicaties ontwikkelen voor elke dienst of product. In tegenstelling tot oude technieken met browser-plugins werkt het framework - zonder vervelende installatie - in alle moderne browsers, óók op tablets.</p>
+          {% capture profile %}{% include /3d-framework/3d-framework.md %}{% endcapture %}
+          {{ profile|markdownify }}
           <hr class="separator"/>
         </div>
       </div>
@@ -40,9 +41,10 @@ title: 3D Framework
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <div class="cases-body center-block">
+        <div class="cases-body center-block one-liner">
           <hr class="separator"/>
-          <p class="one-liner">Online tekenen en ontwerpen, gecombineerd met krachtige 3D-weergave.</p>
+          <p class="">{% capture profile %}{% include /3d-framework/one-liner.md %}{% endcapture %}
+          {{ profile|markdownify }}</p>
           <a class="btn btn-lg btn-success" href="/#contact">Meer informatie</a>
         </div>
       </div>
