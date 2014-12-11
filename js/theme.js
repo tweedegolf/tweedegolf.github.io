@@ -21,7 +21,7 @@ $('#contact form').on('submit', function (e) {
         email = form.find('[name=email]').val(),
         message = form.find('[name=message]').val(),
         payload = email + '|' + name + '|' + message,
-        hash = Sha1.hash(payload);
+        hash = Sha1.hash(payload.replace(/(\W)/gm, ''));
 
     $('<input>', {
         'type': 'hidden',
