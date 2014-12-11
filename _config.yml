@@ -15,3 +15,5 @@ collections:
         output: false
     static:
         output: true
+    cases:
+        output: false
