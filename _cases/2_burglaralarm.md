@@ -1,8 +1,8 @@
 ---
-title: Burglar Alarm
+title: Visualisatie en gamification
 thumb: burglaralarm.png
 vimeo: 113716605
-intro: Dankzij slimme integratie is de stap van 2D-ontwerp naar 3D snel gemaakt. Het framework genereert niet alleen 3D-weergaves; de gebruiker kan óók navigeren door de 3D-wereld.
+intro: Zijn uw producten configureerbaar of vragen ze om een klant-specifiek ontwerp? Overtuig uw klanten met een gepersonaliseerd ontwerp en laat ze het ervaren in 3D. 
 ---
 
-Dankzij slimme integratie is de stap van 2D-ontwerp naar 3D snel gemaakt. Het framework genereert niet alleen 3D-weergaves; de gebruiker kan óók navigeren door de 3D-wereld.
+Zijn uw producten configureerbaar of vragen ze om een klant-specifiek ontwerp? Bind en overtuig uw klanten met een gepersonaliseerd ontwerp en laat ze uw producten ervaren in 3D. Versterk de beleving met game- of first person-elementen. Consumenten apps, co-creatie, business-to-business acquisitie, ...? Neem contact met ons op!

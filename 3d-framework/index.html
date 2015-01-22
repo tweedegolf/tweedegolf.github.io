@@ -35,7 +35,7 @@ title: 3D Framework
           <img src="/img/cases/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
         </a>
         <h3>{{ item.title }}</h3>
-        <p class="intro">{{ item.intro }}</p>
+        <p class="intro">{{ item.intro }} <a href="#{{ item.title|downcase|replace:' ','-' }}" data-toggle="modal"> {{ item.introlinkname }}</a></p>
       </div>
     {% endfor %}
     </div>

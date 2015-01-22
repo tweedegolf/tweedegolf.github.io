@@ -1,1 +1,1 @@
-Met het framework én onze expertise kunnen we snel en efficiënt ontwerp- en tekenapplicaties ontwikkelen voor elke dienst of product. In tegenstelling tot oude technieken met browser-plugins werkt het framework - zonder vervelende installatie - in alle moderne browsers, óók op tablets.
+Een online productconfigurator of een ontwerp- of teken-app? Visualisatie in 3D? Met ons 3D Framework en onze expertise zetten we idee&euml;n razendsnel om in succesvolle web apps.
