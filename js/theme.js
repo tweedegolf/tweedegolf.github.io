@@ -10,7 +10,15 @@ $('.page-scroll a').bind('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
-    }, 800, 'easeCustom');
+    }, 800, 'easeCustom', function () {
+        // This will fire twice: for both HTML and BODY
+        if ($(this).is('body')) {
+            window.location.href = $anchor.attr('href');
+            if (typeof ga !== 'undefined') {
+                ga('send', 'pageview', $anchor.attr('href').replace('#','/') );
+            }
+        }
+    });
     event.preventDefault();
 });
 
@@ -76,18 +84,13 @@ $(function() {
     }
     $('.portfolio-modal').on('show.bs.modal', function (e) {
         var hash = '#' + $(e.target).attr('id');
-        if(history.pushState) {
-            window.history.pushState(null, null, hash);
-        } else {
-            window.location.hash = hash;
-        }
-    });
-    $('.portfolio-modal').on('show.bs.modal', function (e) {
-        var hash = '#' + $(e.target).attr('id');
         if(window.history.pushState) {
             window.history.pushState(null, null, hash);
         } else {
             window.location.hash = hash;
+        }
+        if( typeof ga !== 'undefined' ) {
+            ga('send', 'pageview', hash.replace('#','/') );
         }
     }).on('hidden.bs.modal', function () {
         var location = window.location.pathname + window.location.search;
