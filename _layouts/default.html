@@ -28,6 +28,14 @@
 
   {{ content }}
 
+  <script>
+    function stopVideos() {
+      $('iframe').each(function(){
+        // Reload iframe, thus stopping the video
+        $(this).attr('src', $(this).attr('src'));
+      });
+    }
+  </script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/sha1.min.js"></script>
