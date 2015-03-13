@@ -288,7 +288,7 @@ section#static {
     }
 }
 
-section#over-ons {
+section#about {
   padding-bottom: 0;
   text-align: center;
 
@@ -321,6 +321,42 @@ section#over-ons {
 
     .btn {
       margin-top: 20px;
+    }
+  }
+}
+
+section#team {
+  padding-top: 160px;
+  padding-bottom: 0;
+
+  .member {
+
+    img {
+      float: left;
+      height: 100px;
+      width: 100px;
+      margin: 20px;
+    }
+
+    span {
+      display: block;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 32px;
+    }
+
+    .job {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .email {
+      font-size: 14px;
+      color: #666;
     }
   }
 }
@@ -389,7 +425,6 @@ section#cases {
 }
 
 #contact {
-  padding-top: 160px;
 
   .form-group {
     margin-top: 20px;

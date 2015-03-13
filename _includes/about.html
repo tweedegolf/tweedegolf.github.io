@@ -1,42 +1,121 @@
-<section class="success" id="over-ons">
-  <div class="container">
+<div id="over-ons">
+  <section class="success" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Over ons</h2>
+          <hr class="star-light">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          {% capture profile %}{% include /about/profile.md %}{% endcapture %}
+          {{ profile|markdownify }}
+        </div>
+      </div>
+      <div class="row cubes">
+        {% for item in site.cubes %}
+          <div class="col-sm-6 col-md-4 cube">
+            {% if item.image %}
+              <img src="/img/about/{{ item.image }}"></img>
+            {% else %}
+              {% if item.number %}
+                <span class="number">{{ item.number }}</span>
+              {% endif %}
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+              {% if item.link %}
+                <a class="btn btn-lg btn-success" href="{{ item.link }}">Meer...</a>
+              {% endif %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section id="team">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Over ons</h2>
-        <hr class="star-light">
+        <h2>Team</h2>
+        <hr class="star-primary">
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-offset-2 col-lg-8">
-        {% capture profile %}{% include /about/profile.md %}{% endcapture %}
-        {{ profile|markdownify }}
+    <div class="container">
+      <div class="row members">
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
+        <div class="col-sm-6 col-md-4 member">
+          <img class="img-circle" src="/img/team/member.jpg"></img>
+          <span class="name">Name</span>
+          <span class="job">Web developer</span>
+          <span class="email">name@tweedegolf.nl</span>
+        </div>
       </div>
     </div>
-    <div class="row cubes">
-      <div class="col-sm-6 col-md-4 cube">
-        <img src="/img/about/gezellig.jpg"></img>
-      </div>
-      <div class="col-sm-6 col-md-4 cube">
-        <span class="number">8</span>
-        <p>research projecten</p>
-        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
-      </div>
-      <div class="col-sm-6 col-md-4 cube">
-        <img src="/img/about/code.jpg"></img>
-      </div>
-      <div class="col-sm-6 col-md-4 cube">
-        <span class="number">1</span>
-        <p>oculus rift</p>
-        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
-      </div>
-      <div class="col-sm-6 col-md-4 cube">
-        <img src="/img/about/oculus-rift-drone.jpg"></img>
-      </div>
-      <div class="col-sm-6 col-md-4 cube">
-        <span class="number">1</span>
-        <p>drone</p>
-        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
