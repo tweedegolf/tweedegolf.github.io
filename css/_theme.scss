@@ -31,6 +31,7 @@ strong {
     font-weight: 700;
 }
 
+hr.star,
 hr.star-light,
 hr.star-primary,
 hr.star-success {
@@ -42,6 +43,7 @@ hr.star-success {
     margin: 25px auto 60px;
 }
 
+hr.star:after,
 hr.star-light:after,
 hr.star-primary:after,
 hr.star-success:after {
@@ -92,8 +94,10 @@ hr.separator {
 
 header {
     text-align: center;
-    background: $brand-primary;
+    background-image: url('/img/kantoor.jpg');
+    background-size: cover;
     color: white;
+    position: relative;
     .container {
         padding-top: 100px;
         padding-bottom: 50px;
@@ -112,6 +116,21 @@ header {
             font-size: 1.25em;
             font-weight: 300;
         }
+    }
+
+    &:before {
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background: rgba(118, 53, 34, 0.8);
+    	-moz-transition: background .3s linear;
+    	-webkit-transition: background .3s linear;
+    	-o-transition: background .3s linear;
+    	transition: background .3s linear;
     }
 }
 
@@ -439,8 +458,8 @@ footer {
                 -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
                 -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
                 transition: all 0.5s ease 0s;
-                -moz-transition: all .6s ease; 
-                -ms-transition: all .6s ease; 
+                -moz-transition: all .6s ease;
+                -ms-transition: all .6s ease;
                 &:hover {
                     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
                     -webkit-filter: grayscale(0%);
