@@ -1,1 +1,3 @@
-Wij zijn een webbureau met een sterke focus op techniek; we bouwen webapplicaties en web apps. Een sterke toegevoegde waarde hebben we waar vernieuwende online producten ontwikkeld worden of waar een websysteem moet zorgen voor optimale workflow. We zijn altijd op zoek naar technisch uitdagende projecten. Plannen of ideeën? Neem [contact](#contact) met ons op.
+Wij bouwen webapplicaties en web apps.
+
+Een sterke toegevoegde waarde hebben we waar vernieuwende online producten ontwikkeld worden of waar een websysteem moet zorgen voor optimale workflow.

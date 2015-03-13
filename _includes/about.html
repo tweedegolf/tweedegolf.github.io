@@ -7,17 +7,35 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-offset-2 col-lg-8">
         {% capture profile %}{% include /about/profile.md %}{% endcapture %}
         {{ profile|markdownify }}
       </div>
-      <div class="col-lg-4">
-        {% capture research %}{% include /about/research.md %}{% endcapture %}
-        {{ research|markdownify }}
+    </div>
+    <div class="row cubes">
+      <div class="col-sm-6 col-md-4 cube">
+        <img src="/img/about/gezellig.jpg"></img>
       </div>
-      <div class="col-lg-4">
-        {% capture history %}{% include /about/history.md %}{% endcapture %}
-        {{ history|markdownify }}
+      <div class="col-sm-6 col-md-4 cube">
+        <span class="number">8</span>
+        <p>research projecten</p>
+        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
+      </div>
+      <div class="col-sm-6 col-md-4 cube">
+        <img src="/img/about/code.jpg"></img>
+      </div>
+      <div class="col-sm-6 col-md-4 cube">
+        <span class="number">1</span>
+        <p>oculus rift</p>
+        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
+      </div>
+      <div class="col-sm-6 col-md-4 cube">
+        <img src="/img/about/oculus-rift-drone.jpg"></img>
+      </div>
+      <div class="col-sm-6 col-md-4 cube">
+        <span class="number">1</span>
+        <p>drone</p>
+        <a class="btn btn-lg btn-success" href="/blog">Meer...</a>
       </div>
     </div>
   </div>

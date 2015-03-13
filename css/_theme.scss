@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -228,12 +228,6 @@ section.success {
     }
 }
 
-section#about {
-    p {
-        text-style: justify;
-    }
-}
-
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -292,6 +286,43 @@ section#static {
     * {
         z-index: 2;
     }
+}
+
+section#over-ons {
+  padding-bottom: 0;
+  text-align: center;
+
+  .cubes {
+    position: relative;
+    top: 60px;
+  }
+
+  .cube {
+    background-color: white;
+    border: 1px solid #eee;
+    height: 300px;
+    padding: 0;
+
+    p {
+      color: #666;
+    }
+
+    .number {
+      font-size: 112px;
+      font-weight: bold;
+      color: $brand-success;
+      line-height: 154px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
 }
 
 section#cases {
@@ -358,10 +389,12 @@ section#cases {
 }
 
 #contact {
-    .form-group {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  padding-top: 160px;
+
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .floating-label-form-group {

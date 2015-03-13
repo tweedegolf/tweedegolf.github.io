@@ -7000,9 +7000,6 @@ section.success {
   section.success p a {
     color: #02151F; }
 
-section#about p {
-  text-style: justify; }
-
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
@@ -7050,8 +7047,29 @@ section#static {
 #portfolio * {
   z-index: 2; }
 
-section#profile {
+section#over-ons {
+  padding-bottom: 0;
   text-align: center; }
+  section#over-ons .cubes {
+    position: relative;
+    top: 60px; }
+  section#over-ons .cube {
+    background-color: white;
+    border: 1px solid #eee;
+    height: 300px;
+    padding: 0; }
+    section#over-ons .cube p {
+      color: #666; }
+    section#over-ons .cube .number {
+      font-size: 112px;
+      font-weight: bold;
+      color: #416375;
+      line-height: 154px; }
+    section#over-ons .cube img {
+      width: 100%;
+      height: 100%; }
+    section#over-ons .cube .btn {
+      margin-top: 20px; }
 
 section#cases {
   padding: 200px 0 100px 0; }
@@ -7097,9 +7115,11 @@ section#cases {
 #contact .alert {
   display: none; }
 
-#contact .form-group {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+#contact {
+  padding-top: 160px; }
+  #contact .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .floating-label-form-group {
   position: relative;
