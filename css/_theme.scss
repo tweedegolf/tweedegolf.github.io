@@ -330,12 +330,13 @@ section#team {
   padding-bottom: 0;
 
   .member {
+    height: 140px;
 
     img {
       float: left;
       height: 100px;
       width: 100px;
-      margin: 20px;
+      margin: 20px 14px;
     }
 
     span {
@@ -346,7 +347,7 @@ section#team {
       font-size: 18px;
       font-weight: bold;
       color: #333;
-      margin-top: 32px;
+      padding-top: 32px;
     }
 
     .job {

@@ -7074,24 +7074,26 @@ section#about {
 section#team {
   padding-top: 160px;
   padding-bottom: 0; }
-  section#team .member img {
-    float: left;
-    height: 100px;
-    width: 100px;
-    margin: 20px; }
-  section#team .member span {
-    display: block; }
-  section#team .member .name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 32px; }
-  section#team .member .job {
-    font-size: 14px;
-    color: #666; }
-  section#team .member .email {
-    font-size: 14px;
-    color: #666; }
+  section#team .member {
+    height: 140px; }
+    section#team .member img {
+      float: left;
+      height: 100px;
+      width: 100px;
+      margin: 20px 14px; }
+    section#team .member span {
+      display: block; }
+    section#team .member .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      padding-top: 32px; }
+    section#team .member .job {
+      font-size: 14px;
+      color: #666; }
+    section#team .member .email {
+      font-size: 14px;
+      color: #666; }
 
 section#cases {
   padding: 200px 0 100px 0; }
