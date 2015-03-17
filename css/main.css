@@ -6944,6 +6944,39 @@ header {
     -webkit-transition: background .3s linear;
     -o-transition: background .3s linear;
     transition: background .3s linear; }
+  header.blog {
+    background-image: none;
+    overflow: hidden;
+    height: 540px; }
+    header.blog .leadimg {
+      position: absolute;
+      top: -270px;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%; }
+    header.blog .article-heading {
+      position: absolute;
+      bottom: 40px;
+      z-index: 2; }
+      header.blog .article-heading h1 {
+        font-size: 80px;
+        font-weight: 100;
+        text-transform: none; }
+    header.blog:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      background-image: linear-gradient(rgba(65, 99, 117, 0.8), rgba(32, 50, 59, 0.8));
+      -moz-transition: background .3s linear;
+      -webkit-transition: background .3s linear;
+      -o-transition: background .3s linear;
+      transition: background .3s linear;
+      z-index: 1; }
 
 @media (min-width: 768px) {
   header .container {
@@ -7120,6 +7153,23 @@ section#cases {
     section#cases p.intro {
       max-width: 360px;
       margin: 0 auto 60px; } }
+
+section#blog-items a, section#blog-items .tags, section#blog-items h3 {
+  color: #333;
+  margin: 6px 0; }
+  section#blog-items a:hover, section#blog-items .tags:hover, section#blog-items h3:hover {
+    text-decoration: none; }
+section#blog-items hr {
+  border-top: 3px solid #333;
+  margin: 6px 0; }
+section#blog-items h3 {
+  text-transform: none;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0; }
+section#blog-items p {
+  font-size: 16px;
+  margin: 6px 0; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
