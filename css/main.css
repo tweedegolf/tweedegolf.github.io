@@ -6962,7 +6962,6 @@ header {
     height: 540px; }
     header.blog .leadimg {
       position: absolute;
-      top: -270px;
       left: 0;
       min-width: 100%;
       min-height: 100%; }
@@ -7177,7 +7176,12 @@ section#cases {
       margin: 0 auto 60px; } }
 
 .blog-item {
-  padding: 24px 0; }
+  padding: 24px 0;
+  max-width: 360px;
+  float: left; }
+  @media (max-width: 766px) {
+    .blog-item {
+      max-width: 290px; } }
   .blog-item a, .blog-item .tags, .blog-item h3 {
     color: #333;
     margin: 6px 0; }

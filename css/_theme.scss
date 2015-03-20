@@ -154,7 +154,6 @@ header {
 
       .leadimg {
         position: absolute;
-        top: -(540px / 2);
         left: 0;
         min-width: 100%;
         min-height: 100%;
@@ -469,6 +468,12 @@ section#cases {
 .blog-item {
 
   padding: 24px 0;
+  max-width: 360px;
+  float: left;
+
+  @media(max-width: 766px) {
+    max-width: 290px;
+  }
 
   a, .tags, h3 {
     color: #333;
