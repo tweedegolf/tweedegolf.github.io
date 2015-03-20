@@ -6847,7 +6847,7 @@ p {
 p.small {
   font-size: 16px; }
 
-article p {
+section#post-content p {
   font-size: 15px; }
 
 a,
@@ -6916,6 +6916,15 @@ hr.separator {
 
 .img-centered {
   margin: 0 auto; }
+
+.button.github {
+  background-image: url("/img/button-github.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  bottom: 36px;
+  left: 146px; }
 
 header {
   text-align: center;
@@ -7168,7 +7177,7 @@ section#cases {
       margin: 0 auto 60px; } }
 
 .blog-item {
-  padding: 20px 0; }
+  padding: 24px 0; }
   .blog-item a, .blog-item .tags, .blog-item h3 {
     color: #333;
     margin: 6px 0; }

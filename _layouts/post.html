@@ -17,16 +17,14 @@ layout: default
   </div>
 </header>
 
-<section id="blog-post">
+<section id="post-content">
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <article>
-          <p>{{ content }}</p>
-        </article>
+        <p>{{ content }}</p>
       </div>
-
       <div class="col-md-offset-1 col-md-4">
+
       {% for member in site.data.members %}
         {% if member.name == page.author %}
           <div class="member-card">
@@ -41,6 +39,15 @@ layout: default
           </div>
         {% endif %}
       {% endfor %}
+
+      <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
+
+      <div class="addthis_sharing_toolbox" data-url="http://tweedegolf.com{{ page.url }}" data-title="{{ page.title }}"></div>
+      {% if page.github %}
+      <a href="{{ page.github }}">
+        <span class="button github" title="GitHub"></span>
+      </a>
+      {% endif %}
 
       {% for post in site.posts %}
         <div class="blog-item">
@@ -57,8 +64,8 @@ layout: default
           </a>
         </div>
       {% endfor %}
-      </div>
 
+      </div>
     </div>
   </div>
 </section>

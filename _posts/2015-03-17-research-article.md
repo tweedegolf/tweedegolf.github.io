@@ -4,7 +4,7 @@ thumb: oculus-rift.jpg
 leadimg:
 tags: html5, canvas, 3D framework
 author: Daniel
-github: http://google.com/
+github: http://github.com/
 ---
 
 Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
