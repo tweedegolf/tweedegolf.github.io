@@ -13,7 +13,7 @@ p.small {
 }
 
 article p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 a,
@@ -155,9 +155,20 @@ header {
         bottom: 40px;
         z-index: 2;
 
+        .tags {
+          font-size: 18px;
+          text-align: left;
+
+          .fa {
+            font-size: 22px;
+            margin-right: 4px;
+          }
+        }
+
         h1 {
-          font-size: 80px;
+          font-size: 66px;
           font-weight: 100;
+          text-align: left;
           text-transform: none;
         }
       }
@@ -382,9 +393,11 @@ section#team {
 
   img {
     float: left;
-    height: 100px;
-    width: 100px;
-    margin: 20px 14px;
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 14px;
+    margin-bottom: 20px;
   }
 
   span {
@@ -395,7 +408,7 @@ section#team {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    padding-top: 32px;
+    padding-top: 24px;
   }
 
   .job {
@@ -445,7 +458,7 @@ section#cases {
 
 .blog-item {
 
-  margin: 30px 0;
+  padding: 20px 0;
 
   a, .tags, h3 {
     color: #333;

@@ -6848,7 +6848,7 @@ p.small {
   font-size: 16px; }
 
 article p {
-  font-size: 16px; }
+  font-size: 15px; }
 
 a,
 a:hover,
@@ -6961,9 +6961,16 @@ header {
       position: absolute;
       bottom: 40px;
       z-index: 2; }
+      header.blog .article-heading .tags {
+        font-size: 18px;
+        text-align: left; }
+        header.blog .article-heading .tags .fa {
+          font-size: 22px;
+          margin-right: 4px; }
       header.blog .article-heading h1 {
-        font-size: 80px;
+        font-size: 66px;
         font-weight: 100;
+        text-align: left;
         text-transform: none; }
     header.blog:before {
       content: "";
@@ -7115,16 +7122,18 @@ section#team {
   height: 140px; }
   .member-card img {
     float: left;
-    height: 100px;
-    width: 100px;
-    margin: 20px 14px; }
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 14px;
+    margin-bottom: 20px; }
   .member-card span {
     display: block; }
   .member-card .name {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    padding-top: 32px; }
+    padding-top: 24px; }
   .member-card .job {
     font-size: 14px;
     color: #666; }
@@ -7159,7 +7168,7 @@ section#cases {
       margin: 0 auto 60px; } }
 
 .blog-item {
-  margin: 30px 0; }
+  padding: 20px 0; }
   .blog-item a, .blog-item .tags, .blog-item h3 {
     color: #333;
     margin: 6px 0; }
