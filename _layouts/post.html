@@ -22,22 +22,38 @@ layout: default
         </article>
       </div>
 
+      <div class="col-md-offset-1 col-md-4">
       {% for member in site.data.members %}
         {% if member.name == page.author %}
-          <div class="col-sm-6 col-md-4">
-            <div class="member-card">
-              {% if member.avatar %}
-                <img src="/img/team/{{ member.avatar }}"></img>
-              {% else %}
-                <img class="img-circle" src="/img/team/member.jpg"></img>
-              {% endif %}
-              <span class="name">{{ member.name }}</span>
-              <span class="job">{{ member.job }}</span>
-              <span class="email">{{ member.email }}</span>
-            </div>
+          <div class="member-card">
+            {% if member.avatar %}
+              <img src="/img/team/{{ member.avatar }}"></img>
+            {% else %}
+              <img class="img-circle" src="/img/team/member.jpg"></img>
+            {% endif %}
+            <span class="name">{{ member.name }}</span>
+            <span class="job">{{ member.job }}</span>
+            <span class="email">{{ member.email }}</span>
           </div>
         {% endif %}
       {% endfor %}
+
+      {% for post in site.posts %}
+        <div class="blog-item">
+          <a href="{{ post.url }}" class="blog-link">
+            {% if post.thumb %}
+              <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
+            {% endif %}
+            <div class="tags">
+              <span class="fa fa-tags"></span>
+              <strong>{{ post.tags | join: ' ' }}</strong>
+            </div>
+            <hr>
+            <h3>{{ post.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+      </div>
 
     </div>
   </div>

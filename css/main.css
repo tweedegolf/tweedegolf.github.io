@@ -6847,6 +6847,9 @@ p {
 p.small {
   font-size: 16px; }
 
+article p {
+  font-size: 16px; }
+
 a,
 a:hover,
 a:focus,
@@ -7155,29 +7158,29 @@ section#cases {
       max-width: 360px;
       margin: 0 auto 60px; } }
 
-section#blog-items .blog-item {
+.blog-item {
   margin: 30px 0; }
-  section#blog-items .blog-item a, section#blog-items .blog-item .tags, section#blog-items .blog-item h3 {
+  .blog-item a, .blog-item .tags, .blog-item h3 {
     color: #333;
     margin: 6px 0; }
-    section#blog-items .blog-item a:hover, section#blog-items .blog-item .tags:hover, section#blog-items .blog-item h3:hover {
+    .blog-item a:hover, .blog-item .tags:hover, .blog-item h3:hover {
       text-decoration: none; }
-  section#blog-items .blog-item .tags {
+  .blog-item .tags {
     font-size: 11px;
     text-transform: uppercase; }
-    section#blog-items .blog-item .tags .fa {
+    .blog-item .tags .fa {
       font-size: 15px;
       color: #416375;
       margin-right: 2px; }
-  section#blog-items .blog-item hr {
+  .blog-item hr {
     border-top: 4px solid #333;
     margin: 6px 0; }
-  section#blog-items .blog-item h3 {
+  .blog-item h3 {
     text-transform: none;
     font-size: 30px;
     font-weight: 100;
     margin: 0; }
-  section#blog-items .blog-item p {
+  .blog-item p {
     font-size: 16px;
     margin: 6px 0; }
 
