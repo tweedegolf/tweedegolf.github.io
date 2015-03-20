@@ -44,15 +44,17 @@
     <div class="container">
       <div class="row members">
         {% for member in site.data.members %}
-          <div class="col-sm-6 col-md-4 member">
-            {% if member.avatar %}
-              <img src="/img/team/{{ member.avatar }}"></img>
-            {% else %}
-              <img class="img-circle" src="/img/team/member.jpg"></img>
-            {% endif %}
-            <span class="name">{{ member.name }}</span>
-            <span class="job">{{ member.job }}</span>
-            <span class="email">{{ member.email }}</span>
+          <div class="col-sm-6 col-md-4">
+            <div class="member-card">
+              {% if member.avatar %}
+                <img src="/img/team/{{ member.avatar }}"></img>
+              {% else %}
+                <img class="img-circle" src="/img/team/member.jpg"></img>
+              {% endif %}
+              <span class="name">{{ member.name }}</span>
+              <span class="job">{{ member.job }}</span>
+              <span class="email">{{ member.email }}</span>
+            </div>
           </div>
         {% endfor %}
       </div>

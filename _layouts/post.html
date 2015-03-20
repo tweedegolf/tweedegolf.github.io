@@ -16,15 +16,29 @@ layout: default
 <section id="blog-post">
   <div class="container">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-md-7">
         <article>
           <p>{{ content }}</p>
         </article>
       </div>
-      <div class="col-sm-offset-1 col-sm-4">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
+
+      {% for member in site.data.members %}
+        {% if member.name == page.author %}
+          <div class="col-sm-6 col-md-4">
+            <div class="member-card">
+              {% if member.avatar %}
+                <img src="/img/team/{{ member.avatar }}"></img>
+              {% else %}
+                <img class="img-circle" src="/img/team/member.jpg"></img>
+              {% endif %}
+              <span class="name">{{ member.name }}</span>
+              <span class="job">{{ member.job }}</span>
+              <span class="email">{{ member.email }}</span>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
     </div>
   </div>
 </section>

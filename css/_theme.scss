@@ -371,37 +371,37 @@ section#about {
 section#team {
   padding-top: 160px;
   padding-bottom: 0;
+}
 
-  .member {
-    height: 140px;
+.member-card {
+  height: 140px;
 
-    img {
-      float: left;
-      height: 100px;
-      width: 100px;
-      margin: 20px 14px;
-    }
+  img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 20px 14px;
+  }
 
-    span {
-      display: block;
-    }
+  span {
+    display: block;
+  }
 
-    .name {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-      padding-top: 32px;
-    }
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 32px;
+  }
 
-    .job {
-      font-size: 14px;
-      color: #666;
-    }
+  .job {
+    font-size: 14px;
+    color: #666;
+  }
 
-    .email {
-      font-size: 14px;
-      color: #666;
-    }
+  .email {
+    font-size: 14px;
+    color: #666;
   }
 }
 
