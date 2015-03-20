@@ -1,4 +1,5 @@
 ---
+layout: post
 thumb: oculus-rift.jpg
 leadimg:
 tags: html5, canvas, 3D framework
