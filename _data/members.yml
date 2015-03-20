@@ -1,8 +1,35 @@
-- name: Tom Preston-Werner
-  github: mojombo
+- name: Daniel
+  job: webdeveloper
+  email: daniel@tweedegolf.com
 
-- name: Parker Moore
-  github: parkr
+- name: Daniella
+  job: webdeveloper
+  email: daniella@tweedegolf.com
 
-- name: Liu Fengyun
-  github: liufengyun
+- name: Dennis
+  job: webdeveloper
+  email: dennis@tweedegolf.com
+
+- name: Erik
+  job: webdeveloper
+  email: erik@tweedegolf.com
+
+- name: Hugo
+  job: webdeveloper
+  email: hugo@tweedegolf.com
+
+- name: Marlon
+  job: webdeveloper
+  email: marlon@tweedegolf.com
+
+- name: Robert
+  job: webdeveloper
+  email: robert@tweedegolf.com
+
+- name: RubenN
+  job: webdeveloper
+  email: ruben@tweedegolf.com
+
+- name: RubenT
+  job: webdeveloper
+  email: rubent@tweedegolf.com

@@ -43,16 +43,16 @@
     </div>
     <div class="container">
       <div class="row members">
-        {% for item in site.members %}
+        {% for member in site.data.members %}
           <div class="col-sm-6 col-md-4 member">
-            {% if item.image %}
-              <img src="/img/team/{{ item.image }}"></img>
+            {% if member.avatar %}
+              <img src="/img/team/{{ member.avatar }}"></img>
             {% else %}
               <img class="img-circle" src="/img/team/member.jpg"></img>
             {% endif %}
-            <span class="name">{{ item.name }}</span>
-            <span class="job">{{ item.job }}</span>
-            <span class="email">{{ item.email }}</span>
+            <span class="name">{{ member.name }}</span>
+            <span class="job">{{ member.job }}</span>
+            <span class="email">{{ member.email }}</span>
           </div>
         {% endfor %}
       </div>
