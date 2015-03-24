@@ -12,8 +12,17 @@ p.small {
     font-size: 16px;
 }
 
-section#post-content p {
-  font-size: 15px;
+article {
+
+  p {
+    font-size: 15px;
+  }
+
+  img { // include images as html instead of md if custom styling is required
+    display: block;
+    margin: 48px auto;
+    @extend .img-responsive;
+  }
 }
 
 a,

@@ -910,7 +910,7 @@ figure {
 img {
   vertical-align: middle; }
 
-.img-responsive {
+.img-responsive, article img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -6847,8 +6847,11 @@ p {
 p.small {
   font-size: 16px; }
 
-section#post-content p {
+article p {
   font-size: 15px; }
+article img {
+  display: block;
+  margin: 48px auto; }
 
 a,
 a:hover,
