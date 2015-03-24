@@ -28,7 +28,7 @@ After updating the [sass](http://sass-lang.com/) stylesheet in the folder `css`,
 
 ### Site content updates
 
-Site content updates are performed by editing the site source directly.
+Site content updates are performed by editing the site source directly. We use [kramdown](http://kramdown.gettalong.org/quickref.html) (variety of markdown). 
 
 #### Static pages
 
