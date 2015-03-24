@@ -6929,6 +6929,13 @@ hr.separator {
   bottom: 36px;
   left: 146px; }
 
+.icon-nerd {
+  background-image: url("/img/icon-nerd.png");
+  display: inline-block;
+  height: 30px;
+  width: 26px;
+  margin: 0 0 0 10px; }
+
 header {
   text-align: center;
   background-image: url("/img/kantoor.jpg");
@@ -6979,7 +6986,7 @@ header {
           font-size: 22px;
           margin-right: 4px; }
       header.blog .article-heading h1 {
-        font-size: 66px;
+        font-size: 50px;
         font-weight: 100;
         text-align: left;
         text-transform: none; }

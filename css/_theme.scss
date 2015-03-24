@@ -115,6 +115,14 @@ hr.separator {
   left: 146px;
 }
 
+.icon-nerd {
+  background-image: url('/img/icon-nerd.png');
+  display: inline-block;
+  height: 30px;
+  width: 26px;
+  margin: 0 0 0 10px;
+}
+
 header {
     text-align: center;
     background-image: url('/img/kantoor.jpg');
@@ -184,7 +192,7 @@ header {
         }
 
         h1 {
-          font-size: 66px;
+          font-size: 50px;
           font-weight: 100;
           text-align: left;
           text-transform: none;
