@@ -7223,7 +7223,19 @@ section#team {
   .member-card .email {
     font-size: 14px;
     color: #666; }
+  @media (max-width: 990px) {
+    #post-content .member-card {
+      float: left;
+      min-width: 290px;
+      height: 180px;
+      padding-top: 50px; } }
 
+@media (max-width: 990px) {
+  #post-content .post-info {
+    float: left;
+    min-width: 290px;
+    height: 180px;
+    padding-top: 70px; } }
 section#cases {
   padding: 200px 0 100px 0; }
   section#cases .star-primary {
@@ -7251,12 +7263,10 @@ section#cases {
       margin: 0 auto 60px; } }
 
 .blog-item {
-  padding: 24px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 360px;
   float: left; }
-  @media (max-width: 766px) {
-    .blog-item {
-      max-width: 290px; } }
   .blog-item img {
     margin-bottom: 6px; }
   .blog-item a, .blog-item .tags, .blog-item .tags .fa, .blog-item h3 {
@@ -7289,6 +7299,10 @@ section#cases {
   .blog-item p {
     font-size: 16px;
     margin: 6px 0; }
+  @media (max-width: 960px) {
+    .blog-item {
+      max-width: 290px;
+      padding-right: 20px; } }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {

@@ -4,6 +4,7 @@ thumb: oculus-rift.jpg
 leadimg:
 tags: oculus rift, VR, 3D
 author: Daniel
+nerd: 2
 ---
 
 The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of sometimes quite exotic devices have been developed. For instance take a look at this VR cabinet called "sensorama" developed by Morton Heilig in 1962:

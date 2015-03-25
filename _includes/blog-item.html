@@ -10,7 +10,7 @@
     </div>
     {% endif %}
     {% if post.nerd %}
-    <div class="nerd protip" title="Nerd rating">
+    <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
       {% for i in (1..{{post.nerd}}) %}
         <span class="icon-nerd-xs"></span>
       {% endfor %}
