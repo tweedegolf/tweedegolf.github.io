@@ -6934,7 +6934,48 @@ hr.separator {
   display: inline-block;
   height: 30px;
   width: 26px;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 2px; }
+
+.icon-nerd-xs {
+  background-image: url("/img/icon-nerd-xs.png");
+  display: inline-block;
+  height: 18px;
+  width: 16px;
+  margin: 0 0 0 4px; }
+
+.protip {
+  display: inline;
+  position: relative; }
+  .protip:hover {
+    color: #c00;
+    text-decoration: none; }
+    .protip:hover:after {
+      background: #111;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: .5em;
+      bottom: 1.7em;
+      color: #fff;
+      content: attr(title);
+      display: block;
+      left: 0;
+      padding: 4px;
+      position: absolute;
+      text-shadow: 0 1px 0 #000;
+      white-space: nowrap;
+      z-index: 98;
+      font-size: 13px; }
+    .protip:hover:before {
+      border: solid;
+      border-color: #111 transparent;
+      border-color: rgba(0, 0, 0, 0.8) transparent;
+      border-width: .4em .4em 0 .4em;
+      bottom: 1.3em;
+      content: "";
+      display: block;
+      left: 1em;
+      position: absolute;
+      z-index: 99;
+      font-size: 13px; }
 
 header {
   text-align: center;
@@ -6990,6 +7031,14 @@ header {
         font-weight: 100;
         text-align: left;
         text-transform: none; }
+      header.blog .article-heading .nerd {
+        padding-left: 14px; }
+        header.blog .article-heading .nerd.protip:hover:after {
+          bottom: 4em;
+          left: 1; }
+        header.blog .article-heading .nerd.protip:hover:before {
+          bottom: 3.6em;
+          left: 2em; }
     header.blog:before {
       content: "";
       display: block;
@@ -7208,21 +7257,30 @@ section#cases {
   @media (max-width: 766px) {
     .blog-item {
       max-width: 290px; } }
-  .blog-item a, .blog-item .tags, .blog-item h3 {
-    color: #333;
-    margin: 6px 0; }
-    .blog-item a:hover, .blog-item .tags:hover, .blog-item h3:hover {
+  .blog-item img {
+    margin-bottom: 6px; }
+  .blog-item a, .blog-item .tags, .blog-item .tags .fa, .blog-item h3 {
+    color: #333 !important; }
+    .blog-item a:hover, .blog-item .tags:hover, .blog-item .tags .fa:hover, .blog-item h3:hover {
       text-decoration: none; }
   .blog-item .tags {
+    float: left;
     font-size: 11px;
     text-transform: uppercase; }
     .blog-item .tags .fa {
       font-size: 15px;
       color: #416375;
       margin-right: 2px; }
+  .blog-item .nerd {
+    float: right;
+    font-size: 0; }
   .blog-item hr {
+    clear: both;
     border-top: 4px solid #333;
-    margin: 6px 0; }
+    margin: 0;
+    padding: 6px 0;
+    position: relative;
+    top: 6px; }
   .blog-item h3 {
     text-transform: none;
     font-size: 30px;

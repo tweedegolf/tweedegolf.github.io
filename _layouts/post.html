@@ -8,15 +8,21 @@ layout: default
   <img class="leadimg" src="/img/blog/oculus-rift.jpg" alt="Virtual Reality demo" />
   <div class="container">
     <div class="article-heading">
+      {% if page.tags.size > 0 %}
       <div class="tags">
         <span class="fa fa-tags"></span>
         {{ page.tags | join: ' ' }}
       </div>
+      {% endif %}
       <h1>
         {{ page.title }}
-        {% for i in (1..{{page.nerd}}) %}
-          <span class="icon-nerd"></span>
-        {% endfor %}
+        {% if page.nerd %}
+        <span class="nerd protip" title="Nerd rating">
+          {% for i in (1..{{page.nerd}}) %}
+            <span class="icon-nerd"></span>
+          {% endfor %}
+        </span>
+        {% endif %}
       </h1>
     </div>
   </div>
@@ -57,19 +63,7 @@ layout: default
       {% endif %}
 
       {% for post in site.posts %}
-        <div class="blog-item">
-          <a href="{{ post.url }}" class="blog-link">
-            {% if post.thumb %}
-              <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
-            {% endif %}
-            <div class="tags">
-              <span class="fa fa-tags"></span>
-              <strong>{{ post.tags | join: ' ' }}</strong>
-            </div>
-            <hr>
-            <h3>{{ post.title }}</h3>
-          </a>
-        </div>
+        {% include blog-item.html %}
       {% endfor %}
 
       </div>
