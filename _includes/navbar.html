@@ -28,8 +28,12 @@
         <li class="page-scroll">
           <a href="{% unless page.homepage %}/{% endunless %}#contact">Contact</a>
         </li>
+        <li class="divider-vertical"></li>
         <li class="{% if page.permalink == '3d-framework/' %}active{% endif %}">
           <a href="/3d-framework">3D Framework</a>
+        </li>
+        <li class="{% if page.permalink == 'blog/' %}active{% endif %}">
+          <a href="/blog">Blog</a>
         </li>
       </ul>
     </div>

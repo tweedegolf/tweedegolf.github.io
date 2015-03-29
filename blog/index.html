@@ -18,19 +18,7 @@ layout: default
     <div class="row">
       {% for post in site.posts %}
       <div class="col-sm-4">
-        <div class="blog-item">
-          <a href="{{ post.url }}" class="blog-link">
-            {% if post.thumb %}
-              <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
-            {% endif %}
-            <div class="tags">
-              <span class="fa fa-tags"></span>
-              <strong>{{ post.tags | join: ' ' }}</strong>
-            </div>
-            <hr>
-            <h3>{{ post.title }}</h3>
-          </a>
-        </div>
+        {% include blog-item.html %}
       </div>
       {% endfor %}
     </div>
