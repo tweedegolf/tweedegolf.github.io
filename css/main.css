@@ -7302,7 +7302,7 @@ section#cases {
     margin: 6px 0; }
   @media (min-width: 960px) {
     .blog-item {
-      height: 310px; } }
+      height: 330px; } }
   @media (max-width: 960px) {
     .blog-item {
       max-width: 290px;
