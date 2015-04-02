@@ -7266,7 +7266,8 @@ section#cases {
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 360px;
-  float: left; }
+  float: left;
+  min-height: 246px; }
   .blog-item img {
     margin-bottom: 6px; }
   .blog-item a, .blog-item .tags, .blog-item .tags .fa, .blog-item h3 {
@@ -7299,6 +7300,9 @@ section#cases {
   .blog-item p {
     font-size: 16px;
     margin: 6px 0; }
+  @media (min-width: 960px) {
+    .blog-item {
+      height: 310px; } }
   @media (max-width: 960px) {
     .blog-item {
       max-width: 290px;

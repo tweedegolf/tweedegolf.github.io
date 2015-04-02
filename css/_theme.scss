@@ -587,7 +587,8 @@ section#cases {
         font-size: 18px;
         text-align: center;
     }
-    @media(max-width: 766px) {
+
+    @media (max-width: 766px) {
         p.intro {
             max-width: 360px;
             margin: 0 auto 60px;
@@ -601,6 +602,7 @@ section#cases {
   padding-bottom: 20px;
   max-width: 360px;
   float: left;
+  min-height: 246px;
 
   img {
     margin-bottom: 6px;
@@ -651,10 +653,15 @@ section#cases {
     margin: 6px 0;
   }
 
+  @media (min-width: 960px) {
+    height: 310px;
+  }
+
   @media (max-width: 960px) {
     max-width: 290px;
     padding-right: 20px;
   }
+
 }
 
 @media(min-width:767px) {
