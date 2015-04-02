@@ -17,7 +17,7 @@ layout: default
       <h1>
         {{ page.title }}
         {% if page.nerd %}
-        <span class="nerd protip" title="Nerd rating">
+        <span class="nerd protip" title="Nerd rating: {{ page.nerd }}">
           {% for i in (1..{{page.nerd}}) %}
             <span class="icon-nerd"></span>
           {% endfor %}
@@ -36,35 +36,37 @@ layout: default
           {{ content }}
         </article>
       </div>
-      <div class="col-md-offset-1 col-md-4">
+      <div class="col-md-offset-1 col-md-4 col-sm-12">
 
-      {% for member in site.data.members %}
-        {% if member.name == page.author %}
-          <div class="member-card">
-            {% if member.avatar %}
-              <img src="/img/team/{{ member.avatar }}"></img>
-            {% else %}
-              <img class="img-circle" src="/img/team/member.jpg"></img>
-            {% endif %}
-            <span class="name">{{ member.name }}</span>
-            <span class="job">{{ member.job }}</span>
-            <span class="email">{{ member.email }}</span>
-          </div>
-        {% endif %}
-      {% endfor %}
+        {% for member in site.data.members %}
+          {% if member.name == page.author %}
+            <div class="member-card">
+              {% if member.avatar %}
+                <img src="/img/team/{{ member.avatar }}"></img>
+              {% else %}
+                <img class="img-circle" src="/img/team/member.jpg"></img>
+              {% endif %}
+              <span class="name">{{ member.name }}</span>
+              <span class="job">{{ member.job }}</span>
+              <span class="email">{{ member.email }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
 
-      <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
+        <div class="post-info">
+          <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
 
-      <div class="addthis_sharing_toolbox" data-url="http://tweedegolf.com{{ page.url }}" data-title="{{ page.title }}"></div>
-      {% if page.github %}
-      <a href="{{ page.github }}">
-        <span class="button github" title="GitHub"></span>
-      </a>
-      {% endif %}
+          <div class="addthis_sharing_toolbox" data-url="http://tweedegolf.com{{ page.url }}" data-title="{{ page.title }}"></div>
+          {% if page.github %}
+          <a href="{{ page.github }}">
+            <span class="button github" title="GitHub"></span>
+          </a>
+          {% endif %}
+        </div>
 
-      {% for post in site.posts %}
-        {% include blog-item.html %}
-      {% endfor %}
+        {% for post in site.posts %}
+          {% include blog-item.html %}
+        {% endfor %}
 
       </div>
     </div>

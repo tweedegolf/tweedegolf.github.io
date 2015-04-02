@@ -5,7 +5,7 @@ leadimg:
 tags: html5, canvas, 3D framework
 author: Daniel
 github: http://google.com/
-nerd: 3
+nerd: 1
 ---
 
 Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.

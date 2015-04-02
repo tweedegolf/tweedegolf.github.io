@@ -2,8 +2,9 @@
 layout: post
 thumb: oculus-rift.jpg
 leadimg:
-tags:
+tags: tag, tag, tag
 author: Daniel
+nerd: 3
 ---
 
 > If you are new to Virtual Reality, you might want to read [this post](http://data.tweedegolf.nl/research-blog/vr-intro.html) fist.
