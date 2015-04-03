@@ -2,26 +2,39 @@
 layout: post
 thumb: oculus-rift.jpg
 leadimg:
-tags: tag, tag, tag
+tags: VR WebVR Mozilla 3D Cardboard Oculus Rift
 author: Daniel
-nerd: 3
+nerd: 2
 ---
 
-> If you are new to Virtual Reality, you might want to read [this post](http://data.tweedegolf.nl/research-blog/vr-intro.html) fist.
+<!--
+> If you are not familiar with the Oculus Rift, you might want to read [this post](http://localhost:4000/2015/03/19/oculus-rift) first.
+-->
 
 Most VR applications are native games that are developed with tools like Unity and Unreal and that have to be downloaded from the regular app stores, or from other app stores that have been set up by manufacturers of virtual reality headsets, like for instance [Samsungs Gear VR app store](https://www.oculus.com/gear-vr/).
 
 The biggest benefit of a native application is its unbeatable performance, which is crucial for games. However, you can use VR for other purposes as well. For instance you can add VR to [panorama viewers](http://www.emanueleferonato.com/2014/12/10/html5-webgl-360-degrees-panorama-viewer-with-three-js/) to make them even more immersive. Likewise you could build 3D scenes that are architectural or historical recreations of buildings that you can enter and walk around in with your VR headset. This kind of applications are relatively easy to develop using web technologies.
 
+<video width="500" controls>
+  <source src="/img/blog/Emanuele-Feronato-panorama-viewer.mp4" type="video/mp4">
+</video>
+*Panorama viewer by Emanuele Feronato*
+
 The benefits of developing using open web technologies are obvious; you can publish your content instantly without gate keepers (app stores), you can use your own cheap or free tools, there is a culture of collaboration in the web developers' community, and so on. Both Mozilla and Google saw the potential of VR on the web and started to develop an API that provides access to VR devices. Currently only the Oculus Rift is supported but that will probably change as soon as new devices hit the market.
 
 Unlike for instance what happened in the past with the development of the WebAudio API, Mozilla and Google are working on one and the same API for WebVR. Mozilla has also implemented WebVR in the nightly build of Opera. It is not yet known whether Spartan, Microsoft's new browser for Windows 10, is going to support WebVR. However it probably is because so far Spartan has made a show of virtue as it comes to new browsers standards.
 
-The WebVR API is able to detect a connected VR device. A single physical VR device shows up as a HMDVRDevice object and as a PositionSensorVRDevice object, but both objects share the same hardware id so you know they are linked. The first object contains information related to the display and the lenses such as the resolution, the distance between the lenses and the distance from your eyes to the lenses. The latter object contains information about the position, rotation and velocity of movement of the device.
+Google also created an open source hardware VR device, the [Google Cardboard](https://www.google.com/get/cardboard/). This is a device made of cardboard that turns a mobile device into a standalone VR headset. The mobile device's gyroscope, accelerometer and magnetometer are used to track the rotation and position, and the 3D content is rendered by the device itself. The Google Cardboard combined with the WebVR API and web technologies for generating the 3D scene makes creating VR application achievable for a large audience.
+
+<img src="/img/blog/Google-Cardboard.jpg" width="80%">
+
+The WebVR API is able to detect a connected VR device, or if the browser is running on a device that can be used as a standalone VR device such as a mobile phone or a tablet. A single physical VR device shows up as a HMDVRDevice object and as a PositionSensorVRDevice object, but both objects share the same hardware id so you know they are linked. The first object contains information related to the display and the lenses such as the resolution, the distance between the lenses and the distance from your eyes to the lenses. The latter object contains information about the position, rotation and velocity of movement of the device.
 
 For creating the 3D content you can use a myriad of javascript 3D libraries, but Threejs is by far the most popular and easiest to use library. At Tweede Golf we continually check other libraries but so far we have stuck with Threejs. What's more, Threejs already supports VR devices; there are controllers that relay the tracking data from the sensors available, and renderers that do the stereo rendering for you.
 
-Now that [WebGL](http://caniuse.com/#feat=webgl) has landed in all browsers across all operating systems, both mobile and desktop, the biggest hurdle for rendering 3D content in a browser has been taken away. With VR, this opens great opportunities to change the way we experience the web. For instance Mozilla is experimenting to render existing web pages with CSS3 and WebGL for VR devices. In the coming blog posts we will write about the experiments that we are doing at Tweede Golf with web based VR.
+Now that [WebGL](http://caniuse.com/#feat=webgl) has landed in all browsers across all operating systems, both mobile and desktop, the biggest hurdle for rendering 3D content in a browser has been taken away. With VR, this opens great opportunities to change the way we experience the web. For instance Mozilla is experimenting to render existing web pages with CSS3 and WebGL for VR devices.
+
+
 
 **links for further exploration:**<br>
 [The Current Status of Browser-based Virtual Reality in HTML5](http://www.infoq.com/news/2015/01/vr-html5)<br>
