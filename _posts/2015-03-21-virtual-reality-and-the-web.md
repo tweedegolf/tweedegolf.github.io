@@ -34,6 +34,7 @@ For creating the 3D content you can use a myriad of javascript 3D libraries, but
 
 Now that [WebGL](http://caniuse.com/#feat=webgl) has landed in all browsers across all operating systems, both mobile and desktop, the biggest hurdle for rendering 3D content in a browser has been taken away. With VR, this opens great opportunities to change the way we experience the web. For instance Mozilla is experimenting to render existing web pages with CSS3 and WebGL for VR devices.
 
+In the next blog post we show you our first test with WebVR.
 
 
 **links for further exploration:**<br>
