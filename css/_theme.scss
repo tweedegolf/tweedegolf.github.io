@@ -910,6 +910,10 @@ footer {
             img {
                 max-width: 100%;
             }
+            &.noborders {
+              border: none;
+              padding: 16px 0;
+            }
         }
     }
     .close-modal {
