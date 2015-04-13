@@ -7,16 +7,19 @@ author: Daniel
 nerd: 5
 ---
 
-*work in progress!*
-<br>
-<br>
-<br>
+
 **WebVR**
 
 Our first WebVR application consist of a big cube in Threejs, and a simple 3D scene that floats inside that cube. On each side of the cube we print the name and direction of the axis towards which the side is facing.
-
+<!--
 <img src="/img/blog/debug-cube.jpg" width="90%">
+-->
 
+<video width="500" controls>
+  <source src="http://abumarkub.net/videos/debug-cube.mp4" type="video/mp4">
+</video>
+
+<br>
 When wearing an Oculus, you are positioned in the middle of this cube and by moving your head you can look to all sides of the cube. The 3D scene that floats inside the cube consists of a transparent floor with a few simple rectangular shapes placed on it. The floor of the scene is bit below your viewpoint and you can move around over the floor with the arrow keys of your keyboard.
 
 A real world analogy would be when a camera is mounted on a small cart that you can drive around in a miniature world, and this miniature world is placed inside a room that has the compass points printed in large letters on all four walls, the floor and the ceiling.
@@ -96,13 +99,17 @@ cube (room)
         ↳ scene (miniature world)
 ~~~
 
-This pivot is necessary because if we rotate we always want to rotate on the current position in the 3D scene. You can visualize how this works by putting a pencil upright on your desk and hold a piece of paper (or any other flat object) above the tip of the pencil. The desk is the floor of the cube, the pencil is the pivot and the piece of paper is the 3D scene.
+This pivot is necessary because we always want to rotate on the current position in the 3D scene. You can visualize how this works by putting a pencil upright on your desk and hold a piece of paper (or any other flat object) above the tip of the pencil. The desk is the floor of the cube, the pencil is the pivot and the piece of paper is the 3D scene.
 
-Now if we want to rotate, we rotate the piece of paper around the position of the pencil's tip (the pivot point), and if we want to move forward we move the piece of paper a bit over the pencil's tip (we change the pivot point). See this video:
+Now if we want to rotate, we rotate the piece of paper around the position of the pencil's tip (the pivot point), and if we want to move forward we move the piece of paper a bit over the pencil's tip (we change the position of the pivot point). See this video:
 
 <video width="500" controls>
-  <source src="http://abumarkub.net/videos/2015-04-13-161209.webm" type="video/mp4">
+  <source src="http://abumarkub.net/videos/2015-04-13-161209.webm" type="video/webm">
 </video>
+
+<br>
+
+
 
 
 
@@ -110,8 +117,6 @@ Now if we want to rotate, we rotate the piece of paper around the position of th
 <!--
 If the application runs on a mobile device inside a browser that doesn't have the WebVR API implemented, we use Threejs' `DeviceOrientationControls` to get the rotation of the device.
 -->
-
-
 
 <!--
 Since early April, mobile devices are being detected as VR devices. This means that you can use the WebVR API for Cardboard applications as well; you don't need the native Cardboard API anymore.
