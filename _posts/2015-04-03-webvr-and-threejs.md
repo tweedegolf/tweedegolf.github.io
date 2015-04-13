@@ -13,13 +13,13 @@ nerd: 5
 <br>
 **WebVR**
 
-Our first WebVR application is a big cube in Threejs, and on each side of this cube we print the name and direction of the axis towards which the side is facing.
+Our first WebVR application consist of a big cube in Threejs, and a simple 3D scene that floats inside that cube. On each side of the cube we print the name and direction of the axis towards which the side is facing.
 
 <img src="/img/blog/debug-cube.jpg" width="90%">
 
-You are positioned in the center of this cube and by moving your head you can look to all sides of the cube. We have placed a simple 3D scene in the cube: a transparent floor with a few simple rectangular shapes placed on it. The floor of the scene is bit below your viewpoint and you can move around over the floor with the arrow keys of your keyboard.
+When wearing an Oculus, you are positioned in the middle of this cube and by moving your head you can look to all sides of the cube. The 3D scene that floats inside the cube consists of a transparent floor with a few simple rectangular shapes placed on it. The floor of the scene is bit below your viewpoint and you can move around over the floor with the arrow keys of your keyboard.
 
-A real world analogy would be if a camera is mounted on a cart that you can drive around in a miniature world, and this miniature world is placed inside a room that has the compass points printed in large letters on all four walls, the floor and the ceiling.
+A real world analogy would be when a camera is mounted on a small cart that you can drive around in a miniature world, and this miniature world is placed inside a room that has the compass points printed in large letters on all four walls, the floor and the ceiling.
 
 
 <br>
@@ -44,7 +44,10 @@ The detected VR devices can be instances of `PositionSensorVRDevice` or instance
 
 `PositionSensorVRDevice` instances are objects that contain data about rotation, position and velocity of movement.
 
-`HMDVRDevice` instances are objects that contain information such as the distance between the lenses, the distance between the lenses and the displays, the resolution of the displays and so on.
+`HMDVRDevice` instances are objects that contain information such as the distance between the lenses, the distance between the lenses and the displays, the resolution of the displays and so on. This information is needed for the browser to render the scene in stereo with barrel distortion, like so:
+
+<img src="/img/blog/threejs-barrel-distortion.jpg" width="65%">
+
 
 To get the rotation and position data from the `PositionSensorVRDevice` we need to call its `getState()` method as frequently as we want to update the scene.
 
@@ -83,20 +86,23 @@ For our first application we only use the orientation data of the Oculus. We use
   camera.quaternion.copy(state.orientation);
 ~~~
 
-Usually when you want to walk around in a 3D scene you move and rotate the camera in the desired direction but in this case this wasn't possible because the camera's rotation is controlled by the Oculus. So we do it the other way round; moving forward in the 3D scene is not done by moving the camera forward, but by moving the whole scene backwards.
+Usually when you want to walk around in a 3D scene you move and rotate the camera in the desired direction but in this case this isn't possible because the camera's rotation is controlled by the Oculus. So we do it the other way round; moving forward in the 3D scene is not done by moving the camera forward, but by moving the whole scene backwards instead.
 
 To be able to walk in any direction, we add an extra pivot for the rotation of the 3D scene:
 
 ~~~
 cube (room)
-   ↳ container (pivot)
-            ↳ scene (miniature world)
+  ↳ container (pivot)
+        ↳ scene (miniature world)
 ~~~
 
+This pivot is necessary because if we rotate we always want to rotate on the current position in the 3D scene. You can visualize how this works by putting a pencil upright on your desk and hold a piece of paper (or any other flat object) above the tip of the pencil. The desk is the floor of the cube, the pencil is the pivot and the piece of paper is the 3D scene.
 
-scene.rotation.z += Math.PI/2; -> oculus specific orientation correction
-scene.rotation.x -= Math.PI/2; -> regular rotation to turn a Threejs plane into a floor
+Now if we want to rotate, we rotate the piece of paper around the position of the pencil's tip (the pivot point), and if we want to move forward we move the piece of paper a bit over the pencil's tip (we change the pivot point). See this video:
 
+<video width="500" controls>
+  <source src="http://abumarkub.net/videos/2015-04-13-161209.webm" type="video/mp4">
+</video>
 
 
 
