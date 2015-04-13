@@ -82,7 +82,7 @@
             {% endif %}
             {% assign screens = item.screens | split: "," %}
             {% for screen in screens %}
-              <div class="screen">
+              <div class="screen {% if item.noborders %}noborders{% endif %}">
                 <img src="/img/portfolio/{{ screen}}" class="img-responsive img-centered" alt="{{ item.title }} screenshot 1">
               </div>
             {% endfor %}

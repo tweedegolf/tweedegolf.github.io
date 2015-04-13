@@ -7502,6 +7502,9 @@ footer {
       margin: 30px 0; }
       .portfolio-modal .modal-content .screen img {
         max-width: 100%; }
+      .portfolio-modal .modal-content .screen.noborders {
+        border: none;
+        padding: 16px 0; }
   .portfolio-modal .close-modal {
     position: fixed;
     width: 75px;
