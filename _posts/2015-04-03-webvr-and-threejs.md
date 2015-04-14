@@ -134,8 +134,8 @@ Another thing that we can learn from the image above is that in order to make a 
 <video width="500" controls>
   <source src="http://abumarkub.net/videos/Screencast 2015-04-14 12:37:41.mp4#t=0.07" type="video/mp4" loop>
 </video>
-<br>
 
+<br>
 **Oculus specific topics**
 
 It turned out that to get the Oculus working correctly with Threejs, we had to disconnect the camera from the scene. In Threejs you have the option not to add the camera to the scene, which is very useful if you want to rotate the scene but not the camera.
