@@ -10,7 +10,7 @@ nerd: 5
 
 **WebVR**
 
-Our first WebVR application consists of a big cube in Threejs, and a simple 3D scene that floats inside that cube. On each side of the cube we print the name and direction of the axis towards which the side is facing.
+Our first WebVR application consists of a big cube in Threejs, and a simple 3D scene that floats inside that cube. On each side of the cube we print the name and direction of the axis towards which the side is facing, we'll call this cube the orientation cube from now on.
 <!--
 <img src="/img/blog/debug-cube.jpg" width="90%">
 -->
@@ -20,10 +20,11 @@ Our first WebVR application consists of a big cube in Threejs, and a simple 3D s
 </video>
 
 <br>
-When wearing an Oculus, you are positioned in the middle of this cube and you can look to all sides of the cube by moving your head. The 3D scene that floats inside the cube consists of a transparent floor with a few simple rectangular shapes placed on it. The floor of the scene is positioned a bit below your viewpoint and you can move around over the floor with the arrow keys of your keyboard.
+When wearing an Oculus, you are positioned in the middle of this orientation cube and you can look to all sides of the orientation cube by moving your head. The 3D scene that floats inside the orientation cube consists of a transparent floor with a few simple rectangular shapes placed on it. The floor of the scene is positioned a bit below your viewpoint and you can move around over the floor with the arrow keys of your keyboard.
 
+<!--
 A real world analogy would be when a camera is mounted on a small cart that you can drive around in a miniature world, and this miniature world is placed inside a room that has the axis directions printed in large letters on all four walls, on the floor and on the ceiling.
-
+-->
 
 <br>
 **The API**
@@ -89,19 +90,24 @@ For our first application we only use the orientation data of the Oculus. We use
   camera.quaternion.copy(state.orientation);
 ~~~
 
-Usually when you want to walk around in a 3D scene you move and rotate the camera in the desired direction but in this case this isn't possible because the camera's rotation is controlled by the Oculus. So we do it the other way round; moving forward in the 3D scene is not done by moving the camera forward, but by moving the whole scene backwards.
+Usually when you want to walk around in a 3D scene you move and rotate the camera in the desired direction but in this case this isn't possible because the camera's rotation is controlled by the Oculus. So we do it the other way round; moving forward in the 3D scene is not done by moving the camera forward in the 3D scene, but by moving the whole 3D scene towards the camera.
 
-To be able to walk in any direction, we add an extra pivot for the rotation of the 3D scene:
+To get this to work properly we had to add an extra pivot to our root scene. The root scene is the scene object that you create by `new THREE.Scene()`. To this root scene we add both the orientation cube and a container object that acts as a pivot. The 3D scene is a child of the pivot:
 
 ~~~
-cube (room)
-  ↳ container (pivot)
-        ↳ scene (miniature world)
+root scene
+  ↳ orientation cube
+  ↳ container
+        ↳ 3D scene (floor with simple rectangular objects)
 ~~~
 
-This pivot is necessary because we want the current position in the scene to be the rotation point (the pivot). You can visualize how this works by putting a pencil upright on your desk and hold a piece of paper (or any other flat object) above the tip of the pencil. The desk is the floor of the cube, the pencil is the pivot and the piece of paper is the 3D scene.
 
-Now if we want to rotate, we rotate the piece of paper around the point where the tip of the pencil touches the paper (the pivot point), and if we want to move forward we move the piece of paper over the pencil's tip in the desired direction (thus we change the position of the pivot point). See this video:
+A real world analogy would be a room (root scene) that has the axis directions painted in large letters on all four walls, the floor and the ceiling (orientation cube). In the room we put a table (the pivot) and on this table a miniature world (the 3D scene) is placed.
+
+
+The pivot is necessary because we want the current position in the scene to be the rotation point (the pivot). You can visualize how this works by putting a pencil upright on your desk and hold a piece of paper (or any other flat object) above the tip of the pencil. The desk is the root scene, the pencil is the pivot and the piece of paper is the 3D scene.
+
+Now if we want to rotate, we rotate the piece of paper around the point where the tip of the pencil touches the paper (the pivot point), and if we want to change our position we move the piece of paper over the pencil's tip in the desired direction (thus we change the position of the pivot point). See this video:
 
 <video width="500" controls>
   <source src="http://abumarkub.net/videos/2015-04-13-161209.webm" type="video/webm">
@@ -117,30 +123,55 @@ In Threejs a non-rotated 3D object faces towards the positive z-axis and the top
 <img src="/img/blog/threejs-axis.jpg" width="65%">
 
 
-The arrow in the picture above is rotated 0°. This is unlike the Cartesian system where a 0° rotation is in the direction of the positive x-axis, so the rotation of the arrow in the picture would be 90° in the Cartesian system.
+According to Threejs, the arrow in the picture above has a rotation of 0° on the z-axis (on the other 2 axes as well for that matter). However in trigonometry a 0° rotation over the z-axis is in the direction of the positive x-axis, so the real rotation of the arrow in the picture is 90°.
 
-If we want to move the arrow one unit in the direction towards which the arrow is rotated, we use a bit of trigonometry to calculate the what fraction of the unit the arrow has to move over the x-axis and over the y-axis:
+If we want to move the arrow one unit in the direction towards which the arrow is rotated, we use trigonometry to calculate the fraction of the unit the arrow has to move over the x-axis and over the y-axis, therefor we have to compensate for Threejs' unorthodox reading of a rotation of 0°:
 
 ~~~
   arrow.position.x += unit * Math.cos(arrow.rotation.z + Math.PI/2);
   arrow.position.y += unit * Math.sin(arrow.rotation.z + Math.PI/2);
 ~~~
 
-As you see we add Math.PI/2 to the rotation of the arrow because as mentioned above, a rotation of 0° in Threejs equals a rotation of 90° in the Cartesian system.
 
-
-Another thing that we can learn from the image above is that in order to make a ground for our 3D scene, we need to rotate a 3D object by -90° over the x-axis:
+Another thing that we can learn from the image above is that in order to make a ground for our 3D scene, we need to rotate a the arrow by -90° over the x-axis:
 
 <video width="500" controls>
   <source src="http://abumarkub.net/videos/Screencast 2015-04-14 12:37:41.mp4#t=0.07" type="video/mp4" loop>
 </video>
 
+
+Instead of rotating the arrow to make a floor, you could also choose to rotate the whole root scene. And you could perform a rotation over the z-axis at the same time to compensate for the fact that 0° in Threejs is actually a rotation of 90°:
+~~~
+  scene.rotation.x -= Math.PI/2
+  scene.rotation.z += Math.PI/2
+~~~
+
+If you choose to rotate the scene, please make sure that you do not add the camera to the scene, see next section.
+
 <br>
-**Oculus specific topics**
+**About the camera in Threejs**
 
-It turned out that to get the Oculus working correctly with Threejs, we had to disconnect the camera from the scene. In Threejs you have the option not to add the camera to the scene, which is very useful if you want to rotate the scene but not the camera.
+The camera in Threejs is by default on the same hierarchical level as the root scene. Which is like a cameraman who is filming a scene on a stage while standing in the audience; theoretically both the stage and the cameraman can move, independently of each other.
+
+If you add the camera to the root scene then it is like the cameraman stands on the stage while filming; if you move the stage, the cameraman will move as well.
+
+You can also add a camera to any 3D object inside the scene. This is like the cameraman stands on a cart on the stage while filming the stage; the cameraman can move independently of the stage, but if the stage moves the cameraman and her cart will move as well.
+
+In our application the camera is fully controlled by the Oculus so it is best chose for the first scenario.
+
+This is even more true because we have chosen to apply the necessary rotations (described above) to the root scene instead of to all individual objects that are added to the root scene because it results in less and easier to read code.
+
+As a consequence, we can not add the camera to the scene because then the rotations would have no effect at all. Note that in most Threejs examples that you find online it doesn't make any difference whether or not the camera is being added to the scene, but in our case it is very important.
 
 
+<br>
+**The result**
+
+We have made a screencast from the output to the Oculus:
+
+<video width="500" controls>
+  <source src="http://abumarkub.net/videos/take1.mov" type="video/mp4">
+</video>
 
 <!--
 If the application runs on a mobile device inside a browser that doesn't have the WebVR API implemented, we use Threejs' `DeviceOrientationControls` to get the rotation of the device.
