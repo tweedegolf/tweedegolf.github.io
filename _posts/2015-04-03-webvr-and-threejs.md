@@ -170,7 +170,7 @@ As a consequence, we can not add the camera to the scene because then the rotati
 We have made a screencast from the output to the Oculus:
 
 <video width="500" controls>
-  <source src="http://abumarkub.net/videos/take1.mov" type="video/mp4">
+  <source src="http://abumarkub.org/videos/take1.mov" type="video/mp4">
 </video>
 
 <!--
