@@ -124,6 +124,8 @@ If we want to rotate we world, we rotate the pivot. If we want to move forward i
 
 You can play yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot.
 
+
+<!--
 <br>
 
 **Threejs specific topics**
@@ -158,7 +160,10 @@ Instead of rotating the arrow to make a floor, you could also choose to rotate t
 ~~~
 
 If you choose to rotate the scene, please make sure that you do not add the camera to the scene, see next section.
+-->
 
+
+<a name="camera">
 <br>
 **About the camera in Threejs**
 
@@ -170,9 +175,7 @@ You can also add a camera to any 3D object inside the root scene. This is like t
 
 In our application the camera is fully controlled by the Oculus so it is best chose for the first scenario.
 
-This is even more true because we have chosen to apply the necessary rotations (described above) to the root scene instead of to all individual objects that are added to the root scene because it results in less and easier to read code.
-
-As a consequence, we can not add the camera to the scene because then the rotations would have no effect at all. Here is an example of a situation whereby the camera and the scene rotate together:
+This is even more true because we have applied rotations to the root scene (see in [this post](/2015/04/17/threejs-rotations/)). As a consequence, if we add the camera to the scene, the rotations of the scene will have no effect. Here is an example of a situation whereby the scene rotates while the camera is added to that same scene:
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R2Ch397Ipps" frameborder="0" allowfullscreen></iframe>
 <br>
@@ -183,12 +186,13 @@ Note that in most Threejs examples that you find online it doesn't make any diff
 <br>
 **The result**
 
-We have made 2 screencasts from the output to the Oculus:
+We have made 2 screencasts of the result from the output rendered to the Oculus:
 
 <video width="500" controls>
   <source src="http://data.tweedegolf.nl/videos/take1.mov" type="video/mp4">
 </video>
 
+<br>
 <br>
 
 <video width="500" controls>
