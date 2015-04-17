@@ -147,7 +147,7 @@ If we want to move the arrow one unit in the direction towards which the arrow i
 Another thing that we can learn from the image above is that in order to make a ground for our 3D scene, we need to rotate a the arrow by -90° over the x-axis:
 
 <video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/plane_rotation#t=0.07" type="video/mp4" loop>
+  <source src="http://data.tweedegolf.nl/videos/plane_rotation.mp4#t=0.07" type="video/mp4" loop>
 </video>
 
 
