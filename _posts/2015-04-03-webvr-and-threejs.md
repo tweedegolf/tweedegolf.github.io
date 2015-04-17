@@ -20,7 +20,7 @@ When wearing an Oculus, you are positioned in the middle of this orientation cub
 <img src="/img/blog/debug-cube.jpg" width="90%">
 -->
 <video width="500" controls>
-  <source src="http://abumarkub.net/videos/debug-cube.mp4" type="video/mp4">
+  <source src="http://data.tweedegolf.nl/videos/debug-cube.mp4" type="video/mp4">
 </video>
 
 <br>
@@ -119,7 +119,7 @@ The camera (the user) stays fixed at the same position as the pivot, but it can 
 If we want to rotate we world, we rotate the pivot. If we want to move forward in the world, we move the world backwards over the pivot, see this video:
 
 <video width="500" controls>
-  <source src="http://abumarkub.org/videos/pivot-rotation.mp4" type="video/mp4">
+  <source src="http://data.tweedegolf.nl/videos/pivot-rotation.mp4" type="video/mp4">
 </video>
 
 You can play yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot.
@@ -147,7 +147,7 @@ If we want to move the arrow one unit in the direction towards which the arrow i
 Another thing that we can learn from the image above is that in order to make a ground for our 3D scene, we need to rotate a the arrow by -90° over the x-axis:
 
 <video width="500" controls>
-  <source src="http://abumarkub.net/videos/Screencast 2015-04-14 12:37:41.mp4#t=0.07" type="video/mp4" loop>
+  <source src="http://data.tweedegolf.nl/videos/plane_rotation#t=0.07" type="video/mp4" loop>
 </video>
 
 
@@ -186,13 +186,13 @@ Note that in most Threejs examples that you find online it doesn't make any diff
 We have made 2 screencasts from the output to the Oculus:
 
 <video width="500" controls>
-  <source src="http://abumarkub.org/videos/take1.mov" type="video/mp4">
+  <source src="http://data.tweedegolf.nl/videos/take1.mov" type="video/mp4">
 </video>
 
 <br>
 
 <video width="500" controls>
-  <source src="http://abumarkub.org/videos/take2.mov" type="video/mp4">
+  <source src="http://data.tweedegolf.nl/videos/take2.mov" type="video/mp4">
 </video>
 
 <!--
