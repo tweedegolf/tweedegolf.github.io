@@ -116,7 +116,7 @@ But because the natural angle of a straight forward movement is 0°, the x-axis 
 Now we have created the ideal situation for a first person setting.
 
 
-You can play yourself with the [final result](http://data.tweedegolf.nl/threejs-rotations).
+You can play yourself with the [final result](http://data.tweedegolf.nl/threejs-rotations). Code is available at [GitHub](https://github.com/abudaan/threejs-rotations).
 
 
 
