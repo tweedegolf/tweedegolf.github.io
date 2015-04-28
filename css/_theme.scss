@@ -511,13 +511,52 @@ section#team {
 .member-card {
   height: 140px;
 
-  img {
+  div.member-image {
     float: left;
     height: 80px;
     width: 80px;
     margin-top: 20px;
     margin-right: 14px;
     margin-bottom: 20px;
+    background-size: 80px 160px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover{
+      background-position: bottom;
+    }
+    &.Bram{
+      background-image: url('../img/team/bram.jpg');
+    }
+    &.Daniel{
+      background-image: url('../img/team/placeholder.jpg');
+    }
+    &.Daniella{
+      background-image: url('../img/team/daniella.jpg');
+    }
+    &.Dennis{
+      background-image: url('../img/team/dennis.jpg');
+    }
+    &.Erik{
+      background-image: url('../img/team/erik.jpg');
+    }
+    &.Hugo{
+      background-image: url('../img/team/hugo.jpg');
+    }
+    &.Marlon{
+      background-image: url('../img/team/marlon.jpg');
+    }
+    &.Robert{
+      background-image: url('../img/team/robert.jpg');
+    }
+    &.RubenN{
+      background-image: url('../img/team/rubenn.jpg');
+    }
+    &.RubenT{
+      background-image: url('../img/team/rubent.jpg');
+    }
   }
 
   span {

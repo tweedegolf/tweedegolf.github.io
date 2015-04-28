@@ -1,3 +1,7 @@
+- name: Bram
+  job: webdeveloper
+  email: bram@tweedegolf.com
+
 - name: Daniel
   job: webdeveloper
   email: daniel@tweedegolf.com
