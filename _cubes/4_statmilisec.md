@@ -1,4 +1,4 @@
 ---
-number: <span class="milisec">461985081183</span>
+number: <span class="millisec"></span>
 text: miliseconden sinds oprichting
 ---

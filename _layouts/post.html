@@ -41,12 +41,7 @@ layout: default
         {% for member in site.data.members %}
           {% if member.name == page.author %}
             <div class="member-card">
-              {% if member.avatar %}
-                <div class="member-image {{ member.name }}"></div>
-                <!-- <img src="/img/team/{{ member.avatar }}"></img> -->
-              {% else %}
-                <img class="img-circle" src="/img/team/member.jpg"></img>
-              {% endif %}
+              <div class="member-image {{ member.name }}"></div>
               <span class="name">{{ member.name }}</span>
               <span class="job">{{ member.job }}</span>
               <span class="email">{{ member.email }}</span>
