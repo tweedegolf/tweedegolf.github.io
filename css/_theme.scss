@@ -131,6 +131,10 @@ hr.separator {
   margin: 0 0 0 4px;
 }
 
+video, iframe {
+  width: 100%;
+}
+
 .protip {
   display: inline;
   position: relative;
