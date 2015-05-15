@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb: oculus-rift.jpg
-leadimg:
+thumb: oculus-rift-and-positional-tracker.jpg
+leadimg: oculus-rift-and-positional-tracker.jpg
 tags: Oculus Rift, VR, 3D
 author: Daniel
 nerd: 2
@@ -109,11 +109,3 @@ May be add a paragraph about latency and simulator sickness, see:
 https://docs.google.com/a/tweedegolf.com/document/d/18ZT3Sea-Z9_Ve299WI9ui4bTmXv0Dk-cNHOjTBKzh8c/edit#
 
 -->
-
-
-
-
-
-
-
-

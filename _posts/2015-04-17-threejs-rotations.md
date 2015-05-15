@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb: oculus-rift.jpg
-leadimg:
+thumb: floor-and-arrow.png
+leadimg: floor-and-arrow.png
 tags: Threejs Rotation
 author: Daniel
 nerd: 3

@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb: oculus-rift.jpg
-leadimg:
+thumb: threejs-barrel-distortion.jpg
+leadimg: threejs-barrel-distortion.jpg
 tags: VR WebVR Mozilla 3D Cardboard Oculus Rift Threejs
 author: Daniel
 nerd: 3
