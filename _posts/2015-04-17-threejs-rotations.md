@@ -55,9 +55,7 @@ If you rotate a 3D object in Threejs you only change its rotation in relation to
 
 What we could do as well, is to apply the rotation to the root scene as a whole; in that case the axes of the floor and the root scene stay aligned with each other:
 
-<video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/rotating-root-scene.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927799" width="600" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <br>
 Both solutions are equally valid, but there is one caveat: if you choose to rotate the root scene, please make sure that you do *not* add the camera to the scene because that would cancel out the rotations, see this [post](/2015/04/03/webvr-and-threejs/#camera).
@@ -93,9 +91,7 @@ This is rather counter intuitive, and it is the result of the fact that in Three
 
 We can fix this by rotating the floor or the root scene 90° over the z-axis. Lets move the root scene so the axes of the floor stay aligned with the axes of the root scene:
 
-<video width="600" controls>
-  <source src="http://data.tweedegolf.nl/videos/rotate-root-scene-and-move-arrow.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927743" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 The arrow object is moving away from us but the head of the arrow points a the wrong direction. The rotation of the arrow object is still is 0°, but the texture on the arrow object (the PlaneBufferGeometry instance) makes us believe that the arrow object has a rotation of -90°.
 

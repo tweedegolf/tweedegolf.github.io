@@ -19,9 +19,7 @@ When wearing an Oculus, you are positioned in the middle of this orientation cub
 <!--
 <img src="/img/blog/debug-cube.jpg" width="90%">
 -->
-<video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/debug-cube.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927605" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <br>
 
@@ -118,9 +116,7 @@ The camera (the user) stays fixed at the same position as the pivot, but it can 
 
 If we want to rotate we world, we rotate the pivot. If we want to move forward in the world, we move the world backwards over the pivot, see this video:
 
-<video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/pivot-rotation.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927690" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can play yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot. Code available at [GitHub](https://github.com/abudaan/vr-test4).
 
@@ -177,7 +173,7 @@ In our application the camera is fully controlled by the Oculus so it is best ch
 
 This is even more true because we have applied rotations to the root scene (see in [this post](/2015/04/17/threejs-rotations/)). As a consequence, if we add the camera to the scene, the rotations of the scene will have no effect. Here is an example of a situation whereby the scene rotates while the camera is added to that same scene:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/R2Ch397Ipps" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="360" src="https://www.youtube.com/embed/R2Ch397Ipps" frameborder="0" allowfullscreen></iframe>
 <br>
 
 Note that in most Threejs examples that you find online it doesn't make any difference whether or not the camera is added to the root scene, but in our case it is very important.
@@ -188,16 +184,12 @@ Note that in most Threejs examples that you find online it doesn't make any diff
 
 We have made 2 screencasts of the result from the output rendered to the Oculus:
 
-<video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/take1.mov" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927801" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <br>
 <br>
 
-<video width="500" controls>
-  <source src="http://data.tweedegolf.nl/videos/take2.mov" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127927800" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <!--
 If the application runs on a mobile device inside a browser that doesn't have the WebVR API implemented, we use Threejs' `DeviceOrientationControls` to get the rotation of the device.

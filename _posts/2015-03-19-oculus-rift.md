@@ -76,7 +76,7 @@ And this device (currently on Kickstarter) takes it even further:
 <!--
 <img src="/img/blog/VR-cyberith.gif" width="90%">
 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bgblE3nxvNg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="360" src="https://www.youtube.com/embed/bgblE3nxvNg" frameborder="0" allowfullscreen></iframe>
 <br>
 
 **Other devices**

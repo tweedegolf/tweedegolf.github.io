@@ -15,9 +15,7 @@ Most VR applications are native games that are developed with tools like Unity a
 
 The biggest benefit of a native application is its unbeatable performance, which is crucial for games. However, you can use VR for other purposes as well. For instance you can add VR to [panorama viewers](http://www.emanueleferonato.com/2014/12/10/html5-webgl-360-degrees-panorama-viewer-with-three-js/) to make them even more immersive. Likewise you could build 3D scenes that are architectural or historical recreations of buildings that you can enter and walk around in with your VR headset. This kind of applications are relatively easy to develop using web technologies.
 
-<video width="500" controls>
-  <source src="/img/blog/Emanuele-Feronato-panorama-viewer.mp4" type="video/mp4">
-</video>
+<iframe src="https://player.vimeo.com/video/127931214" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 *Panorama viewer by Emanuele Feronato*
 
 The benefits of developing using open web technologies are obvious; you can publish your content instantly without gate keepers (app stores), you can use your own cheap or free tools, there is a culture of collaboration in the web developers' community, and so on. Both Mozilla and Google saw the potential of VR on the web and started to develop an API that provides access to VR devices. Currently only the Oculus Rift is supported but that will probably change as soon as new devices hit the market.
