@@ -7,5 +7,3 @@ tags: healthcare, therapietrouw, real-time, monitoring
 screens: pb.jpg
 website: http://pillbox-datacentre.nl/
 ---
-
-

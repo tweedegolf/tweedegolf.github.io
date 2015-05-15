@@ -490,10 +490,12 @@ section#about {
     }
 
     .number {
-      font-size: 112px;
+      font-size: 44px;
       font-weight: bold;
       color: $brand-success;
-      line-height: 154px;
+      display: inline-block;
+      line-height: 2em;
+      margin-top: 50px;
     }
 
     img {
