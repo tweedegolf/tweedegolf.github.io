@@ -1,4 +1,4 @@
 ---
-number: 36000
+number: 10000+
 text: regels code per maand
 ---
