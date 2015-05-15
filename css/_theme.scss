@@ -478,7 +478,7 @@ section#about {
   .cubes {
     position: relative;
     top: 60px;
-    
+
     border: 1px solid #eee;
 
   }
@@ -494,12 +494,17 @@ section#about {
     }
 
     .number {
+      font-family: monospace;
       font-size: 44px;
       font-weight: bold;
       color: $brand-success;
       display: inline-block;
       line-height: 2em;
       margin-top: 50px;
+      .large {
+        font-size: 88px;
+        line-height: 44px;
+      }
     }
 
     img {
