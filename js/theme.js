@@ -5,9 +5,12 @@ $.easing.easeCustom = function (x, t, b, c, d) {
     return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
 };
 
-// Calculate and fill miliseconds since 1 jul 2009
-var milisec = ((new Date).getTime() - (new Date(2009, 07, 01)).getTime());
-$('.milisec').text(milisec);
+// Calculate and fill miliseconds since 1 jul 2009 continuously
+function setMillisec() {
+  var millisec = ((new Date).getTime() - (new Date(2009, 07, 01)).getTime());
+  $('.millisec').text(millisec);
+}
+setInterval(setMillisec, 500);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $('.page-scroll a').bind('click', function(event) {
