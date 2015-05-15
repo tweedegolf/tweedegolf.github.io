@@ -659,7 +659,11 @@ section#cases {
   .tags {
     float: left;
     font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-transform: uppercase;
+    white-space: nowrap;
+    width: 260px;
     .fa {
       font-size: 15px;
       color: $brand-success;
