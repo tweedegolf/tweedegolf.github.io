@@ -1,3 +1,3 @@
 ---
-image: code.jpg
+image: group.jpg
 ---
