@@ -4,7 +4,7 @@ thumb: oculus-rift.jpg
 leadimg:
 tags: VR WebVR Mozilla 3D Cardboard Oculus Rift Threejs
 author: Daniel
-nerd: 5
+nerd: 3
 ---
 
 
@@ -213,6 +213,3 @@ If no VR device is detected and the application is not running on a mobile devic
 
 <img src="/img/blog/threejs-barrel-distortion.jpg" width="65%">
 -->
-
-
-

@@ -4,7 +4,7 @@ thumb: oculus-rift.jpg
 leadimg:
 tags: Threejs Rotation
 author: Daniel
-nerd: 5
+nerd: 3
 ---
 
 **Rotations in Threejs**
@@ -137,10 +137,3 @@ Now we get this:
 
 This results in an equal translation over both the x and the y-axis, and the translation over the x-axis is in the negative direction. This is exactly what we want.
 -->
-
-
-
-
-
-
-
