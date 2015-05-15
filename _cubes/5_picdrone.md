@@ -1,3 +1,3 @@
 ---
-image: oculus-rift-drone.jpg
+image: oculus.jpg
 ---
