@@ -7081,11 +7081,9 @@ header {
     letter-spacing: 1px; }
     .navbar .navbar-nav li a:focus {
       outline: none; }
-  .navbar .navbar-brand {
-    display: none; }
-    .navbar .navbar-brand img {
-      width: 120px;
-      margin-top: -5px; }
+  .navbar .navbar-brand img {
+    width: 120px;
+    margin-top: -5px; }
 
 .navbar-inverse {
   background-color: #222;
@@ -7189,10 +7187,10 @@ section#about {
   text-align: center; }
   section#about .cubes {
     position: relative;
-    top: 60px; }
+    top: 60px;
+    border: 1px solid #eee; }
   section#about .cube {
     background-color: white;
-    border: 1px solid #eee;
     height: 300px;
     padding: 0; }
     section#about .cube p {

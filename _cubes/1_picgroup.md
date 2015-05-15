@@ -1,3 +1,3 @@
 ---
-image: gezellig.jpg
+image: pand.jpg
 ---

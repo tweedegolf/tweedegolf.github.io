@@ -477,11 +477,14 @@ section#about {
   .cubes {
     position: relative;
     top: 60px;
+    
+    border: 1px solid #eee;
+
   }
 
   .cube {
     background-color: white;
-    border: 1px solid #eee;
+    //border: 1px solid #eee;
     height: 300px;
     padding: 0;
 
