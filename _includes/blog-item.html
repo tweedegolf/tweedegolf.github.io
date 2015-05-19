@@ -3,20 +3,21 @@
     {% if post.thumb %}
       <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
     {% endif %}
-    {% if post.tags.size > 0 %}
-    <div class="tags">
-      <span class="fa fa-tags"></span>
-      <strong>{{ post.tags | join: ' ' }}</strong>
+    <div class="infobar">
+      {% if post.tags.size > 0 %}
+      <div class="tags">
+        <span class="fa fa-tags"></span>
+        <strong>{{ post.tags | join: ' ' }}</strong>
+      </div>
+      {% endif %}
+      {% if post.nerd %}
+      <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
+        {% for i in (1..{{post.nerd}}) %}
+          <span class="icon-nerd-xs"></span>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
-    {% if post.nerd %}
-    <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
-      {% for i in (1..{{post.nerd}}) %}
-        <span class="icon-nerd-xs"></span>
-      {% endfor %}
-    </div>
-    {% endif %}
-    <hr>
     <h3>{{ post.title }}</h3>
   </a>
 </div>
