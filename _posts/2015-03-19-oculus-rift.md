@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb: oculus-rift-and-positional-tracker.jpg
-leadimg: oculus-rift-and-positional-tracker.jpg
+thumb: oculus.jpg
+leadimg: oculus.jpg
 tags: Oculus Rift, VR, 3D
 author: Daniel
 nerd: 2
