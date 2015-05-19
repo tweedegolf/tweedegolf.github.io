@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb: google-cardboard.jpg
-leadimg: google-cardboard.jpg
+thumb: google-cardboard2.jpg
+leadimg: google-cardboard2.jpg
 tags: VR WebVR Mozilla 3D Cardboard Oculus Rift
 author: Daniel
 nerd: 2
