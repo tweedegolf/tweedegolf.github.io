@@ -1,5 +1,5 @@
 ---
-number: <span class="large">8</span>
-text: research projecten
+number: <span class="large">42</span>
+text: research prototypes
 link: /blog/
 ---
