@@ -7,8 +7,6 @@ author: Daniel
 nerd: 3
 ---
 
-**Rotations in Threejs**
-
 In this post we create a first person 3D setting, and we use rotations to accomplish this.
 
 In Threejs you create a scene like so:

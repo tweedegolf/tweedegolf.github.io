@@ -7,9 +7,6 @@ author: Daniel
 nerd: 3
 ---
 
-
-**WebVR**
-
 Our first WebVR application consists of a big cube in Threejs, and a simple 3D scene floating inside that cube. The 3D scene consists of a transparent floor with a few simple rectangular shapes placed on it.
 
 On each side of the cube we print the name and direction of the axis towards which the side is facing. Lets call this cube the "orientation cube", and lets call the 3D scene "the world" because that is what it is from the user's perspective. Both the orientation cube and the world are directly added to the root scene, which is the scene you create with the code `rootScene = new THREE.Scene()`.

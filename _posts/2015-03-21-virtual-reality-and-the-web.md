@@ -7,10 +7,6 @@ author: Daniel
 nerd: 2
 ---
 
-<!--
-> If you are not familiar with the Oculus Rift, you might want to read [this post](http://localhost:4000/2015/03/19/oculus-rift) first.
--->
-
 Most VR applications are native games that are developed with tools like Unity and Unreal and that have to be downloaded from the regular app stores, or from other app stores that have been set up by manufacturers of virtual reality headsets, like for instance [Samsungs Gear VR app store](https://www.oculus.com/gear-vr/).
 
 The biggest benefit of a native application is its unbeatable performance, which is crucial for games. However, you can use VR for other purposes as well. For instance you can add VR to [panorama viewers](http://www.emanueleferonato.com/2014/12/10/html5-webgl-360-degrees-panorama-viewer-with-three-js/) to make them even more immersive. Likewise you could build 3D scenes that are architectural or historical recreations of buildings that you can enter and walk around in with your VR headset. This kind of applications are relatively easy to develop using web technologies.
