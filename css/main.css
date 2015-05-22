@@ -6842,8 +6842,10 @@ button.close {
   content: "\f1e2"; }
 
 body {
-  overflow-x: hidden;
   font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#wrapper {
+  overflow-x: hidden; }
 
 p {
   font-size: 18px;
