@@ -7223,7 +7223,8 @@ section#team {
 
 .member-card {
   height: 140px; }
-  .member-card div.member-image {
+  .member-card a.member-image {
+    display: block;
     float: left;
     height: 80px;
     width: 80px;
@@ -7235,27 +7236,27 @@ section#team {
     -moz-border-radius: 50%;
     border-radius: 50%;
     overflow: hidden; }
-    .member-card div.member-image:hover {
+    .member-card a.member-image:hover {
       background-position: bottom; }
-    .member-card div.member-image.Bram {
+    .member-card a.member-image.Bram {
       background-image: url("../img/team/bram.jpg"); }
-    .member-card div.member-image.Daniel {
+    .member-card a.member-image.Daniel {
       background-image: url("../img/team/daniel.jpg"); }
-    .member-card div.member-image.Daniella {
+    .member-card a.member-image.Daniella {
       background-image: url("../img/team/daniella.jpg"); }
-    .member-card div.member-image.Dennis {
+    .member-card a.member-image.Dennis {
       background-image: url("../img/team/dennis.jpg"); }
-    .member-card div.member-image.Erik {
+    .member-card a.member-image.Erik {
       background-image: url("../img/team/erik.jpg"); }
-    .member-card div.member-image.Hugo {
+    .member-card a.member-image.Hugo {
       background-image: url("../img/team/hugo.jpg"); }
-    .member-card div.member-image.Marlon {
+    .member-card a.member-image.Marlon {
       background-image: url("../img/team/marlon.jpg"); }
-    .member-card div.member-image.Robert {
+    .member-card a.member-image.Robert {
       background-image: url("../img/team/robert.jpg"); }
-    .member-card div.member-image.RubenN {
+    .member-card a.member-image.RubenN {
       background-image: url("../img/team/rubenn.jpg"); }
-    .member-card div.member-image.RubenT {
+    .member-card a.member-image.RubenT {
       background-image: url("../img/team/rubent.jpg"); }
   .member-card span {
     display: block; }
