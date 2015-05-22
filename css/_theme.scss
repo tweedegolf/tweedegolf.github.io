@@ -659,9 +659,11 @@ section#cases {
 
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: 360px;
-  float: left;
   min-height: 246px;
+
+  #blog-items & {
+    margin: 0 20px;
+  }
 
   img {
     margin-bottom: 6px;
@@ -675,14 +677,43 @@ section#cases {
     }
   }
 
+  .previmg {
+    position: relative;
+
+    .infobar {
+      background-color: rgba(0,0,0,.5);
+      color: #fff !important;
+      height: 30px;
+      padding: 6px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      a, .tags, .tags .fa, h3 {
+        color: #fff !important;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   .tags {
     float: left;
     font-size: 11px;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap;
-    width: 260px;
+    width: 360px;
+    @media (max-width: 600px) {
+      width: 200px;
+    }
+    #post-content & {
+      width: 200px;
+    }
     .fa {
       font-size: 15px;
       color: $brand-success;
@@ -695,20 +726,12 @@ section#cases {
     font-size: 0;
   }
 
-  hr {
-    clear: both;
-    border-top: 4px solid #333;
-    margin: 0;
-    padding: 6px 0;
-    position: relative;
-    top: 6px;
-  }
-
   h3 {
     text-transform: none;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 100;
     margin: 0;
+    padding: 6px 0;
   }
 
   p {
@@ -716,15 +739,15 @@ section#cases {
     margin: 6px 0;
   }
 
-  @media (min-width: 960px) {
-    height: 330px;
-  }
+  .excerpt {
+    margin: 0;
+    min-height: 6em;
+    padding: 0;
 
-  @media (max-width: 960px) {
-    max-width: 290px;
-    padding-right: 20px;
+    #post-content & {
+      display: none;
+    }
   }
-
 }
 
 @media(min-width:767px) {

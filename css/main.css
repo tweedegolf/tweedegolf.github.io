@@ -7311,23 +7311,43 @@ section#cases {
 .blog-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: 360px;
-  float: left;
   min-height: 246px; }
+  #blog-items .blog-item {
+    margin: 0 20px; }
   .blog-item img {
     margin-bottom: 6px; }
   .blog-item a, .blog-item .tags, .blog-item .tags .fa, .blog-item h3 {
     color: #333 !important; }
     .blog-item a:hover, .blog-item .tags:hover, .blog-item .tags .fa:hover, .blog-item h3:hover {
       text-decoration: none; }
+  .blog-item .previmg {
+    position: relative; }
+    .blog-item .previmg .infobar {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff !important;
+      height: 30px;
+      padding: 6px;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+      .blog-item .previmg .infobar a, .blog-item .previmg .infobar .tags, .blog-item .previmg .infobar .tags .fa, .blog-item .previmg .infobar h3 {
+        color: #fff !important; }
+        .blog-item .previmg .infobar a:hover, .blog-item .previmg .infobar .tags:hover, .blog-item .previmg .infobar .tags .fa:hover, .blog-item .previmg .infobar h3:hover {
+          text-decoration: none; }
   .blog-item .tags {
     float: left;
     font-size: 11px;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap;
-    width: 260px; }
+    width: 360px; }
+    @media (max-width: 600px) {
+      .blog-item .tags {
+        width: 200px; } }
+    #post-content .blog-item .tags {
+      width: 200px; }
     .blog-item .tags .fa {
       font-size: 15px;
       color: #416375;
@@ -7335,28 +7355,21 @@ section#cases {
   .blog-item .nerd {
     float: right;
     font-size: 0; }
-  .blog-item hr {
-    clear: both;
-    border-top: 4px solid #333;
-    margin: 0;
-    padding: 6px 0;
-    position: relative;
-    top: 6px; }
   .blog-item h3 {
     text-transform: none;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 100;
-    margin: 0; }
+    margin: 0;
+    padding: 6px 0; }
   .blog-item p {
     font-size: 16px;
     margin: 6px 0; }
-  @media (min-width: 960px) {
-    .blog-item {
-      height: 330px; } }
-  @media (max-width: 960px) {
-    .blog-item {
-      max-width: 290px;
-      padding-right: 20px; } }
+  .blog-item .excerpt {
+    margin: 0;
+    min-height: 6em;
+    padding: 0; }
+    #post-content .blog-item .excerpt {
+      display: none; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
