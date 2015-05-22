@@ -529,7 +529,8 @@ section#team {
 .member-card {
   height: 140px;
 
-  div.member-image {
+  a.member-image {
+    display: block;
     float: left;
     height: 80px;
     width: 80px;
