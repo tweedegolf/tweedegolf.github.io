@@ -108,3 +108,7 @@ $(function() {
         }
     });
 });
+
+$('.member-image').click(function(e){
+    e.preventDefault();
+});
