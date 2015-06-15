@@ -7,7 +7,7 @@ author: Daniel
 nerd: 3
 ---
 
-Our first WebVR application consists of a big cube in Threejs, and a simple 3D scene floating inside that cube. The 3D scene consists of a transparent floor with a few simple rectangular shapes placed on it.
+Our first WebVR application consists of a big cube in Threejs and a simple 3D scene floating inside that cube. The 3D scene consists of a transparent floor with a few simple rectangular shapes placed on it.
 
 On each side of the cube we print the name and direction of the axis towards which the side is facing. Lets call this cube the "orientation cube", and lets call the 3D scene "the world" because that is what it is from the user's perspective. Both the orientation cube and the world are directly added to the root scene, which is the scene you create with the code `rootScene = new THREE.Scene()`.
 
@@ -27,7 +27,7 @@ A real world analogy would be when a camera is mounted on a small cart that you 
 <br>
 **The API**
 
-To get the rotation and position data of the Oculus with javascript we first query for VR devices:
+To get the rotation and position data of the Oculus using javascript, we first query for VR devices:
 
 ~~~javascript
 if(navigator.getVRDevices){
@@ -88,9 +88,9 @@ For our first application we only use the orientation data of the Oculus. We use
   camera.quaternion.copy(state.orientation);
 ~~~
 
-Usually when you want to walk around in a 3D world as a First Person you move and rotate the camera in the desired direction but in this case this isn't possible because the camera's rotation is controlled by the Oculus. So we do it the other way round; we keep the camera at a fixed position and move and rotate the world.
+Usually when you want to walk around in a 3D world as a First Person you move and rotate the camera in the desired direction, but in this case this is not possible because the camera's rotation is controlled by the Oculus. Instead we do the reverse; keeping the camera at a fixed position while moving and rotating the world.
 
-To get this to work properly we add an extra pivot to our root scene and we add the world as a child to the pivot:
+To get this to work properly, we add an extra pivot to our root scene and we add the world as a child to the pivot:
 
 ~~~
 camera
@@ -115,7 +115,7 @@ If we want to rotate we world, we rotate the pivot. If we want to move forward i
 
 <iframe src="https://player.vimeo.com/video/127927690" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can play yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot. Code available at [GitHub](https://github.com/abudaan/vr-test4).
+You can try it yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot. The source code is available at [GitHub](https://github.com/abudaan/vr-test4).
 
 
 <!--
@@ -160,26 +160,26 @@ If you choose to rotate the scene, please make sure that you do not add the came
 <br>
 **About the camera in Threejs**
 
-The camera in Threejs is by default on the same hierarchical level as the root scene. Which is like a cameraman who is filming a play on a stage while standing in the audience; theoretically both the stage and the cameraman can move, independently of each other.
+The camera in Threejs is on the same hierarchical level as the root scene by default. Which is like a cameraman who is filming a play on a stage while standing in the audience; theoretically both the stage and the cameraman can move, independently of each other.
 
 If you add the camera to the root scene then it is like the cameraman stands on the stage while filming the play; if you move the stage, the cameraman will move as well.
 
-You can also add a camera to any 3D object inside the root scene. This is like the cameraman stands on a cart on the stage while filming the play; the cameraman can move independently of the stage, but if the stage moves the cameraman and her cart will move as well.
+You can also add a camera to any 3D object inside the root scene. This is like the cameraman standing on a cart on the stage while filming the play; the cameraman can move independently of the stage, but if the stage moves the cameraman and her cart will move as well.
 
-In our application the camera is fully controlled by the Oculus so it is best chose for the first scenario.
+In our application the camera is fully controlled by the Oculus, so the first scenario is the best option.
 
-This is even more true because we have applied rotations to the root scene (see in [this post](/2015/04/17/threejs-rotations/)). As a consequence, if we add the camera to the scene, the rotations of the scene will have no effect. Here is an example of a situation whereby the scene rotates while the camera is added to that same scene:
+This is comes in handy, since we have applied rotations to the root scene (see in [this post](/2015/04/17/threejs-rotations/)). As a consequence, if we add the camera to the scene, the rotations of the scene will have no effect. Here is an example of a situation whereby the scene rotates while the camera is added to that same scene:
 
 <iframe width="500" height="360" src="https://www.youtube.com/embed/R2Ch397Ipps" frameborder="0" allowfullscreen></iframe>
 <br>
 
-Note that in most Threejs examples that you find online it doesn't make any difference whether or not the camera is added to the root scene, but in our case it is very important.
+Note that in most Threejs examples you find online it does not make any difference whether or not the camera is added to the root scene, but in our case it is very important.
 
 
 <br>
 **The result**
 
-We have made 2 screencasts of the result from the output rendered to the Oculus:
+We have made two screencasts of the result from the output rendered to the Oculus:
 
 <iframe src="https://player.vimeo.com/video/127927801" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
