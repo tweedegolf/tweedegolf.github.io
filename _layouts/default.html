@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ post.excerpt || page.title }}" />
-
+    <meta name="description" content="{{ page.description || post.excerpt }}">
+    
     <title>{{ site.name }}</title>
 
     <link href="/css/main.css" rel="stylesheet" type="text/css">
