@@ -7369,6 +7369,17 @@ section#cases {
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
+.recent-posts {
+  padding-top: 20px; }
+  .recent-posts h3 {
+    font-size: 20px;
+    padding: 16px 0; }
+  .recent-posts .heading {
+    font-size: 24px;
+    padding-bottom: 0px; }
+  .recent-posts .date {
+    display: none; }
+
 .btn-outline {
   color: white;
   font-size: 20px;
