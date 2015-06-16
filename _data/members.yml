@@ -1,39 +1,39 @@
 - name: Bram
-  job: webdeveloper
+  job: project lead
   email: bram@tweedegolf.com
 
 - name: Daniel
-  job: webdeveloper
+  job: researcher
   email: daniel@tweedegolf.com
 
 - name: Daniella
-  job: webdeveloper
+  job: front-end developer
   email: daniella@tweedegolf.com
 
 - name: Dennis
-  job: webdeveloper
+  job: researcher
   email: dennis@tweedegolf.com
 
 - name: Erik
-  job: webdeveloper
+  job: business analyst
   email: erik@tweedegolf.com
 
 - name: Hugo
-  job: webdeveloper
+  job: developer
   email: hugo@tweedegolf.com
 
 - name: Marlon
-  job: webdeveloper
+  job: senior developer
   email: marlon@tweedegolf.com
 
 - name: Robert
-  job: webdeveloper
+  job: developer
   email: robert@tweedegolf.com
 
 - name: RubenN
-  job: webdeveloper
+  job: developer
   email: ruben@tweedegolf.com
 
 - name: RubenT
-  job: webdeveloper
+  job: serious game developer
   email: rubent@tweedegolf.com

@@ -2,8 +2,9 @@
 layout: post
 thumb: floor-and-arrow.png
 leadimg: floor-and-arrow.png
-tags: Threejs Rotation
+tags: Threejs, first person, WebGL
 author: Daniel
+description: Using rotations in Threejs to create a a first person 3D setting.
 github: https://github.com/abudaan/threejs-rotations
 nerd: 3
 ---

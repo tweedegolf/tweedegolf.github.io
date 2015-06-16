@@ -2,7 +2,8 @@
 layout: post
 thumb: light-result.png
 leadimg: light-result.png
-tags: Threejs light shadow casting
+tags: Threejs, point light, shadow casting, WebGL
+description: Casting shadows from pointlights in Three.js
 author: Dennis
 nerd: 4
 ---
