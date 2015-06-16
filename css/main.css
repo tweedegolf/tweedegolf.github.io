@@ -6922,14 +6922,13 @@ hr.separator {
 .img-centered {
   margin: 0 auto; }
 
-.button.github {
-  background-image: url("/img/button-github.png");
-  display: block;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  bottom: 36px;
-  left: 146px; }
+.code.btn {
+  background-color: #bbb;
+  border-color: #bbb;
+  margin-top: 12px; }
+  .code.btn:hover {
+    background-color: #aaa;
+    border-color: #aaa; }
 
 .icon-nerd {
   background-image: url("/img/icon-nerd.png");
