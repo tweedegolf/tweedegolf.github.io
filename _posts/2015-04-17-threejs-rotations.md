@@ -4,6 +4,7 @@ thumb: floor-and-arrow.png
 leadimg: floor-and-arrow.png
 tags: Threejs Rotation
 author: Daniel
+github: https://github.com/abudaan/threejs-rotations
 nerd: 3
 ---
 

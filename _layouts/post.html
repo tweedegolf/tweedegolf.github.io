@@ -37,12 +37,12 @@ layout: default
         </article>
       </div>
       <div class="col-md-offset-1 col-md-4 col-sm-12">
-
+        <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
         {% for member in site.data.members %}
           {% if member.name == page.author %}
             <div class="member-card">
-              <div class="member-image {{ member.name }}"></div>
-              <span class="name">{{ member.name }}</span>
+              <a class="member-image {{ member.name }}"></a>
+              <span class="name">by <strong>{{ member.name }}</strong></span>
               <span class="job">{{ member.job }}</span>
               <span class="email">{{ member.email }}</span>
             </div>
@@ -50,8 +50,6 @@ layout: default
         {% endfor %}
 
         <div class="post-info">
-          <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
-
           <div class="addthis_sharing_toolbox" data-url="http://tweedegolf.nl{{ page.url }}" data-title="{{ page.title }}"></div>
           {% if page.github %}
           <a href="{{ page.github }}">
@@ -60,9 +58,12 @@ layout: default
           {% endif %}
         </div>
 
-        {% for post in site.posts %}
-          {% include blog-item.html %}
-        {% endfor %}
+        <div class="recent-posts">
+          <h3>Recent posts</h3>
+          {% for post in site.posts %}
+            {% include blog-item.html %}
+          {% endfor %}
+        </div>
 
       </div>
     </div>
