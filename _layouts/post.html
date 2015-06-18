@@ -52,8 +52,9 @@ layout: default
         <div class="post-info">
           <div class="addthis_sharing_toolbox" data-url="http://tweedegolf.nl{{ page.url }}" data-title="{{ page.title }}"></div>
           {% if page.github %}
-          <a href="{{ page.github }}">
-            <span class="button github" title="GitHub"></span>
+          <a class="code btn btn-success" target="_blank" href="{{ page.github }}">
+            <i class="fa fa-code fa-lg"></i>
+            View code
           </a>
           {% endif %}
         </div>

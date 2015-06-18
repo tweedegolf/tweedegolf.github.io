@@ -6922,14 +6922,13 @@ hr.separator {
 .img-centered {
   margin: 0 auto; }
 
-.button.github {
-  background-image: url("/img/button-github.png");
-  display: block;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  bottom: 36px;
-  left: 146px; }
+.code.btn {
+  background-color: #bbb;
+  border-color: #bbb;
+  margin-top: 12px; }
+  .code.btn:hover {
+    background-color: #aaa;
+    border-color: #aaa; }
 
 .icon-nerd {
   background-image: url("/img/icon-nerd.png");
@@ -7000,6 +6999,28 @@ header {
   header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300; }
+  header .intro-desc {
+    bottom: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 2; }
+    header .intro-desc a, header .intro-desc a:active, header .intro-desc a:visited {
+      color: #fff;
+      outline: none;
+      text-decoration: underline; }
+      header .intro-desc a:hover, header .intro-desc a:active:hover, header .intro-desc a:visited:hover {
+        text-decoration: none; }
+    header .intro-desc p {
+      font-size: 16px; }
+    header .intro-desc .separator {
+      margin: 24px auto; }
+    header .intro-desc .icon-research {
+      background-image: url("/img/research.png");
+      background-repeat: no-repeat;
+      display: block;
+      height: 150px;
+      margin: 0 auto;
+      width: 150px; }
   header:before {
     content: "";
     display: block;

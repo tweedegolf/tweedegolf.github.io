@@ -109,14 +109,14 @@ hr.separator {
     margin: 0 auto;
 }
 
-.button.github {
-  background-image: url('/img/button-github.png');
-  display: block;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  bottom: 36px;
-  left: 146px;
+.code.btn {
+  background-color: #bbb;
+  border-color: #bbb;
+  margin-top: 12px;
+  &:hover {
+    background-color: #aaa;
+    border-color: #aaa;
+  }
 }
 
 .icon-nerd {
@@ -205,6 +205,34 @@ header {
             font-size: 1.25em;
             font-weight: 300;
         }
+    }
+    .intro-desc {
+      bottom: 50px;
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      a, a:active, a:visited {
+        color: #fff;
+        outline: none;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      p {
+        font-size: 16px;
+      }
+      .separator {
+        margin: 24px auto;
+      }
+      .icon-research {
+        background-image: url("/img/research.png");
+        background-repeat: no-repeat;
+        display: block;
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+      }
     }
 
     &:before {
