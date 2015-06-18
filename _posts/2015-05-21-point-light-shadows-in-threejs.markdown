@@ -8,7 +8,7 @@ author: Dennis
 nerd: 4
 ---
 
-For a research and development project we created a small garden environment in which you can place lights. The objective was to visualise how your garden would look like during the night, beautifully lit according to your personal light design. Of course objects in your garden cast shadows and influence the look and feel of the lighting: we needed to include shadow casting in our demos. That seemed doable, but it turned out the WebGL framework we use for our WebGL development, Three.js, only supports shadow casting for spot lights. Unfortunately not all lights in our gardens are spot lights... We needed to find a way to cast shadows from point lights in Three.js.
+For a research and development project we created a small garden environment in which you can place lights. The objective was to visualise what your garden would look like during the night, beautifully lit according to your personal light design. Of course objects in your garden cast shadows and influence the look and feel of the lighting: we needed to include shadow casting in our demos. That seemed doable, but it turned out the WebGL framework we use for our WebGL development, Three.js, only supports shadow casting for spot lights. Unfortunately not all lights in our gardens are spot lights... We needed to find a way to cast shadows from point lights in Three.js.
 
 ![yga-verlichting](/img/blog/light-yga-verlichting.png){: style="margin-bottom: 5px;"}
 *Screen from the garden prototype. Spot light support only...*{: style="display: inline-block;margin-bottom: 20px;"}
@@ -43,10 +43,10 @@ So what do we do? Instead of doing 1 depth pass we do 6. One for every unit dire
 
 * Use dual paraboloid shadow mapping, which does allow us to use 1 texture for point lights but still needs the 6 render passes we talked about. Another downside of this technique is that there are slight distortions, but all in all it should look nice enough.
 
-
 These implementations are all candidate implementations for the final prototype. They haven’t been implemented yet except for the first one, which makes 6 seperate textures per point light. The result of that implementation is shown below.
 
-![light-result](/img/blog/light-result.jpg){: style="margin-bottom: 5px;"}
+<iframe src="https://player.vimeo.com/video/131074418" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 *Test environment for point light shadows*{: style="display: inline-block;margin-bottom: 20px;"}
 
-We will keep you updated with our progress on the other solutions.
+
+
