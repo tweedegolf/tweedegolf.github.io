@@ -2,7 +2,7 @@
 layout: post
 thumb: oculus.jpg
 leadimg: oculus.jpg
-tags: Oculus Rift VR 3D
+tags: Oculus Rift, VR, 3D
 author: Daniel
 description: The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of - sometimes quite exotic - devices have been developed.
 nerd: 2
