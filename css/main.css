@@ -7049,6 +7049,10 @@ header {
         header.blog .article-heading .nerd.protip:hover:before {
           bottom: 3.6em;
           left: 2em; }
+    header.blog img > em {
+      margin-bottom: 10px; }
+    header.blog img em {
+      margin-bottom: 30px; }
     header.blog:before {
       content: "";
       display: block;
