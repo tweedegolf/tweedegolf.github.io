@@ -1,3 +1,3 @@
 ---
-image: group.jpg
+image: pointcloud.jpg
 ---

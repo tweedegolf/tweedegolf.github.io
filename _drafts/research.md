@@ -1,1 +1,0 @@
-Naast de projecten voor onze klanten zijn we doorlopend bezig met innovatie: onderzoek naar opkomende webtechnologieën en de vertaling daarvan naar nieuwe toepassingen. Beide leiden tot de versterking van onze expertise en onze "gereedschapskist". Een voorbeeld is ons [3D framework](/3d-framework/).

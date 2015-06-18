@@ -4,10 +4,11 @@ thumb: oculus.jpg
 leadimg: oculus.jpg
 tags: Oculus Rift, VR, 3D
 author: Daniel
+description: The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of - sometimes quite exotic - devices have been developed.
 nerd: 2
 ---
 
-The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of sometimes quite exotic devices have been developed. For instance take a look at this VR cabinet called "sensorama" developed by Morton Heilig in 1962:
+The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of - sometimes quite exotic - devices have been developed. For instance, take a look at this VR cabinet called "sensorama" developed by Morton Heilig in 1962:
 
 ![Morton Heilig Sensorama](/img/blog/sensorama.jpg)
 
@@ -44,34 +45,34 @@ To cancel out the pinch distortion, the image is rendered with barrel distortion
 
 <img src="/img/blog/barrel-distortion.jpg" width="90%">
 
-The nett result of the pinch distortion of the lenses and the barrel distortion of the image is that you see a straight image that is bigger than the screen size of the Oculus.
+The netto result of the pinch distortion of the lenses and the barrel distortion of the image is that you see a straight image that is bigger than the screen size of the Oculus.
 
-As you can see in the image a side effect of barrel distortion is that the image is stretched out towards the edges. This means that the pixel density is less in the outer regions of the image. This is not a problem because it is much like how our vision works in real life: things we see in our peripheral vision are not as sharp as the things we see right in front of us. Shown in the image below: the red cone is the FOV that we can really focus on, and objects in the green and blue cones are increasingly more blurry.
+As you can see in the image, a side effect of barrel distortion is that the image is stretched out towards the edges. This means that the pixel density is less in the outer regions of the image. This is not a problem, because it is much like how our own vision works in real life: the objects we see in our peripheral vision are not as sharp as the objects we see right in front of us. Shown in the image below: the red cone is the FOV that we can really focus on, and objects in the green and blue cones are increasingly more blurry.
 
 <img src="/img/blog/FOV-human-eye.jpg" width="90%">
 
 
 **Tracking rotation, movement and position**
 
-The Oculus has sensors that track rotation and the velocity of your movements; in the device you find a gyroscope, a accelerometer and a magnetometer. The data coming from these sensors gets combined in a process called [sensor fusion](http://en.wikipedia.org/wiki/Sensor_fusion), and this is done by the built-in Spectra7 VR7100 ARM processor. Sensor fusion roughly means that you combine data coming from different sensors to calculate data that is more accurate than the data that comes from each individual sensor.
+The Oculus has sensors that track rotation and the velocity of your movements; in the device you find a gyroscope, an accelerometer and a magnetometer. The data coming from these sensors gets combined in a process called [sensor fusion](http://en.wikipedia.org/wiki/Sensor_fusion), this is done by the built-in Spectra7 VR7100 ARM processor. Sensor fusion roughly means that you combine data coming from different sensors to calculate data that is more accurate than the data that comes from each individual sensor.
 
-Furthermore the Oculus has 40 leds that are being tracked by the separate positional tracker device. This device looks a bit like a webcam and ideally you mount it on top of your computer monitor.
+Furthermore, the Oculus has 40 leds that are tracked by the separate positional tracker device. This device looks a bit like a webcam and ideally you mount it on top of your computer monitor.
 
 
 
 **Generating the 3D scene**
 
-The Oculus has to be connected to a computer; an HDMI cable for the displays and a USB cable that attaches the connector box. The connector box receives both a cabl from the positional tracker and from the HDM itself.
+The Oculus has to be connected to a computer; an HDMI cable for the displays and a USB cable that attaches the connector box. The connector box receives both a cable from the positional tracker and from the HMD itself.
 
-Of all the data from the sensors and the positional the computer creates a 3D scene that is in accordance with the position and movement of your head and your body, which makes you feel like you are actually standing inside that scene.
+Of all the data from the sensors are combined to create a 3D scene that is in accordance with the position and movement of your head and your body, which makes you feel like you are actually standing inside that scene.
 
-Because the Oculus Rift blocks your vision on the real world and the fact that you are connected to a computer like a goat tied to a pole, it makes it quite hard if not dangerous to walk around while wearing an Oculus.
+Because the Oculus Rift blocks your vision on the real world and the fact that you are connected to a computer like a goat tied to a pole, it makes it quite hard - if not dangerous - to walk around while wearing an Oculus.
 
-Therefor other devices have been developed that transfer physically walking movements to the computer as well, see images below. On the other hand it is very likely that in the near future the on-board processor of the Oculus will be fast enough to render the 3D content and thus the Oculus Rift would become a standalone device like Microsoft's Hololens.
+Therefore, other devices have been developed that transfer physically walking movements to the computer as well, see images below. On the other hand, it is very likely that in the near future the on-board processor of the Oculus will be fast enough to render the 3D content and thus the Oculus Rift would become a standalone device, like Microsoft's Hololens.
 
 <img src="/img/blog/VR-treadmill.jpg" width="90%">
 
-And this device (currently on Kickstarter) takes it even further:
+This device (currently on Kickstarter) takes it even further:
 
 <!--
 <img src="/img/blog/VR-cyberith.gif" width="90%">
@@ -83,13 +84,13 @@ And this device (currently on Kickstarter) takes it even further:
 
 Besides the Oculus Rift there are numerous other companies that have made or announced HMD's for VR. You can roughly divide them into three categories: 1) devices that have to be connected to a computer, 2) devices that work with a mobile phone and 3) standalone devices.
 
-The Oculus is of the first category; it needs a computer for rendering the content. On the one hand the HMD is an extra monitor to your computer, and on the other hand it is an input device that tracks your movements. In the future the connection between the HMD and the computer will probably wireless.
+The Oculus is of the first category; it needs a computer for rendering the content. On the one hand the HMD is an extra monitor to your computer, and on the other hand it is an input device that tracks your movements. In the future the connection between the HMD and the computer will probably become wireless.
 
 Googles Cardboard is an example of the second category, the phone's gyroscope, accelerometer and magnetometer are used to track the rotation and position, and the 3D content is rendered by the phone itself.
 
 Microsoft's Hololens is of the third category. With the increasing power of mobile processors and co-processors for rendering and motion, we will probably see more devices of this type in the future.
 
-Advantage of the first category is that you have more processing power for rendering the 3D content, advantage of the second category is that you are not tied by wires to your computer and that it is a relatively cheap solution provided that you already own a smartphone with decent processing power. The third category combines the advantages of the first two categories.
+Advantage of the first category is that you have more processing power for rendering the 3D content, advantage of the second category is that you are not tied by wires to your computer and that it is a relatively cheap solution, provided that you already own a smartphone with decent processing power. The third category combines the advantages of the first two categories.
 
 
 <!--

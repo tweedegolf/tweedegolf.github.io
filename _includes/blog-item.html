@@ -1,5 +1,7 @@
 <div class="blog-item">
   <a href="{{ post.url }}" class="blog-link">
+    <h3>{{ post.title }}</h3>
+    <p class="date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
     <div class="previmg">
       {% if post.thumb %}
         <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
@@ -22,7 +24,6 @@
         {% endif %}
       </div>
     </div>
-    <h3>{{ post.title }}</h3>
     <p class="excerpt">
       {{ post.content | strip_html | truncatewords: 30 }}
     </p>

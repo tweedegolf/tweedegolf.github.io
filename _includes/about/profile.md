@@ -1,3 +1,1 @@
-Wij bouwen webapplicaties en web apps.
-
-Een sterke toegevoegde waarde hebben we waar vernieuwende online producten ontwikkeld worden of waar een websysteem moet zorgen voor optimale workflow.
+Tweede golf is een webbureau met een sterke focus op techniek; we bouwen vernieuwende webapplicaties en web apps. We zijn altijd op zoek naar technisch uitdagende projecten. Plannen of ideeën? Neem contact met ons op.

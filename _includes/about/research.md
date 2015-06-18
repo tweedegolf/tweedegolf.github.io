@@ -1,0 +1,2 @@
+Naast de projecten voor onze klanten doen we onderzoek naar opkomende webtechnologieën en de vertaling naar nieuwe toepassingen. Beide leiden tot de versterking van onze expertise en "gereedschapskist". Het [3D framework](/3d-framework/) is daarvan een voorbeeld. 
+In het blog delen we interessante resultaten. Wees gewaarschuwd: de inhoud is niet altijd even toegankelijk voor niet-developers. Hou de *nerd rating* in de gaten.
