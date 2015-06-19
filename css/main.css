@@ -6861,6 +6861,8 @@ article img.with-caption {
     display: inline-block;
     font-size: 13px;
     margin-bottom: 36px; }
+article iframe, article video {
+  margin: 36px 0 24px; }
 
 #comments {
   padding-top: 60px; }
