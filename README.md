@@ -30,19 +30,21 @@ After updating the [sass](http://sass-lang.com/) stylesheet in the folder `css`,
 
 Site content updates are performed by editing the site source directly. We use [kramdown](http://kramdown.gettalong.org/quickref.html) (variety of markdown).
 
-#### Blog posts
+#### Blog articles
 
-Start by providing the following variables between three dashes:
+Static pages are added by creating .md files in the `/_posts` folder. For unpublished articles you may use the `/_drafts` folder instead. We always use the `post` layout for blog posts.Ordinary text may be added simpy by writing in the file itself, below all variables.
 
-`---`
-+ `layout: _post_` (always the same)
+Start by providing the following variables, enclosing them in three dashes `---` above and below:
+
++ `layout: post` (always the same)
 + `thumb: my-image.jpg` (located in /img/blog/thumbs/; size 720x360)
-+ `leadimg: my-image.jpg` (located in /img/blog/; no size limits, but is ideally landscape oriented and large)
++ `leadimg: my-image.jpg` (located in /img/blog/; ideally landscape oriented and large)
 + `tags: tag, tag, tag` (try to provide 2 - 6 tags; order by relevance)
-+ `author: Daniel` (provide a TG employee's first name; author info will be pulled from /data/members)
-+ `description: Our first WebVR application is a big cube in Threejs and a simple 3D scene floating inside that cube. The 3D scene consists of ...` (meta description)
++ `author: Daniel` (an employee's first name; info is pulled from `/data/members`)
++ `description: Lorem ipsum dolor ...` (meta description; max 155 chars)
 + `nerd: 3` (nerd level 1 - 3; view other articles for reference)
-`---`
+
+After closing the variables section with three dashes `---`, you may just start typing your article's content.
 
 Inserting an image:
 
@@ -58,14 +60,13 @@ Custom images may be added in the repo directly.
 Embedding a video:
 
     <iframe src="https://player.vimeo.com/video/131074418" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    *Test environment for point light shadows*
 
 Embedding a video with caption:
 
     <iframe src="https://player.vimeo.com/video/131074418" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{: .with-caption}
     *Test environment for point light shadows*
 
-You can probably use any vendor's default embedding code, but it would be best to *only define a height of 360 and no width* as we are resizing videos responsively.
+You can probably use any vendor's default embedding code, but it would be best to **only define a height of 360 and no width** as we are resizing videos responsively.
 
 Custom video's may be uploaded to TG's Vimeo account rather than be put in the repo directly or on-site.
 
