@@ -48,9 +48,10 @@ article {
     margin-bottom: 12px;
     & + em, & + p { // nearest following em or p which should contain caption text
       color: #888;
-      display: inline-block;
+      display: block;
       font-size: 13px;
       margin-bottom: 36px;
+      text-align: center;
     }
   }
 }
