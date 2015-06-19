@@ -6855,6 +6855,9 @@ article img {
   display: block;
   margin: 48px auto; }
 
+#comments {
+  padding-top: 60px; }
+
 a,
 a:hover,
 a:focus,
@@ -7057,11 +7060,7 @@ header {
           font-size: 22px;
           margin-right: 4px; }
       header.blog .article-heading h1 {
-<<<<<<< HEAD
         margin-left: 12px;
-=======
-        margin-left: 15px;
->>>>>>> 8ec1ead35a20c2df4067f4a60cfd4ded3654687b
         font-size: 50px;
         font-weight: 100;
         text-align: left;
