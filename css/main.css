@@ -6849,6 +6849,11 @@ p {
 p.small {
   font-size: 16px; }
 
+article h2, article h3, article h4, article h5, article h6 {
+  text-transform: none; }
+article h2, article h3 {
+  margin-top: 32px;
+  margin-bottom: 16px; }
 article p {
   font-size: 15px; }
 article pre {
