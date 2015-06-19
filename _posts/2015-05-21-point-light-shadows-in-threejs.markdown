@@ -45,5 +45,5 @@ So what do we do? Instead of doing 1 depth pass we do 6. One for every unit dire
 
 These implementations are all candidate implementations for the final prototype. They haven’t been implemented yet except for the first one, which makes 6 seperate textures per point light. The result of that implementation is shown below.
 
-<iframe src="https://player.vimeo.com/video/131074418" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-*Test environment for point light shadows*{: style="display: inline-block;margin-bottom: 20px;"}
+<iframe src="https://player.vimeo.com/video/131074418" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{: .with-caption}
+*Test environment for point light shadows*

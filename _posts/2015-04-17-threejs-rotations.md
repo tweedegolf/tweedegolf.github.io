@@ -45,7 +45,7 @@ And as far as rotation is concerned: a 3D object that has no rotation on any of 
 
 If we want to create a floor, or a ground for our 3D scene we have to rotate a plane -90° over the x-axis, play the following video to see how that works out:
 
-<video width="500" controls>
+<video height="360" controls>
   <source src="http://data.tweedegolf.nl/videos/plane_rotation.mp4#t=0.07" type="video/mp4">
 </video>
 
