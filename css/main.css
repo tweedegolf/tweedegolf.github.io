@@ -6851,6 +6851,8 @@ p.small {
 
 article p {
   font-size: 15px; }
+article pre {
+  margin: 24px 0; }
 article img {
   display: block;
   margin: 48px auto; }
