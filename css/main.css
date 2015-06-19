@@ -6854,6 +6854,13 @@ article p {
 article img {
   display: block;
   margin: 48px auto; }
+article img.with-caption {
+  margin-bottom: 12px; }
+  article img.with-caption + em {
+    color: #888;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 36px; }
 
 #comments {
   padding-top: 60px; }

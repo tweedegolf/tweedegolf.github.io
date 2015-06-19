@@ -10,8 +10,8 @@ nerd: 4
 
 For a research and development project we created a small garden environment in which you can place lights. The objective was to visualise what your garden would look like during the night, beautifully lit according to your personal light design. Of course objects in your garden cast shadows and influence the look and feel of the lighting: we needed to include shadow casting in our demos. That seemed doable, but it turned out the WebGL framework we use for our WebGL development, Three.js, only supports shadow casting for spot lights. Unfortunately not all lights in our gardens are spot lights... We needed to find a way to cast shadows from point lights in Three.js.
 
-![yga-verlichting](/img/blog/light-yga-verlichting.png){: style="margin-bottom: 5px;"}
-*Screen from the garden prototype. Spot light support only...*{: style="display: inline-block;margin-bottom: 20px;"}
+![yga-verlichting](/img/blog/light-yga-verlichting.png){: .with-caption}
+*Screen from the garden prototype. Spot light support only...*
 
 The first step was understanding how shadow casting works for spot lights and understanding why this would not work for point lights. The process of shadow casting is quite elegant. It takes an extra render pass one comparison per object and light to determine if a fragment should be shaded.
 
@@ -47,6 +47,3 @@ These implementations are all candidate implementations for the final prototype.
 
 <iframe src="https://player.vimeo.com/video/131074418" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 *Test environment for point light shadows*{: style="display: inline-block;margin-bottom: 20px;"}
-
-
-

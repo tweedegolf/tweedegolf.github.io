@@ -26,6 +26,16 @@ article {
     margin: 48px auto;
     @extend .img-responsive;
   }
+
+  img.with-caption {
+    margin-bottom: 12px;
+    & + em {
+      color: #888;
+      display: inline-block;
+      font-size: 13px;
+      margin-bottom: 36px;
+    }
+  }
 }
 
 #comments {
