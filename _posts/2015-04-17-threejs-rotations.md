@@ -26,8 +26,7 @@ This is the root scene; all other 3D objects have to be added to this root scene
 
 The coordinate system of Threejs is a right handed system, which means that the positive z-axis is pointing towards you:
 
-<img src="/img/blog/left-and-right-handed-system.gif" width="65%">
-
+![Left and right handed system](/img/blog/left-and-right-handed-system.gif)
 
 In the picture below you see a Threejs scene. The red line is the x-axis, the green line the y-axis and the blue line the z-axis. A dotted line indicates a negative axis.
 
@@ -35,7 +34,7 @@ The black arrow in the yellow square is an instance of `THREE.PlaneBufferGeometr
 
 On this PlaneBufferGeometry a texture of an arrow has been mapped. The PlaneBufferGeometry has been added to the root scene without any rotation or translation.
 
-<img src="/img/blog/threejs-axis.jpg" width="65%">
+![ThreeJS axis](/img/blog/threejs-axis.jpg)
 
 What we can learn from this picture, is that a 3D object without translation and rotation gets added to the origin of the scene.
 
@@ -66,7 +65,7 @@ Both solutions are equally valid, but there is one caveat: if you choose to rota
 
 Now lets create a proper floor and add the arrow object to the floor:
 
-<img src="/img/blog/floor-and-arrow.png" width="85%">
+![Floor and arrow](/img/blog/floor-and-arrow.png)
 
 Next we want to move the arrow object one unit into the direction the arrow head is pointing. We use trigonometry to calculate the fraction of the unit the arrow object has to move over the x-axis and the fraction of the unit the arrow object has to move over the y-axis based on its rotation over the z-axis:
 
@@ -120,8 +119,7 @@ You can play yourself with the [final result](http://data.tweedegolf.nl/threejs-
 <!--
 Another example: we want to translate the arrow after we have rotated the arrow 45°. A positive rotation in Threejs follows the convention and is counterclockwise:
 
-
-<img src="/img/blog/threejs-rotation-45-degrees.jpg" width="85%">
+![ThreeJS rotation 45 degrees](threejs-rotation-45-degrees.jpg)
 
 Now we get this:
 
