@@ -43,6 +43,7 @@ Start by providing the following variables, enclosing them in three dashes `---`
 + `author: Daniel` (an employee's first name; info is pulled from `/data/members`)
 + `description: Lorem ipsum dolor ...` (meta description; max 155 chars)
 + `nerd: 3` (nerd level 1 - 3; view other articles for reference)
++ OPTIONAL: `github: https://github.com/account/repo` (will render a 'View code'-button)
 
 After closing the variables section with three dashes `---`, you may just start typing your article's content.
 
