@@ -12,7 +12,7 @@ Nowadays most VR applications are native games that are developed with tools lik
 
 The biggest benefit of native applications is their unbeatable performance, which is crucial for games. However, you can use VR for other purposes as well. For instance, you can add VR to [panorama viewers](http://www.emanueleferonato.com/2014/12/10/html5-webgl-360-degrees-panorama-viewer-with-three-js/) to make them more immersive. Likewise, you could build 3D scenes that are architectural or historical recreations of buildings that you can enter and walk around in with your VR headset. These kind of applications are relatively easy to develop using web technologies.
 
-<iframe src="https://player.vimeo.com/video/127931214" width="500" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/127931214" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{: .with-caption}
 *Panorama viewer by Emanuele Feronato*
 
 The benefits of developing using open web technologies are obvious; you can publish your content instantly without gate keepers (app stores), you can use your own cheap or free tools, there is a culture of collaboration in the web developers' community, and so on. Both Mozilla and Google saw the potential of VR on the web and started to develop an API that provides access to VR devices. Currently only the Oculus Rift is supported, which will probably change as soon as new devices hit the market.
@@ -21,7 +21,7 @@ Mozilla and Google are working on one and the same API for WebVR, unlike what ha
 
 Google also created an open source hardware VR device, the [Google Cardboard](https://www.google.com/get/cardboard/). This is a device made of cardboard that turns a mobile device into a standalone VR headset. The mobile device's gyroscope, accelerometer and magnetometer are used to track the rotation and position, and the 3D content is rendered by the device itself. The Google Cardboard combined with the WebVR API and web technologies for generating the 3D scene makes creating VR application achievable for a large audience.
 
-<img src="/img/blog/google-cardboard2.jpg" width="80%">
+![Google Cardboard](/img/blog/google-cardboard2.jpg)
 
 The WebVR API is able to detect a connected VR device, or if the browser is running on a device that can be used as a standalone VR device such as a mobile phone or a tablet. A single physical VR device shows up as a HMDVRDevice object and as a PositionSensorVRDevice object, but both objects share the same hardware id so you know they are linked. The first object contains information related to the display and the lenses such as the resolution, the distance between the lenses and the distance from your eyes to the lenses. The latter object contains information about the position, rotation and velocity of movement of the device.
 
@@ -31,13 +31,10 @@ Now that [WebGL](http://caniuse.com/#feat=webgl) has landed in all browsers acro
 
 In the next blog post we show you our first test with WebVR.
 
+Links:
 
-**links for further exploration:**<br>
-[The Current Status of Browser-based Virtual Reality in HTML5](http://www.infoq.com/news/2015/01/vr-html5)<br>
-[A series of videos shot a the SFHTML5 meetup about VR and HTML5](https://www.youtube.com/playlist?list=PLUj8-Hhrb-a0Z3f70ygX5fXLk8Sa4mTQZ)<br>
-
-
-
+- [The Current Status of Browser-based Virtual Reality in HTML5](http://www.infoq.com/news/2015/01/vr-html5)
+- [A series of videos shot a the SFHTML5 meetup about VR and HTML5](https://www.youtube.com/playlist?list=PLUj8-Hhrb-a0Z3f70ygX5fXLk8Sa4mTQZ)
 
 <!--
 These are benefits that Tony Parisi mentioned in his speech for the SFHTML5 meetup that was held 16th of January this year:
