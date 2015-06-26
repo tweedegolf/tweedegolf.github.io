@@ -32,7 +32,7 @@ Site content updates are performed by editing the site source directly. We use [
 
 #### Blog articles
 
-Static pages are added by creating .md files in the `/_posts` folder. For unpublished articles you may use the `/_drafts` folder instead. We always use the `post` layout for blog posts.Ordinary text may be added simpy by writing in the file itself, below all variables.
+Static pages are added by creating .md files in the `/_posts` folder. For unpublished articles you may use the `/_drafts` folder instead. We always use the `post` layout for blog posts. Ordinary text may be added simpy by writing in the file itself, below all variables.
 
 Start by providing the following variables, enclosing them in three dashes `---` above and below:
 
