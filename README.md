@@ -75,4 +75,4 @@ Custom video's may be uploaded to TG's Vimeo account rather than be put in the r
 #### Static pages
 
 Static pages are added by creating .md files in the /_static folder. We always use the `static` layout for static pages.
-Ordinary text may be added simpy by writing in the file itself, below all variables.
+Ordinary text may be added simply by writing in the file itself, below all variables.
