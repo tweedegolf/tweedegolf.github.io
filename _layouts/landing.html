@@ -4,27 +4,25 @@ layout: default
 
 {% include navbar.html %}
 
-<header>
+<header class="blog">
   <img class="leadimg" src="/img/{% if page.leadimg %}{{ page.leadimg }}{% else %}oculus-rift.jpg{% endif %}" />
   <div class="container">
-    <div class="article-heading">
-      <h1>
-        {{ page.title }}
-      </h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div class="intro-desc">
+          <span class="icon-research"></span>
+          <h1>{{ page.title }}</h1>
+          <hr class="separator">
+
+          {% capture intro %}{% include /symfony/intro.md %}{% endcapture %}
+          {{ intro|markdownify }}
+
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<section id="static">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-
-        {{ content }}
-
-      </div>
-    </div>
-  </div>
-</section>
+{{ content }}
 
 {% include footer.html %}
