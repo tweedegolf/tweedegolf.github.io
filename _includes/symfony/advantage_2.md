@@ -1,0 +1,2 @@
+###100% focus (voordeel 2)###
+Symfony's standaard componenten zoals de Security- en FormComponent zorgen voor een solide basis voor elk project. En developers zijn weinig tijd kwijt met repetitieve taken. Door het gebruik van Symfony kunnen we ons volledig richten op de speciefieke *business logic* die binnen een project moet worden geimplementeerd.

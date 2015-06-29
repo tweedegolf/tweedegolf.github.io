@@ -10,7 +10,23 @@ permalink: symfony/
     <div class="row">
       <div class="col-md-12">
 
-        <p>Content.</p>
+        {% capture profile %}{% include /symfony/main.md %}{% endcapture %}
+		{{ profile|markdownify }}
+
+        {% capture profile %}{% include /symfony/advantage_1.md %}{% endcapture %}
+		{{ profile|markdownify }}
+
+        {% capture profile %}{% include /symfony/advantage_2.md %}{% endcapture %}
+		{{ profile|markdownify }}
+
+        {% capture profile %}{% include /symfony/advantage_3.md %}{% endcapture %}
+		{{ profile|markdownify }}
+
+		<br>
+		
+		*Onderaan pagina:*<br>
+        {% capture profile %}{% include /symfony/bottom.md %}{% endcapture %}
+		{{ profile|markdownify }}
 
       </div>
     </div>
