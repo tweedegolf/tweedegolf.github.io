@@ -1,3 +1,3 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus turpis, rhoncus eget enim vel, **aliquam sollicitudin ante**. Praesent ullamcorper efficitur magna, et venenatis lorem.
+Dankzij de expertise van tweede golf hadden wij binnen **luttele weken** onze hele web app omgezet naar Symfony2, met alle voordelen van dien. Wij zijn zéér tevreden!
 
-<cite>-- Barack Obama, US President</cite>
+<cite>-- Voornaam Achternaam, Plan Viewer</cite>
