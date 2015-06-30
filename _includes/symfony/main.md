@@ -1,2 +1,2 @@
-###Razendsnel ontwikkelen (main text, linksboven)###
+###Razendsnel ontwikkelen ###
 Het elegante Symfony2 is de huidige *industry standard* op het gebied van PHP web development. Met onze diepgaande kennis van dit framework zijn we in staat om razendsnel web applicaties te ontwikkelen die klaar zijn voor morgen. Maar Symfony2 is meer dan alleen een framework. Het bevat een filosofie over hoe PHP web apps ontwikkeld zouden moeten en daar hechten we bij tweede golf veel waarde aan.

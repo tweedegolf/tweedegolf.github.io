@@ -1,2 +1,2 @@
-### Best practices, best results (voordeel 1) ###
-Bij tweede golf volgen we nauwgezet de *[beste practices](http://symfony.com/doc/current/best_practices/index.html)* waar de Symfony community voor staat. We zijn daarbij niet bang om onze werkwijze zo nu en dan aan te passen: voorop lopen is de norm. De best practices vormen een belangrijk onderdeel van ons *development process* en zorgen ervoor dat we het maximale uit elk project halen. 
+### Best practices, best results ###
+Bij tweede golf volgen we nauwgezet de *[beste practices](http://symfony.com/doc/current/best_practices/index.html)* waar de Symfony community voor staat. We zijn daarbij niet bang om onze werkwijze zo nu en dan aan te passen: voorop lopen is de norm. De best practices vormen een belangrijk onderdeel van ons *development process* en zorgen ervoor dat we het maximale uit elk project halen.

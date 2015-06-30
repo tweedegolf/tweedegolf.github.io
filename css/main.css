@@ -7660,9 +7660,11 @@ footer {
     text-style: justify; }
 
 #landing .main h1, #landing .main h2, #landing .main h3 {
-  font-size: 28px !important;
-  text-transform: none !important; }
+  font-size: 28px;
+  text-transform: none; }
+#landing .main p {
+  font-size: 24px; }
 #landing .adv h1, #landing .adv h2, #landing .adv h3 {
-  text-transform: none !important; }
+  text-transform: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1133,13 +1133,16 @@ footer {
 #landing {
   .main {
     h1, h2, h3 {
-      font-size: 28px !important;
-      text-transform: none !important;
+      font-size: 28px;
+      text-transform: none;
+    }
+    p {
+      font-size: 24px;
     }
   }
   .adv {
     h1, h2, h3 {
-      text-transform: none !important;
+      text-transform: none;
     }
   }
 }
