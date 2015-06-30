@@ -1,2 +1,8 @@
 ###Razendsnel ontwikkelen ###
-Met onze diepgaande kennis van Symfony zijn we in staat om razendsnel applicaties te ontwikkelen die klaar zijn voor morgen. Het elegante [Symfony framework](http://symfony.com/) is de huidige **industry standard** op het gebied van PHP web development. Wereldwijd vormt het de basis van honderdduizenden succesvolle web apps. Het bevat een duidelijke filosofie over hoe web apps ontwikkeld zouden moeten worden.
+Dankzij onze diepgaande kennis van het[Symfony framework](http://symfony.com/) zijn we in staat om razendsnel applicaties te ontwikkelen die klaar zijn voor morgen.
+
++ De huidige **industry standard** binnen PHP web development.
+
++ Wereldwijd de basis van honderdduizenden succesvolle web apps.
+
++ Méér dan een framework; een development-filosofie. 
