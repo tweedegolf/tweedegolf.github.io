@@ -1,2 +1,2 @@
 ### Best practices, best results ###
-Voorop lopen is de norm. We volgen de *[best practices](http://symfony.com/doc/current/best_practices/index.html)* waar de Symfony community voor staat en zijn niet bang om onze werkwijze zo nu en dan aan te passen. De best practices vormen een belangrijk onderdeel van ons *development process* en zorgen ervoor dat we het maximale uit elk project halen.
+Voorop lopen is de norm. We volgen de **[best practices](http://symfony.com/doc/current/best_practices/index.html)** waar de Symfony community voor staat en zijn niet bang om onze werkwijze zo nu en dan aan te passen. De best practices vormen een belangrijk onderdeel van ons **development process** en zorgen ervoor dat we het maximale uit elk project halen.
