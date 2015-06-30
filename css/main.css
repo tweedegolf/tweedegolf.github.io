@@ -7713,7 +7713,10 @@ header.landing h1, header.landing h2, header.landing h3 {
     font-size: 24px;
     line-height: 40px; }
   #landing .main ul {
-    margin-top: 24px; }
+    margin-top: 28px; }
+  #landing .main li p {
+    font-size: 18px;
+    line-height: 28px; }
 #landing .adv {
   margin-top: 50px; }
   #landing .adv:nth-of-type(1) {
