@@ -12,7 +12,7 @@ contact: marlon
       <div class="col-sm-6">
 
         <div class="main">
-          <img class="icon" src="http://placehold.it/84x84" />
+          <span class="icon calendar"></span>
           {% capture main %}{% include /symfony/main.md %}{% endcapture %}
           {{ main|markdownify }}
         </div>
@@ -26,19 +26,19 @@ contact: marlon
       <div class="col-sm-6">
 
         <div class="adv">
-          <img class="icon" src="http://placehold.it/56x56" />
+          <span class="icon award"></span>
           {% capture adv1 %}{% include /symfony/advantage_1.md %}{% endcapture %}
     		  {{ adv1|markdownify }}
         </div>
 
         <div class="adv">
-          <img class="icon" src="http://placehold.it/56x56" />
+          <span class="icon gear"></span>
           {% capture adv2 %}{% include /symfony/advantage_2.md %}{% endcapture %}
     		  {{ adv2|markdownify }}
         </div>
 
         <div class="adv">
-          <img class="icon" src="http://placehold.it/56x56" />
+          <span class="icon love"></span>
           {% capture adv3 %}{% include /symfony/advantage_3.md %}{% endcapture %}
           {{ adv3|markdownify }}
         </div>

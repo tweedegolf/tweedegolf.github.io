@@ -7683,8 +7683,23 @@ header.landing .icon-symfony {
 header.landing h1, header.landing h2, header.landing h3 {
   text-transform: none; }
 
+#landing .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block; }
+  #landing .icon.calendar {
+    background-image: url("/img/icon-calendar.png"); }
+  #landing .icon.award {
+    background-image: url("/img/icon-award.png"); }
+  #landing .icon.gear {
+    background-image: url("/img/icon-gear.png"); }
+  #landing .icon.love {
+    background-image: url("/img/icon-love.png"); }
 #landing .main {
   margin-right: 40px; }
+  #landing .main .icon {
+    height: 84px;
+    width: 84px; }
   #landing .main h1, #landing .main h2, #landing .main h3 {
     font-size: 56px;
     padding-bottom: 24px;
@@ -7694,6 +7709,9 @@ header.landing h1, header.landing h2, header.landing h3 {
     line-height: 40px; }
 #landing .adv {
   margin-top: 50px; }
+  #landing .adv .icon {
+    height: 56px;
+    width: 56px; }
   #landing .adv:nth-of-type(1) {
     margin-top: 100px; }
   #landing .adv h1, #landing .adv h2, #landing .adv h3 {
