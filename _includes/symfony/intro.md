@@ -1,1 +1,1 @@
-Bij tweede golf ontwikkelen we *state of the art* web apps met het PHP-framework Symfony2. 
+Wij ontwikkelen *state of the art* web apps met het PHP-framework Symfony. 
