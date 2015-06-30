@@ -7712,6 +7712,8 @@ header.landing h1, header.landing h2, header.landing h3 {
   #landing .main p {
     font-size: 24px;
     line-height: 40px; }
+  #landing .main ul {
+    margin-top: 24px; }
 #landing .adv {
   margin-top: 50px; }
   #landing .adv:nth-of-type(1) {
