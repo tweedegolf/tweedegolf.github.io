@@ -7659,6 +7659,30 @@ footer {
     text-align: left;
     text-style: justify; }
 
+#nav-landing .navbar-inverse {
+  background-color: transparent; }
+#nav-landing .navbar-brand {
+  opacity: 0.5; }
+#nav-landing .navbar-shrink {
+  background-color: #222; }
+  #nav-landing .navbar-shrink .navbar-brand {
+    opacity: initial; }
+
+header.landing .container {
+  padding-top: 150px;
+  padding-bottom: 0; }
+header.landing:before {
+  background: rgba(0, 0, 0, 0.8); }
+header.landing .icon-symfony {
+  background-image: url("/img/symfony-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px; }
+header.landing h1, header.landing h2, header.landing h3 {
+  text-transform: none; }
+
 #landing .main {
   margin-right: 40px; }
   #landing .main h1, #landing .main h2, #landing .main h3 {
@@ -7678,13 +7702,13 @@ footer {
   #landing .adv p {
     font-size: 16px;
     line-height: 28px; }
-#landing .highlight {
+#landing .testimonial {
   background-color: #754c8b;
   font-color: #ffffff;
   margin-top: 50px;
   margin-right: 40px;
   padding: 32px 40px; }
-  #landing .highlight p {
+  #landing .testimonial p {
     color: #fff;
     font-size: 18px;
     line-height: 32px; }

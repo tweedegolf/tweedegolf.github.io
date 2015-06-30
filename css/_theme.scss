@@ -1130,6 +1130,42 @@ footer {
     }
 }
 
+
+// landing page
+#nav-landing {
+  .navbar-inverse {
+    background-color: transparent;
+  }
+  .navbar-brand {
+    opacity: 0.5;
+  }
+  .navbar-shrink {
+    background-color: #222;
+    .navbar-brand {
+      opacity: initial;
+    }
+  }
+}
+header.landing {
+  .container {
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
+  &:before {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .icon-symfony {
+    background-image: url("/img/symfony-logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    margin: 0 auto;
+    width: 150px;
+  }
+  h1, h2, h3 {
+    text-transform: none;
+  }
+}
 #landing {
   .main {
     margin-right: 40px;
