@@ -1147,8 +1147,11 @@ footer {
   }
 }
 header.landing {
+  @media (min-width: 1300px) {
+    background-position: center -50px;
+  }
   .container {
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 0;
   }
   &:before {
@@ -1164,6 +1167,13 @@ header.landing {
   }
   h1, h2, h3 {
     text-transform: none;
+  }
+  .desc p {
+    font-size: 18px;
+  }
+  .tocontent {
+    display: inline-block;
+    margin-top: 28px;
   }
 }
 #landing {

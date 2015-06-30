@@ -7668,8 +7668,11 @@ footer {
   #nav-landing .navbar-shrink .navbar-brand {
     opacity: initial; }
 
+@media (min-width: 1300px) {
+  header.landing {
+    background-position: center -50px; } }
 header.landing .container {
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 0; }
 header.landing:before {
   background: rgba(0, 0, 0, 0.8); }
@@ -7682,6 +7685,11 @@ header.landing .icon-symfony {
   width: 150px; }
 header.landing h1, header.landing h2, header.landing h3 {
   text-transform: none; }
+header.landing .desc p {
+  font-size: 18px; }
+header.landing .tocontent {
+  display: inline-block;
+  margin-top: 28px; }
 
 #landing p a, #landing p a:hover, #landing p a:focus, #landing p a:active, #landing p a.active {
   color: #0af; }
