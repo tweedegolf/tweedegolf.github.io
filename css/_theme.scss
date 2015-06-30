@@ -1132,17 +1132,41 @@ footer {
 
 #landing {
   .main {
+    margin-right: 40px;
     h1, h2, h3 {
-      font-size: 28px;
+      font-size: 56px;
+      padding-bottom: 24px;
       text-transform: none;
     }
     p {
       font-size: 24px;
+      line-height: 36px;
     }
   }
   .adv {
+    margin-top: 50px;
+    &:nth-of-type(1) { // first advantage
+      margin-top: 100px;
+    }
     h1, h2, h3 {
+      padding-bottom: 10px;
       text-transform: none;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .highlight {
+    background-color: #754c8b;
+    font-color: #ffffff;
+    margin-top: 50px;
+    margin-right: 40px;
+    padding: 32px 40px;
+    p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 32px;
     }
   }
 }

@@ -7659,12 +7659,34 @@ footer {
     text-align: left;
     text-style: justify; }
 
-#landing .main h1, #landing .main h2, #landing .main h3 {
-  font-size: 28px;
-  text-transform: none; }
-#landing .main p {
-  font-size: 24px; }
-#landing .adv h1, #landing .adv h2, #landing .adv h3 {
-  text-transform: none; }
+#landing .main {
+  margin-right: 40px; }
+  #landing .main h1, #landing .main h2, #landing .main h3 {
+    font-size: 56px;
+    padding-bottom: 24px;
+    text-transform: none; }
+  #landing .main p {
+    font-size: 24px;
+    line-height: 36px; }
+#landing .adv {
+  margin-top: 50px; }
+  #landing .adv:nth-of-type(1) {
+    margin-top: 100px; }
+  #landing .adv h1, #landing .adv h2, #landing .adv h3 {
+    padding-bottom: 10px;
+    text-transform: none; }
+  #landing .adv p {
+    font-size: 16px;
+    line-height: 28px; }
+#landing .highlight {
+  background-color: #754c8b;
+  font-color: #ffffff;
+  margin-top: 50px;
+  margin-right: 40px;
+  padding: 32px 40px; }
+  #landing .highlight p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px; }
 
 /*# sourceMappingURL=main.css.map */
