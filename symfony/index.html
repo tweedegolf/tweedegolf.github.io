@@ -17,10 +17,10 @@ contact: marlon
           {{ main|markdownify }}
         </div>
 
-        <div class="testimonial">
+        <blockquote class="testimonial">
           {% capture testimonial %}{% include /symfony/testimonial.md %}{% endcapture %}
           {{ testimonial|markdownify }}
-        </div>
+        </blockquote>
 
       </div>
       <div class="col-sm-6">

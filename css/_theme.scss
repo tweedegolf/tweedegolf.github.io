@@ -1194,15 +1194,17 @@ header.landing {
     }
   }
   .testimonial {
-    background-color: #754c8b;
-    font-color: #ffffff;
+    background-color: #f8f8f8;
+    color: #666;
     margin-top: 50px;
     margin-right: 40px;
     padding: 32px 40px;
     p {
-      color: #fff;
       font-size: 18px;
       line-height: 32px;
+    }
+    cite {
+      float: right;
     }
   }
 }
