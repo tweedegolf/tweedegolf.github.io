@@ -3,13 +3,17 @@
   <a name="contact-ok"></a>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Contact</h2>
-        <hr class="star-primary">
+      <div class="col-lg-5">
+        {% for member in site.data.members %}
+          {% if member.name == page.contact %}
+            <div class="member-card">
+              <a class="member-image {{ member.name }}"></a>
+              <span class="name">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over Symfony development bij tweede golf. Rechtstreeks mailen kan ook: {{ member.email }}.</span>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-lg-6 col-lg-offset-1">
         <div class="alert alert-success alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert">
             <span aria-hidden="true">&times;</span>
