@@ -1194,6 +1194,7 @@ header.landing {
     }
   }
   .testimonial {
+    @include clearfix;
     background-color: #f8f8f8;
     color: #666;
     margin-top: 50px;
