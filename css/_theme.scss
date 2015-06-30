@@ -1264,8 +1264,14 @@ header.landing {
 }
 #contact.personal {
   background-color: #f8f8f8;
+  h5 {
+    color: #666;
+    font-size: 24px;
+    text-transform: none;
+  }
   .member-card {
     .desc {
+      color: #666;
       font-size: 16px;
       line-height: 24px;
       padding-left: 30px;
@@ -1285,9 +1291,23 @@ header.landing {
 }
 footer.landing {
   .footer-above {
-    background-color: #444;
+    background-color: #333;
+    .footer-col {
+      opacity: 0.5;
+      &:hover p, &:hover a {
+        opacity: 1;
+      }
+    }
+    h6 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
   .footer-below {
     background-color: #222;
+    p {
+      font-size: 13px;
+      opacity: 0.5;
+    }
   }
 }

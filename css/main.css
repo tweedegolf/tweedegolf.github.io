@@ -7761,7 +7761,12 @@ header.landing .tocontent {
 
 #contact.personal {
   background-color: #f8f8f8; }
+  #contact.personal h5 {
+    color: #666;
+    font-size: 24px;
+    text-transform: none; }
   #contact.personal .member-card .desc {
+    color: #666;
     font-size: 16px;
     line-height: 24px;
     padding-left: 30px;
@@ -7775,8 +7780,18 @@ header.landing .tocontent {
     color: #0af !important; }
 
 footer.landing .footer-above {
-  background-color: #444; }
+  background-color: #333; }
+  footer.landing .footer-above .footer-col {
+    opacity: 0.5; }
+    footer.landing .footer-above .footer-col:hover p, footer.landing .footer-above .footer-col:hover a {
+      opacity: 1; }
+  footer.landing .footer-above h6 {
+    font-size: 20px;
+    margin-bottom: 20px; }
 footer.landing .footer-below {
   background-color: #222; }
+  footer.landing .footer-below p {
+    font-size: 13px;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=main.css.map */
