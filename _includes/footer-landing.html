@@ -1,19 +1,19 @@
-<section id="contact personal">
+<section id="contact" class="personal">
   <a name="contact"></a>
   <a name="contact-ok"></a>
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
+      <div class="col-md-6">
         {% for member in site.data.members %}
           {% if member.name == page.contact %}
             <div class="member-card">
-              <a class="member-image {{ member.name }}"></a>
-              <span class="name">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</span>
+              <a class="member-image {{ member.name }} col-xs-2"></a>
+              <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</p>
             </div>
           {% endif %}
         {% endfor %}
       </div>
-      <div class="col-lg-6 col-lg-offset-1">
+      <div class="col-md-6">
         <div class="alert alert-success alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert">
             <span aria-hidden="true">&times;</span>
@@ -55,3 +55,51 @@
     </div>
   </div>
 </section>
+
+<footer class="text-center landing">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <h3>Adres</h3>
+          <p>
+          <a href="https://www.google.com/maps/place/tweede+golf+bv/@51.822895,5.869926,17z/data=!3m1!4b1!4m2!3m1!1s0x47c708fbab5e926d:0xaf8fddaed8fb8cc1">
+            <span class="fa fa-map-marker"></span>
+            St. Annastraat 113 <br>
+            6524 EK Nijmegen
+          </a>
+          </p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>Contact</h3>
+          <p>
+          <span class="fa fa-phone"></span>
+          024 - 3010 484 <br>
+          <a href="mailto:info@tweedegolf.nl">
+            <span class="fa fa-envelope"></span> info@tweedegolf.nl
+          </a>
+          </p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>Support</h3>
+          <ul class="list-inline">
+            <li>
+              <a href="skype:tweedegolf.support?call" target="_blank" class="btn-social btn-outline">
+              <i class="fa fa-fw fa-skype"></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

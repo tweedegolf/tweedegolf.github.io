@@ -1167,6 +1167,9 @@ header.landing {
   }
 }
 #landing {
+  p a, p a:hover, p a:focus, p a:active, p a.active {
+    color: #0af; // symfony blue
+  }
   .icon {
     background-repeat: no-repeat;
     background-size: contain;
@@ -1247,5 +1250,34 @@ header.landing {
     cite {
       float: right;
     }
+  }
+}
+#contact.personal {
+  background-color: #f8f8f8;
+  .member-card {
+    .desc {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+  }
+  .floating-label-form-group {
+    border-bottom: 1px solid #ddd;
+  }
+  .btn {
+    background-color: #0af !important;
+    border-color: #0af !important;
+  }
+  .floating-label-form-group-with-focus label {
+    color: #0af !important;
+  }
+}
+footer.landing {
+  .footer-above {
+    background-color: #444;
+  }
+  .footer-below {
+    background-color: #222;
   }
 }
