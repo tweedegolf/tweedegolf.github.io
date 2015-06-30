@@ -1222,6 +1222,12 @@ header.landing {
       font-size: 16px;
       line-height: 28px;
     }
+    .more {
+      color: #0af; // symfony blue
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+    }
   }
   .testimonial {
     @include clearfix;
