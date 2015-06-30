@@ -1129,3 +1129,17 @@ footer {
         text-style: justify;
     }
 }
+
+#landing {
+  .main {
+    h1, h2, h3 {
+      font-size: 28px !important;
+      text-transform: none !important;
+    }
+  }
+  .adv {
+    h1, h2, h3 {
+      text-transform: none !important;
+    }
+  }
+}

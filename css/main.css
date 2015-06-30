@@ -7659,4 +7659,10 @@ footer {
     text-align: left;
     text-style: justify; }
 
+#landing .main h1, #landing .main h2, #landing .main h3 {
+  font-size: 28px !important;
+  text-transform: none !important; }
+#landing .adv h1, #landing .adv h2, #landing .adv h3 {
+  text-transform: none !important; }
+
 /*# sourceMappingURL=main.css.map */

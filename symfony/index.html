@@ -3,30 +3,45 @@ layout: landing
 title: Symfony Development
 description: Lorem ipsum etc etc.
 permalink: symfony/
+contact: marlon
 ---
 
-<section id="static">
+<section id="landing symfony">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
 
-        {% capture profile %}{% include /symfony/main.md %}{% endcapture %}
-		{{ profile|markdownify }}
+        <div class="main">
+          <img class="icon" src="http://placehold.it/84x84" />
+          {% capture main %}{% include /symfony/main.md %}{% endcapture %}
+          {{ main|markdownify }}
+        </div>
 
-        {% capture profile %}{% include /symfony/advantage_1.md %}{% endcapture %}
-		{{ profile|markdownify }}
+        <div class="highlight">
+          {% capture highlight %}{% include /symfony/highlight.md %}{% endcapture %}
+          {{ highlight|markdownify }}
+        </div>
 
-        {% capture profile %}{% include /symfony/advantage_2.md %}{% endcapture %}
-		{{ profile|markdownify }}
+      </div>
+      <div class="col-md-6">
 
-        {% capture profile %}{% include /symfony/advantage_3.md %}{% endcapture %}
-		{{ profile|markdownify }}
+        <div class="adv">
+          <img class="icon" src="http://placehold.it/56x56" />
+          {% capture adv1 %}{% include /symfony/advantage_1.md %}{% endcapture %}
+    		  {{ adv1|markdownify }}
+        </div>
 
-		<br>
-		
-		*Onderaan pagina:*<br>
-        {% capture profile %}{% include /symfony/bottom.md %}{% endcapture %}
-		{{ profile|markdownify }}
+        <div class="adv">
+          <img class="icon" src="http://placehold.it/56x56" />
+          {% capture adv2 %}{% include /symfony/advantage_2.md %}{% endcapture %}
+    		  {{ adv2|markdownify }}
+        </div>
+
+        <div class="adv">
+          <img class="icon" src="http://placehold.it/56x56" />
+          {% capture adv3 %}{% include /symfony/advantage_3.md %}{% endcapture %}
+          {{ adv3|markdownify }}
+        </div>
 
       </div>
     </div>
