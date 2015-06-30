@@ -1171,6 +1171,8 @@ header.landing {
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
+    height: 56px;
+    width: 56px;
     &.calendar {
       background-image: url("/img/icon-calendar.png");
     }
@@ -1182,6 +1184,10 @@ header.landing {
     }
     &.love {
       background-image: url("/img/icon-love.png");
+    }
+    &.quote {
+      background-image: url("/img/icon-quote.png");
+      opacity: 0.1;
     }
   }
   .main {
@@ -1202,10 +1208,6 @@ header.landing {
   }
   .adv {
     margin-top: 50px;
-    .icon {
-      height: 56px;
-      width: 56px;
-    }
     &:nth-of-type(1) { // first advantage
       margin-top: 100px;
     }
