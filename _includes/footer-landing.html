@@ -8,7 +8,7 @@
           {% if member.name == page.contact %}
             <div class="member-card">
               <a class="member-image {{ member.name }}"></a>
-              <span class="name">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over Symfony development bij tweede golf. Rechtstreeks mailen kan ook: {{ member.email }}.</span>
+              <span class="name">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</span>
             </div>
           {% endif %}
         {% endfor %}
