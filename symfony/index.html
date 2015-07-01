@@ -29,20 +29,26 @@ about: Symfony development bij tweede golf
 
         <div class="adv">
           <span class="icon award"></span>
-          {% capture adv1 %}{% include /symfony/advantage_1.md %}{% endcapture %}
-    		  {{ adv1|markdownify }}
+          <div class="truncate-2-lines">
+            {% capture adv1 %}{% include /symfony/advantage_1.md %}{% endcapture %}
+      		  {{ adv1|markdownify }}
+          </div>
         </div>
 
         <div class="adv">
           <span class="icon gear"></span>
-          {% capture adv2 %}{% include /symfony/advantage_2.md %}{% endcapture %}
-    		  {{ adv2|markdownify }}
+          <div class="truncate-2-lines">
+            {% capture adv2 %}{% include /symfony/advantage_2.md %}{% endcapture %}
+      		  {{ adv2|markdownify }}
+          </div>
         </div>
 
         <div class="adv">
           <span class="icon love"></span>
-          {% capture adv3 %}{% include /symfony/advantage_3.md %}{% endcapture %}
-          {{ adv3|markdownify }}
+          <div class="truncate-2-lines">
+            {% capture adv3 %}{% include /symfony/advantage_3.md %}{% endcapture %}
+            {{ adv3|markdownify }}
+          </div>
         </div>
 
       </div>

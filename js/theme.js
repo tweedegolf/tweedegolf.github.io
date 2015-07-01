@@ -113,30 +113,29 @@ $('.member-image').click(function(e){
     e.preventDefault();
 });
 
+/**
+ * Truncate a text block
+ */
 var truncate = function(target) {
 
   $(target).each(function() {
 
-    var $p = $(this);
-    var text = $p.text();
-    var truncatedP = text.substring(0, 140) + '...';
-
-    // store original text
-    $p.data('fulltext', text);
-
-    // after storing the full text, fill with our truncated text
-    $p.text(truncatedP);
-
-    // create html link and insert after paragraph
-    $('<span/>').attr({href: '#','class': 'more'}).text('Meer ↓').
-    insertAfter($p);
-
-    // when the directly following 'more' link is clicked
-    $p.next().click(function() {
-      $p.text($p.data('fulltext')); // insert original text
-      $(this).hide(); // hide 'more' link
+    var className = 'truncate-2-lines'; 
+    var block = $(this);
+    block.addClass(className);
+   
+    // create link and bind handler
+    var link = $('<span/>').attr({href: '#','class': 'more'}).text('Meer ↓');
+    link.click(function() {   
+        console.log('click', $(this).prev('.' + className).length);     
+        $(this).prev('.' + className).removeClass(className);
+        $(this).hide();
+        return false;
     });
+    
+    // insert link in truncated block
+    block.after(link);
   });
 };
 
-truncate('.adv p');
+truncate('.adv div');
