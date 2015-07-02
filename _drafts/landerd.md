@@ -1,7 +1,7 @@
 ---
 title: Kavels in Landerd
 thumb: landerd.jpg
-date: 2014
+#date: 2014
 client: Gemeente Landerd
 partner: LaVerbe
 partnerurl: http://laverbe.nl
