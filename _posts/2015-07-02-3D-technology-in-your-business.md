@@ -26,19 +26,19 @@ The newest iteration of the tool adds VR as an extra 3D view mode; with VR you c
 Note that the edit/drawing mode of our tool is always 2D; you can not (yet) edit or draw in 3D.
 
 
-** Interactivity **
+#### Interactivity
 
 Both the 2D view and the 3D view of a drawing can be made interactive. This is very useful, especially when you are designing technical objects like the aforementioned examples assembly line and electric circuit. To elaborate on the latter example: you can define and add logic to the objects/elements that are available to build your circuit. Then you can check your wiring by virtually powering your circuit; this means that a current will be simulated, and the logic of the elements will be evaluated as soon as the current reaches an element.
 
 
-** Test cases **
+#### Test cases
 
 Besides implementations for our customers, we have made several test cases for demoing purposes. In our last test case we have combined all features described above. With the [burglar alarm tool](http://tweedegolf.nl/3d-framework/#visualisatie-en-gamification) you can design the floor-plan of a building and add several burglar detection devices to it. Subsequently you can add wiring between the detection devices to connect them for instance to a monitoring system.
 
 After you are done designing your alarm setup, you can switch to 3D mode and move the 3D representation of a burglar around in the scene to check if there are still spots in the building that are not covered by a detection device. And with a VR headset you can actually step in the shoes of a burglar and try to break into your own building.
 
 
-** Other use cases **
+#### Other use cases
 
 The use cases that our customers come up with continues to surprise us and inspires us to develop the tool in new directions. We are confident that our drawing tool can be used in a wide range of applications, and that it can be easily extended and adapted to meet your requirements.
 
