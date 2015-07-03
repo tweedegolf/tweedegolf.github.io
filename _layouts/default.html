@@ -46,9 +46,10 @@
           $(this).attr('src', $(this).attr('src'));
         });
       }
-
       $(function() {
-        $("img.lazy").lazyload();
+        $("img.lazy").lazyload({
+          threshold : 10 // Fix for modal img loading
+        });
       });
     </script>
   </body>
