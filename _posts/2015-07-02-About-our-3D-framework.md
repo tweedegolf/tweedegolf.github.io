@@ -1,7 +1,7 @@
 ---
 layout: post
-thumb:
-leadimg:
+thumb: pointcloud-leadimg.jpg
+leadimg: pointcloud-leadimg.jpg
 tags: 3D, VR, first person, 3D visualisation
 author: Daniel
 description: About our 3D framework
