@@ -594,6 +594,9 @@ section#team {
   height: 140px;
 
   a.member-image {
+    background-image: url('../img/team.jpg');
+    background-size: 480px 320px;
+    background-position: 0px 0px;
     display: block;
     float: left;
     height: 80px;
@@ -601,44 +604,74 @@ section#team {
     margin-top: 20px;
     margin-right: 14px;
     margin-bottom: 20px;
-    background-size: 80px 160px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     overflow: hidden;
 
     &:hover{
-      background-position: bottom;
+      background-position: 0px -80px;
     }
+
     &.Bram{
-      background-image: url('../img/team/bram.jpg');
+      background-position: -80px 0;
+      &:hover{
+        background-position: -80px -80px;
+      }
     }
     &.Daniel{
-      background-image: url('../img/team/daniel.jpg');
+      background-position: -160px 0;
+      &:hover{
+        background-position: -160px -80px;
+      }
     }
     &.Daniella{
-      background-image: url('../img/team/daniella.jpg');
+      background-position: -240px 0;
+      &:hover{
+        background-position: -240px -80px;
+      }
     }
     &.Dennis{
-      background-image: url('../img/team/dennis.jpg');
+      background-position: -320px 0;
+      &:hover{
+        background-position: -320px -80px;
+      }
     }
     &.Erik{
-      background-image: url('../img/team/erik.jpg');
+      background-position: -400px 0;
+      &:hover{
+        background-position: -400px -80px;
+      }
     }
     &.Hugo{
-      background-image: url('../img/team/hugo.jpg');
+      background-position: 0px -160px;
+      &:hover{
+        background-position: 0px -240px;
+      }
     }
     &.Marlon{
-      background-image: url('../img/team/marlon.jpg');
+      background-position: -80px -160px;
+      &:hover{
+        background-position: -80px -240px;
+      }
     }
     &.Robert{
-      background-image: url('../img/team/robert.jpg');
+      background-position: -160px -160px;
+      &:hover{
+        background-position: -160px -240px;
+      }
     }
     &.RubenN{
-      background-image: url('../img/team/rubenn.jpg');
+      background-position: -240px -160px;
+      &:hover{
+        background-position: -240px -240px;
+      }
     }
     &.RubenT{
-      background-image: url('../img/team/rubent.jpg');
+      background-position: -320px -160px;
+      &:hover{
+        background-position: -240px -240px;
+      }
     }
   }
 
