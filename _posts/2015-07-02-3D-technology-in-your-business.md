@@ -13,6 +13,8 @@ Our [3D framework](http://tweedegolf.nl/3d-framework/) is a very versatile multi
 
 The type of application that can be build on top of our 3D framework ranges from a 3D configuration tool for configuring or creating an object in 3D space by using predefined parts, to a drawing tool that allows you to draw anything you can imagine and render that anything to 3D or materialize it with a 3D printer. The framework can also be used for complex data visualization.
 
+> example of a 3D configuration tool
+
 ![Nike 3D configurator](/img/blog/nike-3D-configurator-small.jpg)
 
 
@@ -20,31 +22,38 @@ The type of application that can be build on top of our 3D framework ranges from
 
 The framework has a 2D mode and 3D mode. You can for instance draw an object in 2D mode and then view it from all angles in 3D mode. Or vice versa, draw a building in 3D mode and study the floor-plans in 2D mode.
 
-You can also import existing 3D artwork and export to several 3D formats. There are also importers available 3D data sets such as point clouds and heat maps.
+You can also import existing 3D artwork and export to several 3D formats. There are also importers available for 3D data sets such as point clouds and heat maps.
 
 The framework has been setup in a modular way and so far we can divide the framework into the following modules:
 
 - 2D drawing tool
 - 3D modules:
-  1. a serverside image generator that renders static images from the 3D scene
+  1. a serverside image generator that renders static images of the 3D scene
   2. live 3D scene that you can walk through in several modes (first person, bird view, automated camera path and more)
   3. same as 2. but you interact with the scene by using a virtual reality (VR) headset such as the Oculus Rift or Microsoft Hololens
   4. same as 2. but with added augmented reality (AR) layers
-  5. an interface to a 3D printer
+  5. interface to a 3D printer
 - importers:
   1. Collada
   2. glTF
   3. point cloud
 - serverside administration modules for registration and user profile management, including storage of content created by the user such as drawings
 
+> point cloud 3D rendering
+
 ![point cloud](/img/blog/pointcloud.jpg)
+
+> heat map
+
 ![heat map](/img/blog/heatmap.png)
 
 
 
 #### Interactivity
 
-Besides the regular navigation interaction, each object in the framework can be made interactive. This is very useful, especially when you are designing technical objects like an assembly line or an electric circuit. To elaborate on the latter example: you can define and add logic to the objects/elements that are available to build your circuit. Then you can check your wiring by virtually powering your circuit; this means that a current will be simulated, and the logic of the elements will be evaluated as soon as the current reaches an element.
+Besides the regular navigation interaction, each object in the framework can be made interactive. This is very useful, especially when you are designing technical objects like an assembly line or an electric circuit. To elaborate on the latter example: you can define and add logic to the objects/elements that are available to build your circuit.
+
+Then you can check your wiring by virtually powering your circuit; this means that a current will be simulated, and the logic of the elements will be evaluated as soon as the current reaches an element.
 
 
 #### Test cases
