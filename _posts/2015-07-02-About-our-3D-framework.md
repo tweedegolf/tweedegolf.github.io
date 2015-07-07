@@ -4,7 +4,7 @@ thumb:
 leadimg:
 tags: 3D, VR, first person, 3D visualisation
 author: Daniel
-description: How to use 3D technology in your business
+description: About our 3D framework
 nerd: 1
 ---
 
