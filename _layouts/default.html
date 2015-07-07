@@ -33,20 +33,24 @@
       {{ content }}
 
     </div>
-  <script>
-    function stopVideos() {
-      $('iframe').each(function(){
-        // Reload iframe, thus stopping the video
-        $(this).attr('src', $(this).attr('src'));
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/sha1.min.js"></script>
+    <script src="/js/jquery.lazyload.js"></script>
+    <script src="/js/theme.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5155ba434aa40c17" async="async"></script>
+    <script>
+      function stopVideos() {
+        $('iframe').each(function(){
+          // Reload iframe, thus stopping the video
+          $(this).attr('src', $(this).attr('src'));
+        });
+      }
+      $(function() {
+        $("img.lazy").lazyload({
+          threshold : 500 // Fix for modal img loading
+        });
       });
-    }
-  </script>
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/sha1.min.js"></script>
-  <script src="/js/theme.js" charset="utf-8"></script>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5155ba434aa40c17" async="async"></script>
-
-
+    </script>
   </body>
 </html>
