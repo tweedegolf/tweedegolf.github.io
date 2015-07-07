@@ -13,7 +13,7 @@ Our [3D framework](http://tweedegolf.nl/3d-framework/) is a very versatile multi
 
 The type of application that can be build on top of our 3D framework ranges from a 3D configuration tool for configuring or creating an object in 3D space by using predefined parts, to a drawing tool that allows you to draw anything you can imagine and render that anything to 3D or materialize it with a 3D printer. The framework can also be used for complex data visualization.
 
-![Nike 3D configurator](../img/blog/nike-3D-configurator-small.jpg)
+![Nike 3D configurator](/img/blog/nike-3D-configurator-small.jpg)
 
 
 #### Features
@@ -37,8 +37,8 @@ The framework has been setup in a modular way and so far we can divide the frame
   3. point cloud
 - serverside administration modules for registration and user profile management, including storage of content created by the user such as drawings
 
-![point cloud](../img/blog/pointcloud.jpg)
-![heat map](../img/blog/heatmap.png)
+![point cloud](/img/blog/pointcloud.jpg)
+![heat map](/img/blog/heatmap.png)
 
 
 
@@ -51,7 +51,7 @@ Besides the regular navigation interaction, each object in the framework can be 
 
 Besides implementations for our customers, we have made several test cases for demoing purposes. In our last test case we have combined almost all features described above. With the [burglar alarm tool](http://tweedegolf.nl/3d-framework/#visualisatie-en-gamification) you can design the floor-plan of a building and add several burglar detection devices to it. Subsequently you can add wiring between the detection devices to connect them for instance to a monitoring system.
 
-![burgler alarm](../img/blog/burgler-alarm-small.jpg)
+![burgler alarm](/img/blog/burgler-alarm-small.jpg)
 
 After you are done designing your alarm setup, you can switch to 3D mode and move the 3D representation of a burglar around in the scene to check if there are still spots in the building that are not covered by a detection device. And with a VR headset you can actually step in the shoes of a burglar and try to break into your own building.
 
