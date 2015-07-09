@@ -8,9 +8,15 @@ Public website of tweede golf
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
 
     bower install
+    bundle install
     bundle exec jekyll serve --watch
 
+Note: if you want to be able to see drafts, instead of the last command run this one: 
+
+    bundle exec jekyll serve --watch --draft
+
 The website is served on `http://localhost:4000`.
+
 
 ## Updates
 

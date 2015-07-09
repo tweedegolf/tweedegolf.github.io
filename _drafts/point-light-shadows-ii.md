@@ -37,11 +37,13 @@ The last approach was the dual-paraboloid shadow mapping. This approach would ta
 
 In conclusion the best way to make point light shadows work without going over the texture-sampler limit and without spending too much time is the large texture with viewports approach. This means we have to duplicate some code in the shader and implement 2 loops to do shadow calculation. One calculating shadows for all the spot lights and one for all the point lights.
 
-After implementing this strategy we ran into another problem. This time the number of varying variables ([GLSL standard] page 31) in the shaders exceeded the WegGL implementation register limit. This limit in Chrome is fixed at 16. This meant we could only have one point light with shadows, actually less than when we used the naive implementation. In Firefox the limit is higher which results in it being hardware implementation defined. So it works smoothly with 2 point lights, but the performance starts to suffer when enabling 3 or more point lights.
+After implementing this strategy we ran into another problem. This time the number of varying variables ([GLSL standard] page 31) in the shaders exceeded the WegGL implementation register limit. This limit in Chrome is fixed at 16. This meant we could only have one point light with shadows, actually less than when we used the naive implementation. In Firefox the limit is higher which results in it being hardware implementation defined. So on my hardware it works smoothly with 2 point lights, but the performance starts to suffer when enabling 3 or more point lights.
 
 This is because the hardware implementation of the fragment shaders only has a couple of "fast registers". These are actually separate hardware implementations of real registers which allow fast access to the data stored within. If you go over this hardware limit, values normally stored in these "fast registers" will be stored in "slow registers". These are implemented by storing them in Video RAM. Which is much slower relative to the "fast registers".
 
 So in Firefox at least the demo can be run in real-time with a couple of point lights IF your hardware has a couple of extra "fast registers". After that you can still use this implementation to generate screenshots of scenes, which can still give you a nice impression of the shadows being cast in a garden, something we wanted to use this application for. But of course it would be very nice to have a real-time solution, unfortunately this requires at least some desktop hardware to achieve.
+
+&lt;movie to be included and uploaded to vimeo https://drive.google.com/open?id=0B0Dw6JAvH1c9aWM3UXp1Z0dicGs &gt;
 
 [GLSL standard]: https://www.khronos.org/files/opengles_shading_language.pdf#page=37
 [devmaster.net]: http://devmaster.net/p/3002/shader-effects-shadow-mapping
