@@ -9,11 +9,11 @@ author: RubenN
 nerd: 2
 ---
 
-At tweede golf, we take innovation seriously: we take the time to research new technologies and subsequently challenge ourselves to try out these new techniques to discover new applications. Sometimes we like to take "try out" quite literally: build something first, ask questions later. 
+At tweede golf, we value innovation: we take the time to research new technologies and subsequently challenge ourselves to try out these new techniques in order to discover new applications. We also like to learn by doing: build something first, ask questions later. 
 
 Following that philosophy, we recently held a programming contest. We gave ourselves two days to create new applications on top of our existing [3D framework]. One of the teams created an app they dubbed "Skauty". It uses a 3D representation to visualize datasets. 
 
-Now it is time to look back: what are the benefits of 3D data visualization? Read on and find out. 
+Now is the time to look back: what are the benefits of 3D data visualization? Read on and find out. 
 
 ![The Skauty prototype](/img/blog/skauti.png){:.with-caption}
 *The Skauty prototype*
@@ -67,7 +67,7 @@ or for rent. We also built a quick animation that gives the user access to more 
 *3D data visualization (dubbed "Skauti")*
 
 Above you can see what typical user interaction in this
-prototype is like. Given the fact it only took us the time span of a two-day programming contest to make this prototype, we can only imagine what can be achieved using this technique. If you see an application that is useful to you, do not hesistate to contact us.
+prototype is like. Given the fact it only took us the time span of a two-day programming contest to make this prototype, we can only imagine what can be achieved using this technique. If you see an application that is useful to you, do not hesitate to contact us.
 
 [3D framework]: /3d-framework/
 [point cloud visualizations]: /#portfolio-planviewer-3d
