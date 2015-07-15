@@ -1,1 +1,1 @@
-Tweede golf is een webbureau met een sterke focus op techniek; we bouwen vernieuwende webapplicaties en web apps. We zijn altijd op zoek naar technisch uitdagende projecten. Plannen of ideeën? Neem contact met ons op.
+Tweede golf is een webbureau met een sterke focus op techniek; we bouwen *state of the art* web apps en webapplicaties met het open source framework [Symfony](/symfony). We zijn altijd op zoek naar technisch uitdagende projecten. Plannen of ideeën? Neem contact met ons op.

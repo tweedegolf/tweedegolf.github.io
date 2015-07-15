@@ -6871,6 +6871,9 @@ article .with-caption {
     font-size: 13px;
     margin-bottom: 36px;
     text-align: center; }
+article .footnotes {
+  font-size: 13px;
+  font-style: italic; }
 
 #comments {
   padding-top: 60px; }
@@ -7316,7 +7319,7 @@ section#team {
     .member-card a.member-image.RubenT {
       background-position: -320px -160px; }
       .member-card a.member-image.RubenT:hover {
-        background-position: -240px -240px; }
+        background-position: -320px -240px; }
   .member-card span {
     display: block; }
   .member-card .name {
