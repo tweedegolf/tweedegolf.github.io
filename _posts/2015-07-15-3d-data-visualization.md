@@ -3,8 +3,8 @@ layout: post
 thumb: skauti.jpg
 leadimg: skauti.png
 tags: Threejs, WebGL, 3D, Data visualization
-description: 3D Data Visualization
-title: 3D Data Visualization
+description: 3D data visualization for geospatial analysis using WebGL and Three.js
+title: 3D data visualization
 author: RubenN
 nerd: 2
 ---
