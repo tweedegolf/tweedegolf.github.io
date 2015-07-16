@@ -11,12 +11,12 @@ nerd: 2
 
 At tweede golf, we value innovation: we take the time to research new technologies and subsequently challenge ourselves to try out these new techniques in order to discover new applications. We also like to learn by doing: build something first, ask questions later. 
 
-Following that philosophy, we recently held a programming contest. We gave ourselves two days to create new applications on top of our existing [3D framework]. One of the teams created an app they dubbed "Skauty". It uses a 3D representation to visualize datasets. 
+Following that philosophy, we recently held a programming contest. We gave ourselves two days to create new applications on top of our existing [3D framework]. One of the teams created an app they dubbed "Skauti". It uses a 3D representation to visualize datasets. 
 
 Now is the time to look back: what are the benefits of 3D data visualization? Read on and find out. 
 
-![The Skauty prototype](/img/blog/skauti.png){:.with-caption}
-*The Skauty prototype*
+![The Skauti prototype](/img/blog/skauti.png){:.with-caption}
+*The Skauti prototype*
 
 We all like to base our decisions on data. However, just having a data sheet containing a lot of numbers will often not help you much, especially when the data set is very large. Graphs and visualizations are typcially used to obtain a better understanding of data. When it comes to presenting geospatial data (i.e. data which is dependent on some location) a 2D map is often the preferred solution.
 
@@ -52,7 +52,7 @@ instead of the pixel based tile maps often used for 2D cartography on the web. N
 becomes easier to achieve and scrolling and zooming can be made into a more
 smooth experience for the user.
 
-### The Skauty prototype 
+### The Skauti prototype 
 
 We wanted to make the most of these advantages. We set ourselves the challenge to create a small prototype of a 3D map. In this prototype we took our own city, Nijmegen, and we used building data provided by the Dutch government, specifically
 the [BAG]{:target="_blank"} and [AHN2]{:target="_blank"} datasets, to determine
