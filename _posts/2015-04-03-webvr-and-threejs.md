@@ -106,7 +106,7 @@ If we want to rotate we world, we rotate the pivot. If we want to move forward i
 
 <iframe src="https://player.vimeo.com/video/127927690" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can try it yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot. The source code is available at [GitHub](https://github.com/abudaan/vr-test4).
+You can try it yourself with the [live version](http://data.tweedegolf.nl/vr-test4/); the arrow keys up and down control the translation of the world and the arrow keys left and right the rotation of the pivot. The source code is available at [GitHub](https://github.com/tweedegolf/vr-test4).
 
 <!--
 **Threejs specific topics**
