@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Your GardenAssitant"
+title: "Your GardenAssistant"
 date: "2015-07-31"
 layout: post
-thumb: 
-leadimg:
-tags:
+thumb: yga-beregening2-5.png
+leadimg: yga-beregening2-5.png
+tags: intelligent advice, knowledge based systems, Your GardenAssistant, heatmap, moisturgraph
 author: Bram
 nerd: 2
 ---
@@ -16,7 +16,7 @@ In 2014 we won an innovation grant from the province of Gelderland based on our 
 
 [Image / video: Teken je tuin]
 
-Together with Draw Your Garden, we proposed to develop a number of prototypes aimed at assisting the users on serveral areas, which hitherto required much expert-knowledge. Appropriatly, we named this project 'Your Garden Assistant'. 
+Together with Draw Your Garden, we proposed to develop a number of prototypes aimed at assisting the users on serveral areas, which hitherto required much expert-knowledge. Appropriatly, we named this project 'Your GardenAssistant'. 
 
 For the project we focused on three areas of garden design:
 
