@@ -43,7 +43,7 @@ This is because the hardware implementation of the fragment shaders only has a c
 
 So in Firefox at least the demo can be run in real-time with a couple of point lights IF your hardware has a couple of extra "fast registers". After that you can still use this implementation to generate screenshots of scenes, which can still give you a nice impression of the shadows being cast in a garden, something we wanted to use this application for. But of course it would be very nice to have a real-time solution, unfortunately this requires at least some desktop hardware to achieve.
 
-&lt;movie to be included and uploaded to vimeo https://drive.google.com/open?id=0B0Dw6JAvH1c9aWM3UXp1Z0dicGs &gt;
+<iframe src="https://player.vimeo.com/video/133734871" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 [GLSL standard]: https://www.khronos.org/files/opengles_shading_language.pdf#page=37
 [devmaster.net]: http://devmaster.net/p/3002/shader-effects-shadow-mapping
