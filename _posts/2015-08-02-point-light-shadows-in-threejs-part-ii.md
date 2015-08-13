@@ -1,10 +1,11 @@
 ---
 layout: post
+title: "Point Light Shadows In Threejs, part II"
+date: "2015-08-02"
+description: Follow up post on point light shadows in Three.js.
 thumb: light2-shader.png
 leadimg: light2-shader.png
 tags: three.js, point light, shadow casting, WebGL
-description: Follow up post on point light shadows in Three.js.
-title: "Point light shadows II"
 author: Dennis
 nerd: 4
 ---
