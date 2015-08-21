@@ -31,7 +31,7 @@ Both Firefox' native canvas debugger and Chrome's WebGL debugger, called the [We
 ![cube depth map](/img/blog/light2-shadow-cube.png){:.thumbnail}{:.with-caption}
 *Image taken from [devmaster.net] explaining shadow mapping using cube maps.*
 
-The last approach was the dual-paraboloid shadow mapping. This approach would take two textures per point light. (The previous blogpost talked about one, but this proved to be incorrect.) This would make it less ideal than the other two approaches. On top of that the implementation is rather complex. If we had complete control over the OpenGL code this could be a solution but figuring out where to adapt the three.js code and the shaders turns out to be a big hassle. As it would also involves a transformation to paraboloid space it would be really hard to debug. All this would be required for a lesser effect than the other - hopefully more simple - methods, like the larger texture with viewports.
+The last approach was the dual-paraboloid shadow git agit mapping. This approach would take two textures per point light. (The previous blogpost talked about one, but this proved to be incorrect.) This would make it less ideal than the other two approaches. On top of that the implementation is rather complex. If we had complete control over the OpenGL code this could be a solution but figuring out where to adapt the three.js code and the shaders turns out to be a big hassle. As it would also involves a transformation to paraboloid space it would be really hard to debug. All this would be required for a lesser effect than the other - hopefully more simple - methods, like the larger texture with viewports.
 
 ![paraboloid transformation](/img/blog/light2-paraboloid-transformation.png){:.thumbnail}{:.with-caption}*Image taken from [gamedevelop.eu] explaining the paraboloid transformation.*
 
@@ -43,7 +43,7 @@ This is because the hardware implementation of the fragment shaders only has a c
 
 So in Firefox at least the demo can be run in real-time with a couple of point lights IF your hardware has a couple of extra "fast registers". After that you can still use this implementation to generate screenshots of scenes, which can still give you a nice impression of the shadows being cast in a garden, something we wanted to use this application for. But of course it would be very nice to have a real-time solution, unfortunately this requires at least some desktop hardware to achieve.
 
-&lt;movie to be included and uploaded to vimeo https://drive.google.com/open?id=0B0Dw6JAvH1c9aWM3UXp1Z0dicGs &gt;
+<iframe src="https://player.vimeo.com/video/133734871" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 [GLSL standard]: https://www.khronos.org/files/opengles_shading_language.pdf#page=37
 [devmaster.net]: http://devmaster.net/p/3002/shader-effects-shadow-mapping

@@ -1359,3 +1359,189 @@ div.truncate-2-lines {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+// new fancy Process page
+// new styling because everything's a mess and awkward to work with
+// time for some refactoring (we should probably get rid of the old theme altogether)
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,100italic,100,700,700italic);
+
+.master.process {
+  p {
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    line-height: 1.7em;
+    strong {
+      font-weight: 500;
+    }
+  }
+  // navbar overrides
+  .navbar-inverse {
+    background-color: transparent;
+  }
+  .navbar-fixed-top .navbar-brand img {
+    opacity: .5;
+  }
+  .navbar-shrink {
+    background-color: #222;
+    .navbar-brand {
+      opacity: initial;
+    }
+  }
+  header {
+    .icon-process {
+      background-image: url("/img/icon-process.png");
+      background-repeat: no-repeat;
+      display: block;
+      height: 86px;
+      margin: 0 auto;
+      width: 96px;
+    }
+    h1 {
+      font-size: 48px;
+      text-transform: none;
+    }
+    p {
+      font-size: 18px;
+    }
+    &::before { // colourised overlay
+      background-color: rgba(31,18,10,.85);
+    }
+  }
+  #intro {
+    background-color: #F6F4EF;
+    padding: 80px 0;
+    p {
+      color: #554C45;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  #examples {
+    background-color: #E7E7E7;
+    padding: 60px 0 60px;
+    span[class^="icon-"], span[class*="icon-"] {
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    .icon-draw {
+      background-image: url("/img/icon-appdraw.png");
+      height: 95px;
+      width: 95px;
+    }
+    .icon-flow {
+      background-image: url("/img/icon-appflow.png");
+      height: 106px;
+      width: 84px;
+    }
+    .icon-chart {
+      background-image: url("/img/icon-appchart.png");
+      height: 108px;
+      width: 91px;
+    }
+    p {
+      color: #2D477F;
+      text-align: center;
+      a {
+        background-color: rgba(45,71,127,.1);
+        border-bottom: 1px dotted #2D477F;
+        color: #2D477F;
+        &:hover {
+          background-color: rgba(45,71,127,.2);
+          text-decoration: none;
+        }
+        .fa {
+          font-size: 12px;
+        }
+      }
+    }
+    .type {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 12px 0;
+      text-transform: uppercase;
+    }
+    .example {
+      display: inline-block;
+      font-style: italic;
+      float: right;
+    }
+  }
+  #explanatory {
+    background-color: #233864;
+    padding: 80px 0;
+    p {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  #phases {
+    background-color: #2D477F;
+    padding: 0 0 60px 0;
+    .carousel {
+      img {
+        width: 47%;
+      }
+      .carousel-caption {
+        left: 53%;
+        right: 15%;
+        text-align: left;
+        top: 20%;
+        h3 {
+          font-size: 18px;
+        }
+      }
+      .carousel-control {
+        background-image: none;
+        .fa {
+          font-size: 50px;
+          margin-top: -25px;
+          position: absolute;
+          top: 50%;
+        }
+        &.left {
+          left: -25px;
+          .fa {
+            left: 0;
+          }
+        }
+        &.right {
+          right: -25px;
+          .fa {
+            right: 0;
+          }
+        }
+      }
+      .carousel-indicators {
+        bottom: -48px;
+      }
+    }
+  }
+  #info {
+    background-color: #F6F4EF;
+    color: #554C45;
+    padding: 100px 0;
+    .main {
+      margin-right: 40px;
+      h2 {
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 36px;
+        text-transform: none;
+      }
+      p {
+        font-size: 20px;
+        text-transform: none;
+      }
+    }
+    .extra {
+      margin-top: 40px;
+      &:nth-of-type(1) { // first "extra" item
+        margin-top: 160px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
