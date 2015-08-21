@@ -1424,12 +1424,12 @@ div.truncate-2-lines {
     }
     .icon-draw {
       background-image: url("/img/icon-appdraw.png");
-      height: 95px;
+      height: 108px;
       width: 95px;
     }
     .icon-flow {
       background-image: url("/img/icon-appflow.png");
-      height: 106px;
+      height: 108px;
       width: 84px;
     }
     .icon-chart {
@@ -1466,13 +1466,18 @@ div.truncate-2-lines {
       float: right;
     }
   }
-  #explanatory {
+  .explanatory {    
     background-color: #233864;
     padding: 80px 0;
     p {
       color: #fff;
       font-size: 20px;
       text-align: center;
+    }
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
     }
   }
   #phases {
@@ -1517,7 +1522,15 @@ div.truncate-2-lines {
       }
     }
   }
-  #info {
+  .info {
+    .row.title {
+       margin-bottom: 25px; 
+    }
+
+    .row:not(.title) {
+       margin-bottom: 70px; 
+    }
+
     background-color: #F6F4EF;
     color: #554C45;
     padding: 100px 0;
@@ -1535,10 +1548,10 @@ div.truncate-2-lines {
       }
     }
     .extra {
-      margin-top: 40px;
-      &:nth-of-type(1) { // first "extra" item
+      /*margin-top: 40px;*/
+/*      &:nth-of-type(1) { // first "extra" item
         margin-top: 160px;
-      }
+      }*/
       p {
         font-size: 16px;
       }
