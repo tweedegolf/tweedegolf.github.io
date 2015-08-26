@@ -1,6 +1,6 @@
 ---
 layout: default
-title: tweede golf - Realistische ontwikkelen
+title: tweede golf - Serious web development
 description: tweede golf ontwikkelt web apps en doorloopt daarbij een solide development proces.
 permalink: proces/
 contact: Erik
@@ -17,9 +17,10 @@ about: ons development proces
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           <div class="intro-desc">
             <span class="icon-process"></span>
-            <h1>Realistisch ontwikkelen</h1>
+            <h1>Serious web development</h1>
             <hr class="separator">
-              <p>Een solide development proces is essentieel om tot een goed eindproduct te komen.</p>
+              {% capture teaser %}{% include /proces/teaser.md %}{% endcapture %}
+              {{ teaser|markdownify }}              
           </div>
         </div>
       </div>
@@ -30,7 +31,8 @@ about: ons development proces
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <p>Ieder project is anders, maar het doel is steeds hetzelfde: <strong>een robuust eindproduct afleveren dat aan alle verwachtingen van de eindgebruikers voldoet</strong>. Om dit doel te bereiken doorlopen we een bewezen developmentproces. Dit proces bevat alle stappen tussen de eerste kennismaking en <i>discovery</i> tot en met de uiteindelijke oplevering en nazorg.</p>
+          {% capture intro %}{% include /proces/intro.md %}{% endcapture %}
+          {{ intro|markdownify }} 
         </div>
       </div>
     </div>
@@ -44,11 +46,8 @@ about: ons development proces
             <span class="icon-draw"></span>
             <span class="type">Drawing apps</span>
             <span class="example">
-              Web apps die 2D- en 3D-tekentechnologien gebruiken zoals
-              <a href="#">
-                Tekenjetuin
-                  <span class="fa fa-chevron-right"></span>
-              </a>
+              {% capture drawing_apps %}{% include /proces/drawing_apps.md %}{% endcapture %}
+              {{ drawing_apps|markdownify }} 
             </span>
           </p>
         </div>
@@ -57,11 +56,8 @@ about: ons development proces
             <span class="icon-flow"></span>
             <span class="type">Workflow apps</span>
             <span class="example">
-              Web apps waarin je bijvoorbeeld je volledige productbeheer doet, zoals
-              <a href="#">
-                Turas
-                  <span class="fa fa-chevron-right"></span>
-              </a>
+              {% capture workflow_apps %}{% include /proces/workflow_apps.md %}{% endcapture %}
+              {{ workflow_apps|markdownify }} 
             </span>
           </p>
         </div>
@@ -70,11 +66,8 @@ about: ons development proces
             <span class="icon-chart"></span>
             <span class="type">Visualisation apps</span>
             <span class="example">
-              Web apps die data tot leven brengen, zoals 
-              <a href="#">
-                Online Beleidsmonitor
-                  <span class="fa fa-chevron-right"></span>
-              </a>
+              {% capture visualisation_apps %}{% include /proces/visualisation_apps.md %}{% endcapture %}
+              {{ visualisation_apps|markdownify }} 
             </span>
           </p>
         </div>
@@ -86,7 +79,8 @@ about: ons development proces
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <p><strong>Het proces</strong> dat we doorlopen is een combinatie van de bekende best practices binnen softwaredevelopment en onze eigen jarenlange ervaring. Omdat geen enkele maatwerkopdracht hetzelfde is, verschilt de focus per project. Hierbij is ook de mate waarin de opdrachtgever zijn concept al heeft uitgewerkt een belangrijke factor. Idealiter zijn dit de fases die we doorlopen:</p>
+          {% capture proces %}{% include /proces/proces.md %}{% endcapture %}
+          {{ proces|markdownify }} 
         </div>
       </div>
     </div>
@@ -112,44 +106,36 @@ about: ons development proces
               <div class="item active">
                 <img src="http://placehold.it/500x500" alt="Fase: Kennismaking &amp; <i>Discovery</i>">
                 <div class="carousel-caption">
-                  <h3>1/5 Kennismaking &amp; <i>Discovery</i></h3>
-                  <p>Wie is de klant? Wat is het probleem dat moet worden opgelost? Wie zijn de toekomstige gebruikers? We stellen vragen en vragen door. Het is essentieel dat we jouw doelen goed kennen.</p>
-
-                  <p>Is de opdracht complex, dan volgt een <i>discovery fase</i>. Doel hiervan is kennisuitwisseling en het formuleren van een concreet plan. We organiseren gezamelijke workshops, of komen persoonlijk kijken naar wat er speelt.</p>
+                  {% capture step_1 %}{% include /proces/step_1.md %}{% endcapture %}
+                  {{ step_1|markdownify }} 
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Information &amp; interaction design">
                 <div class="carousel-caption">
-                  <h3>2/5 Information &amp; interaction design </h3>
-                  <p>Wat is de beste manier om de cruciale elementen uit het domein van het project in een datastructuur te vangen? Wat zijn belangrijke relaties? Welke eindgebruikers mogen straks bij welke data? Dit is information design.</p>
-
-                  <p>We denken in deze fase ook na over interaction design. Hoe zal app aanvoelen? En we stellen de randvoorwaarden voor het grafische design vast. Het liefst doen we dit d.m.v. <i> <a href="#">rapid prototyping</a></i></p>
+                  {% capture step_2 %}{% include /proces/step_2.md %}{% endcapture %}
+                  {{ step_2|markdownify }}    
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Korte development cycli">
                 <div class="carousel-caption">
-                  <h3>3/5 Korte development cycli</h3>
-                  <p>De daadwerkelijke implementatie gaat van start. We werken in korte cycli van 3 tot 4 weken (sprints) waarbij we tussentijds beta-versies opleveren. Die testen we met de opdrachtgever en waar nodig met potentiele eindgebruikers.</p>
-
-                  <p>De initiele requirements worden bijgesteld n.a.v de feedback die we verzamelen. Halverwege deze fase stellen we de datum vast voor de eerste release.</p>  
+                  {% capture step_3 %}{% include /proces/step_3.md %}{% endcapture %}
+                  {{ step_3|markdownify }} 
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Eerste release">
                 <div class="carousel-caption">
-                  <h3>4/5 Eerste release</h3> <p>Op het moment dat het product technisch “af” is en de opdrachtgever er klaar voor is, volgt de eerste release. De app gaat live en wordt voor het eerst door echte eindgebruikers gebruikt.</p>
-
-                  <p> In deze fase kijken we met name naar of de app gebruikt wordt op de manier zoals we verwachtten en of zich geen onverwachte problemen voordoen.</p>
+                  {% capture step_4 %}{% include /proces/step_4.md %}{% endcapture %}
+                  {{ step_4|markdownify }} 
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Continuous improvements">
                 <div class="carousel-caption">
-                  <h3>5/5 Continuous improvements</h3> <p>Goede software verandert, omdat door het opdoen van gebruikerservaring de eisen aan de software veranderen. We anticiperen hier zoveel mogelijk op, zodat we in deze fase makkelijk aanpassingen kunnen doen. </p>
-
-                  <p>We houden de software up-to-date en schaven features bij als daar aanleiding voor is.</p>
+                  {% capture step_5 %}{% include /proces/step_5.md %}{% endcapture %}
+                  {{ step_5|markdownify }} 
                 </div>
               </div>                               
             </div>
@@ -173,6 +159,7 @@ about: ons development proces
   <section class="info">
     <div class="container">
       <div class="row title">
+        <a id="minimal-viable-product"></a>
         <div class="col-md-12">
           <h2>Minimal viable product</h2>
         </div>
@@ -180,20 +167,31 @@ about: ons development proces
       <div class="row">
         <div class="col-sm-6">
           <div class="main" name="main">
-            <p>Een <strong>minimal viable product</strong> voldoet precies aan de eisen - en niet meer dan dat. En ook die eisen proberen we in eerste instantie zo eenvoudig mogelijk te houden. We zijn een groot voorstander van deze vorm van <i> lean development </i>.</p>
+            {% capture intro %}{% include /proces/mv-product/intro.md %}{% endcapture %}
+            {{ intro|markdownify }} 
           </div>
         </div>
         <div class="col-sm-6">
           <div class="extra">
-            <p>Wij geloven dat het beter is om <strong>snel een minimalistisch eindproduct</strong> te realiseren en dat “in het wild los te laten”, dan om direct een heel uitgebreid product te bouwen waarvan het onduidelijk is of bepaalde features ook echt gebruikt zullen worden.</p>
+            <h3>Lean softwaredevelopment</h3>
+            {% capture advantage_1 %}{% include /proces/mv-product/advantage_1.md %}{% endcapture %}
+            {{ advantage_1|markdownify }} 
           </div>
           <div class="extra">
-            <p>Onze aanpak resulteert in een zo kort mogelijke <strong>time to market</strong>, essentieel voor success op het web.</p>
+            <h3>Betere investeringsbeslissingen</h3>
+            {% capture advantage_2 %}{% include /proces/mv-product/advantage_2.md %}{% endcapture %}
+            {{ advantage_2|markdownify }} 
           </div>
+          <div class="extra">
+            <h3>Korte time to market</h3>
+            {% capture advantage_3 %}{% include /proces/mv-product/advantage_3.md %}{% endcapture %}
+            {{ advantage_3|markdownify }} 
+          </div>          
         </div>
       </div>
 
       <div class="row title">
+        <a id="rapid-prototyping"></a>
         <div class="col-md-12">
           <h2>Rapid prototyping</h2>
         </div>
@@ -201,18 +199,25 @@ about: ons development proces
       <div class="row">
         <div class="col-sm-6">
           <div class="main" name="main">
-            <p>We geloven in het snel ontwikkelen van kleine prototypes om de core-functionaliteit van een app in werking te zien - zogenaamde <strong>rapid prototyping</strong>. En we zijn er goed in. Uit ervaring weten we dat je vaak pas op het moment dat je iets echt voor je ziet, volledig kunt beoordelen of “het goed werkt” of niet.</p>
+            {% capture intro %}{% include /proces/rapid-prototyping/intro.md %}{% endcapture %}
+            {{ intro|markdownify }} 
           </div>
         </div>
         <div class="col-sm-6">
           <div class="extra">
-            <p>Rapid prototyping helpt bij het <strong>inschatting van risico's</strong>. Verwachten we bijvoorbeeld dat hardware performance een rol gaat spelen later in het project? Een helder beeld van de risico's voorkomst verrassingen.</p>
+            <h3>Beter risico's inschatten</h3>
+            {% capture advantage_1 %}{% include /proces/rapid-prototyping/advantage_1.md %}{% endcapture %}
+            {{ advantage_1|markdownify }} 
           </div>
           <div class="extra">
-            <p>Het hebben van een prototype <strong>vereenvoudigt de uitwisseling van ideen</strong> over het te bouwen eindproduct. Het wordt met een prototype sneller duiderlijk wat precies het doel is en hoe daar te komen. De kans op misverstanden over de requirements is met een prototype minimaal.</p>
+            <h3>Focus</h3>
+            {% capture advantage_2 %}{% include /proces/rapid-prototyping/advantage_2.md %}{% endcapture %}
+            {{ advantage_2|markdownify }} 
           </div>
           <div class="extra">
-            <p>Het bouwen van een prototype is de <strong>investering meer dan waard</strong>. In alle projecten waar we deze aanpak hebben toegepast, is de ervaring van de opdrachtgever dat we door het prototype uiteindelijk sneller tot het juiste eindproduct zijn gekomen.</p>
+            <h3>Rendement</h3>
+            {% capture advantage_3 %}{% include /proces/rapid-prototyping/advantage_3.md %}{% endcapture %}
+            {{ advantage_3|markdownify }} 
           </div>
         </div>
       </div>
@@ -228,7 +233,8 @@ about: ons development proces
     </div>
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <p>We werken graag en goed samen. Niet alleen met elkaar, maar ook met jou. Ieders expertise is essentieel om tot een goed product te komen. Als je met ons werkt, werk je met mensen die met je meedenken en er het maximale uit willen halen. Interesse in een kennismaking? Neem contact op.</p>
+            {% capture team_up %}{% include /proces/team_up.md %}{% endcapture %}
+            {{ team_up|markdownify }} 
         </div>
       </div>
     </div>

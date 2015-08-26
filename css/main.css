@@ -7911,6 +7911,10 @@ div.truncate-2-lines {
 .master.process .explanatory {
   background-color: #233864;
   padding: 80px 0; }
+  .master.process .explanatory a {
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline; }
   .master.process .explanatory p {
     color: #fff;
     font-size: 20px;
@@ -7922,13 +7926,17 @@ div.truncate-2-lines {
 .master.process #phases {
   background-color: #2D477F;
   padding: 0 0 60px 0; }
+  .master.process #phases a {
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline; }
   .master.process #phases .carousel img {
     width: 47%; }
   .master.process #phases .carousel .carousel-caption {
     left: 53%;
     right: 15%;
     text-align: left;
-    top: 20%; }
+    top: 15%; }
     .master.process #phases .carousel .carousel-caption h3 {
       font-size: 18px; }
   .master.process #phases .carousel .carousel-control {
@@ -7949,6 +7957,7 @@ div.truncate-2-lines {
   .master.process #phases .carousel .carousel-indicators {
     bottom: -48px; }
 .master.process .info {
+  /* put anchor above the info item for need linking */
   background-color: #F6F4EF;
   color: #554C45;
   padding: 100px 0; }
@@ -7956,6 +7965,11 @@ div.truncate-2-lines {
     margin-bottom: 25px; }
   .master.process .info .row:not(.title) {
     margin-bottom: 70px; }
+  .master.process .info .row.title {
+    position: relative; }
+    .master.process .info .row.title a#rapid-prototyping, .master.process .info .row.title a#minimal-viable-product {
+      position: absolute;
+      top: -100px; }
   .master.process .info .main {
     margin-right: 40px; }
     .master.process .info .main h2 {
@@ -7967,9 +7981,9 @@ div.truncate-2-lines {
       font-size: 20px;
       text-transform: none; }
   .master.process .info .extra {
-    /*margin-top: 40px;*/
-    /*      &:nth-of-type(1) { // first "extra" item
-            margin-top: 160px;
-          }*/ }
+    margin-bottom: 26px; }
+    .master.process .info .extra h3 {
+      margin-top: 0px;
+      text-transform: none; }
     .master.process .info .extra p {
       font-size: 16px; }
