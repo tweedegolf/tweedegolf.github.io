@@ -1,2 +1,2 @@
-Naast de projecten voor onze klanten doen we onderzoek naar opkomende webtechnologieën en de vertaling naar nieuwe toepassingen. Beide leiden tot de versterking van onze expertise en "gereedschapskist". Het [3D framework](/3d-framework/) is daarvan een voorbeeld. 
-In het blog delen we interessante resultaten. Wees gewaarschuwd: de inhoud is niet altijd even toegankelijk voor niet-developers. Hou de *nerd rating* in de gaten.
+In addition to working on projects for our clients we also carry out research on emerging web technologies and think about how to use these technologies in innovative ways. Both activities strenghten our expertise and enlarge our 'toolbox'. An excellent example of this is our [3D framework](/3d-framework/).
+We aim to keep you informed about the interesting results of our research on our blog. A small warning beforehand: the contents might be a bit technical for non-developers. Keep an eye out for the *nerd rating*. Enjoy!

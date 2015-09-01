@@ -12,7 +12,7 @@ nerd: 2
 
 For some 3D visualisations you want to have a realistic simulation of a world.
 And what is a world without proper physics?
-So as a small research project we decided to add physics integration into our 3d world representation of (our home twown) Nijmegen.
+So as a small research project we decided to add physics integration into our 3d world representation of (our home town) Nijmegen.
 
 ![ΔV](/img/blog/physics-dv.png){:.with-caption}*Image taken from our simplified 3d representation of Nijmegen project ΔV*
 

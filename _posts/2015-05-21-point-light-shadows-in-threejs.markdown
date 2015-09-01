@@ -19,8 +19,7 @@ The extra render pass is rendering the distance of an object to every light to a
 
 ![Shadowpass](/img/blog/light-shadowpass.png)
 
-The above picture shows a color representation of the depth value. Each color corresponds with a 32 bit integer indicating where its z-position lies between Z-Near and Z-Far. So a the maximum value of the 32 bit integer would correspond with Z-Far and the 0 value would correspond with Z-Near
-
+The above picture shows a color representation of the depth value. Each color corresponds with a 32 bit integer indicating where its z-position lies between Z-Near and Z-Far. So a the maximum value of the 32 bit integer would correspond with Z-Far and the 0 value would correspond with Z-Near.
 
 Now you can check for every pixel if it is in the shade of a certain light as follows.
 
@@ -44,6 +43,8 @@ So what do we do? Instead of doing 1 depth pass we do 6. One for every unit dire
 * Use dual paraboloid shadow mapping, which does allow us to use 1 texture for point lights but still needs the 6 render passes we talked about. Another downside of this technique is that there are slight distortions, but all in all it should look nice enough.
 
 These implementations are all candidate implementations for the final prototype. They haven’t been implemented yet except for the first one, which makes 6 seperate textures per point light. The result of that implementation is shown below.
+
+Update: we've written a follow-up article ["Point light shadows in Three.js, part II"](/2015/08/02/point-light-shadows-in-threejs-part-ii/).
 
 <iframe src="https://player.vimeo.com/video/131074418" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{: .with-caption}
 *Test environment for point light shadows*
