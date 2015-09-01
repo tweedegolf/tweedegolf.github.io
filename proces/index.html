@@ -20,7 +20,7 @@ about: ons development proces
             <h1>Serious web development</h1>
             <hr class="separator">
               {% capture teaser %}{% include /proces/teaser.md %}{% endcapture %}
-              {{ teaser|markdownify }}              
+              {{ teaser|markdownify }}
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ about: ons development proces
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           {% capture intro %}{% include /proces/intro.md %}{% endcapture %}
-          {{ intro|markdownify }} 
+          {{ intro|markdownify }}
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ about: ons development proces
             <span class="type">Drawing apps</span>
             <span class="example">
               {% capture drawing_apps %}{% include /proces/drawing_apps.md %}{% endcapture %}
-              {{ drawing_apps|markdownify }} 
+              {{ drawing_apps|markdownify }}
             </span>
           </p>
         </div>
@@ -57,7 +57,7 @@ about: ons development proces
             <span class="type">Workflow apps</span>
             <span class="example">
               {% capture workflow_apps %}{% include /proces/workflow_apps.md %}{% endcapture %}
-              {{ workflow_apps|markdownify }} 
+              {{ workflow_apps|markdownify }}
             </span>
           </p>
         </div>
@@ -67,7 +67,7 @@ about: ons development proces
             <span class="type">Visualisation apps</span>
             <span class="example">
               {% capture visualisation_apps %}{% include /proces/visualisation_apps.md %}{% endcapture %}
-              {{ visualisation_apps|markdownify }} 
+              {{ visualisation_apps|markdownify }}
             </span>
           </p>
         </div>
@@ -80,7 +80,7 @@ about: ons development proces
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           {% capture proces %}{% include /proces/proces.md %}{% endcapture %}
-          {{ proces|markdownify }} 
+          {{ proces|markdownify }}
         </div>
       </div>
     </div>
@@ -107,37 +107,37 @@ about: ons development proces
                 <img src="http://placehold.it/500x500" alt="Fase: Kennismaking &amp; <i>Discovery</i>">
                 <div class="carousel-caption">
                   {% capture step_1 %}{% include /proces/step_1.md %}{% endcapture %}
-                  {{ step_1|markdownify }} 
+                  {{ step_1|markdownify }}
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Information &amp; interaction design">
                 <div class="carousel-caption">
                   {% capture step_2 %}{% include /proces/step_2.md %}{% endcapture %}
-                  {{ step_2|markdownify }}    
+                  {{ step_2|markdownify }}
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Korte development cycli">
                 <div class="carousel-caption">
                   {% capture step_3 %}{% include /proces/step_3.md %}{% endcapture %}
-                  {{ step_3|markdownify }} 
+                  {{ step_3|markdownify }}
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Eerste release">
                 <div class="carousel-caption">
                   {% capture step_4 %}{% include /proces/step_4.md %}{% endcapture %}
-                  {{ step_4|markdownify }} 
+                  {{ step_4|markdownify }}
                 </div>
               </div>
               <div class="item">
                 <img src="http://placehold.it/500x500" alt="Fase: Continuous improvements">
                 <div class="carousel-caption">
                   {% capture step_5 %}{% include /proces/step_5.md %}{% endcapture %}
-                  {{ step_5|markdownify }} 
+                  {{ step_5|markdownify }}
                 </div>
-              </div>                               
+              </div>
             </div>
 
             <!-- Controls -->
@@ -158,66 +158,50 @@ about: ons development proces
 
   <section class="info">
     <div class="container">
-      <div class="row title">
-        <a id="minimal-viable-product"></a>
-        <div class="col-md-12">
-          <h2>Minimal viable product</h2>
-        </div>
-      </div>
-      <div class="row">
+      <div class="content-minimum-viable-product">
         <div class="col-sm-6">
           <div class="main" name="main">
             {% capture intro %}{% include /proces/mv-product/intro.md %}{% endcapture %}
-            {{ intro|markdownify }} 
+            {{ intro|markdownify }}
           </div>
         </div>
         <div class="col-sm-6">
           <div class="extra">
-            <h3>Lean softwaredevelopment</h3>
             {% capture advantage_1 %}{% include /proces/mv-product/advantage_1.md %}{% endcapture %}
-            {{ advantage_1|markdownify }} 
+            {{ advantage_1|markdownify }}
           </div>
           <div class="extra">
-            <h3>Betere investeringsbeslissingen</h3>
             {% capture advantage_2 %}{% include /proces/mv-product/advantage_2.md %}{% endcapture %}
-            {{ advantage_2|markdownify }} 
+            {{ advantage_2|markdownify }}
           </div>
           <div class="extra">
-            <h3>Korte time to market</h3>
             {% capture advantage_3 %}{% include /proces/mv-product/advantage_3.md %}{% endcapture %}
-            {{ advantage_3|markdownify }} 
-          </div>          
+            {{ advantage_3|markdownify }}
+          </div>
         </div>
       </div>
 
-      <div class="row title">
-        <a id="rapid-prototyping"></a>
-        <div class="col-md-12">
-          <h2>Rapid prototyping</h2>
-        </div>
-      </div>
-      <div class="row">
+      <hr>
+
+      <div class="content-rapid-prototyping">
         <div class="col-sm-6">
           <div class="main" name="main">
             {% capture intro %}{% include /proces/rapid-prototyping/intro.md %}{% endcapture %}
-            {{ intro|markdownify }} 
+            {{ intro|markdownify }}
           </div>
         </div>
         <div class="col-sm-6">
           <div class="extra">
-            <h3>Beter risico's inschatten</h3>
             {% capture advantage_1 %}{% include /proces/rapid-prototyping/advantage_1.md %}{% endcapture %}
-            {{ advantage_1|markdownify }} 
+            {{ advantage_1|markdownify }}
           </div>
           <div class="extra">
-            <h3>Focus</h3>
             {% capture advantage_2 %}{% include /proces/rapid-prototyping/advantage_2.md %}{% endcapture %}
-            {{ advantage_2|markdownify }} 
+            {{ advantage_2|markdownify }}
           </div>
           <div class="extra">
-            <h3>Rendement</h3>
             {% capture advantage_3 %}{% include /proces/rapid-prototyping/advantage_3.md %}{% endcapture %}
-            {{ advantage_3|markdownify }} 
+            {{ advantage_3|markdownify }}
           </div>
         </div>
       </div>
@@ -234,7 +218,7 @@ about: ons development proces
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             {% capture team_up %}{% include /proces/team_up.md %}{% endcapture %}
-            {{ team_up|markdownify }} 
+            {{ team_up|markdownify }}
         </div>
       </div>
     </div>
