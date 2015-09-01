@@ -10,9 +10,9 @@ author: Dennis
 nerd: 2
 ---
 
-For some 3D visualisations you want to have a realistic simulation of a world.
-And what is a world without proper physics?
-So as a small research project we decided to add physics integration into our 3d world representation of (our home town) Nijmegen.
+We all want our 3D visualisations to be as real as possible. A basic premise seems to be that they adhere to the laws of physics. No small feat! Or is it? We decided to give it a go by making a game in a two-day programming contest. We needed the physics engine to base the game on, so in fact, we had only one day to do it. 
+
+48 hours later we found out we had been overly ambitious. However, we did manage to create a basic physics engine. Hopefully, our experiences will give you some insight into using physics in 3D. 
 
 ![ΔV](/img/blog/physics-dv.png){:.with-caption}*Image taken from our simplified 3d representation of Nijmegen project ΔV*
 
