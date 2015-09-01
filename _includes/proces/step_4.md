@@ -1,4 +1,4 @@
-###4/5 Eerste release###
+### Eerste release
 
 Eindelijk is het zover: het product is technisch “af” en de opdrachtgever is er klaar voor. De app gaat *live* en wordt voor het eerst &eacute;cht gebruikt.
 

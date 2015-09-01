@@ -1,3 +1,13 @@
+// material design icons
+@function mdi($name) {
+  @return char(nth($hexes, index($names, $name)));
+}
+// usage:
+// .custom:before {
+//   font: normal normal normal 24px/1 MaterialDesignIcons;
+//   content: mdi('account');
+// }
+
 body {
     font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1468,7 +1478,7 @@ div.truncate-2-lines {
   }
   .explanatory {
     background-color: #233864;
-    padding: 80px 0;
+    padding: 80px 0 48px;
     a {
       color: #fff;
       font-style: italic;
@@ -1487,23 +1497,87 @@ div.truncate-2-lines {
   }
   #phases {
     background-color: #2D477F;
-    padding: 0 0 60px 0;
+    padding: 0;
+    position: relative;
+    &:after { // wrap with explanatory, space for indicators
+      background-color: #233864;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 100%;
+    }
     a {
       color: #fff;
       font-style: italic;
       text-decoration: underline;
     }
     .carousel {
-      img {
-        width: 47%;
+      .carousel-inner {
+        height: 420px;
+        .item {
+          height: 100%;
+        }
+      }
+      .carousel-visual {
+        @extend .clearfix;
+        position: relative;
+        height: 100%;
+        width: 45%;
+        .phase {
+          background-color: #59759E;
+          color: white;
+          font-size: 70px;
+          height: 110px;
+          left: 0;
+          line-height: 110px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 140px;
+        }
+        .icon {
+          bottom: 0;
+          height: 328px;
+          position: absolute;
+          right: 0;
+          text-align: right;
+          width: 100%;
+          &:after {
+            color: #59759E;
+            content: "";
+            font: normal normal normal 380px/1 "MaterialDesignIcons";
+          }
+          &.discovery:after {
+            bottom: -20px;
+            content: mdi('compass');
+            position: relative;
+            right: -20px;
+          }
+          &.design:after {
+            content: mdi('code-not-equal-variant');
+          }
+          &.development:after {
+            content: mdi('rotate-right');
+          }
+          &.release:after {
+            content: mdi('arrow-up-bold-circle');
+          }
+          &.improvements:after {
+            content: mdi('plus-circle');
+          }
+        }
       }
       .carousel-caption {
         left: 53%;
-        right: 15%;
+        right: 10%;
         text-align: left;
-        top: 15%;
+        text-shadow: none;
+        top: 2%;
         h3 {
           font-size: 18px;
+        }
+        p {
+          font-size: 16px;
         }
       }
       .carousel-control {
@@ -1528,7 +1602,7 @@ div.truncate-2-lines {
         }
       }
       .carousel-indicators {
-        bottom: -48px;
+        bottom: -50px;
       }
     }
   }
