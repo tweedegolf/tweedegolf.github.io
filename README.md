@@ -11,7 +11,7 @@ To serve this website locally, install [bower](http://bower.io/) and [bundler](h
     bundle install
     bundle exec jekyll serve --watch
 
-Note: if you want to be able to see drafts, instead of the last command run this one: 
+Note: if you want to be able to see drafts, instead of the last command run this one:
 
     bundle exec jekyll serve --watch --draft
 

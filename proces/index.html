@@ -1,0 +1,243 @@
+---
+layout: default
+title: tweede golf - Serious web development
+description: tweede golf ontwikkelt web apps en doorloopt daarbij een solide development proces.
+permalink: proces/
+contact: Erik
+about: ons development proces
+---
+
+<div class="master process">
+
+  {% include navbar.html %}
+
+  <header class="process">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="intro-desc">
+            <span class="icon-process"></span>
+            <h1>Serious web development</h1>
+            <hr class="separator">
+              {% capture teaser %}{% include /proces/teaser.md %}{% endcapture %}
+              {{ teaser|markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          {% capture intro %}{% include /proces/intro.md %}{% endcapture %}
+          {{ intro|markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="examples">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            <span class="icon-draw"></span>
+            <span class="type">Drawing apps</span>
+            <span class="example">
+              {% capture drawing_apps %}{% include /proces/drawing_apps.md %}{% endcapture %}
+              {{ drawing_apps|markdownify }}
+            </span>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            <span class="icon-flow"></span>
+            <span class="type">Workflow apps</span>
+            <span class="example">
+              {% capture workflow_apps %}{% include /proces/workflow_apps.md %}{% endcapture %}
+              {{ workflow_apps|markdownify }}
+            </span>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>
+            <span class="icon-chart"></span>
+            <span class="type">Visualisation apps</span>
+            <span class="example">
+              {% capture visualisation_apps %}{% include /proces/visualisation_apps.md %}{% endcapture %}
+              {{ visualisation_apps|markdownify }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explanatory">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          {% capture proces %}{% include /proces/proces.md %}{% endcapture %}
+          {{ proces|markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="phases">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="carousel-phases" class="carousel slide" data-interval="false">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-phases" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-phases" data-slide-to="1"></li>
+              <li data-target="#carousel-phases" data-slide-to="2"></li>
+              <li data-target="#carousel-phases" data-slide-to="3"></li>
+              <li data-target="#carousel-phases" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="carousel-visual">
+                  <span class="phase">1/5</span>
+                  <span class="icon discovery"></span>
+                </div>
+                <div class="carousel-caption">
+                  {% capture step_1 %}{% include /proces/step_1.md %}{% endcapture %}
+                  {{ step_1|markdownify }}
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-visual">
+                  <span class="phase">2/5</span>
+                  <span class="icon design"></span>
+                </div>
+                <div class="carousel-caption">
+                  {% capture step_2 %}{% include /proces/step_2.md %}{% endcapture %}
+                  {{ step_2|markdownify }}
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-visual">
+                  <span class="phase">3/5</span>
+                  <span class="icon development"></span>
+                </div>
+                <div class="carousel-caption">
+                  {% capture step_3 %}{% include /proces/step_3.md %}{% endcapture %}
+                  {{ step_3|markdownify }}
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-visual">
+                  <span class="phase">4/5</span>
+                  <span class="icon release"></span>
+                </div>
+                <div class="carousel-caption">
+                  {% capture step_4 %}{% include /proces/step_4.md %}{% endcapture %}
+                  {{ step_4|markdownify }}
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-visual">
+                  <span class="phase">5/5</span>
+                  <span class="icon improvements"></span>
+                </div>
+                <div class="carousel-caption">
+                  {% capture step_5 %}{% include /proces/step_5.md %}{% endcapture %}
+                  {{ step_5|markdownify }}
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-phases" role="button" data-slide="prev">
+              <span class="previous button" aria-hidden="true"></span>
+              <span class="sr-only">Vorige</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-phases" role="button" data-slide="next">
+              <span class="next button" aria-hidden="true"></span>
+              <span class="sr-only">Volgende</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <div class="content-minimum-viable-product">
+        <div class="col-sm-6">
+          <div class="main" name="main">
+            {% capture intro %}{% include /proces/mv-product/intro.md %}{% endcapture %}
+            {{ intro|markdownify }}
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="extra">
+            {% capture advantage_1 %}{% include /proces/mv-product/advantage_1.md %}{% endcapture %}
+            {{ advantage_1|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture advantage_2 %}{% include /proces/mv-product/advantage_2.md %}{% endcapture %}
+            {{ advantage_2|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture advantage_3 %}{% include /proces/mv-product/advantage_3.md %}{% endcapture %}
+            {{ advantage_3|markdownify }}
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="content-rapid-prototyping">
+        <div class="col-sm-6">
+          <div class="main" name="main">
+            {% capture intro %}{% include /proces/rapid-prototyping/intro.md %}{% endcapture %}
+            {{ intro|markdownify }}
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="extra">
+            {% capture advantage_1 %}{% include /proces/rapid-prototyping/advantage_1.md %}{% endcapture %}
+            {{ advantage_1|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture advantage_2 %}{% include /proces/rapid-prototyping/advantage_2.md %}{% endcapture %}
+            {{ advantage_2|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture advantage_3 %}{% include /proces/rapid-prototyping/advantage_3.md %}{% endcapture %}
+            {{ advantage_3|markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="explanatory">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <h2> We vormen een team: samenwerken?</h2>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            {% capture team_up %}{% include /proces/team_up.md %}{% endcapture %}
+            {{ team_up|markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% include footer-landing.html %}
