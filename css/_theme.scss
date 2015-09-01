@@ -1,3 +1,13 @@
+// material design icons
+@function mdi($name) {
+  @return char(nth($hexes, index($names, $name)));
+}
+// usage:
+// .custom:before {
+//   font: normal normal normal 24px/1 MaterialDesignIcons;
+//   content: mdi('account');
+// }
+
 body {
     font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1366,7 +1376,7 @@ div.truncate-2-lines {
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,100italic,100,700,700italic);
 
 .master.process {
-  p {
+  h1, h2, h3, h4, h5, h6, p, li {
     font-family: "Roboto", "Helvetica Neue", sans-serif;
     line-height: 1.7em;
     strong {
@@ -1466,9 +1476,9 @@ div.truncate-2-lines {
       float: right;
     }
   }
-  .explanatory {    
+  .explanatory {
     background-color: #233864;
-    padding: 80px 0;
+    padding: 80px 0 48px;
     a {
       color: #fff;
       font-style: italic;
@@ -1487,93 +1497,171 @@ div.truncate-2-lines {
   }
   #phases {
     background-color: #2D477F;
-    padding: 0 0 60px 0;
+    padding: 0;
+    position: relative;
+    &:after { // wrap with explanatory, space for indicators
+      background-color: #233864;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 100%;
+    }
     a {
       color: #fff;
       font-style: italic;
       text-decoration: underline;
     }
     .carousel {
-      img {
-        width: 47%;
+      .carousel-inner {
+        height: 420px;
+        .item {
+          height: 100%;
+        }
+      }
+      .carousel-visual {
+        @extend .clearfix;
+        position: relative;
+        height: 100%;
+        width: 45%;
+        .phase {
+          background-color: #59759E;
+          color: white;
+          font-size: 70px;
+          height: 110px;
+          left: 0;
+          line-height: 110px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 140px;
+        }
+        .icon {
+          bottom: 0;
+          height: 328px;
+          position: absolute;
+          right: 0;
+          text-align: right;
+          width: 100%;
+          &:after {
+            color: #59759E;
+            content: "";
+            font: normal normal normal 380px/1 "MaterialDesignIcons";
+          }
+          &.discovery:after {
+            bottom: -20px;
+            content: mdi('compass');
+            position: relative;
+            right: -20px;
+          }
+          &.design:after {
+            content: mdi('code-not-equal-variant');
+          }
+          &.development:after {
+            content: mdi('rotate-right');
+          }
+          &.release:after {
+            content: mdi('arrow-up-bold-circle');
+          }
+          &.improvements:after {
+            content: mdi('plus-circle');
+          }
+        }
       }
       .carousel-caption {
         left: 53%;
-        right: 15%;
+        right: 10%;
         text-align: left;
-        top: 15%;
+        text-shadow: none;
+        top: 2%;
         h3 {
           font-size: 18px;
+        }
+        p {
+          font-size: 16px;
         }
       }
       .carousel-control {
         background-image: none;
-        .fa {
-          font-size: 50px;
+        .button {
+          background-color: white;
+          border-radius: 50%;
+          color: #233864;
+          font: normal normal lighter 20px/1 "MaterialDesignIcons";
+          height: 50px;
+          line-height: 50px;
           margin-top: -25px;
           position: absolute;
+          text-shadow: none;
           top: 50%;
+          width: 50px;
         }
         &.left {
           left: -25px;
-          .fa {
+          .button {
             left: 0;
+            &:after {
+              content: mdi('arrow-left');
+            }
           }
         }
         &.right {
           right: -25px;
-          .fa {
+          .button {
             right: 0;
+            &:after {
+              content: mdi('arrow-right');
+            }
           }
         }
       }
       .carousel-indicators {
-        bottom: -48px;
+        bottom: -50px;
       }
     }
   }
   .info {
-    .row.title {
-       margin-bottom: 25px; 
-    }
-
-    .row:not(.title) {
-       margin-bottom: 70px; 
-    }
-
-    /* put anchor above the info item for need linking */
-    .row.title {
-      position: relative;
-      a#rapid-prototyping, a#minimal-viable-product {
-        position: absolute;
-        top: -100px;
-      }
-    }
-
-    background-color: #F6F4EF;
+    background-color: #F6F4EE;
     color: #554C45;
     padding: 100px 0;
     .main {
       margin-right: 40px;
       h2 {
-        font-size: 50px;
-        line-height: 62px;
-        margin-bottom: 36px;
-        text-transform: none;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 26px;
       }
       p {
         font-size: 20px;
-        text-transform: none;
+      }
+      ul {
+        margin-top: 30px;
+      }
+      li {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2em;
       }
     }
     .extra {
       margin-bottom: 26px;
       h3 {
         margin-top: 0px;
-        text-transform: none;
       }
       p {
         font-size: 16px;
+      }
+    }
+    [class*="content-min"] {
+      @extend .row;
+      .extra:nth-of-type(1) { // first paragraph
+        margin-top: 140px; // double indent
+      }
+    }
+    [class*="content-rap"] {
+      @extend .row;
+      margin-top: 60px;
+      .extra:nth-of-type(1) { // first paragraph
+        margin-top: 86px; // single indent
       }
     }
   }
