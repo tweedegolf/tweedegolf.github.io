@@ -11819,19 +11819,30 @@ div.truncate-2-lines {
       font-size: 16px; }
   .master.process #phases .carousel .carousel-control {
     background-image: none; }
-    .master.process #phases .carousel .carousel-control .fa {
-      font-size: 50px;
+    .master.process #phases .carousel .carousel-control .button {
+      background-color: white;
+      border-radius: 50%;
+      color: #233864;
+      font: normal normal lighter 20px/1 "MaterialDesignIcons";
+      height: 50px;
+      line-height: 50px;
       margin-top: -25px;
       position: absolute;
-      top: 50%; }
+      text-shadow: none;
+      top: 50%;
+      width: 50px; }
     .master.process #phases .carousel .carousel-control.left {
       left: -25px; }
-      .master.process #phases .carousel .carousel-control.left .fa {
+      .master.process #phases .carousel .carousel-control.left .button {
         left: 0; }
+        .master.process #phases .carousel .carousel-control.left .button:after {
+          content: "\f140"; }
     .master.process #phases .carousel .carousel-control.right {
       right: -25px; }
-      .master.process #phases .carousel .carousel-control.right .fa {
+      .master.process #phases .carousel .carousel-control.right .button {
         right: 0; }
+        .master.process #phases .carousel .carousel-control.right .button:after {
+          content: "\f145"; }
   .master.process #phases .carousel .carousel-indicators {
     bottom: -50px; }
 .master.process .info {

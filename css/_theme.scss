@@ -1582,22 +1582,35 @@ div.truncate-2-lines {
       }
       .carousel-control {
         background-image: none;
-        .fa {
-          font-size: 50px;
+        .button {
+          background-color: white;
+          border-radius: 50%;
+          color: #233864;
+          font: normal normal lighter 20px/1 "MaterialDesignIcons";
+          height: 50px;
+          line-height: 50px;
           margin-top: -25px;
           position: absolute;
+          text-shadow: none;
           top: 50%;
+          width: 50px;
         }
         &.left {
           left: -25px;
-          .fa {
+          .button {
             left: 0;
+            &:after {
+              content: mdi('arrow-left');
+            }
           }
         }
         &.right {
           right: -25px;
-          .fa {
+          .button {
             right: 0;
+            &:after {
+              content: mdi('arrow-right');
+            }
           }
         }
       }
