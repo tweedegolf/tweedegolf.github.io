@@ -10688,8 +10688,12 @@ article h2, article h3, article h4, article h5, article h6 {
 article h2, article h3 {
   margin-top: 32px;
   margin-bottom: 16px; }
-article p {
-  font-size: 16px; }
+article p, article li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+article li {
+  margin-bottom: 12px; }
 article pre {
   margin: 24px 0; }
 article img {
@@ -10867,7 +10871,11 @@ header {
       header .intro-desc a:hover, header .intro-desc a:active:hover, header .intro-desc a:visited:hover {
         text-decoration: none; }
     header .intro-desc p {
-      font-size: 16px; }
+      font-size: 20px; }
+    header .intro-desc p .research {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1.5em; }
     header .intro-desc .separator {
       margin: 24px auto; }
     header .intro-desc .icon-research {
@@ -10907,15 +10915,17 @@ header {
       bottom: 40px;
       z-index: 2; }
       header.blog .article-heading .tags {
-        font-size: 18px;
-        text-align: left; }
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        text-transform: uppercase; }
         header.blog .article-heading .tags .fa {
           font-size: 22px;
           margin-right: 4px; }
       header.blog .article-heading h1 {
         margin-left: 12px;
         font-size: 50px;
-        font-weight: 100;
+        font-weight: 500;
         text-align: left;
         text-transform: none; }
       header.blog .article-heading .nerd {
