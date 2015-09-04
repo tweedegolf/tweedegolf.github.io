@@ -1,8 +1,11 @@
 
 // Roboto font
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
-// material design icons
+
+// Material design icons
+
 @function mdi($name) {
   @return char(nth($hexes, index($names, $name)));
 }
@@ -11,6 +14,38 @@
 //   font: normal normal normal 24px/1 MaterialDesignIcons;
 //   content: mdi('account');
 // }
+
+
+// Palettes
+
+.pallette-light-brown {
+  background-color: #F6F4EF;
+  p, li {
+    color: #554C45;
+  }
+}
+
+.palette-light-blue {
+  background-color: #E7E7E7;
+  p, li {
+    color: #2D477F;
+  }
+}
+
+.palette-dark-blue {
+  background-color: #233864;
+  p, li {
+    color: white;
+  }
+}
+
+.palette-dark-blue-alt {
+  background-color: #2D477F;
+  p, li {
+    color: white;
+  }
+}
+
 
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -28,6 +63,11 @@ p {
 
 p.small {
   font-size: 16px;
+}
+
+p a {
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 article {
@@ -506,7 +546,7 @@ section.success {
 
     p {
         a {
-            color: $brand-dark-success;
+            color: white;
         }
     }
 }
