@@ -21,7 +21,7 @@ As could be expected, 48 hours later we found out we had been overly ambitious. 
 ###Making a game with Physijs
 
 Our goal was to make a small game in which you cycle through Nijmegen and have to avoid being run over by cars.
-We first looked into some frameworks that offer physics simulation in the browser. We found [Physijs] which integrates with [three.js] and uses [ammo.js], which is a javascript port of [bullet].
+We first looked into some frameworks that offer physics simulation in the browser. We found [Physijs] which integrates with [Three.js] and uses [ammo.js], which is a javascript port of [bullet].
 
 Physijs runs all the physics simulation in a web worker. The worker makes sure that it does not interfere with the renderloop. To set up Physijs you need to point it to its web worker and the ammo script that it requires.
 The next step is to create a Physijs.Scene and call the simulate function of that scene in your update function.
@@ -30,7 +30,7 @@ After having done the basic setup, we needed to add physics objects. To do this 
 
 ![Physijs demo](/img/blog/physics-physijs-demo.png){:.with-caption}*Check out [demo of Physijs] to get a feel of what is possible. For more demos check out [Physijs]*
 
-###Crashing bicycles
+###Crashing cars
 
 For our little game prototype we used Physijs.BoxMesh for the cars, the surfaces and the bicycle. For the buildings we used the Physisjs.ConcaveMesh, because multiple buildings needed to be grouped together in chunks and this would cause collisions otherwise. We must note Physisjs.ConcaveMesh is a very costly physics object to have in your simulation, but luckily the performance turned out to be reasonable.
 
@@ -44,7 +44,7 @@ As you can see in the movie the cars behave a bit strangely when tipped over. Th
 
 [demo of Physijs]: http://chandlerprall.github.io/Physijs/examples/vehicle.html/
 [Physijs]: http://chandlerprall.github.io/Physijs/
-[three.js]: http://threejs.org/
+[Three.js]: http://threejs.org/
 [ammo.js]: https://github.com/kripken/ammo.js/
 [bullet]: http://bulletphysics.org/wordpress/
 [TOP10NL]: http://www.kadaster.nl/web/artikel/producten/TOP10NL.htm
