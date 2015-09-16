@@ -1,5 +1,7 @@
 vendor/
 _site/
 .sass-cache/
-.DS_Stor
+*/.DS_Store
+.DS_Store
+.DS_Store?
 *swp
