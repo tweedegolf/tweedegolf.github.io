@@ -1480,6 +1480,10 @@ div.truncate-2-lines {
       background-color: rgba(31,18,10,.85);
     }
   }
+  #billing {
+    background-color: #E7E7E7;
+    padding: 60px 0 60px;
+  }
   #intro {
     background-color: #F6F4EF;
     padding: 80px 0;
@@ -1729,5 +1733,8 @@ div.truncate-2-lines {
         margin-top: 86px; // single indent
       }
     }
+  }
+  .info#billing .extra:nth-of-type(1) {
+    margin-top: 79px;
   }
 }

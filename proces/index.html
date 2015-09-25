@@ -223,7 +223,36 @@ about: ons development proces
     </div>
   </section>
 
-    <section class="explanatory">
+  <section class="info" id="billing">
+    <div class="container">
+      <div class="row">
+        <div class="content-minimum-viable-product">
+
+        <div class="col-sm-6">
+          <div class="main" name="main">
+            {% capture intro %}{% include /proces/billing/intro.md %}{% endcapture %}
+            {{ intro|markdownify }}
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="extra">
+            {% capture fixed_price %}{% include /proces/billing/fixed_price.md %}{% endcapture %}
+            {{ fixed_price|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture always_informed %}{% include /proces/billing/always_informed.md %}{% endcapture %}
+            {{ always_informed|markdownify }}
+          </div>
+          <div class="extra">
+            {% capture rate %}{% include /proces/billing/rate.md %}{% endcapture %}
+            {{ rate|markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explanatory">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
