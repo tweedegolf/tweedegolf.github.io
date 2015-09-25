@@ -1293,7 +1293,7 @@ header.landing {
     margin-top: 28px;
   }
 }
-#landing {
+.landing, .case {
   p a, p a:hover, p a:focus, p a:active, p a.active {
     color: #0af; // symfony blue
   }
@@ -1731,3 +1731,17 @@ div.truncate-2-lines {
     }
   }
 }
+
+.case {
+  background-color: #E7E7E7;
+  padding: 60px 0 60px;
+
+  div.screen {
+    margin-top: 30px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+

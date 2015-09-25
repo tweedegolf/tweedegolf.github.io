@@ -7,43 +7,105 @@ contact: Bram
 about: Google for Work bij tweede golf
 ---
 
-<section id="landing">
+<section class="landing">
   <div class="container">
-    <div class="row">
+    <div class="row">      
       <div class="col-sm-6">
-
         <div class="main" name="main">
-          <span class="icon calendar"></span>
           {% capture main %}{% include /google-for-work/power_of_google_apps.md %}{% endcapture %}
           {{ main|markdownify }}
         </div>
       </div>
       <div class="col-sm-6">
-
         <div class="adv">
           <span class="icon award"></span>
-          <div class="truncate-2-lines">
-            {% capture adv1 %}{% include /symfony/advantage_1.md %}{% endcapture %}
-      		  {{ adv1|markdownify }}
-          </div>
+          {% capture integration_advantage_1 %}{% include /google-for-work/integration_advantage_1.md %}{% endcapture %}
+    		  {{ integration_advantage_1|markdownify }}
         </div>
 
         <div class="adv">
           <span class="icon gear"></span>
-          <div class="truncate-2-lines">
-            {% capture adv2 %}{% include /symfony/advantage_2.md %}{% endcapture %}
-      		  {{ adv2|markdownify }}
-          </div>
+          {% capture integration_advantage_2 %}{% include /google-for-work/integration_advantage_2.md %}{% endcapture %}
+    		  {{ integration_advantage_2|markdownify }}
         </div>
 
         <div class="adv">
           <span class="icon love"></span>
-          <div class="truncate-2-lines">
-            {% capture adv3 %}{% include /symfony/advantage_3.md %}{% endcapture %}
-            {{ adv3|markdownify }}
-          </div>
+          {% capture integration_advantage_3 %}{% include /google-for-work/integration_advantage_3.md %}{% endcapture %}
+          {{ integration_advantage_3|markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="main" name="main">
+          {% capture case_1_intro %}{% include /google-for-work/case_1_intro.md %}{% endcapture %}
+          {{ case_1_intro|markdownify }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <!-- todo: put in relevant screens -->
+        <div class="screen" id="screen-bvb-1">
+          <img class="lazy" data-original="/img/portfolio/bvb01.png" class="img-responsive img-centered" alt="Screenshot 1 Blok voor Blok">
         </div>
 
+        <div class="screen" id="screen-bvb-2">
+          <img class="lazy" data-original="/img/portfolio/bvb02.png" class="img-responsive img-centered" alt="Screenshot 2 Blok voor Blok">
+        </div>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="landing">
+  <div class="container">
+    <div class="row">      
+      <div class="col-sm-6">
+        <div class="main" name="main">
+          {% capture customize_google_apps %}{% include /google-for-work/customize_google_apps.md %}{% endcapture %}
+          {{ customize_google_apps|markdownify }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="adv">
+          <span class="icon award"></span>
+          {% capture customize_advantage_1 %}{% include /google-for-work/customize_advantage_1.md %}{% endcapture %}
+          {{ customize_advantage_1|markdownify }}
+        </div>
+        <div class="adv">
+          <span class="icon gear"></span>
+          {% capture customize_advantage_2 %}{% include /google-for-work/customize_advantage_2.md %}{% endcapture %}
+          {{ customize_advantage_2|markdownify }}
+        </div>
+        <div class="adv">
+          <span class="icon love"></span>
+          {% capture customize_advantage_3 %}{% include /google-for-work/customize_advantage_3.md %}{% endcapture %}
+          {{ customize_advantage_3|markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="main" name="main">
+          {% capture case_2_intro %}{% include /google-for-work/case_2_intro.md %}{% endcapture %}
+          {{ case_2_intro|markdownify }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <!-- todo: put in relevant screens -->
+        <div class="screen" id="screen-bvb-1">
+          <img class="lazy" data-original="/img/portfolio/askja.jpg" class="img-responsive img-centered" alt="Screenshot 1 Blok voor Blok">
+        </div>       
       </div>
     </div>
   </div>

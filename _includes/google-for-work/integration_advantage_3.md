@@ -1,0 +1,1 @@
+De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. 

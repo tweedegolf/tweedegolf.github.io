@@ -1,0 +1,1 @@
+Een specifieke koppeling van Google Sheets naar Google Forms om de resultaten van enquetes op eenvoudige wijze te kunnen rapporteren.
