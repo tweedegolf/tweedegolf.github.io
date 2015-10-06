@@ -1,9 +1,10 @@
 ### Case: Custom tagging in Google Drive
 
-Het project [Blok voor Blok](/#portfolio-blok-voor-blok) draait om het samenwerken aan publicaties gebaseerd op relevante fragmenten uit een groot aantal (meer dan 1000) zeer verschillende documenten. Om dit proces te faciliteren deden we het volgende:
+Hoe maak je korte, overzichtelijke rapporten uit een berg van 1000 documenten? Hoe zorg je dat een team van redacteurs efficient kan samenwerken?
+Voor het project [Blok voor Blok](/#portfolio-blok-voor-blok) (opdrachtgever Rijksdienst voor Ondernemend Nederland) realiseerden we een gebalanceerde oplossing met Google for Work:
 
-+ We gebruikten Google Drive om de verscheidenheid aan documenten op te slaan
++ Google Drive en Docs om de documenten te delen
 
-+ We breidden we de functionaliteit van Google Drive uit, zodat de gebruikers fragmenten kunnen taggen met de namen van thema’s uit Blok voor Blok waarvoor ze relevant zijn. Op dezelfde wijze als je comments in bijvoorbeeld Google Documents toevoegt.
++ Een add-on voor Google Docs om supersnel fragmenten te taggen
 
-+ En we zorgden ervoor dat de getagde fragmenten op eenvoudige wijze in de Blok voor Blok web app ge&iuml;mporteerd konden worden, waar ze de basis vormen voor publicaties.
++ In de custom web app direct beschikking over de geselecteerde fragmenten en snel rapporten maken: fragmenten categoriseren en met een rapport-template ......
