@@ -18,6 +18,7 @@
 
 // Palettes
 
+
 .pallette-light-brown {
   background-color: #F6F4EF;
   p, li {
@@ -567,11 +568,15 @@ section#static {
 .portfolio-item {
     margin: 0 0 15px;
     right: 0;
+    img{
+      max-width: 100%;
+    }
     .portfolio-link {
         display: block;
         position: relative;
         max-width: 360px;
         margin: 0 auto;
+
         .caption {
             background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
