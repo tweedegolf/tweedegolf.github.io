@@ -1,1 +1,0 @@
-Het toevoegen van custom validatieregels in Google Sheets, zodat je met een druk op de knop de data valideert voor je die importeert in de gekoppelde web app.

@@ -11594,6 +11594,15 @@ header.landing .icon-symfony {
   height: 150px;
   margin: 0 auto;
   width: 150px; }
+header.landing .icon-google-for-work {
+  background-image: url("/img/apps-for-work-social-icon.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px; }
 header.landing h1, header.landing h2, header.landing h3 {
   text-transform: none; }
 header.landing .desc p {
@@ -11932,7 +11941,8 @@ div.truncate-2-lines {
 
 .case {
   background-color: #E7E7E7;
-  padding: 60px 0 60px; }
+  padding: 60px 0 60px;
+  margin-bottom: 130px; }
   .case div.screen {
     margin-top: 30px; }
   .case img {
