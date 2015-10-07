@@ -1,6 +1,6 @@
 ## Case: Google Sheets integratie voor prijsbeheer
 
-Voor maatwerk reisbureau [Askja Reizen](/#portfolio-askja) maakten we een integratie met Google Sheets voor het beheren van productprijzen. We zorgen voor:
+Voor reisorganisatie [Askja Reizen](/#portfolio-askja) maakten we een integratie met Google Sheets voor het beheren van productprijzen: 
 
 + Koppeling tussen het door ons ontwikkelde back-office systeem en Google Sheets. 
 
