@@ -4,7 +4,7 @@ Voor reisorganisatie [Askja Reizen](/#portfolio-askja) maakten we een integratie
 
 + Koppeling tussen het door ons ontwikkelde back-office systeem en Google Sheets. 
 
-+ Automatische controle en validatie van de data uit de sheets. Met een druk op de knop importeren. 
++ Automatische controle en validatie van de data uit de sheets. Met één druk op de knop importeren. 
 
 + Overkoepelende rapportage van managementinformatie, zoals omzet en marges. 
 
