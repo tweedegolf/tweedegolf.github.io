@@ -1,1 +1,1 @@
-De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. Dit resulteert in minder complexiteit, gemakkerlijker onderhoud en lagere kosten.
+De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. Dit betekent minder complexiteit, gemakkelijker onderhoud en lagere kosten.
