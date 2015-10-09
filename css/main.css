@@ -11630,6 +11630,14 @@ header.landing .tocontent {
   .landing .icon.quote, .case .icon.quote {
     background-image: url("/img/icon-quote.png");
     opacity: 0.1; }
+  .landing .icon.head, .case .icon.head {
+    background-image: url("/img/icon-head.png"); }
+  .landing .icon.scale, .case .icon.scale {
+    background-image: url("/img/icon-scale.png"); }
+  .landing .icon.share, .case .icon.share {
+    background-image: url("/img/icon-share.png"); }
+  .landing .icon.google, .case .icon.google {
+    background-image: url("/img/icon-google.png"); }
 .landing .main, .case .main {
   margin-right: 40px; }
   .landing .main .icon, .case .main .icon {

@@ -1291,8 +1291,8 @@ header.landing {
     height: 150px;
     margin: 0 auto;
     width: 150px;
-  }  
-  
+  }
+
   h1, h2, h3 {
     text-transform: none;
   }
@@ -1329,6 +1329,18 @@ header.landing {
     &.quote {
       background-image: url("/img/icon-quote.png");
       opacity: 0.1;
+    }
+    &.head {
+      background-image: url("/img/icon-head.png");
+    }
+    &.scale {
+      background-image: url("/img/icon-scale.png");
+    }
+    &.share {
+      background-image: url("/img/icon-share.png");
+    }
+    &.google {
+      background-image: url("/img/icon-google.png");
     }
   }
   .main {
@@ -1756,4 +1768,3 @@ div.truncate-2-lines {
     max-width: 100%;
   }
 }
-
