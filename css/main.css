@@ -11530,20 +11530,24 @@ footer {
         padding: 16px 0; }
   .portfolio-modal .close-modal {
     position: fixed;
-    width: 75px;
-    height: 75px;
-    background-color: white;
-    top: 25px;
-    right: 25px;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     z-index: 9999;
-    border-radius: 100%; }
+    border-radius: 100%;
+    top: 10px;
+    right: 5px; }
+    @media (min-width: 960px) {
+      .portfolio-modal .close-modal {
+        top: 20px;
+        right: 15px; } }
     .portfolio-modal .close-modal:hover {
       opacity: 0.3; }
     .portfolio-modal .close-modal .lr {
-      height: 75px;
+      height: 50px;
       width: 1px;
-      margin-left: 37px;
+      margin-left: 25px;
       background-color: #000000;
       transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -11552,8 +11556,10 @@ footer {
       /* Safari and Chrome */
       z-index: 1051; }
       .portfolio-modal .close-modal .lr .rl {
-        height: 75px;
+        height: 50px;
         width: 1px;
+        margin-top: 1px;
+        margin-left: -1px;
         background-color: #000000;
         transform: rotate(90deg);
         -ms-transform: rotate(90deg);
