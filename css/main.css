@@ -11638,6 +11638,14 @@ header.landing .tocontent {
     background-image: url("/img/icon-share.png"); }
   .landing .icon.google, .case .icon.google {
     background-image: url("/img/icon-google.png"); }
+.landing .case-label, .case .case-label {
+  font-size: 1em;
+  display: inline-block;
+  border: 1px solid;
+  padding: 0px 10px;
+  box-sizing: border-box; }
+.landing #google-for-work-contact-button, .case #google-for-work-contact-button {
+  margin-top: 20px; }
 .landing .main, .case .main {
   margin-right: 40px; }
   .landing .main .icon, .case .main .icon {
@@ -11952,6 +11960,6 @@ div.truncate-2-lines {
   padding: 60px 0 60px;
   margin-bottom: 130px; }
   .case div.screen {
-    margin-top: 30px; }
+    margin-top: 50px; }
   .case img {
     max-width: 100%; }

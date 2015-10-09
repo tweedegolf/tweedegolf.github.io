@@ -7,7 +7,7 @@ contact: Hugo
 about: Google for Work bij tweede golf
 ---
 
-<section class="landing">
+<section id="landing" class="landing">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
@@ -15,6 +15,11 @@ about: Google for Work bij tweede golf
           <span class="icon google"></span>
           {% capture main %}{% include /google-for-work/power_of_google_apps.md %}{% endcapture %}
           {{ main|markdownify }}
+          <div class="page-scroll">
+            <a id="google-for-work-contact-button" type="button" class="btn btn-lg btn-success" href="#contact">
+                Direct contact
+              </a>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
@@ -37,6 +42,7 @@ about: Google for Work bij tweede golf
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -45,6 +51,7 @@ about: Google for Work bij tweede golf
     <div class="row">
       <div class="col-sm-6">
         <div class="main" name="main">
+          <div class="case-label">case 1</div>
           {% capture case_1_intro %}{% include /google-for-work/case_1_intro.md %}{% endcapture %}
           {{ case_1_intro|markdownify }}
         </div>
@@ -68,6 +75,7 @@ about: Google for Work bij tweede golf
     <div class="row">
       <div class="col-sm-6">
         <div class="main" name="main">
+          <div class="case-label">case 2</div>
           {% capture case_2_intro %}{% include /google-for-work/case_2_intro.md %}{% endcapture %}
           {{ case_2_intro|markdownify }}
         </div>

@@ -1293,6 +1293,7 @@ header.landing {
     width: 150px;
   }
 
+
   h1, h2, h3 {
     text-transform: none;
   }
@@ -1304,6 +1305,7 @@ header.landing {
     margin-top: 28px;
   }
 }
+
 .landing, .case {
   p a, p a:hover, p a:focus, p a:active, p a.active {
     color: #0af; // symfony blue
@@ -1342,6 +1344,16 @@ header.landing {
     &.google {
       background-image: url("/img/icon-google.png");
     }
+  }
+  .case-label{
+    font-size: 1em;
+    display: inline-block;
+    border: 1px solid;
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+  #google-for-work-contact-button{
+    margin-top: 20px;
   }
   .main {
     margin-right: 40px;
@@ -1761,7 +1773,7 @@ div.truncate-2-lines {
   margin-bottom: 130px;
 
   div.screen {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   img {

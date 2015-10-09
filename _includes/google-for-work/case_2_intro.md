@@ -1,4 +1,4 @@
-##Google Sheets integratie voor prijsbeheer
+###Google Sheets integratie voor prijsbeheer
 
 Voor reisorganisatie [Askja Reizen](/#portfolio-askja) maakten we een integratie met Google Sheets voor het beheren van productprijzen:
 
