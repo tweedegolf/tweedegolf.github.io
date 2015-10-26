@@ -1366,13 +1366,15 @@ header.landing {
   }
   .case-label{
     font-size: 1em;
+    color: #fff;
+    background-color: #763522;
     display: inline-block;
-    border: 1px solid;
-    padding: 0px 10px;
+    padding: 10px;
     box-sizing: border-box;
   }
-  #google-for-work-contact-button{
-    margin-top: 20px;
+  .row.contact-wrapper{
+    padding-top: 30px;
+    text-align: center;
   }
   .main {
     margin-right: 40px;

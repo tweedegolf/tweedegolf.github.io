@@ -15,11 +15,6 @@ about: Google for Work bij tweede golf
           <span class="icon google"></span>
           {% capture main %}{% include /google-for-work/power_of_google_apps.md %}{% endcapture %}
           {{ main|markdownify }}
-          <div class="page-scroll">
-            <a id="google-for-work-contact-button" type="button" class="btn btn-lg btn-success" href="#contact">
-                Direct contact
-              </a>
-          </div>
         </div>
       </div>
       <div class="col-sm-6">
@@ -42,7 +37,13 @@ about: Google for Work bij tweede golf
         </div>
       </div>
     </div>
-
+    <div class="row contact-wrapper">
+      <div class="col-sm-12">
+        <div class="page-scroll">
+          <a type="button" class="btn btn-lg btn-success" href="#contact">Neem contact op <i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -51,7 +52,7 @@ about: Google for Work bij tweede golf
     <div class="row">
       <div class="col-sm-6">
         <div class="main" name="main">
-          <div class="case-label">case 1</div>
+          <div class="case-label"><strong>Case 1:</strong> Blok voor Blok</div>
           {% capture case_1_intro %}{% include /google-for-work/case_1_intro.md %}{% endcapture %}
           {{ case_1_intro|markdownify }}
         </div>
@@ -79,7 +80,7 @@ about: Google for Work bij tweede golf
     <div class="row">
       <div class="col-sm-6">
         <div class="main" name="main">
-          <div class="case-label">case 2</div>
+          <div class="case-label"><strong>Case 2:</strong> Askja Prijsbeheer</div>
           {% capture case_2_intro %}{% include /google-for-work/case_2_intro.md %}{% endcapture %}
           {{ case_2_intro|markdownify }}
         </div>

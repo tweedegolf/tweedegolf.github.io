@@ -7,4 +7,4 @@ Voor het project [Blok voor Blok](/#portfolio-blok-voor-blok) (opdrachtgever Rij
 
 + Een add-on voor Google Docs om supersnel fragmenten te taggen
 
-+ Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand.
++ Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand
