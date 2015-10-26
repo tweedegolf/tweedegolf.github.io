@@ -18,6 +18,7 @@
 
 // Palettes
 
+
 .pallette-light-brown {
   background-color: #F6F4EF;
   p, li {
@@ -567,11 +568,15 @@ section#static {
 .portfolio-item {
     margin: 0 0 15px;
     right: 0;
+    img{
+      max-width: 100%;
+    }
     .portfolio-link {
         display: block;
         position: relative;
         max-width: 360px;
         margin: 0 auto;
+
         .caption {
             background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
@@ -1197,22 +1202,33 @@ footer {
     }
     .close-modal {
         position: fixed;
-        width:75px;
-        height:75px;
-        background-color:white;
-        top: 25px;
-        right: 25px;
+        width:52px;
+        height:52px;
+        background-color: rgba(255, 255, 255, 0.8);
+        //border: 1px solid #eee;
+        //top: 25px;
+        //right: 25px;
         cursor: pointer;
         z-index: 9999;
         border-radius: 100%;
+        top: 10px;
+        right: 5px;
+        @media (min-width:960px) {
+          top: 20px;
+          right: 15px;
+        }
         &:hover {
             opacity: 0.3;
         }
         .lr {
-            height:75px;
+            //height:75px;
+
+            height:50px;
             width:1px;
-            margin-left:37px;
+            //margin-left:37px;
+            margin-left:25px;
             background-color:#000000;
+
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -1220,8 +1236,11 @@ footer {
             /* Safari and Chrome */
             z-index:1051;
             .rl {
-                height:75px;
+                //height:75px;
+                height:50px;
                 width:1px;
+                margin-top:1px;
+                margin-left: -1px;
                 background-color:#000000;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);

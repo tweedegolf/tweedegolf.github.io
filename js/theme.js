@@ -120,22 +120,31 @@ var truncate = function(target) {
 
   $(target).each(function() {
 
-    var className = 'truncate-2-lines'; 
+    var className = 'truncate-2-lines';
     var block = $(this);
     block.addClass(className);
-   
+
     // create link and bind handler
     var link = $('<span/>').attr({href: '#','class': 'more'}).text('Meer ↓');
-    link.click(function() {   
-        console.log('click', $(this).prev('.' + className).length);     
+    link.click(function() {
+        console.log('click', $(this).prev('.' + className).length);
         $(this).prev('.' + className).removeClass(className);
         $(this).hide();
         return false;
     });
-    
+
     // insert link in truncated block
     block.after(link);
   });
 };
 
 truncate('.adv div');
+
+
+/*
+ * Back button closes modal if opened
+ */
+
+window.addEventListener("hashchange",function(e){
+  $('.modal').modal('hide');
+});
