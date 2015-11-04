@@ -19,7 +19,7 @@ Therefor we decided to try Threejs' own JSON format. JSON is less verbose and be
 
 Every 3D object inherits the `toJSON()` method from the class Object3D, so you can convert a loaded Collada model to JSON and then save it to disk. We wanted to wrap this idea into a Nodejs app but the [ColladaLoader](https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/ColladaLoader.js) for Threejs depends on the [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser), and there is not yet an adequate equivalent for this in Nodejs.
 
-So we made an online converter. There are 2 versions; a version that shows a preview of the model as Collada and as JSON and a 'headless' version that just converts the Collada. The first version is suitable if you want to convert only a few models and check the models side by side for possible conversion errors [[link](http://data.tweedegolf.nl/collada2json/)]. If you want to convert a large number of Colladas you'd better use the second version [[link](http://data.tweedegolf.nl/collada2json_headless/)].
+So we made an online converter. There are 2 versions; a version that shows the model as Collada and as JSON, and a 'headless' version that just converts the Collada. The first version is suitable if you want to convert only a few models and check the models side by side for possible conversion errors [[link](http://data.tweedegolf.nl/collada2json/)]. If you want to convert a large number of Colladas you'd better use the second version [[link](http://data.tweedegolf.nl/collada2json_headless/)].
 
 
 #### How it works
