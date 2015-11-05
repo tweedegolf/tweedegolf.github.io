@@ -5,6 +5,7 @@ leadimg:
 tags: Collada, Three.js, 3D, optimization, webgl
 author: Daniel
 description: Optimizing 3D models by converting Collada's to JSON
+github: https://github.com/tweedegolf/collada2json
 nerd: 3
 ---
 
@@ -37,4 +38,4 @@ The last step is to add the texture images to the JSON file save the result as a
 #### Code and links
  - [converter with preview](http://data.tweedegolf.nl/collada2json/)
  - [headless converter](http://data.tweedegolf.nl/collada2json_headless/)
- - [code on github](https://github.com/abudaan/collada2json) (the headless version has its own branch "[headless](https://github.com/abudaan/collada2json/tree/headless)")
+ - [code on github](https://github.com/tweedegolf/collada2json) (the preview and headless version have their own branch)
