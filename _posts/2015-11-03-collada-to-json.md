@@ -1,41 +1,48 @@
 ---
 layout: post
-thumb:
-leadimg:
-tags: Collada, Three.js, 3D, optimization, webgl
+title: "Three.js Collada to JSON converter"
+date: "8-11-2015"
+thumb: teapots-json-collada.jpg
+leadimg: teapots-json-collada.jpg
+tags: Collada, Three.js, 3D, JSON, WebGL
 author: Daniel
 description: Optimizing 3D models by converting Collada's to JSON
 github: https://github.com/tweedegolf/collada2json
 nerd: 3
 ---
 
-So far we have been using 3D models in Collada format in our 3D projects. Our 3D artist [Boris Ignjatovic](http://www.borisignjatovic.com/) works in Maya 3D and after quite some experimenting we found that Collada was the export format that worked best for us.
+The Collada format is the most widely used format for 3D models in Three.js. However, the Collada format is an interchange format, not a delivery format. 
 
-However, the Collada format is an interchange format, not a delivery format. Where a delivery format should be as small as possible and optimized for parsing by the receiving end, an interchange format doesn't have such requirements. Because Collada is XML it is rather verbose. And to parse a Collada, Threejs has to loop over every node of the tree and convert it to a Threejs 3D object.
+#### Interchange vs. delivery
 
+Where a delivery format should be as small as possible and optimized for parsing by the receiving end, an interchange format doesn't have such requirements, it should just make the exchange of the models painless. Because Collada is XML it is rather verbose. And to parse a Collada, Three.js has to loop over every node of the tree and convert it to a Three.js 3D object.
 
-#### Threejs' JSON format
+#### Three.js' JSON format
 
-Therefor we decided to try Threejs' own JSON format. JSON is less verbose and because it is Threejs' own format, parsing is done in a breeze. After some fruitless experiments with Maya's Threejs JSON exporter and some existing Collada to JSON converters, we tried our luck with Threejs' built in `toJSON()` method.
+For improved delivery we first looked at [glTF](http://threejs.org/docs/#Reference/Loaders/glTFLoader). Unfortunately it wasn't without flaws in our implementations. Next we decided to try Three.js' own JSON format for delivery. JSON is less verbose and because it is Three.js' own format, parsing is done in a breeze. After some fruitless experiments with Maya's Three.js JSON exporter and some existing Collada to JSON converters, we tried our luck with Three.js' built in `toJSON()` method.
 
-Every 3D object inherits the `toJSON()` method from the class Object3D, so you can convert a loaded Collada model to JSON and then save it to disk. We wanted to wrap this idea into a Nodejs app but the [ColladaLoader](https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/ColladaLoader.js) for Threejs depends on the [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser), and there is not yet an adequate equivalent for this in Nodejs.
+Every 3D object inherits the `toJSON()` method from the class Object3D, so you can convert a loaded Collada model to JSON and then save it to disk. We wanted to wrap this idea into a Nodejs app but the [ColladaLoader](https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/ColladaLoader.js) for Three.js depends on the [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser), and there is not yet an adequate equivalent for this in Nodejs.
 
-So we made an online converter. There are 2 versions; a version that shows the model as Collada and as JSON, and a 'headless' version that just converts the Collada. The first version is suitable if you want to convert only a few models and check the models side by side for possible conversion errors [[link](http://data.tweedegolf.nl/collada2json/)]. If you want to convert a large number of Colladas you'd better use the second version [[link](http://data.tweedegolf.nl/collada2json_headless/)].
+#### Three.js JSON converter
 
+So we made an online converter. There are 2 versions; a version that shows the model as Collada and as JSON, and a 'headless' version that just converts the Collada. The first version is suitable if you want to convert only a few models and check the models side by side for possible conversion errors, a [Collada to JSON checker](http://data.tweedegolf.nl/collada2json/). If you want to convert a large number of Colladas you'd better use the second version, a headless [Collada to JSON converter](http://data.tweedegolf.nl/collada2json_headless/).
+
+![Teapots](/img/blog/teapots-json-collada.jpg){: .with-caption}
+*All great teapots are alike*
 
 #### How it works
 
-First the Collada gets parsed by the DOMParser to search for textures. This is necessary because Threejs' `toJSON()` method does not include textures in the resulting JSON object.
+First the Collada gets parsed by the DOMParser to search for textures. This is necessary because Three.js' `toJSON()` method does not include textures in the resulting JSON object.
 
 We add the images of all found textures to the `THREE.Cache` object. By doing so we suppress error messages generated by the Collada loader.
 
-Then we use the `parse()` method of the ColladaLoader to parse the Collada model into a Threejs `Group`, and because a `Group` inherits from `Object3D` we can convert it to JSON right away.
+Then we use the `parse()` method of the ColladaLoader to parse the Collada model into a Three.js `Group`, and because a `Group` inherits from `Object3D` we can convert it to JSON right away.
 
-The last step is to add the texture images to the JSON file save the result as a Blob using `URL.createObjectURL`.
-
+The last step is to add the texture images to the JSON file and save the result as a Blob using `URL.createObjectURL`. All done!
 
 
 #### Code and links
- - [converter with preview](http://data.tweedegolf.nl/collada2json/)
- - [headless converter](http://data.tweedegolf.nl/collada2json_headless/)
- - [code on github](https://github.com/tweedegolf/collada2json) (the preview and headless version have their own branch)
+ - [Collada to JSON checker](http://data.tweedegolf.nl/collada2json/)
+ - [Collada to JSON converter](http://data.tweedegolf.nl/collada2json_headless/)
+ - [Code on Github](https://github.com/tweedegolf/collada2json) (the preview and headless version have their own branch)
+ - [Boris Ignjatovic, our preferred 3D artist](http://www.borisignjatovic.com/). Thanks for helping us find the best workflow!
