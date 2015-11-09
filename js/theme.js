@@ -84,13 +84,20 @@ $(window).on('scroll', function (e) {
 $(function() {
     var modal = $(window.location.hash);
     if (modal.length > 0 && modal.is('.modal')) {
-         modal.modal('show');
+        $("img.lazy", modal).lazyload({
+            threshold : 100
+        }).removeClass("lazy");
+        modal.modal('show');
     }
     if (window.location.hash === '#contact-ok') {
         $('#contact .alert').slideDown();
     }
     $('.portfolio-modal').on('show.bs.modal', function (e) {
         var hash = '#' + $(e.target).attr('id');
+        var portfolioModal = $(this);
+        $("img.lazy", portfolioModal).lazyload({
+            threshold : 100
+        }).removeClass("lazy");
         if(window.history.pushState) {
             window.history.pushState(null, null, hash);
         } else {
