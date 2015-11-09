@@ -11776,6 +11776,9 @@ div.truncate-2-lines {
   font-size: 18px; }
 .master.process header::before {
   background-color: rgba(31, 18, 10, 0.85); }
+.master.process #billing {
+  background-color: #E7E7E7;
+  padding: 60px 0 60px; }
 .master.process #intro {
   background-color: #F6F4EF;
   padding: 80px 0; }
@@ -11964,6 +11967,8 @@ div.truncate-2-lines {
     margin-top: 60px; }
     .master.process .info [class*="content-rap"] .extra:nth-of-type(1) {
       margin-top: 86px; }
+.master.process .info#billing .extra:nth-of-type(1) {
+  margin-top: 79px; }
 
 .case {
   background-color: #E7E7E7;
