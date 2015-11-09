@@ -11,11 +11,11 @@ github: https://github.com/tweedegolf/collada2json
 nerd: 3
 ---
 
-The Collada format is the most widely used format for 3D models in Three.js. However, the Collada format is an interchange format, not a delivery format. 
+The Collada format is the most commonly used format for 3D models in Three.js. However, the Collada format is an interchange format, not a delivery format. 
 
 #### Interchange vs. delivery
 
-Where a delivery format should be as small as possible and optimized for parsing by the receiving end, an interchange format doesn't have such requirements, it should just make the exchange of the models painless. Because Collada is XML it is rather verbose. And to parse a Collada, Three.js has to loop over every node of the tree and convert it to a Three.js 3D object.
+Where a delivery format should be as small as possible and optimized for parsing by the receiving end, an interchange format doesn't have such requirements, it should just make the exchange of models between 3D authoring tools painless. Because Collada is XML it is rather verbose. And to parse a Collada, Three.js has to loop over every node of the tree and convert it to a Three.js 3D object.
 
 #### Three.js' JSON format
 
