@@ -26,6 +26,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>http://tweedegolf.nl/google-for-work/</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://tweedegolf.nl/2015/11/08/collada-to-json/</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>http://tweedegolf.nl/2015/09/04/physics-in-threejs/</loc>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
