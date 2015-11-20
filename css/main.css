@@ -10922,7 +10922,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(118, 53, 34, 0.8);
+    background: rgba(31, 18, 10, 0.85);
     -moz-transition: background .3s linear;
     -webkit-transition: background .3s linear;
     -o-transition: background .3s linear;
@@ -11003,9 +11003,24 @@ header {
     width: 120px;
     margin-top: -5px; }
 
-.navbar-inverse {
-  background-color: #222;
+.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: transparent;
   border: none; }
+  .navbar.navbar-fixed-top.navbar-inverse .page-scroll.active a {
+    background-color: transparent; }
+
+.navbar.navbar-fixed-top.navbar-inverse.navbar-shrink {
+  background-color: #222; }
+  .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink .page-scroll.active a {
+    background-color: #090909; }
+
+.navbar-fixed-top .navbar-brand img {
+  opacity: .5 !important; }
+
+.navbar-shrink {
+  background-color: #222; }
+  .navbar-shrink .navbar-brand {
+    opacity: initial; }
 
 @media (min-width: 768px) {
   .navbar-fixed-top {
