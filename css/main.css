@@ -11993,3 +11993,56 @@ div.truncate-2-lines {
     margin-top: 50px; }
   .case img {
     max-width: 100%; }
+
+#web-wens-2016 {
+  text-align: center;
+  /* almost the same as on workflow page: */ }
+  #web-wens-2016 section {
+    padding: 50px 0 0 0; }
+  #web-wens-2016 footer {
+    margin-top: 100px; }
+  #web-wens-2016 .row.intro, #web-wens-2016 .master.process .info .intro[class*="content-min"], .master.process .info #web-wens-2016 .intro[class*="content-min"], #web-wens-2016 .master.process .info .intro[class*="content-rap"], .master.process .info #web-wens-2016 .intro[class*="content-rap"] {
+    margin-bottom: 50px; }
+  #web-wens-2016 .alert {
+    display: none; }
+  #web-wens-2016 #examples {
+    background-color: #E7E7E7;
+    padding: 60px 0 60px; }
+    #web-wens-2016 #examples span[class^="icon-"], #web-wens-2016 #examples span[class*="icon-"] {
+      background-repeat: no-repeat;
+      display: inline-block; }
+    #web-wens-2016 #examples .icon-draw {
+      background-image: url("/img/icon-appdraw.png");
+      height: 108px;
+      width: 95px; }
+    #web-wens-2016 #examples .icon-flow {
+      background-image: url("/img/icon-appflow.png");
+      height: 108px;
+      width: 84px; }
+    #web-wens-2016 #examples .icon-chart {
+      background-image: url("/img/icon-appchart.png");
+      height: 108px;
+      width: 91px; }
+    #web-wens-2016 #examples p {
+      color: #2D477F;
+      font-size: 16px;
+      text-align: center; }
+      #web-wens-2016 #examples p a {
+        background-color: rgba(45, 71, 127, 0.1);
+        border-bottom: 1px dotted #2D477F;
+        color: #2D477F; }
+        #web-wens-2016 #examples p a:hover {
+          background-color: rgba(45, 71, 127, 0.2);
+          text-decoration: none; }
+        #web-wens-2016 #examples p a .fa {
+          font-size: 12px; }
+    #web-wens-2016 #examples .type {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 12px 0;
+      text-transform: uppercase; }
+    #web-wens-2016 #examples .example {
+      display: inline-block;
+      font-style: italic;
+      float: right; }

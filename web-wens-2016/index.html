@@ -1,0 +1,176 @@
+---
+layout: default
+title: Jouw web wens voor 2016!
+description: Wat is jouw web wens voor 2016?
+permalink: web-wens-2016/
+---
+
+{% include navbar.html %}
+
+<div id="web-wens-2016">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-text">
+            <span class="name">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row intro">
+        <div class="col-md-12">
+          <h1> Wat is jouw web wens voor 2016?</h1>
+          <p>
+            Wat zou je willen veranderen, doen of beginnen in 2016 op het gebied van web technologie <strong> als alles mogelijk was?</strong> En lijkt het je wat om hier met gelijkgestemden over van gedachten te wisselen? Stuur dan jouw wens in en we nodigen je uit om begin februari bij ons op kantoor langs te komen. Voor een korte, inpirerende sessie waarin ieders wensen en de mogelijkheden die wij zien op het gebied van web technologie in 2016 aan bod komen!
+          </p>
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Wens insturen</h1>
+
+          <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Sluiten</span>
+            </button>
+            <strong>Bedankt voor het insturen van je wens.</strong>
+            Je ontvangt half januari een uitnodiging! Voor een van de sessies.
+          </div>
+          <form role="form" action="http://mailer.tweedegolf.com" method="POST">
+          <input type="hidden" name="_next" value="http://tweedegolf.com/#contact-ok" />
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <label for="name">Naam</label>
+                <input class="form-control" type="text" name="name" placeholder="Naam">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <label for="email">E-mailadres</label>
+                <input class="form-control" type="email" name="email" placeholder="E-mailadres">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-xs-12 floating-label-form-group">
+                <label for="message">Mijn web wens voor 2016</label>
+                <textarea placeholder="Bericht" class="form-control" name="message" rows="5"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <button type="submit" class="btn btn-lg btn-success">
+                  Verzenden
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>       
+    </div>       
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row inspiration">
+        <div class="col-md-12">
+          <h1>Inspiratie nodig?</h1>
+          <p> In 2015 bouwden wij onder andere:</p>
+        </div>
+      </div>        
+    </div>
+  </section>      
+  <section id="examples">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <p>
+          <span class="icon-draw"></span>
+          <span class="type">Drawing apps</span>
+          <span class="example">
+            {% capture drawing_apps %}{% include /proces/drawing_apps.md %}{% endcapture %}
+            {{ drawing_apps|markdownify }}
+          </span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <p>
+          <span class="icon-flow"></span>
+          <span class="type">Workflow apps</span>
+          <span class="example">
+            {% capture workflow_apps %}{% include /proces/workflow_apps.md %}{% endcapture %}
+            {{ workflow_apps|markdownify }}
+          </span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <p>
+          <span class="icon-chart"></span>
+          <span class="type">Visualisation apps</span>
+          <span class="example">
+            {% capture visualisation_apps %}{% include /proces/visualisation_apps.md %}{% endcapture %}
+            {{ visualisation_apps|markdownify }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-4">
+            <h3>Adres</h3>
+            <p>
+            <a href="https://www.google.com/maps/place/tweede+golf+bv/@51.822895,5.869926,17z/data=!3m1!4b1!4m2!3m1!1s0x47c708fbab5e926d:0xaf8fddaed8fb8cc1">
+              <span class="fa fa-map-marker"></span>
+              St. Annastraat 113 <br>
+              6524 EK Nijmegen
+            </a>
+            </p>
+          </div>
+          <div class="footer-col col-md-4">
+            <h3>Contact</h3>
+            <p>
+            <span class="fa fa-phone"></span>
+            024 - 3010 484 <br>
+            <a href="mailto:info@tweedegolf.nl">
+              <span class="fa fa-envelope"></span> info@tweedegolf.nl
+            </a>
+            </p>
+          </div>
+          <div class="footer-col col-md-4">
+            <h3>Support</h3>
+            <ul class="list-inline">
+              <li>
+                <a href="skype:tweedegolf.support?call" target="_blank" class="btn-social btn-outline">
+                <i class="fa fa-fw fa-skype"></i>
+              </a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-below">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>  
+
