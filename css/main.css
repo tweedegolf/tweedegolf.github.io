@@ -11997,6 +11997,17 @@ div.truncate-2-lines {
 #web-wens-2016 {
   text-align: center;
   /* almost the same as on workflow page: */ }
+  #web-wens-2016 header {
+    background-image: url("../img/wish/fireworks.jpg"); }
+  #web-wens-2016 #wish {
+    background-image: url("../img/wish/beste-wensen.png");
+    width: 90%;
+    max-width: 760px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; }
   #web-wens-2016 section {
     padding: 50px 0 0 0; }
   #web-wens-2016 footer {

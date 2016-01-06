@@ -1835,6 +1835,19 @@ div.truncate-2-lines {
 }
 
 #web-wens-2016 {
+  header{
+    background-image: url('../img/wish/fireworks.jpg');
+  }
+  #wish{
+    background-image: url('../img/wish/beste-wensen.png');
+    width: 90%;
+    max-width: 760px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
   text-align: center;
 
   section {
