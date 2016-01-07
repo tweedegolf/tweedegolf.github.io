@@ -1866,6 +1866,12 @@ div.truncate-2-lines {
     .send-wish{
       background-color: #eee;
       padding: 20px 15px;
+
+      #wish_subject {
+        margin-top: 23px;
+        height: 45px;
+        font-size: 1.3em;
+      }
     }
   }
   .row.inspiration{
@@ -1878,59 +1884,4 @@ div.truncate-2-lines {
       max-width: 100%;
     }
   }
-
-
-  // /* almost the same as on workflow page: */
-  //  #examples {
-  //   background-color: #E7E7E7;
-  //   padding: 60px 0 60px;
-  //   span[class^="icon-"], span[class*="icon-"] {
-  //     background-repeat: no-repeat;
-  //     display: inline-block;
-  //   }
-  //   .icon-draw {
-  //     background-image: url("/img/icon-appdraw.png");
-  //     height: 108px;
-  //     width: 95px;
-  //   }
-  //   .icon-flow {
-  //     background-image: url("/img/icon-appflow.png");
-  //     height: 108px;
-  //     width: 84px;
-  //   }
-  //   .icon-chart {
-  //     background-image: url("/img/icon-appchart.png");
-  //     height: 108px;
-  //     width: 91px;
-  //   }
-  //   p {
-  //     color: #2D477F;
-  //     font-size: 16px;
-  //     text-align: center;
-  //     a {
-  //       background-color: rgba(45,71,127,.1);
-  //       border-bottom: 1px dotted #2D477F;
-  //       color: #2D477F;
-  //       &:hover {
-  //         background-color: rgba(45,71,127,.2);
-  //         text-decoration: none;
-  //       }
-  //       .fa {
-  //         font-size: 12px;
-  //       }
-  //     }
-  //   }
-  //   .type {
-  //     display: block;
-  //     font-size: 20px;
-  //     font-weight: 500;
-  //     margin: 12px 0;
-  //     text-transform: uppercase;
-  //   }
-  //   .example {
-  //     display: inline-block;
-  //     font-style: italic;
-  //     float: right;
-  //   }
-  // }
 }
