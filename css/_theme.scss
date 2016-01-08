@@ -1020,11 +1020,18 @@ section#contact {
         padding-right: 0;
         padding-left: 0;
         border: none;
-        border-radius: 0;
         font-size: 1.5em;
-        background: none;
         box-shadow: none !important;
         resize: none;
+        background-color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding-left: 7px;
+        height: 48px;
+    }
+    textarea {
+      min-height: 100px;
     }
     label {
         display: block;
@@ -1872,14 +1879,13 @@ div.truncate-2-lines {
       padding: 20px 15px;
 
       #subject {
-        margin-top: 23px;
-        height: 45px;
+        height: 48px;
         font-size: 1.3em;
       }
     }
   }
   .row.inspiration{
-    a{
+    a {
       float: left;
     }
     img{

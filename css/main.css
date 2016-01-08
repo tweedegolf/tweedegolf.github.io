@@ -11378,11 +11378,17 @@ section#contact .form-group {
     padding-right: 0;
     padding-left: 0;
     border: none;
-    border-radius: 0;
     font-size: 1.5em;
-    background: none;
     box-shadow: none !important;
-    resize: none; }
+    resize: none;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding-left: 7px;
+    height: 48px; }
+  .floating-label-form-group textarea {
+    min-height: 100px; }
   .floating-label-form-group label {
     display: block;
     z-index: 0;
@@ -12023,7 +12029,6 @@ div.truncate-2-lines {
     background-color: #eee;
     padding: 20px 15px; }
     #web-wens-2016 .row.intro .send-wish #subject, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish #subject, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish #subject, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish #subject, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish #subject {
-      margin-top: 23px;
       height: 45px;
       font-size: 1.3em; }
 #web-wens-2016 .row.inspiration a, #web-wens-2016 .master.process .info .inspiration[class*="content-min"] a, .master.process .info #web-wens-2016 .inspiration[class*="content-min"] a, #web-wens-2016 .master.process .info .inspiration[class*="content-rap"] a, .master.process .info #web-wens-2016 .inspiration[class*="content-rap"] a {
