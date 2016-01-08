@@ -12022,6 +12022,8 @@ div.truncate-2-lines {
   #web-wens-2016 .row.intro .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish {
     background-color: #eee;
     padding: 20px 15px; }
+    #web-wens-2016 .row.intro .send-wish #subject-group, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish #subject-group, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish #subject-group, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish #subject-group, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish #subject-group {
+      margin: 20px 0px 9px 0px; }
     #web-wens-2016 .row.intro .send-wish .floating-label-form-group, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish .floating-label-form-group, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish .floating-label-form-group, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish .floating-label-form-group, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish .floating-label-form-group {
       position: relative;
       margin-bottom: 0;
