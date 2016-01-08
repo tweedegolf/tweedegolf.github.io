@@ -89,8 +89,9 @@ $(function() {
         }).removeClass("lazy");
         modal.modal('show');
     }
-    if (window.location.hash === '#contact-ok') {
-        $('#contact .alert').slideDown();
+    if (window.location.hash === '#contact-ok' || window.location.hash === '#form-ok') {
+        console.log($('#contact .alert, .form-ok').length);
+        $('#contact .alert, .form-ok').slideDown();
     }
     $('.portfolio-modal').on('show.bs.modal', function (e) {
         var hash = '#' + $(e.target).attr('id');
