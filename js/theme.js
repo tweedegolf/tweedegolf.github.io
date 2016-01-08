@@ -30,7 +30,7 @@ $('.page-scroll a').bind('click', function(event) {
 });
 
 // add contact form authentiocation hash
-$('#contact form').on('submit', function (e) {
+$('#contact form, .hashable-form').on('submit', function (e) {
     var form = $(this),
         name = form.find('[name=name]').val(),
         email = form.find('[name=email]').val(),
