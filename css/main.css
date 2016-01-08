@@ -12016,14 +12016,16 @@ div.truncate-2-lines {
   text-align: left; }
   #web-wens-2016 .row.intro .text, #web-wens-2016 .master.process .info .intro[class*="content-min"] .text, .master.process .info #web-wens-2016 .intro[class*="content-min"] .text, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .text, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .text {
     margin-bottom: 50px; }
+  #web-wens-2016 .row.intro #tg-logo, #web-wens-2016 .master.process .info .intro[class*="content-min"] #tg-logo, .master.process .info #web-wens-2016 .intro[class*="content-min"] #tg-logo, #web-wens-2016 .master.process .info .intro[class*="content-rap"] #tg-logo, .master.process .info #web-wens-2016 .intro[class*="content-rap"] #tg-logo {
+    margin-top: 30px;
+    max-width: 60%; }
   #web-wens-2016 .row.intro .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish {
     background-color: #eee;
     padding: 20px 15px; }
     #web-wens-2016 .row.intro .send-wish #wish_subject, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish #wish_subject, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish #wish_subject, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish #wish_subject, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish #wish_subject {
       margin-top: 23px;
       height: 45px;
-      font-size: 1.3em;
-      margin-left: -7px; }
+      font-size: 1.3em; }
 #web-wens-2016 .row.inspiration a, #web-wens-2016 .master.process .info .inspiration[class*="content-min"] a, .master.process .info #web-wens-2016 .inspiration[class*="content-min"] a, #web-wens-2016 .master.process .info .inspiration[class*="content-rap"] a, .master.process .info #web-wens-2016 .inspiration[class*="content-rap"] a {
   float: left; }
 #web-wens-2016 .row.inspiration img, #web-wens-2016 .master.process .info .inspiration[class*="content-min"] img, .master.process .info #web-wens-2016 .inspiration[class*="content-min"] img, #web-wens-2016 .master.process .info .inspiration[class*="content-rap"] img, .master.process .info #web-wens-2016 .inspiration[class*="content-rap"] img {
