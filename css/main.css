@@ -12022,7 +12022,7 @@ div.truncate-2-lines {
   #web-wens-2016 .row.intro .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish {
     background-color: #eee;
     padding: 20px 15px; }
-    #web-wens-2016 .row.intro .send-wish #wish_subject, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish #wish_subject, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish #wish_subject, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish #wish_subject, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish #wish_subject {
+    #web-wens-2016 .row.intro .send-wish #subject, #web-wens-2016 .master.process .info .intro[class*="content-min"] .send-wish #subject, .master.process .info #web-wens-2016 .intro[class*="content-min"] .send-wish #subject, #web-wens-2016 .master.process .info .intro[class*="content-rap"] .send-wish #subject, .master.process .info #web-wens-2016 .intro[class*="content-rap"] .send-wish #subject {
       margin-top: 23px;
       height: 45px;
       font-size: 1.3em; }
