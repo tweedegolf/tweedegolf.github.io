@@ -1020,18 +1020,11 @@ section#contact {
         padding-right: 0;
         padding-left: 0;
         border: none;
+        border-radius: 0;
         font-size: 1.5em;
+        background: none;
         box-shadow: none !important;
         resize: none;
-        background-color: #fff;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding-left: 7px;
-        height: 48px;
-    }
-    textarea {
-      min-height: 100px;
     }
     label {
         display: block;
@@ -1877,6 +1870,38 @@ div.truncate-2-lines {
     .send-wish{
       background-color: #eee;
       padding: 20px 15px;
+
+      .floating-label-form-group {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $gray-lighter;
+        input,
+        textarea {
+            z-index: 1;
+            position: relative;
+            padding-right: 0;
+            padding-left: 0;
+            border: none;
+            font-size: 1.5em;
+            box-shadow: none !important;
+            resize: none;
+            background-color: #fff;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding-left: 7px;
+            height: 48px;
+        }
+        textarea {
+          min-height: 100px;
+        }
+
+        &:not(:first-child) {
+          padding-left: 14px;
+          border-left: 1px solid $gray-lighter;
+        }
+      }
 
       #subject {
         height: 48px;
