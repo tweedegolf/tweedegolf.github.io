@@ -1388,6 +1388,15 @@ header.landing {
     &.google {
       background-image: url("/img/icon-google.png");
     }
+    &.team {
+      background-image: url("/img/icon-team.png");
+    }
+    &.money {
+      background-image: url("/img/icon-money.png");
+    }
+    &.info {
+      background-image: url("/img/icon-info.png");
+    }    
   }
   .case-label{
     font-size: 1em;
@@ -1398,7 +1407,8 @@ header.landing {
     box-sizing: border-box;
   }
   .row.contact-wrapper{
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
   }
   .main {
@@ -1427,7 +1437,7 @@ header.landing {
   .adv {
     margin-top: 50px;
     &:nth-of-type(1) { // first advantage
-      margin-top: 100px;
+      margin-top: 28px;
     }
     h1, h2, h3 {
       padding-bottom: 10px;

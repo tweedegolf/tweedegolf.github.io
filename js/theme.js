@@ -130,12 +130,12 @@ var truncate = function(target) {
 
     var className = 'truncate-2-lines';
     var block = $(this);
+
     block.addClass(className);
 
     // create link and bind handler
     var link = $('<span/>').attr({href: '#','class': 'more'}).text('Meer ↓');
     link.click(function() {
-        console.log('click', $(this).prev('.' + className).length);
         $(this).prev('.' + className).removeClass(className);
         $(this).hide();
         return false;
