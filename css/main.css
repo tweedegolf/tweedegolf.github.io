@@ -11661,6 +11661,12 @@ header.landing .tocontent {
     background-image: url("/img/icon-share.png"); }
   .landing .icon.google, .case .icon.google {
     background-image: url("/img/icon-google.png"); }
+  .landing .icon.team, .case .icon.team {
+    background-image: url("/img/icon-team.png"); }
+  .landing .icon.money, .case .icon.money {
+    background-image: url("/img/icon-money.png"); }
+  .landing .icon.info, .case .icon.info {
+    background-image: url("/img/icon-info.png"); }
 .landing .case-label, .case .case-label {
   font-size: 1em;
   color: #fff;
@@ -11669,7 +11675,8 @@ header.landing .tocontent {
   padding: 10px;
   box-sizing: border-box; }
 .landing .row.contact-wrapper, .landing .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .landing .contact-wrapper[class*="content-min"], .landing .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .landing .contact-wrapper[class*="content-rap"], .case .row.contact-wrapper, .case .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .case .contact-wrapper[class*="content-min"], .case .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .case .contact-wrapper[class*="content-rap"] {
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center; }
 .landing .main, .case .main {
   margin-right: 40px; }
@@ -11691,7 +11698,7 @@ header.landing .tocontent {
 .landing .adv, .case .adv {
   margin-top: 50px; }
   .landing .adv:nth-of-type(1), .case .adv:nth-of-type(1) {
-    margin-top: 100px; }
+    margin-top: 28px; }
   .landing .adv h1, .landing .adv h2, .landing .adv h3, .case .adv h1, .case .adv h2, .case .adv h3 {
     padding-bottom: 10px;
     text-transform: none; }
