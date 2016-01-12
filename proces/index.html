@@ -171,6 +171,18 @@ about: ons development proces
     </div>
   </section>
 
+  <section class="testimonials">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <blockquote class="testimonial">
+          <span class="icon quote"></span>
+          {% capture testimonial %}{% include /proces/testimonial.md %}{% endcapture %}
+          {{ testimonial|markdownify }}
+        </blockquote>
+      </div>
+    </div>
+  </section>  
+
   <section class="info">
     <div class="container">
       <div class="content-minimum-viable-product">

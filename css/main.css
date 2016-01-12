@@ -11634,97 +11634,97 @@ header.landing .tocontent {
   display: inline-block;
   margin-top: 28px; }
 
-.landing p a, .landing p a:hover, .landing p a:focus, .landing p a:active, .landing p a.active, .case p a, .case p a:hover, .case p a:focus, .case p a:active, .case p a.active {
+.landing p a, .landing p a:hover, .landing p a:focus, .landing p a:active, .landing p a.active, .case p a, .case p a:hover, .case p a:focus, .case p a:active, .case p a.active, .testimonials p a, .testimonials p a:hover, .testimonials p a:focus, .testimonials p a:active, .testimonials p a.active {
   color: #0af; }
-.landing .icon, .case .icon {
+.landing .icon, .case .icon, .testimonials .icon {
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
   height: 56px;
   width: 56px; }
-  .landing .icon.calendar, .case .icon.calendar {
+  .landing .icon.calendar, .case .icon.calendar, .testimonials .icon.calendar {
     background-image: url("/img/icon-calendar.png"); }
-  .landing .icon.award, .case .icon.award {
+  .landing .icon.award, .case .icon.award, .testimonials .icon.award {
     background-image: url("/img/icon-award.png"); }
-  .landing .icon.gear, .case .icon.gear {
+  .landing .icon.gear, .case .icon.gear, .testimonials .icon.gear {
     background-image: url("/img/icon-gear.png"); }
-  .landing .icon.love, .case .icon.love {
+  .landing .icon.love, .case .icon.love, .testimonials .icon.love {
     background-image: url("/img/icon-love.png"); }
-  .landing .icon.quote, .case .icon.quote {
+  .landing .icon.quote, .case .icon.quote, .testimonials .icon.quote {
     background-image: url("/img/icon-quote.png");
     opacity: 0.1; }
-  .landing .icon.head, .case .icon.head {
+  .landing .icon.head, .case .icon.head, .testimonials .icon.head {
     background-image: url("/img/icon-head.png"); }
-  .landing .icon.scale, .case .icon.scale {
+  .landing .icon.scale, .case .icon.scale, .testimonials .icon.scale {
     background-image: url("/img/icon-scale.png"); }
-  .landing .icon.share, .case .icon.share {
+  .landing .icon.share, .case .icon.share, .testimonials .icon.share {
     background-image: url("/img/icon-share.png"); }
-  .landing .icon.google, .case .icon.google {
+  .landing .icon.google, .case .icon.google, .testimonials .icon.google {
     background-image: url("/img/icon-google.png"); }
-  .landing .icon.team, .case .icon.team {
+  .landing .icon.team, .case .icon.team, .testimonials .icon.team {
     background-image: url("/img/icon-team.png"); }
-  .landing .icon.money, .case .icon.money {
+  .landing .icon.money, .case .icon.money, .testimonials .icon.money {
     background-image: url("/img/icon-money.png"); }
-  .landing .icon.info, .case .icon.info {
+  .landing .icon.info, .case .icon.info, .testimonials .icon.info {
     background-image: url("/img/icon-info.png"); }
-.landing .case-label, .case .case-label {
+.landing .case-label, .case .case-label, .testimonials .case-label {
   font-size: 1em;
   color: #fff;
   background-color: #763522;
   display: inline-block;
   padding: 10px;
   box-sizing: border-box; }
-.landing .row.contact-wrapper, .landing .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .landing .contact-wrapper[class*="content-min"], .landing .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .landing .contact-wrapper[class*="content-rap"], .case .row.contact-wrapper, .case .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .case .contact-wrapper[class*="content-min"], .case .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .case .contact-wrapper[class*="content-rap"] {
+.landing .row.contact-wrapper, .landing .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .landing .contact-wrapper[class*="content-min"], .landing .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .landing .contact-wrapper[class*="content-rap"], .case .row.contact-wrapper, .case .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .case .contact-wrapper[class*="content-min"], .case .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .case .contact-wrapper[class*="content-rap"], .testimonials .row.contact-wrapper, .testimonials .master.process .info .contact-wrapper[class*="content-min"], .master.process .info .testimonials .contact-wrapper[class*="content-min"], .testimonials .master.process .info .contact-wrapper[class*="content-rap"], .master.process .info .testimonials .contact-wrapper[class*="content-rap"] {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center; }
-.landing .main, .case .main {
+.landing .main, .case .main, .testimonials .main {
   margin-right: 40px; }
-  .landing .main .icon, .case .main .icon {
+  .landing .main .icon, .case .main .icon, .testimonials .main .icon {
     height: 84px;
     width: 84px; }
-  .landing .main h1, .landing .main h2, .landing .main h3, .case .main h1, .case .main h2, .case .main h3 {
+  .landing .main h1, .landing .main h2, .landing .main h3, .case .main h1, .case .main h2, .case .main h3, .testimonials .main h1, .testimonials .main h2, .testimonials .main h3 {
     font-size: 56px;
     padding-bottom: 24px;
     text-transform: none; }
-  .landing .main p, .case .main p {
+  .landing .main p, .case .main p, .testimonials .main p {
     font-size: 24px;
     line-height: 40px; }
-  .landing .main ul, .case .main ul {
+  .landing .main ul, .case .main ul, .testimonials .main ul {
     margin-top: 32px; }
-  .landing .main li p, .case .main li p {
+  .landing .main li p, .case .main li p, .testimonials .main li p {
     font-size: 22px;
     line-height: 32px; }
-.landing .adv, .case .adv {
+.landing .adv, .case .adv, .testimonials .adv {
   margin-top: 50px; }
-  .landing .adv:nth-of-type(1), .case .adv:nth-of-type(1) {
+  .landing .adv:nth-of-type(1), .case .adv:nth-of-type(1), .testimonials .adv:nth-of-type(1) {
     margin-top: 28px; }
-  .landing .adv h1, .landing .adv h2, .landing .adv h3, .case .adv h1, .case .adv h2, .case .adv h3 {
+  .landing .adv h1, .landing .adv h2, .landing .adv h3, .case .adv h1, .case .adv h2, .case .adv h3, .testimonials .adv h1, .testimonials .adv h2, .testimonials .adv h3 {
     padding-bottom: 10px;
     text-transform: none; }
-  .landing .adv p, .case .adv p {
+  .landing .adv p, .case .adv p, .testimonials .adv p {
     font-size: 16px;
     line-height: 28px; }
-  .landing .adv .more, .case .adv .more {
+  .landing .adv .more, .case .adv .more, .testimonials .adv .more {
     color: #0af;
     cursor: pointer;
     display: inline-block;
     float: right; }
-.landing .testimonial, .case .testimonial {
+.landing .testimonial, .case .testimonial, .testimonials .testimonial {
   background-color: #f8f8f8;
   color: #666;
   margin-top: 50px;
   margin-right: 40px;
   padding: 32px 40px; }
-  .landing .testimonial:before, .landing .testimonial:after, .case .testimonial:before, .case .testimonial:after {
+  .landing .testimonial:before, .landing .testimonial:after, .case .testimonial:before, .case .testimonial:after, .testimonials .testimonial:before, .testimonials .testimonial:after {
     content: " ";
     display: table; }
-  .landing .testimonial:after, .case .testimonial:after {
+  .landing .testimonial:after, .case .testimonial:after, .testimonials .testimonial:after {
     clear: both; }
-  .landing .testimonial p, .case .testimonial p {
+  .landing .testimonial p, .case .testimonial p, .testimonials .testimonial p {
     font-size: 18px;
     line-height: 32px; }
-  .landing .testimonial cite, .case .testimonial cite {
+  .landing .testimonial cite, .case .testimonial cite, .testimonials .testimonial cite {
     float: right; }
 
 #contact.personal {
