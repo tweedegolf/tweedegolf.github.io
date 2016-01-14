@@ -1,5 +1,6 @@
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
+<!-- page-class is passed into this include to changed the menu styling for the blog & 3d framework pages -->
+<nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header {{include.page-class}}">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
@@ -10,7 +11,8 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{% unless page.homepage %}/{% endunless %}#page-top">
-        <img src="/img/tg.png" alt="{{ site.name }}">
+        <img class=tg-logo src="/img/tg.png" alt="{{ site.name }}">
+        <img class=tg-logo-inverse src="/img/tg-inverse.png" alt="{{ site.name }}">
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
