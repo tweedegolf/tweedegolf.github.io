@@ -15,11 +15,6 @@ about: Symfony development bij tweede golf
           {% capture main %}{% include /symfony/development/main.md %}{% endcapture %}
           {{ main|markdownify }}
         </div>
-<!--         <blockquote class="testimonial">
-          <span class="icon quote"></span>
-          {% capture testimonial %}{% include /symfony/development/testimonial.md %}{% endcapture %}
-          {{ testimonial|markdownify }}
-        </blockquote> -->
       </div>
       <div class="col-sm-6">
         <div class="adv">
@@ -85,7 +80,7 @@ about: Symfony development bij tweede golf
           </div>                          
         </div> 
       </div>  
-    </div> 
+    </div>
 
     <div class="row contact-wrapper">
       <div class="col-sm-12">
@@ -94,5 +89,15 @@ about: Symfony development bij tweede golf
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">    
+        <blockquote class="testimonial">
+          <span class="icon quote"></span>
+          {% capture testimonial %}{% include /symfony/development/testimonial.md %}{% endcapture %}
+          {{ testimonial|markdownify }}
+        </blockquote>
+        </div>
+      </div>
+    </div>
 </section>

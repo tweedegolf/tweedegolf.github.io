@@ -1,3 +1,3 @@
-Tweede golf is al ruim twee jaar onze technische partner waarmee we ons backoffice systeem en de sites voor Askja en VNC hebben ontwikkeld. De grondige inventarisatie die we bij de start uitvoerden was een eye-opener en was cruciaal voor het succes van het project.
+We hebben een team van tweede golf gedurende anderhalve maand ingehuurd om gelijktijdig met een aantal nieuwe producten onze nieuwe site [planviewer.nl](http://www.planviewer.nl) te kunnen lanceren. Hun technische knowhow heeft enorm geholpen om de ontwikkeling vlot te trekken. We kijken tevreden terug op de samenwerking en zijn blij dat ons vastgoedportaal weer staat zoals het moet staan.
 
-<cite>-- Sander van Opstal, Askja reizen</cite>
+<cite>-- **Wiebe Tamminga**, senior accountmanager Planviewer</cite>
