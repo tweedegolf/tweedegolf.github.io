@@ -27,46 +27,164 @@ For Threejs there are 2 libraries that provide React bindings:
 
 Threejs keeps a virtual 3D scene in memory which is rendered to the WebGL context of the canvas element every time you call the render method. The render method completely clears the canvas and creates the complete scene anew, even when nothing has changed.
 
-Therefor we have nothing to gain performance-wise when using React with Threejs, but there is still plenty reason to use it. React encourages you to create components and move state out of components as much as possible, resulting in cleaner, better to maintain code, and the JSX notation gives you a very clear overview of the hierarchical structure of the components in your 3D scene. For example, your scene in react-tree might look like this:
+Therefor we have nothing to gain performance-wise when using React with Threejs, but there is still plenty reason to use it. React encourages you to create components and move state out of components as much as possible, resulting in cleaner, better to maintain code, and the JSX notation gives you a very clear overview of the hierarchical structure of the components in your 3D scene as we will see in the code examples in the next chapter.
+
+
+####Two libraries compared
+
+The library react-three is written in es5 and react-three-renderer is newer and written in es6.
+
+Let's have a look at the following code examples that both create a simple cube. First react-three:
 
 {% highlight xml %}
+
+  import React3 from 'react-three';
+
+  let Scene = React3.Scene
+  let Camera = React3.Camera;
+  let AmbientLight = React3.AmbientLight;
+  let Mesh = React3.Mesh;
+
   <Scene
     width={window.innerWidth}
     height={window.innerHeight}
-    camera={'camera'}
   >
     <Camera
       aspect={window.innerWidth / window.innerHeight}
       far={1000}
       fov={50}
       near={1}
-      position={new THREE.Vector3(0, 300, 500)}
+    />
+    <AmbientLight
+      color={this.props.color}
+      intensity={this.props.intensity}
     />
     <Mesh
-      geometry={new THREE.BoxGeometry(this.props.size, this.props.size, this.props.size)}
-      key={THREE.Math.generateUUID()}
-      material={new THREE.MeshBasicMaterial({color: this.props.color})}
       position={this.props.position}
+      geometry={new THREE.BoxGeometry(this.props.size, this.props.size, this.props.size)}
+      material={new THREE.MeshBasicMaterial({color: this.props.color})}
     />
-  </Scene>
+  />
 {% endhighlight %}
 
 
-This creates a scene with a simple cube. Note that the properties of the components can be instances of Threejs classes as well, for instance the geometry parameter of the `Mesh` component is an instance of `THREE.BoxGeometry`.
+And now the same in react-three-renderer:
 
-####Two libraries compared
+{% highlight xml %}
 
- - react-three:
+  import Scene from 'react-three-renderer'
 
-   - written in es5
-   - uses composite components
+  <Scene
+    width={window.innerWidth}
+    height={window.innerHeight}
+  >
+    <perspectiveCamera
+      aspect={window.innerWidth / window.innerHeight}
+      far={1000}
+      fov={50}
+      near={1}
+    />
+    <ambientLight
+      color={this.props.color}
+    />
+    <mesh
+      position={this.props.position}
+      <boxGeometry
+        width={this.props.size}
+        height={this.props.size}
+        depth={this.props.size}
+      />
+      </meshBasicMaterial
+        color={this.props.color}
+      />
+    />
+  />
+{% endhighlight %}
 
 
- - react-three-renderer:
+We see 2 obvious differences:
 
-   - written in es6
-   - no composite components
+**1)** In react-three we import one object and this object contains all available components. I have given the components the same name as the properties of the imported object, but I could have used any name. The naming convention in React commands us to write custom components with an uppercase, which I obied willingly.
 
+In react-three-renderer we import one component and the available components are known within this tag. This is because react-three-renderer uses internal component, similar to `div`, `span` and so on. Note that the names of the components start with lowercases.
+
+
+**2)** In react-three the properties geometry and material of the `Mesh` component are instances of the corresponding Threejs classes whereas in react-three-renderer both the geometry and the material are components as well.
+
+React-three has only 17 components, but react-three-renderer strives to create components for every Threejs class, thus gaining a higher granularity.
+
+
+
+####Importing models
+
+The model loaders for Threejs load the various 3D formats (Collada, FBX, Obj, JSON, and so on) into Threejs objects that can be added to the scene right away. Where this is very convenient when you use Threejs without React bindings, it requires an extra conversion step when we do use React bindings because we need to parse the Threejs object into components.
+
+To accomplish this, we need to extract the geometries and the materials from the model:
+
+{% highlight javascript %}
+
+  let model; // the loaded 3d model
+  let materialIndices = new Map();
+  let materialsArray = [];
+  let geometries = new Map();
+
+  model.traverse((child) => {
+    if(child instanceof THREE.Mesh){
+      let uuid = child.material.uuid;
+      materialIndices.set(uuid, index++);
+      materialsArray.push(child.material);
+      geometries.set(uuid, child.geometry);
+    }
+  });
+
+  // create multimaterial
+  let multiMaterial = new THREE.MeshFaceMaterial(this.materialsArray);
+
+  let merged = new THREE.Geometry();
+  // merge the geometry and apply the matrix of the new position
+  geometries.forEach((g, uuid) => {
+    merged.merge(g, model.matrix, this.materialIndices.get(uuid));
+  });
+
+  mergedGeometry = new THREE.BufferGeometry().fromGeometry(merged);
+
+{% endhighlight %}
+
+
+Now we can create React components from the imported models. Because multimaterials are supported in react-three we can use the merged geometry:
+
+{% highlight javascript %}
+
+  <Mesh
+    geometry={mergedGeometry}
+    material={mutliMaterial}
+  />
+
+{% endhighlight %}
+
+In react-three-renderer we need more code:
+
+
+{% highlight javascript %}
+
+
+
+  <object3d>
+    geometry={mergedGeometry}
+    material={mutliMaterial}
+  />
+
+{% endhighlight %}
+
+
+
+####Pros and cons
+
+Using React-bindings for Threejs results in very clean code. Usually you don't have a clear hierarchical overview of your 3D scene, but with React your scene is clearly laid out in a tree of components. As as bonus, you can debug your scene with the React browser tools.
+
+Sometimes using React requires some extra steps, for instance when loading 3D models.
+
+Also, it is a bit more difficult to control the renderer. By default
 
 
 
