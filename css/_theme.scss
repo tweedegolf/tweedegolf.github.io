@@ -477,6 +477,8 @@ header {
   }
 }
 
+
+
 .navbar.navbar-fixed-top.navbar-inverse {
     //background-color: #222;
     background-color: transparent;
@@ -503,6 +505,79 @@ header {
   }
 }
 //
+
+
+.tg-logo-inverse{
+  display: none;
+}
+
+
+//different menu styling for blog
+.navbar.navbar-inverse.blog .navbar-nav > li > a {
+  color: #fff;
+  &:hover{
+    color: #ddd;
+  }
+}
+.navbar-inverse.blog ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #fff;
+}
+
+
+//different menu styling for 3d framework
+.navbar-inverse.framework{
+  .tg-logo-inverse{
+    display: block;
+  }
+  .tg-logo{
+    display: none;
+  }
+}
+.navbar-inverse.framework .navbar-nav > li{
+  > a {
+    color: #bbb;
+    background: none;
+    //color: #fff;
+    &:hover{
+      background: none;
+      color: #000;
+    }
+  }
+  &.active{
+    a{
+      color: #000;
+    }
+  }
+}
+.navbar-inverse.framework ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #bbb;
+}
+
+
+
+//shrink for blog and framework
+.navbar-inverse.framework.navbar-shrink{
+  .tg-logo-inverse{
+    display: none;
+  }
+  .tg-logo{
+    display: block;
+  }
+}
+
+.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
+.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
+  color: #777777;
+  &:hover{
+    background-color: #000;
+  }
+}
+.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
+.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #777;
+}
+
+
 
 
 
@@ -1495,6 +1570,11 @@ header.landing {
   }
   .floating-label-form-group-with-focus label {
     color: #0af !important;
+  }
+  .fa-phone, .fa-envelope{
+    float: left;
+    margin: 4px 10px 0 0;
+    width: 16px;
   }
 }
 footer.landing {

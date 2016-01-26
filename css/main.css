@@ -11022,6 +11022,50 @@ header {
   .navbar-shrink .navbar-brand {
     opacity: initial; }
 
+.tg-logo-inverse {
+  display: none; }
+
+.navbar.navbar-inverse.blog .navbar-nav > li > a {
+  color: #fff; }
+  .navbar.navbar-inverse.blog .navbar-nav > li > a:hover {
+    color: #ddd; }
+
+.navbar-inverse.blog ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #fff; }
+
+.navbar-inverse.framework .tg-logo-inverse {
+  display: block; }
+.navbar-inverse.framework .tg-logo {
+  display: none; }
+
+.navbar-inverse.framework .navbar-nav > li > a {
+  color: #bbb;
+  background: none; }
+  .navbar-inverse.framework .navbar-nav > li > a:hover {
+    background: none;
+    color: #000; }
+.navbar-inverse.framework .navbar-nav > li.active a {
+  color: #000; }
+
+.navbar-inverse.framework ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #bbb; }
+
+.navbar-inverse.framework.navbar-shrink .tg-logo-inverse {
+  display: none; }
+.navbar-inverse.framework.navbar-shrink .tg-logo {
+  display: block; }
+
+.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
+.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
+  color: #777777; }
+  .navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a:hover,
+  .navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a:hover {
+    background-color: #000; }
+
+.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
+.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #777; }
+
 @media (min-width: 768px) {
   .navbar-fixed-top {
     padding: 25px 0;
@@ -11746,6 +11790,10 @@ header.landing .tocontent {
     border-color: #0af !important; }
   #contact.personal .floating-label-form-group-with-focus label {
     color: #0af !important; }
+  #contact.personal .fa-phone, #contact.personal .fa-envelope {
+    float: left;
+    margin: 4px 10px 0 0;
+    width: 16px; }
 
 footer.landing .footer-above {
   background-color: #333; }
