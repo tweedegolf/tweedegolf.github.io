@@ -1,7 +1,7 @@
 ---
 title: 3D model viewer
 thumb: 3dapp01.png
-date: 2015
+date: 2015-01-01
 tags: 3D, app, iOS, iPhone, iPad, collada
 screens: 3dapp02.png,3dapp01.png
 noborders: 1

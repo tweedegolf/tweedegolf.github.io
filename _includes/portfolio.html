@@ -42,7 +42,7 @@
               {% if item.date %}
               <li>
                 <span>Datum: </span>
-                <strong>{{ item.date }}</strong>
+                <strong>{{ item.date | date: '%Y'}}</strong>
               </li>
               {% endif %}
               {% if item.client %}

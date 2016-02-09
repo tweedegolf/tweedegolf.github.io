@@ -1,7 +1,7 @@
 ---
 title: Online Beleidsmonitor
 thumb: online_beleidsmonitor.png
-date: begin 2015
+date: begin 2015-01-01
 tags: Datavisualisatie, Monitoring, Google Maps api, Google Charts api
 vimeo: 127491405
 screens: online_beleidsmonitor_1.png,online_beleidsmonitor_admin_1.png,online_beleidsmonitor_admin_2.png,lvb_infographic_online_bestuursmonitor-03.png

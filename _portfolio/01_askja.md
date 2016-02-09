@@ -1,7 +1,7 @@
 ---
 title: Askja
 thumb: askja.png
-date: 2015
+date: 2015-01-01
 client: Askja Reizen
 partner: TK305 (design)
 partnerurl: http://tk305.com/

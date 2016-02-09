@@ -1,7 +1,7 @@
 ---
 title: iX-ray
 thumb: ixp.png
-date: 2015
+date: 2015-01-01
 client: iXperium / HAN
 partner: LaVerbe (design)
 partnerurl: http://laverbe.nl

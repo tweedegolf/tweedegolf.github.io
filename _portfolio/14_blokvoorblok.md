@@ -1,7 +1,7 @@
 ---
 title: Blok voor Blok
 thumb: bvb01.png
-date: 2014
+date: 2014-01-01
 client: HIS / Ministerie van Binnenlandse zaken
 partner: LaVerbe
 partnerurl: http://laverbe.nl

@@ -1,7 +1,7 @@
 ---
 title: PlanViewer 3D
 thumb: planviewer01.png
-date: 2015
+date: 2015-01-01
 client: PlanViewer
 tags: 3D visualisatie, AHN2, api, point cloud
 screens: planviewer01.png,planviewer02.png,planviewer03.png

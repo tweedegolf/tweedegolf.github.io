@@ -1,7 +1,7 @@
 ---
 title: Arttown
 thumb: art.jpg
-date: 2014
+date: 2014-01-01
 client: Arttown
 partner: TK305 (design)
 partnerurl: http://tk305.com

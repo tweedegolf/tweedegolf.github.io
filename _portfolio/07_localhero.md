@@ -1,7 +1,7 @@
 ---
 title: Local Hero Travel
 thumb: localhero.png
-date: 2015
+date: 2015-01-01
 client: Local Hero Travel
 partner: Grafische Republiek
 partnerurl: http://grafische-republiek.com/

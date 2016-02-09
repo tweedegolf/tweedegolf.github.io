@@ -1,7 +1,7 @@
 ---
 title: Tekenjetuin
 thumb: tjt.png
-date: 2014
+date: 2014-01-01
 client: Tekenjetuin
 partner: TK305 (design)
 partnerurl: http://tk305.com
