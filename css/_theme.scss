@@ -1393,23 +1393,23 @@ header.landing {
   &:before {
     background: rgba(0, 0, 0, 0.8);
   }
-  .icon-symfony {
-    background-image: url("/img/symfony-logo.png");
+  .icon-header {
     background-repeat: no-repeat;
     display: block;
     height: 150px;
     margin: 0 auto;
     width: 150px;
+    background-size: contain;
+    background-position: center;
+  }
+  .icon-partners {
+    background-image: url("/img/partners/partners-icon.png");
+  }
+  .icon-symfony {
+    background-image: url("/img/symfony-logo.png");
   }
   .icon-google-for-work {
     background-image: url("/img/apps-for-work-social-icon.png");
-    background-repeat: no-repeat;
-    display: block;
-    background-position: center;
-    background-size: contain;
-    height: 150px;
-    margin: 0 auto;
-    width: 150px;
   }
 
 
@@ -1471,7 +1471,25 @@ header.landing {
     }
     &.info {
       background-image: url("/img/icon-info.png");
-    }    
+    }
+    &.logo-laverbe{
+      width: 200px;
+      height: 35px;
+      margin-bottom: 16px;
+      background-image: url("/img/partners/logo-laverbe.png");
+    }
+    &.logo-grafische-republiek{
+      width: 400px;
+      height: 75px;
+      margin-bottom: 16px;
+      background-image: url("/img/partners/logo-grafische-republiek.png");
+    }
+    &.logo-tk305{
+      width: 400px;
+      height: 75px;
+      margin-bottom: 16px;
+      background-image: url("/img/partners/logo-tk305.png");
+    }
   }
   .case-label{
     font-size: 1em;
@@ -1956,7 +1974,7 @@ div.truncate-2-lines {
     #tg-logo {
       margin-top: 30px;
       max-width: 60%;
-    }    
+    }
     .send-wish{
       background-color: #eee;
       padding: 20px 15px;

@@ -11,11 +11,11 @@ layout: default
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <div class="intro-desc">
-          <span class="icon-header icon-symfony"></span>
+          <span class="icon-header icon-partners"></span>
           <h1>{{ page.title }}</h1>
           <hr class="separator">
 
-          {% capture intro %}{% include /symfony/intro.md %}{% endcapture %}
+          {% capture intro %}{% include /partners/intro.md %}{% endcapture %}
           {{ intro|markdownify }}
           <div class="page-scroll">
             <a class="tocontent" href="#landing"><i class="fa fa-3x fa-angle-down"></i></a>
@@ -28,4 +28,4 @@ layout: default
 
 {{ content }}
 
-{% include footer-landing.html %}
+{% include footer-partners.html %}

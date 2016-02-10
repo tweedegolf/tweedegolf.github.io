@@ -1,0 +1,46 @@
+---
+layout: partners
+title: Partners
+description: Partners van tweede golf
+permalink: partners/
+contact: Marlon
+about: Partners van tweede golf
+---
+
+<section id="landing" class="landing">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="main" name="main">
+          {% capture main %}{% include /partners/main.md %}{% endcapture %}
+          {{ main|markdownify }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="adv">
+          <span class="icon logo-laverbe"></span>
+          <div class="truncate-2-lines">
+            {% capture adv1 %}{% include /partners/partner_1.md %}{% endcapture %}
+      		  {{ adv1|markdownify }}
+          </div>
+        </div>
+        <div class="adv">
+          <span class="icon logo-grafische-republiek"></span>
+          <div class="truncate-2-lines">
+            {% capture adv2 %}{% include /partners/partner_2.md %}{% endcapture %}
+      		  {{ adv2|markdownify }}
+          </div>
+        </div>
+        <div class="adv">
+          <span class="icon logo-tk305"></span>
+          <div class="truncate-2-lines">
+            {% capture adv3 %}{% include /partners/partner_3.md %}{% endcapture %}
+            {{ adv3|markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+</section>
