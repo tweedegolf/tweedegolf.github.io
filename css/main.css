@@ -11654,22 +11654,20 @@ header.landing .container {
   padding-bottom: 0; }
 header.landing:before {
   background: rgba(0, 0, 0, 0.8); }
-header.landing .icon-symfony {
-  background-image: url("/img/symfony-logo.png");
+header.landing .icon-header {
   background-repeat: no-repeat;
   display: block;
   height: 150px;
   margin: 0 auto;
-  width: 150px; }
-header.landing .icon-google-for-work {
-  background-image: url("/img/apps-for-work-social-icon.png");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center;
+  width: 150px;
   background-size: contain;
-  height: 150px;
-  margin: 0 auto;
-  width: 150px; }
+  background-position: center; }
+header.landing .icon-partners {
+  background-image: url("/img/partners/partners-icon.png"); }
+header.landing .icon-symfony {
+  background-image: url("/img/symfony-logo.png"); }
+header.landing .icon-google-for-work {
+  background-image: url("/img/apps-for-work-social-icon.png"); }
 header.landing h1, header.landing h2, header.landing h3 {
   text-transform: none; }
 header.landing .desc p {
@@ -11711,6 +11709,21 @@ header.landing .tocontent {
     background-image: url("/img/icon-money.png"); }
   .landing .icon.info, .case .icon.info, .testimonials .icon.info {
     background-image: url("/img/icon-info.png"); }
+  .landing .icon.logo-laverbe, .case .icon.logo-laverbe, .testimonials .icon.logo-laverbe {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 16px;
+    background-image: url("/img/partners/logo-laverbe.png"); }
+  .landing .icon.logo-grafische-republiek, .case .icon.logo-grafische-republiek, .testimonials .icon.logo-grafische-republiek {
+    width: 400px;
+    height: 75px;
+    margin-bottom: 16px;
+    background-image: url("/img/partners/logo-grafische-republiek.png"); }
+  .landing .icon.logo-tk305, .case .icon.logo-tk305, .testimonials .icon.logo-tk305 {
+    width: 400px;
+    height: 75px;
+    margin-bottom: 16px;
+    background-image: url("/img/partners/logo-tk305.png"); }
 .landing .case-label, .case .case-label, .testimonials .case-label {
   font-size: 1em;
   color: #fff;
