@@ -36,55 +36,55 @@ layout: default
           {{ content }}
         </article>
 
-        <section id="contact" class="personal">
+        <div id="contact" class="personal">
           <a name="contact"></a>
           <a name="contact-ok"></a>
           <div class="container">
             <div class="row">
               <div class="col-md-7">
-                <h5>Contact opnemen</h5>
+                <h5>Get in touch</h5>
                 <div class="alert alert-success alert-dismissible col-md-11" role="alert">
                   <button type="button" class="close" data-dismiss="alert">
                     <span aria-hidden="true">&times;</span>
                     <span class="sr-only">Sluiten</span>
                   </button>
-                  <strong>Bedankt voor je bericht.</strong>
-                  We nemen snel contact met je op.
+                  <strong>Thanks for your message!</strong>
+                  We'll get in touch with you soon.
                 </div>
 
                 {% for member in site.data.members %}
                   {% if member.name == page.contact %}
                     <div class="member-card">
                       <a class="member-image {{ member.name }} col-xs-2"></a>
-                      <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</p>
+                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}. It's also possible to send an email directly: <a href="mailto:{{ member.email }}{% if page.title %}?subject={{ page.title }}{% endif %}">{{ member.email }}</a>.</p>
                     </div>
                   {% endif %}
                 {% endfor %}
                 <form role="form" action="//mailer.tweedegolf.com" method="POST" class="hashable-form">
-                <input type="hidden" name="_next" value="http://localhost:4000{{page.url}}#contact-ok" />
+                <input type="hidden" name="_next" value="http://tweedegolf.nl{{page.url}}#contact-ok" />
                   <div class="row">
                     <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="name">Naam</label>
-                      <input class="form-control" type="text" name="name" placeholder="Naam">
+                      <label for="name">Name</label>
+                      <input class="form-control" type="text" name="name" placeholder="Name">
                     </div>
                   </div>
                   <div class="row">
                     <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="email">E-mailadres</label>
-                      <input class="form-control" type="email" name="email" placeholder="E-mailadres" required="required">
+                      <label for="email">Email address</label>
+                      <input class="form-control" type="email" name="email" placeholder="Email address" required="required">
                     </div>
                   </div>
                   <div class="row">
                     <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="message">Bericht</label>
-                      <textarea placeholder="Bericht" class="form-control" name="message" rows="5"></textarea>
+                      <label for="message">Message</label>
+                      <textarea placeholder="Message" class="form-control" name="message" rows="5"></textarea>
                     </div>
                   </div>
                   <br>
                   <div class="row">
                     <div class="form-group col-xs-7">
                       <button type="submit" class="btn btn-lg btn-success">
-                        Verzenden
+                        Send
                       </button>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ layout: default
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
       <div class="col-md-offset-1 col-md-4 col-sm-12">
         <p>Posted on <strong>{{ page.date | date: "%-d %B %Y" }}</strong></p>
@@ -128,6 +128,5 @@ layout: default
     </div>
   </div>
 </section>
-
 
 {% include footer.html %}

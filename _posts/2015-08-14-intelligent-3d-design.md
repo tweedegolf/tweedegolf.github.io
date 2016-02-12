@@ -7,6 +7,8 @@ thumb: yga-beregening2-5.png
 leadimg: yga-beregening2-5.png
 tags: intelligent advice, knowledge based systems, 3d framework, heat map
 author: Bram
+contact: Bram
+about: AI and our 2d framework
 nerd: 2
 ---
 

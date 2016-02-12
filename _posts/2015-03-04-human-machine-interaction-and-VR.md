@@ -4,6 +4,8 @@ thumb: osmose-wired.jpg
 leadimg: osmose-wired.jpg
 tags: VR, HMI, HCI
 author: Daniel
+contact: Daniel
+about: VR, HMI and HCI
 description: A revolution in human-machine interaction? Virtual reality (VR) and augmented reality (AR) have received a revived interest due to the development of devices like the Oculus Rift and Microsoft's Hololens.
 nerd: 1
 ---

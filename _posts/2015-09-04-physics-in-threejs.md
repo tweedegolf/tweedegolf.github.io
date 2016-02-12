@@ -7,6 +7,8 @@ thumb: physics-engine.jpg
 leadimg: physics-engine.jpg
 tags: WebGL, physics, 3D, Three.js, ammo.js
 author: Dennis
+contact: RubenN
+about: Three.js
 nerd: 3
 ---
 

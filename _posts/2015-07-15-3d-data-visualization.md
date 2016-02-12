@@ -6,6 +6,8 @@ tags: Threejs, WebGL, 3D, Data visualization
 description: 3D data visualization for geospatial analysis using WebGL and Three.js
 title: 3D data visualization
 author: RubenN
+contact: RubenN
+about: 3D data visualization
 nerd: 2
 ---
 

@@ -6,6 +6,8 @@ thumb: teapots-json-collada.jpg
 leadimg: teapots-json-collada.jpg
 tags: Collada, Three.js, 3D, JSON, WebGL
 author: Daniel
+contact: Daniel
+about: The Collada to JSON converter
 description: Optimizing 3D models by converting Collada's to JSON
 github: https://github.com/tweedegolf/collada2json
 nerd: 3

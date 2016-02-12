@@ -1074,12 +1074,23 @@ section#cases {
 }
 
 #contact {
+  padding-top: 10px;
+
   h2 {
     text-transform: uppercase;
   }
   .form-group {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+/* on a post's page, the contact form differs slightly */
+#post-content #contact {
+  margin-top: 40px;
+
+  form {
+    clear: both;
   }
 }
 

@@ -2,8 +2,10 @@
 layout: post
 thumb: threejs-barrel-distortion.jpg
 leadimg: threejs-barrel-distortion.jpg
-tags: VR, WebVR, 3D, Cardboard, Threejs
+tags: VR, WebVR, 3D, Cardboard, Three.js
 author: Daniel
+contact: Daniel
+about: VR, WebVR and Cardboard
 description: Our first WebVR application is a big cube in Threejs and a simple 3D scene floating inside that cube. The 3D scene consists of ...
 nerd: 3
 ---

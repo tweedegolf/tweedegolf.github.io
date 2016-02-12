@@ -7,6 +7,8 @@ thumb: light2-shader.png
 leadimg: light2-shader.png
 tags: Three.js, point light, shadow casting, WebGL
 author: Dennis
+contact: RubenN
+about: Point light shadows in Three.js
 nerd: 5
 ---
 

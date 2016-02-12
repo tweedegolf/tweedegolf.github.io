@@ -4,6 +4,8 @@ thumb: google-cardboard2.jpg
 leadimg: google-cardboard2.jpg
 tags: VR, WebVR
 author: Daniel
+contact: Daniel
+about: VR and WebVR
 description: Virtual reality and the web. The state of WebVR.
 nerd: 2
 ---

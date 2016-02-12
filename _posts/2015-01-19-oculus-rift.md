@@ -5,7 +5,7 @@ leadimg: oculus.jpg
 tags: Oculus Rift, VR, 3D
 author: Daniel
 contact: Daniel
-about: De Oculus Rift, VR en 3D
+about: The Oculus Rift, VR and 3D
 description: The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of - sometimes quite exotic - devices have been developed.
 nerd: 2
 ---
