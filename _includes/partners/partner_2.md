@@ -1,1 +1,1 @@
-Tweede golf werkt samen met <a target="_blank" href="http://www.grafische-republiek.com/">Grafische Republiek</a>, een jong creatief vormgevers duo, gevestigd in hetzelfde pand. (...). Cases: [Local Heo Travel](/#portfolio-local-hero-travel)
+<a target="_blank" href="http://www.grafische-republiek.com/">De Grafische Republiek</a> staat voor heldere en functionele beeldtaal. Een beeldtaal zonder ruis, die de boodschap en kernwaarden van de opdrachtgever representeert. Cases: [Local Hero Travel](/#portfolio-local-hero-travel)
