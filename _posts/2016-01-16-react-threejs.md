@@ -11,7 +11,7 @@ github: https://github.com/abudaan/three.js-rotations
 nerd: 5
 ---
 
-####React
+#### React
 
 
 React has become a popular choice for creating user interfaces. React keeps a virtual DOM and changes in the UI are applied to this virtual DOM first. Then React calculates the minimal set of changes that are needed to update the real DOM to match with the virtual DOM. This process is called reconciliation. Because DOM operations are expensive, the performance benefit of React is substantial.
@@ -22,7 +22,7 @@ Where React ultimately creates html that is rendered by the browser, there is an
 
 
 
-####React and Three.js
+#### React and Three.js
 
 For Three.js there are 2 libraries that provide React bindings:
 
@@ -34,7 +34,7 @@ Three.js keeps a virtual 3D scene in memory which is rendered to the WebGL conte
 Therefor we have nothing to gain performance-wise when using React with Three.js, but there is still plenty reason to use it. React encourages you to create components and move state out of components as much as possible, resulting in cleaner, better to maintain code, and the JSX notation gives you a very clear overview of the hierarchical structure of the components in your 3D scene as we will see in the code examples in the next chapter.
 
 
-####Two libraries compared
+#### Two libraries compared
 
 React-three is written in es5, react-three-renderer is newer and written in es6. The following code examples, that both create a simple cube, show us the differences between the libraries. First react-three:
 
@@ -116,7 +116,7 @@ In react-three-renderer we import one component and the available components are
 React-three has only 17 components, but react-three-renderer strives to create components for every (relevant) Three.js class, thus gaining a higher granularity.
 
 
-####Creating components
+#### Creating components
 
 The following example is a Minecraft character configurator that we can use to change the sizes of all the cubes that the character consists of.
 
@@ -219,7 +219,7 @@ This means that we can use the Minecraft character component both in projects th
 To see the different implementations of the Box component please take a look at the code on github: [react-three](https://github.com/tweedegolf/minecraft-character-configurator/blob/master/react-three/js/components/three/box.react.js) and [react-three-renderer](https://github.com/tweedegolf/minecraft-character-configurator/blob/master/react-three-renderer/js/components/three/box.react.js).
 
 
-####Importing models
+#### Importing models
 
 The model loaders for Three.js load the various 3D formats (Collada, FBX, Obj, JSON, and so on) and parse them into Three.js objects that can be added to the scene right away. This is very convenient when you use Three.js without React bindings, but it requires an extra conversion step when we do use React bindings because we need to parse the Three.js object into components.
 
@@ -281,7 +281,7 @@ In react-three-renderer we need more code, on the one hand because multi-materia
 The `createMaterial` method parses a Three.js material into a react-three-renderer component, see this code at [github](https://github.com/tweedegolf/parsed-model/blob/master/create_material.js).
 
 
-####Pros and cons
+#### Pros and cons
 
 Using React-bindings for Three.js results in very clean code. Usually you don't have a hierarchical overview of your 3D scene, but with React your scene is clearly laid out in a tree of components. As as bonus, you can debug your scene with the React browser tools.
 
@@ -312,7 +312,7 @@ In the [live examples](http://data.tweedegolf.nl/minecraft/) of the Minecraft ch
 
 
 
-####Conclusion
+#### Conclusion
 
 For the types of project that I have discussed above I would definitely recommend using React bindings for Three.js. Not only your code will be better set up and thus better maintainable, it will speed up your work significantly once you have acquainted yourself with the workflow of React as well.
 
