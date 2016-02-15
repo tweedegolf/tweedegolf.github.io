@@ -1,1 +1,1 @@
-Tweede Golf werkt regelmatig samen met LaVerbe Marketing Design Online. LaVerbe geeft advies, creëert en maakt strategieën voor overheid, industrie, zorg, cultuur, onderwijs, wonen en ruimte.
+Tweede golf werkt samen met <a target="_blank" href="http://www.grafische-republiek.com/">Grafische Republiek</a>, een jong creatief vormgevers duo, gevestigd in hetzelfde pand. (...). Cases: [Local Heo Travel](/#portfolio-local-hero-travel)

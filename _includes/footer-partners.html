@@ -1,5 +1,63 @@
-<footer class="text-center">
-  
+<section id="contact" class="personal">
+  <a name="contact"></a>
+  <a name="contact-ok"></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact opnemen</h5>
+        {% for member in site.data.members %}
+          {% if member.name == page.contact %}
+            <div class="member-card">
+              <a class="member-image {{ member.name }} col-xs-2"></a>
+              <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col-md-6">
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Sluiten</span>
+          </button>
+          <strong>Bedankt voor je bericht.</strong>
+          We nemen snel contact met je op.
+        </div>
+        <form role="form" action="//mailer.tweedegolf.com" method="POST" class="hashable-form">
+        <input type="hidden" name="_next" value="http://tweedegolf.nl/partners#contact-ok" />
+          <div class="row">
+            <div class="form-group col-xs-12 floating-label-form-group">
+              <label for="name">Naam</label>
+              <input class="form-control" type="text" name="name" placeholder="Naam">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-12 floating-label-form-group">
+              <label for="email">E-mailadres</label>
+              <input class="form-control" type="email" name="email" placeholder="E-mailadres" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-12 floating-label-form-group">
+              <label for="message">Bericht</label>
+              <textarea placeholder="Bericht" class="form-control" name="message" rows="5"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-xs-12">
+              <button type="submit" class="btn btn-lg btn-success">
+                Verzenden
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">  
   <div class="footer-above">
     <div class="container">
       <div class="row">

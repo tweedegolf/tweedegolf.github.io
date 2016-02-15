@@ -24,7 +24,7 @@
           We nemen snel contact met je op.
         </div>
         <form role="form" action="//mailer.tweedegolf.com" method="POST" class="hashable-form">
-        <input type="hidden" name="_next" value="http://tweedegolf.nl/#contact-ok" />
+        <input type="hidden" name="_next" value="{% if page.contact_ok_link %}{{ page.contact_ok_link }}{% else %}http://tweedegolf.nl/#contact-ok{% endif %}" />
           <div class="row">
             <div class="form-group col-xs-12 floating-label-form-group">
               <label for="name">Naam</label>
