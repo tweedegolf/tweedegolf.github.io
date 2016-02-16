@@ -6,6 +6,8 @@ tags: React, Three.js, 3D, WebGL
 thumb: minecraft.jpg
 leadimg: minecraft.jpg
 author: Daniel
+contact: Daniel
+about: the examples mentioned in this post, react-three and react-three-renderer
 description: Using React for creating 3D front-ends with Three.js
 github: https://github.com/abudaan/three.js-rotations
 nerd: 5
