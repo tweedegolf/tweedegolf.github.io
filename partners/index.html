@@ -3,8 +3,9 @@ layout: partners
 title: Partners
 description: Partners van tweede golf
 permalink: partners/
-contact: Marlon
-about: Partners van tweede golf
+contact: Erik
+about: de samenwerkingen van tweede golf
+contact_ok_link: http://tweedegolf.nl/partners/#contact-ok
 ---
 
 <section id="landing" class="landing">
@@ -17,21 +18,21 @@ about: Partners van tweede golf
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="adv">
+        <div class="adv" id="laverbe">
           <span class="icon logo-laverbe"></span>
           <div class="truncate-2-lines">
             {% capture adv1 %}{% include /partners/partner_1.md %}{% endcapture %}
       		  {{ adv1|markdownify }}
           </div>
         </div>
-        <div class="adv">
+        <div class="adv" id="grafische-republiek">
           <span class="icon logo-grafische-republiek"></span>
           <div class="truncate-2-lines">
             {% capture adv2 %}{% include /partners/partner_2.md %}{% endcapture %}
       		  {{ adv2|markdownify }}
           </div>
         </div>
-        <div class="adv">
+        <div class="adv" id="tk305">
           <span class="icon logo-tk305"></span>
           <div class="truncate-2-lines">
             {% capture adv3 %}{% include /partners/partner_3.md %}{% endcapture %}
@@ -40,7 +41,5 @@ about: Partners van tweede golf
         </div>
       </div>
     </div>
-
-
-    </div>
+  </div>
 </section>

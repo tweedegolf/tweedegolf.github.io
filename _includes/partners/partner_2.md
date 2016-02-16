@@ -1,1 +1,1 @@
-Tweede Golf werkt regelmatig samen met LaVerbe Marketing Design Online. LaVerbe geeft advies, creëert en maakt strategieën voor overheid, industrie, zorg, cultuur, onderwijs, wonen en ruimte.
+<a target="_blank" href="http://www.grafische-republiek.com/">De Grafische Republiek</a> staat voor heldere en functionele beeldtaal. Een beeldtaal zonder ruis, die de boodschap en kernwaarden van de opdrachtgever representeert. Cases: [Local Hero Travel](/#portfolio-local-hero-travel)
