@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "React and Three.js"
-date: "16-01-2016"
+date: "16-02-2016"
 tags: React, Three.js, 3D, WebGL
 thumb: minecraft.jpg
 leadimg: minecraft.jpg
@@ -11,16 +11,17 @@ github: https://github.com/abudaan/three.js-rotations
 nerd: 5
 ---
 
-#### React
+In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, creating the fun quiz app [B-Slash](/#portfolio-b-slash) with it. Soon the idea arise to research the usage of React in combination with Three.js, the famous javascript library for 3D in the browser that we've been using for years now in for example [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
 
+There turned out to be 2 libaries that provide React bindings for Three.js. This post will explore their differences, provide working examples and help you make up your mind on which one to choose.
+
+#### React
 
 React has become a popular choice for creating user interfaces. React keeps a virtual DOM and changes in the UI are applied to this virtual DOM first. Then React calculates the minimal set of changes that are needed to update the real DOM to match with the virtual DOM. This process is called reconciliation. Because DOM operations are expensive, the performance benefit of React is substantial.
 
 But there is more to React than the performance impact. Especially in combination with [Flux](https://facebook.github.io/flux/), [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) and the [debug tools](https://facebook.github.io/react/blog/2014/01/02/react-chrome-developer-tools.html) for the browser it is a very powerful and yet easy to use library to create complex UI's with reusable components.
 
 Where React ultimately creates html that is rendered by the browser, there is an increasing number of libraries that provide React bindings for libraries that render to the canvas element such as [D3.js](https://github.com/esbullington/react-d3), [Flipboard](https://github.com/Flipboard/react-canvas) and [Chart.js](https://github.com/jhudson8/react-chartjs). There are also bindings for [SVG](https://github.com/brentvatne/react-native-svg) and another interesting experiment is [gl-react](https://github.com/ProjectSeptemberInc/gl-react).
-
-
 
 #### React and Three.js
 
@@ -119,6 +120,9 @@ React-three has only 17 components, but react-three-renderer strives to create c
 #### Creating components
 
 The following example is a Minecraft character configurator that we can use to change the sizes of all the cubes that the character consists of.
+
+![Minecraft character configurator](/img/blog/minecraft_configurator_screen.png){: .with-caption}
+*Screenshot of the Minecraft character configurator*
 
 It shows you how easy it is to create 3D components with both libraries and how your code benefits from using React both in terms of being well-organised and maintainable.
 
@@ -314,14 +318,16 @@ In the [live examples](http://data.tweedegolf.nl/minecraft/) of the Minecraft ch
 
 #### Conclusion
 
-For the types of project that I have discussed above I would definitely recommend using React bindings for Three.js. Not only your code will be better set up and thus better maintainable, it will speed up your work significantly once you have acquainted yourself with the workflow of React as well.
+For the types of project that I have discussed above I would definitely recommend using React bindings for Three.js. Not only your code will be better set up and thus better maintainable, it will also speed up your work significantly once you have acquainted yourself with the workflow of React as well.
 
 Whether you should use react-three or react-three-renderer depends on your project. Both libraries are relatively new but as you can see on Github the code gets updated on a weekly basis, and moreover there are lively discussions going on in the issue trackers and issues and suggestions are quite swiftly picked up.
 
-Some things that are important to know to make your choice:
+Some final remarks that can help you make up your mind:
 
 - react-three depends on Three.js r72 React version 0.14.2, react-three-renderer works with the most recent versions of both Three.js and React.
 - react-three-renderer has not yet implemented all Three.js features, react-three does (mainly because its lesser granularity).
 - in react-three the ray caster doesn't work i.c.w. controls like the OrbitControls, in react-three-renderer it does.
+
+Don't hesitate to get in touch filling out the form below, if you have any questions or remarks about this post. Feedback is appreciated.
 
 
