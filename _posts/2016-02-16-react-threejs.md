@@ -9,7 +9,7 @@ author: Daniel
 contact: Daniel
 about: the examples mentioned in this post, react-three and react-three-renderer
 description: Using React for creating 3D front-ends with Three.js
-github: https://github.com/abudaan/three.js-rotations
+github: https://github.com/tweedegolf/minecraft-character-configurator
 nerd: 5
 ---
 
