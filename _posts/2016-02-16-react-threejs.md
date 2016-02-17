@@ -13,9 +13,9 @@ github: https://github.com/tweedegolf/minecraft-character-configurator
 nerd: 5
 ---
 
-In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the famous javascript library for 3D in the browser that we've been using for years now in for example [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
+In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the leading javascript library for 3D. We've been using Three.js for some years now in our projects, for example in [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
 
-Currently, there are 2 libaries that provide React bindings for Three.js. This post will explore their differences using working examples. We hope it will help you to make up your mind which one to choose.
+Currently, there are two libaries that provide React bindings for Three.js. This post will explore their differences using working examples. We hope it will help you to make up your mind which one to choose.
 
 #### React
 
@@ -27,7 +27,7 @@ Where React ultimately creates html that is rendered by the browser, there is an
 
 #### React and Three.js
 
-For Three.js there are 2 libraries that provide React bindings:
+For Three.js there are two libraries that provide React bindings:
 
  - [react-three](https://github.com/Izzimach/react-three)
  - [react-three-renderer](https://github.com/toxicFork/react-three-renderer)
@@ -107,7 +107,7 @@ And now the same in react-three-renderer:
 {% endhighlight %}
 
 
-We see 2 obvious differences:
+We see two obvious differences:
 
 **1)** In react-three we import one object and this object contains all available components. I have given the components the same name as the properties of the imported object, but I could have used any name. The naming convention in React commands us to write custom components starting with an uppercase, which I obied willingly.
 
@@ -229,7 +229,7 @@ To see the different implementations of the Box component please take a look at 
 
 The model loaders for Three.js load the various 3D formats (Collada, FBX, Obj, JSON, and so on) and parse them into Three.js objects that can be added to the scene right away. This is very convenient when you use Three.js without React bindings, but it requires an extra conversion step when we do use React bindings because we need to parse the Three.js object into components.
 
-I have written some utility code for this which is available at [github](https://github.com/tweedegolf/parsed-model). You can find 2 working examples of how to use this code with both libraries in a separate repository at [github](https://github.com/tweedegolf/parsed_model_examples).
+I have written some utility code for this which is available at [github](https://github.com/tweedegolf/parsed-model). You can find two working examples of how to use this code with both libraries in a separate repository at [github](https://github.com/tweedegolf/parsed_model_examples).
 
 The utility is a parser and a loader in one and this is how you use it:
 
@@ -330,6 +330,6 @@ Some final remarks that can help you make up your mind:
 - react-three-renderer has not yet implemented all Three.js features, react-three does (mainly because its lesser granularity).
 - in react-three the ray caster doesn't work i.c.w. controls like the OrbitControls, in react-three-renderer it does.
 
-Don't hesitate to get in touch filling out the form below, if you have any questions or remarks about this post. Feedback is appreciated.
+Don't hesitate to get in touch with us, if you have any questions or remarks about this post. Feedback is much appreciated.
 
 
