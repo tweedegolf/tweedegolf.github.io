@@ -13,9 +13,9 @@ github: https://github.com/abudaan/three.js-rotations
 nerd: 5
 ---
 
-In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, creating the fun quiz app [B-Slash](/#portfolio-b-slash) with it. Soon the idea arise to research the usage of React in combination with Three.js, the famous javascript library for 3D in the browser that we've been using for years now in for example [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
+In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the famous javascript library for 3D in the browser that we've been using for years now in for example [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
 
-There turned out to be 2 libaries that provide React bindings for Three.js. This post will explore their differences, provide working examples and help you make up your mind on which one to choose.
+Currently, there are 2 libaries that provide React bindings for Three.js. This post will explore their differences using working examples. We hope it will help you to make up your mind which one to choose.
 
 #### React
 
