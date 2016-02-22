@@ -7,6 +7,7 @@ thumb: jsaruco.jpg
 leadimg: jsaruco.jpg
 author: Daniel
 contact: Daniel
+about: augmented reality with web technologies 
 description: Using solely web technologies for creating augmented reality applications
 github: https://github.com/tweedegolf/web-ar
 nerd: 3
@@ -16,7 +17,7 @@ nerd: 3
 
 With the start of the implementation of the WebRTC API around 2012, javascript developers gained access to the video and audio streams coming from webcams and microphones. This paved the way for augmented reality (AR) applications that were build solely with web technologies. Using webtechnologies for AR is also called "the augmented web".
 
-Most AR applications use a webcam feed that gets analyzed for certain patters, for instance a simple color field, a movement or a marker. Nowadays there are several other ways to augment the reality of a webpage, for instance using geolocation or devices such as the Leapmotion.
+Most AR applications use a webcam feed that gets analyzed for certain patterns, for instance a simple color field, a movement or a marker. Nowadays there are several other ways to augment the reality of a webpage, for instance using geolocation or devices such as the Leapmotion.
 
 In this post I will focus on AR with markers.
 
