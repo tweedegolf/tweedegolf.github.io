@@ -226,10 +226,20 @@ hr.separator {
 }
 
 .icon-nerd-xs {
-  background-image: url('/img/icon-nerd-xs.png');
+  background-image: url('/img/icon-nerd-xs.png');  
   display: inline-block;
   height: 18px;
   width: 16px;
+  margin: 0 0 0 4px;
+}
+
+.icon-nerd-xl-grey {
+  background-image: url('/img/icon-nerd-xl-grey.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 60px;
+  width: 51px;
   margin: 0 0 0 4px;
 }
 
@@ -357,7 +367,7 @@ header {
     &.blog {
       background-image: none;
       overflow: hidden;
-      height: 540px;
+      height: 410px;
 
       .leadimg {
         position: absolute;
@@ -937,11 +947,23 @@ section#cases {
     }
 }
 
+.blog-items {
+  .about {
+    padding-top: 10px;
+    
+    p {
+      line-height: 1em;
+    }
+  }
+}
+
 .blog-item {
 
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 246px;
+  min-height: 246px;      
+  overflow: hidden;
+  margin-bottom: 50px;
 
   #blog-items & { // in blog article overview
     margin: 0 20px;
