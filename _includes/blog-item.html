@@ -1,14 +1,13 @@
 <div class="blog-item">
     {% if post.nerd %}
-      <!-- <span class="icon-nerd-xl-grey"></span> -->
       <span class="label-blog-type label-developer">Developer</span>
     {% else %}
       <span class="label-blog-type label-business">Business</span>
     {% endif %}
     <a href="{{ post.url }}" class="blog-link">
       <h3>{{ post.title }}</h3>
-      <p class="date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
     </a>
+    <p class="date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
     <div class="previmg">
       {% if post.thumb %}
         <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />

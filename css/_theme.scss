@@ -1102,6 +1102,28 @@ section#cases {
     }
 }
 
+#about-blog{
+  .label-inline{
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .label-developer-inline{
+    background-color: #db2828;
+    border-color: #b21e1e;
+
+  }
+  .label-business-inline{
+    background-color: #416375;
+    border-color: #1C4052;
+  }
+  p{
+    font-size: 16px;
+  }
+
+}
+
 @media(min-width:767px) {
     #portfolio {
         .portfolio-item {

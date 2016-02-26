@@ -23,13 +23,13 @@ description: tweede golf blog
 <section id="blog-items">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div id="about-blog" class="col-md-3">
         <h3>About</h3>
         <p>
-          <span class="icon-nerd-xl-grey"></span>Articles in English, for developers
+          <span class="label-inline label-developer-inline">Developer</span> articles in English.
         </p>
         <p>
-          <span class="icon-nerd-xl-grey"></span>Artikelen in het Nederlands, voor niet-developers
+          <span class="label-inline label-business-inline">Business</span> artikelen in het Nederlands, voor niet-developers.
         </p>
       </div>
       <div class="col-md-6">
@@ -37,7 +37,7 @@ description: tweede golf blog
         {% include blog-item.html %}
       {% endfor %}
       </div>
-      <div class="col-md-3 about">
+      <div class="col-md-3 authors">
         <h3>Authors</h3>
         {% for member in site.data.members %}
           {% if member.author %}
