@@ -226,7 +226,7 @@ hr.separator {
 }
 
 .icon-nerd-xs {
-  background-image: url('/img/icon-nerd-xs.png');  
+  background-image: url('/img/icon-nerd-xs.png');
   display: inline-block;
   height: 18px;
   width: 16px;
@@ -950,7 +950,7 @@ section#cases {
 .blog-items {
   .about {
     padding-top: 10px;
-    
+
     p {
       line-height: 1em;
     }
@@ -961,12 +961,15 @@ section#cases {
 
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 246px;      
-  overflow: hidden;
-  margin-bottom: 50px;
-
+  min-height: 246px;
+  // overflow: hidden; //should be visible because of label
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  padding: 15px;
   #blog-items & { // in blog article overview
-    margin: 0 20px;
+    h3{
+      margin: 10px 0 0 0;
+    }
   }
 
   img {
@@ -1051,6 +1054,53 @@ section#cases {
     }
   }
 }
+.label-blog-type{
+    display: inline-block;
+    top: -6px;
+    line-height: 1;
+    vertical-align: baseline;
+    background-image: none;
+    padding: .5833em .833em;
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+    border-radius: .28571429rem;
+    -webkit-transition: background .1s ease;
+    transition: background .1s ease;
+    position: relative;
+    margin: 0;
+    margin-right: -1.2em;
+    padding-left: 15px;
+    padding-right: 1.2em;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    border-radius: 0 .28571429rem .28571429rem 0;
+    left: -32px;
+    color: #fff;
+
+    &.label-developer{
+      background-color: #db2828;
+      border-color: #b21e1e;
+    }
+    &.label-business{
+      background-color: #416375;
+      border-color: #1C4052;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      top: 100%;
+      left: 0;
+      background-color: transparent;
+      border-style: solid;
+      border-width: 0 1.2em 1.2em 0;
+      border-color: transparent;
+      border-right-color: inherit;
+      width: 0;
+      height: 0;
+    }
+}
 
 @media(min-width:767px) {
     #portfolio {
@@ -1065,6 +1115,7 @@ section#cases {
   h3 {
     font-size: 20px;
     padding: 16px 0;
+    margin-bottom: 30px;
   }
   .heading {
     font-size: 24px;

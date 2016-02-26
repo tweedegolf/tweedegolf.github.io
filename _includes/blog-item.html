@@ -1,40 +1,39 @@
-<div class="blog-item">  
-  <div class="col-md-4">
-    <div class="blog-item-sidebar">
-      {% if post.nerd %}
-        <span class="icon-nerd-xl-grey"></span>
-      {% endif %}
-      <p class="excerpt">
-        {{ post.content | strip_html | truncatewords: 30 }}
-      </p>
-    </div> 
-  </div>
-  <div class="col-md-8">
+<div class="blog-item">
+    {% if post.nerd %}
+      <!-- <span class="icon-nerd-xl-grey"></span> -->
+      <span class="label-blog-type label-developer">Developer</span>
+    {% else %}
+      <span class="label-blog-type label-business">Business</span>
+    {% endif %}
     <a href="{{ post.url }}" class="blog-link">
       <h3>{{ post.title }}</h3>
       <p class="date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
-      <div class="previmg">
-        {% if post.thumb %}
-          <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
-        {% else %}
-          <img src="/img/blog/thumbs/oculus.jpg" class="img-responsive" />
-        {% endif %}
-        <div class="infobar">
-          {% if post.tags.size > 0 %}
-          <div class="tags">
-            <span class="fa fa-tags"></span>
-            <strong>{{ post.tags | join: ' ' }}</strong>
-          </div>
-          {% endif %}
-          {% if post.nerd %}
-          <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
-            {% for i in (1..{{post.nerd}}) %}
-              <span class="icon-nerd-xs"></span>
-            {% endfor %}
-          </div>
-          {% endif %}                   
+    </a>
+    <div class="previmg">
+      {% if post.thumb %}
+        <img src="/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
+      {% else %}
+        <img src="/img/blog/thumbs/oculus.jpg" class="img-responsive" />
+      {% endif %}
+      <div class="infobar">
+        {% if post.tags.size > 0 %}
+        <div class="tags">
+          <span class="fa fa-tags"></span>
+          <strong>{{ post.tags | join: ' ' }}</strong>
         </div>
+        {% endif %}
+        {% if post.nerd %}
+        <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
+          {% for i in (1..{{post.nerd}}) %}
+            <span class="icon-nerd-xs"></span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
-    </a> 
-  </div>
+    </div>
+    <div class="blog-item-sidebar">
+      <p class="excerpt">
+        {{ post.content | strip_html | truncatewords: 30 }}
+      </p>
+    </div>
 </div>
