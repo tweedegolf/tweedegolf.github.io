@@ -10828,6 +10828,15 @@ hr.separator {
   width: 16px;
   margin: 0 0 0 4px; }
 
+.icon-nerd-xl-grey {
+  background-image: url("/img/icon-nerd-xl-grey.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 60px;
+  width: 51px;
+  margin: 0 0 0 4px; }
+
 video, iframe {
   width: 100%; }
 
@@ -10925,7 +10934,7 @@ header {
   header.blog {
     background-image: none;
     overflow: hidden;
-    height: 540px; }
+    height: 410px; }
     header.blog .leadimg {
       position: absolute;
       left: 0;
@@ -11309,10 +11318,17 @@ section#cases {
       max-width: 360px;
       margin: 0 auto 60px; } }
 
+.blog-items .about {
+  padding-top: 10px; }
+  .blog-items .about p {
+    line-height: 1em; }
+
 .blog-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 246px; }
+  min-height: 246px;
+  overflow: hidden;
+  margin-bottom: 50px; }
   #blog-items .blog-item {
     margin: 0 20px; }
   .blog-item img {
@@ -11407,6 +11423,7 @@ section#cases {
     margin-top: 20px;
     margin-bottom: 20px; }
 
+/* on a post's page, the contact form differs slightly */
 #post-content #contact {
   margin-top: 40px; }
   #post-content #contact form {
