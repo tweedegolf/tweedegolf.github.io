@@ -94,6 +94,7 @@ Links:
 
 - [Barrell distortion](https://www.youtube.com/watch?v=B7qrgrrHry0)
 - [Nvidia standalone HMD](http://vrfocus.com/archives/12225/nvidia-vr-hmd-use-x1-super-chip/)
+- [Oculus Rift teardown](https://www.ifixit.com/Teardown/Oculus+Rift+Development+Kit+2+Teardown/27613)
 
 
 <!--
