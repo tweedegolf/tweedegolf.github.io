@@ -49,9 +49,12 @@ As you can see in the image, a side effect of barrel distortion is that the imag
 
 ###Tracking rotation, movement and position
 
-The Oculus has sensors that track rotation and the velocity of your movements; in the device you find a gyroscope, an accelerometer and a magnetometer. The data coming from these sensors gets combined in a process called [sensor fusion](http://en.wikipedia.org/wiki/Sensor_fusion), this is done by the built-in Spectra7 VR7100 ARM processor. Sensor fusion roughly means that you combine data coming from different sensors to calculate data that is more accurate than the data that comes from each individual sensor.
+The Oculus has sensors that track rotation and the velocity of your movements; in the device you find a gyroscope, an accelerometer and a magnetometer.
 
 Furthermore, the Oculus has 40 leds that are tracked by the separate positional tracker device. This device looks a bit like a webcam and ideally you mount it on top of your computer monitor.
+
+The data coming from all sensors and trackers gets combined in a process called [sensor fusion](http://en.wikipedia.org/wiki/Sensor_fusion). Sensor fusion roughly means that you combine data coming from different sources to calculate data that is more accurate than the data that comes from each individual source.
+
 
 ###Generating the 3D scene
 
