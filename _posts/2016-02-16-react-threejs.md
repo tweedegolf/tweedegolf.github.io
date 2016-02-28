@@ -13,7 +13,7 @@ github: https://github.com/tweedegolf/minecraft-character-configurator
 nerd: 5
 ---
 
-In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the leading javascript library for 3D. We've been using Three.js for some years now in our projects, for example in [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
+In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the leading javascript library for 3D. We've been using Three.js for some years now in our projects, for example in [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot.
 
 Currently, there are two libaries that provide React bindings for Three.js. This post will explore their differences using working examples. We hope it will help you to make up your mind which one to choose.
 
@@ -308,14 +308,9 @@ However, with React you can split up such a long list in a breeze, for example b
 {% endhighlight %}
 
 
-Sometimes using React requires some extra steps, for instance when loading 3D models.
+Sometimes using React requires some extra steps, for instance when loading 3D models, and sometimes it might take a bit time to find the right way of implementing common Three.js functionality like for instance user controls or calling Three.js' own render method manually.
 
-By default both react-three and react-three-renderer call Three.js' render function continuously by passing it to `Window.requestAnimationFrame()`. While this is a good choice for 3D games and animations, it is might be overkill in applications that have a more static scene like applications that simply show 3D models.
-
-In react-three you can turn off the automatic render function by setting a parameter in the scene component (`enableRapidRender=false`), but in react-three-renderer you need to change the code yourself to accomplish this.
-
-In the [live examples](http://data.tweedegolf.nl/minecraft/) of the Minecraft character configurator you can see how this continuous rendering affects performance: on my computer the react-three example renders at 60 fps when the application is idle and at about 30 fps when I use the OrbitControls. The react-three-renderer examples renders at 30 fps even with no user interaction, so it consumes unnecessary GPU and CPU power which might slow down other processes on the page.
-
+To elaborate on the latter example: by default both react-three and react-three-renderer call Three.js' render function continuously by passing it to `Window.requestAnimationFrame()`. While this is a good choice for 3D games and animations, it is might be overkill in applications that have a more static scene like applications that simply show 3D models, or our Minecraft character configurator. In both libraries it is possible to turn off automatic rendering by setting a parameter on the scenegraph component, as you can see in the code of the Minecraft character configurator.
 
 
 #### Conclusion
@@ -329,6 +324,7 @@ Some final remarks that can help you make up your mind:
 - react-three depends on Three.js r72 React version 0.14.2, react-three-renderer works with the most recent versions of both Three.js and React.
 - react-three-renderer has not yet implemented all Three.js features, react-three does (mainly because its lesser granularity).
 - in react-three the ray caster doesn't work i.c.w. controls like the OrbitControls, in react-three-renderer it does.
+- both libraries provide excellent examples, studying these will give you a good grasp of the basic principles.
 
 Don't hesitate to get in touch with us, if you have any questions or remarks about this post. Feedback is much appreciated.
 
