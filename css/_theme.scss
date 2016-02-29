@@ -1112,11 +1112,26 @@ section#cases {
   .label-developer-inline{
     background-color: #db2828;
     border-color: #b21e1e;
+    padding: 5px 5px 5px 9px;
+    width: 83px;
 
+    a {
+      color : #fff;
+      text-decoration: none;
+      font-weight: bold;      
+    }
   }
   .label-business-inline{
     background-color: #416375;
     border-color: #1C4052;
+    width: 83px;
+    padding: 5px 8px 5px 11px;
+
+    a {
+      color : #fff;
+      text-decoration: none;
+      font-weight: bold;      
+    }
   }
   p{
     font-size: 16px;

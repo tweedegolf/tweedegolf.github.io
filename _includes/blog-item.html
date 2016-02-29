@@ -1,4 +1,4 @@
-<div class="blog-item">
+<div class="blog-item {{ post.author }} {% if post.nerd %} developer {% else %} business {% endif %}">
     {% if post.nerd %}
       <span class="label-blog-type label-developer">Developer</span>
     {% else %}

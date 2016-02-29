@@ -26,10 +26,14 @@ description: tweede golf blog
       <div id="about-blog" class="col-md-3">
         <h3>About</h3>
         <p>
-          <span class="label-inline label-developer-inline">Developer</span> articles in English.
+          <span class="label-inline label-developer-inline">
+            <a href="/blog/?filter=developer">Developer</a>
+          </span> articles in English, for our fellow developers.
         </p>
         <p>
-          <span class="label-inline label-business-inline">Business</span> artikelen in het Nederlands, voor niet-developers.
+          <span class="label-inline label-business-inline">
+            <a href="/blog/?filter=business">Business</a>
+          </span> artikelen in het Nederlands, voor niet-developers.
         </p>
       </div>
       <div class="col-md-6">
@@ -42,7 +46,7 @@ description: tweede golf blog
         {% for member in site.data.members %}
           {% if member.author %}
             <div class="member-card">
-              <a class="member-image {{ member.name }}"></a>
+              <a class="member-image {{ member.name }} blog" href="/blog/?author={{ member.name }}"></a>
               <span class="name"><strong>{{ member.name }}</strong></span>
               <span class="job">{{ member.job }}</span>
               <span class="email">{{ member.email }}</span>
