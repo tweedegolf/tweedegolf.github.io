@@ -7,7 +7,7 @@ thumb: jsaruco.jpg
 leadimg: jsaruco.jpg
 author: Daniel
 contact: Daniel
-about: augmented reality with web technologies 
+about: augmented reality with web technologies
 description: Using solely web technologies for creating augmented reality applications
 github: https://github.com/tweedegolf/web-ar
 nerd: 3
@@ -23,9 +23,9 @@ In this post I will focus on AR with markers.
 
 #### Two libraries
 
-While some developers have created their own AR libraries, most developers use either [JSAruco](https://github.com/jcmellado/js-aruco) or [JSARToolkit](https://github.com/kig/JSARToolKit). Both libraries are javascript ports from ancient C++ libraries. JSAruco is based on [OpenCV](http://opencv.org/) and JSARToolkit is a port of [ARToolkit](http://www.hitl.washington.edu/artoolkit/) via the in-between ports NyARToolkit (Java) and FLARToolkit (Actionscript).
+While some developers have created their own AR libraries, most developers use either [JSAruco](https://github.com/jcmellado/js-aruco) or [JSARToolkit](https://github.com/kig/JSARToolKit). Both libraries are javascript ports from existing C++ libraries. JSAruco is based on [OpenCV](http://opencv.org/) and JSARToolkit is a port of [ARToolkit](http://www.hitl.washington.edu/artoolkit/) via the in-between ports NyARToolkit (Java) and FLARToolkit (Actionscript).
 
-The inner-workings of the libraries is as follows: a snapshot of the video feed is taken by copying image data from the video to a canvas on every animation frame. This image data gets analyzed for markers, and the position and rotation of every detected marker is returned. This information can subsequently be used to render a 3D object on top of the video feed, thus augmenting the reality.
+Both libraries work by taking a snapshot of the video feed for every frame and copying it to a canvas. This image data gets analyzed for markers, returning the position and rotation of every detected marker. This information can subsequently be used to render a 3D object on top of the video feed, thus augmenting the image.
 
 Three.js works very well with both JSAruco and JSARToolkit and I made 2 simple examples that show you how to use the libraries with Three.js, the code and some markers are available at [Github](https://github.com/tweedegolf/web-ar).
 
@@ -50,7 +50,7 @@ For instance I made this small test using multiple markers:
 
 #### Conditions
 
-In the process of analyzing, the image is turned into an inverted plain black and white image. This means that a pixel is either white or black and this makes it very easy to detect a marker. For the best results, good bright lighting is mandatory. Also putting the marker on a surface with a plain color is recommended. If possible, using backlight is ideal. In general you should turn off the auto focus of your webcam.
+In the process of analyzing, the image is turned into an inverted plain black and white image. This means that a pixel is either white or black and this makes it very easy to detect a marker. For the best results, good bright lighting is mandatory. Also putting the marker on a surface with a plain color is recommended. If possible, using backlighting is ideal. In general you should turn off auto focus on your webcam.
 
 ![Marker detection](/img/blog/inverted.jpg){: .with-caption}
 *Marker detection*
@@ -82,16 +82,8 @@ The advantage of using web technologies is obvious: it is much simpler to set up
 
 The lesser performance is partly because analyzing the image data is done in the main javascript thread, and partly because the lack of control over the camera settings which leads to a poor quality of the incoming feed, for instance due to bad or fluctuating light conditions.
 
-On the short term using webworkers may improve the analyzing and detection step, and on the longer term the ever improving performance of browsers will eventually lead to a more reliable marker detection.
+In the short term using webworkers may improve the analyzing and detection step, and in the long term improved javascript performance for browsers may eventually lead to more reliable marker detection.
 
 Furthermore Web API's keep evolving so in the near future we might get more control over the camera settings via javascript. The draft version of the [MediaCapture API](http://w3c.github.io/mediacapture-main/#dictionary-mediatrackcapabilities-members) already shows some useful future capabilities. Also there is a draft Web API for the [light sensor](https://w3c.github.io/ambient-light/) that is currently only implemented in [Firefox](https://developer.mozilla.org/en-US/docs/Web/API/DeviceLightEvent/Using_light_sensors).
 
 The future of the augmented web looks bright.
-
-
-
-
-
-
-
-
