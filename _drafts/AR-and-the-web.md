@@ -25,7 +25,9 @@ In this post I will focus on AR with markers.
 
 While some developers have created their own AR libraries, most developers use either [JSAruco](https://github.com/jcmellado/js-aruco) or [JSARToolkit](https://github.com/kig/JSARToolKit). Both libraries are javascript ports from existing C++ libraries. JSAruco is based on [OpenCV](http://opencv.org/) and JSARToolkit is a port of [ARToolkit](http://www.hitl.washington.edu/artoolkit/) via the in-between ports NyARToolkit (Java) and FLARToolkit (Actionscript).
 
-Both libraries work by taking a snapshot of the video feed for every frame and copying it to a canvas. This image data gets analyzed for markers, returning the position and rotation of every detected marker. This information can subsequently be used to render a 3D object on top of the video feed, thus augmenting the image.
+Both libraries take a snapshot of the video feed for every frame and copying it to a canvas. This image data gets analyzed for markers, returning the position and rotation of every detected marker. This information can subsequently be used to render a 3D object on top of the video feed, thus augmenting the image.
+
+Note that JSARToolKit is published under a [GPLv3](http://www.gnu.org/licenses/gpl-3.0.en.html) license which prohibits using it in closed source projects. JSARuco is published partly under [BSD](https://en.wikipedia.org/wiki/BSD_licenses) and partly under [LGPL](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) which allows you to use it in closed source projects as long as you don't change the code of the library.
 
 Three.js works very well with both JSAruco and JSARToolkit and I made 2 simple examples that show you how to use the libraries with Three.js, the code and some markers are available at [Github](https://github.com/tweedegolf/web-ar).
 
