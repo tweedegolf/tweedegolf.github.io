@@ -1707,6 +1707,8 @@ header.landing {
     text-transform: none;
   }
   .member-card {
+    height: auto;
+    float: none;
     .desc {
       color: #666;
       font-size: 16px;

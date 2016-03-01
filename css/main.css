@@ -11888,12 +11888,15 @@ header.landing .tocontent {
     color: #666;
     font-size: 24px;
     text-transform: none; }
-  #contact.personal .member-card .desc {
-    color: #666;
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 30px;
-    padding-top: 20px; }
+  #contact.personal .member-card {
+    height: auto;
+    float: none; }
+    #contact.personal .member-card .desc {
+      color: #666;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 30px;
+      padding-top: 20px; }
   #contact.personal .floating-label-form-group {
     border-bottom: 1px solid #ddd; }
   #contact.personal .btn {
