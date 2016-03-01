@@ -13,7 +13,7 @@ github: https://github.com/tweedegolf/minecraft-character-configurator
 nerd: 5
 ---
 
-In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the leading javascript library for 3D. We've been using Three.js for some years now in our projects, for example in [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot. 
+In the autumn of 2015, we got to know the popular javascript library [React](https://facebook.github.io/react/) very well, when we used it to create the fun quiz app [B-Slash](/#portfolio-b-slash). Soon the idea arose to research the usage of React in combination with Three.js, the leading javascript library for 3D. We've been using Three.js for some years now in our projects, for example in [Tekenjetuin](/#portfolio-tekenjetuin). We expected that using React could improve code quality in 3D projects a lot.
 
 Currently, there are two libaries that provide React bindings for Three.js. This post will explore their differences using working examples. We hope it will help you to make up your mind which one to choose.
 
@@ -331,5 +331,3 @@ Some final remarks that can help you make up your mind:
 - in react-three the ray caster doesn't work i.c.w. controls like the OrbitControls, in react-three-renderer it does.
 
 Don't hesitate to get in touch with us, if you have any questions or remarks about this post. Feedback is much appreciated.
-
-

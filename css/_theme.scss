@@ -1079,9 +1079,10 @@ section#cases {
     left: -32px;
     color: #fff;
 
+
     &.label-developer{
-      background-color: #db2828;
-      border-color: #b21e1e;
+      background-color: #a1171a;
+      border-color: #7c1214;
     }
     &.label-business{
       background-color: #416375;
@@ -1100,37 +1101,50 @@ section#cases {
       width: 0;
       height: 0;
     }
+
+}
+
+@media(max-width:767px) {
+  .label-blog-type{
+      left: -24px;
+      &:after{
+        border-width: 0 .6em .6em 0;
+      }
+  }
+
+
 }
 
 #about-blog{
   .label-inline{
     color: #fff;
-    padding: 2px 8px;
+    padding: 5px 5px 5px 9px;
     font-size: 14px;
     font-weight: bold;
+    margin-right: 6px;
   }
   .label-developer-inline{
-    background-color: #db2828;
-    border-color: #b21e1e;
-    padding: 5px 5px 5px 9px;
-    width: 83px;
+    // background-color: #db2828;
+    // border-color: #b21e1e;
+    background-color: #a1171a;
+    border-color: #7c1214;
+
+
+    //width: 83px;
 
     a {
       color : #fff;
       text-decoration: none;
-      font-weight: bold;      
+      font-weight: bold;
     }
   }
   .label-business-inline{
     background-color: #416375;
     border-color: #1C4052;
-    width: 83px;
-    padding: 5px 8px 5px 11px;
-
     a {
       color : #fff;
       text-decoration: none;
-      font-weight: bold;      
+      font-weight: bold;
     }
   }
   p{
