@@ -11417,7 +11417,7 @@ section#cases {
   border-radius: 0 .28571429rem .28571429rem 0;
   left: -32px;
   color: #fff; }
-  .label-blog-type.label-developer {
+  .label-blog-type.label-technology {
     background-color: #a1171a;
     border-color: #7c1214; }
   .label-blog-type.label-business {
@@ -11447,10 +11447,10 @@ section#cases {
   font-size: 14px;
   font-weight: bold;
   margin-right: 6px; }
-#about-blog .label-developer-inline {
+#about-blog .label-technology-inline {
   background-color: #a1171a;
   border-color: #7c1214; }
-  #about-blog .label-developer-inline a {
+  #about-blog .label-technology-inline a {
     color: #fff;
     text-decoration: none;
     font-weight: bold; }
