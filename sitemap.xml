@@ -1,97 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://tweedegolf.nl/</loc>
+    <loc>https://tweedegolf.nl/</loc>
     <changefreq>Weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/blog/</loc>
+    <loc>https://tweedegolf.nl/blog/</loc>
     <changefreq>Weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/3d-framework/</loc>
+    <loc>https://tweedegolf.nl/3d-framework/</loc>
     <changefreq>Monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/symfony/</loc>
+    <loc>https://tweedegolf.nl/symfony/</loc>
     <changefreq>Monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/proces/</loc>
+    <loc>https://tweedegolf.nl/proces/</loc>
     <changefreq>Monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/partners/</loc>
+    <loc>https://tweedegolf.nl/partners/</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tweedegolf.nl/google-for-work/</loc>
     <changefreq>Monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/google-for-work/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>http://tweedegolf.nl/2015/11/08/collada-to-json/</loc>
+    <loc>https://tweedegolf.nl/2016/05/24/AR-and-the-web/</loc>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/09/04/physics-in-threejs/</loc>
+    <loc>https://tweedegolf.nl/2015/11/08/collada-to-json/</loc>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/08/14/intelligent-3d-design/</loc>
+    <loc>https://tweedegolf.nl/2015/09/04/physics-in-threejs/</loc>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/08/02/point-light-shadows-in-threejs-part-ii/</loc>
+    <loc>https://tweedegolf.nl/2015/08/14/intelligent-3d-design/</loc>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/07/15/3d-data-visualization/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://tweedegolf.nl/2015/05/21/point-light-shadows-in-threejs/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://tweedegolf.nl/2015/04/17/threejs-rotations/</loc>
+    <loc>https://tweedegolf.nl/2015/08/02/point-light-shadows-in-threejs-part-ii/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/04/03/webvr-and-threejs/</loc>
+    <loc>https://tweedegolf.nl/2015/07/15/3d-data-visualization/</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tweedegolf.nl/2015/05/21/point-light-shadows-in-threejs/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/03/04/human-machine-interaction-and-VR/</loc>
+    <loc>https://tweedegolf.nl/2015/04/17/threejs-rotations/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/02/21/virtual-reality-and-the-web/</loc>
+    <loc>https://tweedegolf.nl/2015/04/03/webvr-and-threejs/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2015/01/19/oculus-rift/</loc>
+    <loc>https://tweedegolf.nl/2015/03/04/human-machine-interaction-and-VR/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://tweedegolf.nl/2016/02/16/react-threejs/</loc>
+    <loc>https://tweedegolf.nl/2015/02/21/virtual-reality-and-the-web/</loc>
+    <changefreq>Yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tweedegolf.nl/2015/01/19/oculus-rift/</loc>
+    <changefreq>Yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tweedegolf.nl/2016/02/16/react-threejs/</loc>
     <changefreq>Yearly</changefreq>
     <priority>0.5</priority>
   </url>

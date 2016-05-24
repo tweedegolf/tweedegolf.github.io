@@ -2,7 +2,7 @@
 title: Askja Maps
 thumb: askjamaps.jpg
 client: Askja Reizen
-date: 2014-01-01
-tags: map editor
-screens: askjamaps.jpg,askjamaps-faroe.jpg
+date: 2015-01-01
+tags: Map editor, Google Maps API
+screens: askjamaps.jpg,askjamaps-faroe.jpg,askjamaps-cartografie.png
 ---

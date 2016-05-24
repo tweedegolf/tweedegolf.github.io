@@ -11818,6 +11818,11 @@ header.landing .tocontent {
     height: 75px;
     margin-bottom: 16px;
     background-image: url("/img/partners/logo-grafische-republiek.png"); }
+  .landing .icon.logo-gardsign, .case .icon.logo-gardsign, .testimonials .icon.logo-gardsign {
+    width: 200px;
+    height: 72px;
+    margin-bottom: 16px;
+    background-image: url("/img/partners/logo-gardsign.png"); }
   .landing .icon.logo-tk305, .case .icon.logo-tk305, .testimonials .icon.logo-tk305 {
     width: 400px;
     height: 75px;
