@@ -56,7 +56,7 @@ layout: default
                   {% if member.name == page.contact %}
                     <div class="member-card">
                       <a class="member-image {{ member.name }} col-xs-2"></a>
-                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}. It's also possible to send an email directly: <a href="mailto:{{ member.email }}{% if page.title %}?subject={{ page.title }}{% endif %}">{{ member.email }}</a>.</p>
+                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}.</p>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -104,7 +104,9 @@ layout: default
               <a class="member-image {{ member.name }}"></a>
               <span class="name">by <strong>{{ member.name }}</strong></span>
               <span class="job">{{ member.job }}</span>
+              {% if member.employed %}
               <span class="email">{{ member.email }}</span>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}

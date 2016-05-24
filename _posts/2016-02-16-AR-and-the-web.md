@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Augmented Reality with web technologies"
-date: "16-02-2016"
+date: "24-05-2016"
 tags: Three.js, 3D, WebGL, Augmented Reality, JSAruco, JSARToolkit, Augmented Web
 thumb: jsaruco.jpg
 leadimg: jsaruco.jpg

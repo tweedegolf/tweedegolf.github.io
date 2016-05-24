@@ -11394,6 +11394,7 @@ section#cases {
       display: none; }
 
 .label-blog-type {
+  font-size: 12px;
   display: inline-block;
   top: -6px;
   line-height: 1;
@@ -11401,7 +11402,7 @@ section#cases {
   background-image: none;
   padding: .5833em .833em;
   text-transform: none;
-  font-weight: 700;
+  font-weight: 500;
   border: 0 solid transparent;
   border-radius: .28571429rem;
   -webkit-transition: background .1s ease;
@@ -11415,7 +11416,7 @@ section#cases {
   min-width: -moz-max-content;
   min-width: max-content;
   border-radius: 0 .28571429rem .28571429rem 0;
-  left: -32px;
+  left: -30px;
   color: #fff; }
   .label-blog-type.label-technology {
     background-color: #a1171a;
