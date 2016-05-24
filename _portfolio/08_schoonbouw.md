@@ -1,9 +1,9 @@
 ---
 title: Schoonbouw
-thumb: biblio1.png
-date: 2016-05-24
+thumb: schoonbouw.jpg
+date: 2016-01-01
 client: Schoonbouw
 tags:
-screens: biblio1.png,biblio3.png,biblio2.png
+screens: schoonbouw1.jpg
 website: https://schoonbouw.nl/3d-tool-energieneutraal-bouwen/
 ---
