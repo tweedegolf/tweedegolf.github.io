@@ -1,4 +1,5 @@
 ---
+order: 8
 title: Local Hero Travel
 thumb: localhero.png
 date: 2015-01-01

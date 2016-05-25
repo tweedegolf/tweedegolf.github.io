@@ -1,4 +1,5 @@
 ---
+order: 4
 title: West en Weurt
 thumb: nww-meetwaarden.jpg
 date: 2014-01-01
