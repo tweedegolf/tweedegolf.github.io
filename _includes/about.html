@@ -44,6 +44,7 @@
     <div class="container">
       <div class="row members">
         {% for member in site.data.members %}
+        {% if member.employed == true %}
           <div class="col-sm-6 col-md-4">
             <div class="member-card">
               <a href="#" class="member-image {{ member.name }}"></a>
@@ -52,6 +53,7 @@
               <span class="email">{{ member.email }}</span>
             </div>
           </div>
+        {% endif %}
         {% endfor %}
       </div>
     </div>

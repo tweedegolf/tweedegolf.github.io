@@ -56,39 +56,41 @@ layout: default
                   {% if member.name == page.contact %}
                     <div class="member-card">
                       <a class="member-image {{ member.name }} col-xs-2"></a>
-                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}. It's also possible to send an email directly: <a href="mailto:{{ member.email }}{% if page.title %}?subject={{ page.title }}{% endif %}">{{ member.email }}</a>.</p>
+                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}.</p>
                     </div>
                   {% endif %}
                 {% endfor %}
-                <form role="form" action="//mailer.tweedegolf.com" method="POST" class="hashable-form">
-                <input type="hidden" name="_next" value="http://tweedegolf.nl{{page.url}}#contact-ok" />
-                  <div class="row">
-                    <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="name">Name</label>
-                      <input class="form-control" type="text" name="name" placeholder="Name">
+                <div class="col-sm-12">
+                  <form role="form" action="//mailer.tweedegolf.com" method="POST" class="hashable-form">
+                  <input type="hidden" name="_next" value="http://tweedegolf.nl{{page.url}}#contact-ok" />
+                    <div class="row">
+                      <div class="form-group col-xs-10 floating-label-form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Name">
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="email">Email address</label>
-                      <input class="form-control" type="email" name="email" placeholder="Email address" required="required">
+                    <div class="row">
+                      <div class="form-group col-xs-10 floating-label-form-group">
+                        <label for="email">Email address</label>
+                        <input class="form-control" type="email" name="email" placeholder="Email address" required="required">
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-xs-7 floating-label-form-group">
-                      <label for="message">Message</label>
-                      <textarea placeholder="Message" class="form-control" name="message" rows="5"></textarea>
+                    <div class="row">
+                      <div class="form-group col-xs-10 floating-label-form-group">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Message" class="form-control" name="message" rows="5"></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                    <div class="form-group col-xs-7">
-                      <button type="submit" class="btn btn-lg btn-success">
-                        Send
-                      </button>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-xs-10">
+                        <button type="submit" class="btn btn-lg btn-success">
+                          Send
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +104,9 @@ layout: default
               <a class="member-image {{ member.name }}"></a>
               <span class="name">by <strong>{{ member.name }}</strong></span>
               <span class="job">{{ member.job }}</span>
+              {% if member.employed %}
               <span class="email">{{ member.email }}</span>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}

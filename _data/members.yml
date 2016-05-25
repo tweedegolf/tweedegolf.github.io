@@ -1,35 +1,53 @@
 - name: Bram
-  job: project lead
+  job: developer & project lead
   email: bram@tweedegolf.com
+  author: true
+  employed: true
 
 - name: Daniel
   job: researcher
   email: daniel@tweedegolf.com
+  author: true
+  employed: true
 
 - name: Daniella
   job: front-end developer
   email: daniella@tweedegolf.com
+  author: false
+  employed: true
 
 - name: Dennis
   job: researcher
   email: dennis@tweedegolf.com
+  author: false
+  employed: false
 
 - name: Erik
   job: business analyst & owner
   email: erik@tweedegolf.com
+  author: false
+  employed: true
 
 - name: Hugo
-  job: backend & business developer
+  job: developer & business analyst
   email: hugo@tweedegolf.com
+  author: false
+  employed: true
 
 - name: Marlon
   job: senior developer & owner
   email: marlon@tweedegolf.com
+  author: false
+  employed: true
 
 - name: RubenN
-  job: senior game developer
+  job: senior developer
   email: ruben@tweedegolf.com
+  author: true
+  employed: true
 
 - name: RubenT
-  job: game developer
+  job: front-end developer
   email: rubent@tweedegolf.com
+  author: false
+  employed: true

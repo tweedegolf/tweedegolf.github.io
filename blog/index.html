@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research blog
-description: Tweede golf research blog
+description: tweede golf blog
 ---
 
 {% include navbar.html page-class="blog" %}
@@ -14,9 +14,6 @@ description: Tweede golf research blog
         <div class="intro-desc">
           <span class="icon-research"></span>
           <h1>{{ page.title }}</h1>
-          <hr class="separator">
-          {% capture research %}{% include /about/research.md %}{% endcapture %}
-          {{ research|markdownify }}
         </div>
       </div>
     </div>
@@ -26,11 +23,37 @@ description: Tweede golf research blog
 <section id="blog-items">
   <div class="container">
     <div class="row">
-      {% for post in site.posts %}
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
-        {% include blog-item.html %}
+      <div id="about-blog" class="col-md-3">
+        <!--<h3>About</h3>-->
+        <!--<p>-->
+          <!--<span class="label-inline label-technology-inline">-->
+            <!--<a href="/blog/?filter=technology">Technology</a>-->
+          <!--</span> articles in English, for our fellow developers.-->
+        <!--</p>-->
+        <!--<p>-->
+          <!--<span class="label-inline label-business-inline">-->
+            <!--<a href="/blog/?filter=business">Business</a>-->
+          <!--</span> artikelen in het Nederlands, voor niet-developers.-->
+        <!--</p>-->
       </div>
+      <div class="col-md-6">
+      {% for post in site.posts %}
+        {% include blog-item.html %}
       {% endfor %}
+      </div>
+      <div class="col-md-3 authors">
+        <h3>Authors</h3>
+        {% for member in site.data.members %}
+          {% if member.author %}
+            <div class="member-card">
+              <a class="member-image {{ member.name }} blog" href="/blog/?author={{ member.name }}"></a>
+              <span class="name"><strong>{{ member.name }}</strong></span>
+              <span class="job">{{ member.job }}</span>
+              <span class="email">{{ member.email }}</span>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>

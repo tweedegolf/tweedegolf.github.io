@@ -327,5 +327,3 @@ Some final remarks that can help you make up your mind:
 - both libraries provide excellent examples, studying these will give you a good grasp of the basic principles.
 
 Don't hesitate to get in touch with us, if you have any questions or remarks about this post. Feedback is much appreciated.
-
-
