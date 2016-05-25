@@ -1,5 +1,5 @@
 ---
-title: Askja Maps
+title: Map editor
 thumb: askjamaps.jpg
 client: Askja Reizen
 date: 2015-01-01
