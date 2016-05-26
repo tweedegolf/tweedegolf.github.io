@@ -4,7 +4,7 @@ title: Biblio-shop
 thumb: biblio1.png
 date: 2016-01-01
 client: Olifantenpaadje
-tags: biblioplus, webshop, activiteiten, onderwijs
+tags: webshop, saas, onderwijs
 screens: op-shops.png,op-activiteiten.png,op-biblio1.png,op-biblio3.png,op-biblio2.png
 website: https://biblio-shop.nl/
 ---
