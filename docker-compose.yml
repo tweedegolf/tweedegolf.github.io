@@ -1,0 +1,16 @@
+version: '2'
+services:
+    app:
+        image: jekyll/jekyll:pages
+        ports:
+          - "8080:4000"
+          - "4000:4000"
+          - "80:4000"
+        command: jekyll serve --force_polling --incremental
+        volumes:
+          - ".:/srv/jekyll"
+        networks:
+            default:
+                aliases:
+                    - app.dev
+                    - web.dev

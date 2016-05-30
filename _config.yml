@@ -8,7 +8,13 @@ permalink: pretty
 
 # Server
 destination: ./_site
-exclude: ['.gitignore', 'README.md', 'bower.json', '.bowerrc', 'Gemfile', 'Gemfile.lock']
+exclude:
+    - .gitignore
+    - README.md
+    - bower.json
+    - .bowerrc
+    - docker-compose.yml
+    - Vagrantfile
 
 collections:
     portfolio:
