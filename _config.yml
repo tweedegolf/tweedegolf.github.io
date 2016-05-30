@@ -15,6 +15,7 @@ exclude:
     - .bowerrc
     - docker-compose.yml
     - Vagrantfile
+    - .jekyll-metadata
 
 collections:
     portfolio:

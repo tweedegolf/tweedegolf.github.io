@@ -7,3 +7,5 @@ _site/
 *swp
 img/.DS_Store
 .idea/
+.jekyll-metadata
+
