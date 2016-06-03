@@ -26,6 +26,8 @@ This is where the web can help: as an inexpensive and widely accessible platform
 it would be well suited for making VR more mainstream. As it happens, [WebVR]
 is actually well on it's way to make it into some browsers. While currently only
 available in preview versions of some browsers, it does have definite potential.
+Since the [first time we looked at WebVR] a lot of progress has been made by
+browser vendors to support virtual reality!
 
 Imagine browsing the web and being able to quickly jump into VR to view that
 new property development. Or taking a look around that couch before buying it.
@@ -39,3 +41,4 @@ web may just make them available for many.
 [Daydream]: https://vr.google.com/daydream/
 [GearVR]: http://www.samsung.com/global/galaxy/wearables/gear-vr/
 [WebVR]: https://webvr.info/
+[first time we looked at WebVR]: /2015/04/03/webvr-and-threejs/
