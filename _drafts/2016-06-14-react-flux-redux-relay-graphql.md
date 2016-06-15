@@ -39,7 +39,7 @@ Obviously Relay and GraphQL are not designed for managing application state; the
 
 ###The structure of the app
 
-The code of the application is at [github](https://github.com/abudaan/pinterest-slider2) and a live version can be found [here](https://abumarkub.net/pinterest-slider/).
+The code of the application is at [github](https://github.com/tweedegolf/pinterest-slider) and a live version can be found [here](https://abumarkub.net/pinterest-slider/).
 
 The application has only one container, this is in line with the recommendations for maintainable and reusable code: to have as little components with state (i.e. containers) as possible. The container is called App and you can find its code in /containers/app.js
 
