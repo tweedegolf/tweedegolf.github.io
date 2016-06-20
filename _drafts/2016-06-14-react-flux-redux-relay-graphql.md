@@ -25,7 +25,8 @@ Parent components can be other dumb components or smart components. A smart comp
 
 Apart from dumb opposed to smart you may find other naming pairs such as presentational and container, skinny and fat, stateful and pure, screens and components and so on. I will use component (dumb) and container (smart).
 
-This article discusses a simple application that logs in to your Pinterest account and fetches all your public boards. After selecting a board a slideshow containing all images in that board will start. Before you start the slideshow you can set the interval between two successive images.
+This article discusses a simple application that lets you log in to your Pinterest account and fetches all your public boards. After selecting a board a slideshow containing all images in that board will start. Before you start the slideshow you can set the interval between two consecutive images.
+
 
 I have created 3 versions of this application all using a different technology for managing the application state:
 
