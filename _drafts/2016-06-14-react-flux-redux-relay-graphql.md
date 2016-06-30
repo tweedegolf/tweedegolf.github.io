@@ -15,7 +15,7 @@ nerd: 3
 
 
 
-###Introduction
+### Introduction
 
 React has increasingly become a popular choice for building complex interactive front-ends. One of the great benefits of React is that we can create reusable components. A component is reusable if it is not hard-wired to the application or to the application state.
 
@@ -38,7 +38,7 @@ Obviously Relay and GraphQL are not designed for managing application state; the
 
 
 
-###The structure of the app
+### The structure of the app
 
 The code of the application is at [github](https://github.com/tweedegolf/pinterest-slider) and a live version can be found [here](https://abumarkub.net/pinterest-slider/).
 
@@ -54,7 +54,7 @@ Based on a display state the container renders one of the following components:
 Instead of display states I could have use [routes](https://github.com/reactjs/react-router) as well.
 
 
-###The structure of the state
+### The structure of the state
 
 We can define our state as follows:
 
@@ -68,7 +68,7 @@ We can define our state as follows:
 Number 1 is the overall application state that determines which component to render, and together with number 2 and 3 it is dependent on user interaction. Number 4 and 5 represent the data fetched from the server (i.e. the data state) and number 6 gets updated automatically by code, more specific by `setInterval`.
 
 
-###Comparing the 3 versions
+### Comparing the 3 versions
 
 In the versions that use Flux and Redux both application state and data state are stored in one single store. In the Relay/GraphQL version the data state is stored in Relay and the application state is maintained in the App container itself; because our application state is fairly simple this is acceptable.
 
@@ -87,7 +87,7 @@ The Relay/GraphQL version is the odd one out here. Because the application state
 One important thing to notice is that all components are exactly the same in the 3 versions; because the components are completely decoupled they can be used in applications that use very different state management technologies.
 
 
-###Conclusion
+### Conclusion
 
 During coding and refactoring the leading idea was to make the 3 versions as much similar to each other as possible. For the Flux and Redux versions I succeeded fairly well but the Relay/GraphQL version is clearly something different.
 
@@ -99,7 +99,7 @@ But in applications that require a lot of data fetching it is not a question of 
 
 
 
-###Links for further reading
+### Links for further reading
 
 [different Flux implementations](http://jamesknelson.com/which-flux-implementation-should-i-use-with-react/)
 
@@ -110,4 +110,3 @@ But in applications that require a lot of data fetching it is not a question of 
 [async requests](http://www.code-experience.com/async-requests-with-react-js-and-flux-revisited/)
 
 [getting data from an API](https://medium.com/@tribou/flux-getting-data-from-an-api-b73b6478c015#.164yw4ysk)
-
