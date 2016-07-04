@@ -15,7 +15,7 @@ nerd: 4
 
 
 
-###Introduction
+### Introduction
 
 React has increasingly become a popular choice for building complex interactive front-ends. One of the great benefits of React is that we can create reusable components. A component is reusable if it is not hard-wired to the application or to the application state.
 
@@ -38,7 +38,7 @@ The Redux version has 2 variants; the first uses the standard action creators an
 The application shows all images in a Pinterest board in a continuous slideshow. After you log in to your Pinterest account the application fetches all your public boards, then you can select a board, set the interval between two consecutive images and finally press 'start' to start the slideshow.
 
 
-###The structure of the app
+### The structure of the app
 
 The code of the application is at [github](https://github.com/tweedegolf/pinterest-slider) and a live version can be found [here](https://abumarkub.net/pinterest-slider/).
 
@@ -54,7 +54,7 @@ Based on a display state the container renders one of the following components:
 Instead of display states I could have use [routes](https://github.com/reactjs/react-router) as well.
 
 
-###The structure of the state
+### The structure of the state
 
 Our state can be subdivided in the following categories:
 
@@ -70,6 +70,7 @@ Number 1 is the overall application state that determines which component to ren
 
 ###Comparing the 2 versions
 
+
 If you compare the code of the App container you will see that in all versions the properties and actions needed by the components are passed in from the container, however the way this is done differs.
 
 In the Flux version the App container is wrapped in a flux Container and as a result it gets automatically notified of state changes. In the Redux versions we need to add that functionality by using the `@connect` decorator. The connect decorator enhances the container so it can receive state changes and dispatch actions.
@@ -83,13 +84,13 @@ However the second variant of the Redux version does not use Thunk middleware; j
 To conclude take notice that all components are exactly the same in all versions of the application; because the components are completely decoupled they can be used in applications that use very different state management technologies.
 
 
-###Conclusion
+### Conclusion
 
 Although this article only shows that you can reuse components in 3 different versions of the *same* application, I think it is save to say that we can extrapolate this to a situation where we reuse components in very different applications. If you keep in mind during designing that your application should have as little state (thus containers) as possible, you will see that you automatically end up with reusable components.
 
 
 
-###Links for further reading
+### Links for further reading
 
 [different Flux implementations](http://jamesknelson.com/which-flux-implementation-should-i-use-with-react/)
 
@@ -100,4 +101,3 @@ Although this article only shows that you can reuse components in 3 different ve
 [async requests](http://www.code-experience.com/async-requests-with-react-js-and-flux-revisited/)
 
 [getting data from an API](https://medium.com/@tribou/flux-getting-data-from-an-api-b73b6478c015#.164yw4ysk)
-
