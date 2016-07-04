@@ -2,15 +2,15 @@
 layout: post
 title: React components and state management
 date: "14-06-2016"
-tags: React Redux Flux Relay GraphQL state management
+tags: React Redux Flux state management
 thumb:
 leadimg:
 author: Daniel
 contact: Daniel
 about:
 description:
-github: https://github.com/abudaan/pinterest-slider2
-nerd: 3
+github: https://github.com/tweedegolf/pinterest-slider
+nerd: 4
 ---
 
 
@@ -25,24 +25,24 @@ Parent components can be other dumb components or smart components. A smart comp
 
 Apart from dumb opposed to smart you may find other naming pairs such as presentational and container, skinny and fat, stateful and pure, screens and components and so on. I will use component (dumb) and container (smart).
 
-This article discusses a simple application that lets you log in to your Pinterest account and fetches all your public boards. After selecting a board a slideshow containing all images in that board will start. Before you start the slideshow you can set the interval between two consecutive images.
+The idea of this article is to show that well-defined components can be reused in different applications.
+
+This will be illustrated by discussing a simple application in 2 versions: a version that uses Flux and a version uses Redux for state management.
+
+The Redux version has 2 variants; the first uses the standard action creators and Thunk middleware for async actions, and the second one creates actions more like Flux does. I will discuss this more in detail below.
 
 
-I have created 3 versions of this application all using a different technology for managing the application state:
 
-1. React with Flux
-2. React with Redux
-3. React with Relay and GraphQL
+### The idea of the app
 
-Obviously Relay and GraphQL are not designed for managing application state; they are designed for managing data fetching from a server. However since our application fetches data from the Pinterest server, and therefor maintains both a local application state based on user interaction and a data state based on what data has been fetched from the server, I thought it would be interesting to add it to the comparison.
-
+The application shows all images in a Pinterest board in a continuous slideshow. After you log in to your Pinterest account the application fetches all your public boards, then you can select a board, set the interval between two consecutive images and finally press 'start' to start the slideshow.
 
 
 ###The structure of the app
 
 The code of the application is at [github](https://github.com/tweedegolf/pinterest-slider) and a live version can be found [here](https://abumarkub.net/pinterest-slider/).
 
-The application has only one container, this is in line with the recommendations for maintainable and reusable code: to have as little components with state (i.e. containers) as possible. The container is called App and you can find its code in /containers/app.js
+For maintainable and reusable code it is generally recommended to use as little components with state (i.e. containers) as possible. Because our application is fairly simple, it only needs one container. It is called App in the file /containers/app.js
 
 Based on a display state the container renders one of the following components:
 
@@ -56,7 +56,7 @@ Instead of display states I could have use [routes](https://github.com/reactjs/r
 
 ###The structure of the state
 
-We can define our state as follows:
+Our state can be subdivided in the following categories:
 
 1. display state
 2. selected board
@@ -68,34 +68,24 @@ We can define our state as follows:
 Number 1 is the overall application state that determines which component to render, and together with number 2 and 3 it is dependent on user interaction. Number 4 and 5 represent the data fetched from the server (i.e. the data state) and number 6 gets updated automatically by code, more specific by `setInterval`.
 
 
-###Comparing the 3 versions
-
-In the versions that use Flux and Redux both application state and data state are stored in one single store. In the Relay/GraphQL version the data state is stored in Relay and the application state is maintained in the App container itself; because our application state is fairly simple this is acceptable.
+###Comparing the 2 versions
 
 If you compare the code of the App container you will see that in all versions the properties and actions needed by the components are passed in from the container, however the way this is done differs.
 
-The code of the Flux and the Redux versions look very much the same. In the Flux version the App container is wrapped in a flux Container and as a result it gets automatically notified of state changes. In the Redux version we need to add that functionality by using a decorator pattern.
+In the Flux version the App container is wrapped in a flux Container and as a result it gets automatically notified of state changes. In the Redux versions we need to add that functionality by using the `@connect` decorator. The connect decorator enhances the container so it can receive state changes and dispatch actions.
 
-Both the Flux and the Redux version dispatch actions to alter the state in a store. If you compare the `actions.js` and the `store.js` files of both versions you see that they are identical apart from the boilerplate code.
+Both the Flux and the Redux versions dispatch actions to alter the state in a store. In Flux we use the `AppDispatcher` and in Redux we use its `dispatch` method. But there is a small difference between Flux and Redux in the way async actions are handled.
 
-Note that I choose not to use an action creator as described in the Redux documentation; in `actions.js` the actions are both created and dispatched. This has 2 benefits: the code looks more similar to the Flux version and we don't need Thunk middleware for asynchronous actions. Asynchronous actions occur when data needs to be fetched from Pinterest.
+In Redux you use action creator functions that return actions which are passed as argument in the dispatch method. For async actions the dispatch method must be able to dispatch a function instead of a plain object. Thunk middleware handles this for us; with Thunk we can return a function that wraps around a Promise as you can see for example in the code of the `checkSession` function in `actions.js`.
 
-In the file `actions2.js` you see a regular Redux action creator. If you want to use this version you need to change the App container and the store as well, as you see in respectively `app2.js` and `store2.js`. Differences are that in `app2.js` the App container is also decorated with a `mapDispatchToProps` function and in `store2.js` the Thunk middleware is added.
+However the second variant of the Redux version does not use Thunk middleware; just like Flux the actual dispatch happens in the action creator function. The dispatch method is imported into the file `actions.js` and as a result we don't need to implement the `mapDispatchToProps` function in the container.
 
-The Relay/GraphQL version is the odd one out here. Because the application state is maintained in the App container itself, this version doesn't need actions and a dispatcher, nor a separate store file. By wrapping the App container in a Relay container the server data gets automatically fetched and added to the props of the App container, which passes them on to the components.
-
-One important thing to notice is that all components are exactly the same in the 3 versions; because the components are completely decoupled they can be used in applications that use very different state management technologies.
+To conclude take notice that all components are exactly the same in all versions of the application; because the components are completely decoupled they can be used in applications that use very different state management technologies.
 
 
 ###Conclusion
 
-During coding and refactoring the leading idea was to make the 3 versions as much similar to each other as possible. For the Flux and Redux versions I succeeded fairly well but the Relay/GraphQL version is clearly something different.
-
-And I have even cheated a bit as well; as you might have noticed that the Relay/GraphQL version skips the Authorize component and the progress messages. This is done because I didn't want to alter the components Configure and ImageSlider; to use Relay/GraphQL properly I should have wrapped them in their own Relay containers so they fetch their own data as soon as the display state commands them to render. (@Erik: ik wil dit voorbeeldje eigenlijk ook nog even toevoegen)
-
-For this simple Pinterest application we didn't need Relay/GraphQL. I wrote a wrapper around the Pinterest REST API and a small API around that wrapper which makes it very easy to use with Flux and Redux.
-
-But in applications that require a lot of data fetching it is not a question of using Redux/Flux *or* Relay/GraphQL; application state management is best done with Redux, Flux or similar, whereas Relay/GraphQL shines in data state management.
+Although this article only shows that you can reuse components in 3 different versions of the *same* application, I think it is save to say that we can extrapolate this to a situation where we reuse components in very different applications. If you keep in mind during designing that your application should have as little state (thus containers) as possible, you will see that you automatically end up with reusable components.
 
 
 
