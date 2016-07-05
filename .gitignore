@@ -8,4 +8,4 @@ _site/
 img/.DS_Store
 .idea/
 .jekyll-metadata
-
+.idea/workspace.xml
