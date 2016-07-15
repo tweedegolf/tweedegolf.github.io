@@ -12238,3 +12238,19 @@ div.truncate-2-lines {
   float: left;
   cursor: pointer;
   max-width: 100%; }
+
+@media (max-width: 767px) {
+  body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header {
+    position: static !important;
+    background-color: #1f120a !important;
+    margin-bottom: 0 !important; }
+    body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .tg-logo {
+      display: block !important; }
+    body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .tg-logo-inverse {
+      display: none !important; }
+    body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .navbar-nav > li > a {
+      color: #777777; }
+    body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .navbar-nav > li.active a,
+    body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .navbar-nav > li a:hover {
+      background-color: transparent;
+      color: #fff; } }

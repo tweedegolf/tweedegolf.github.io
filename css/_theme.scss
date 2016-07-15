@@ -2178,3 +2178,30 @@ div.truncate-2-lines {
     }
   }
 }
+
+@media (max-width:767px){
+
+  // This is an (ugly) override to make the mobile menu consistent
+
+  body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header{
+    position: static !important;
+    background-color: rgba(31, 18, 10, 1) !important;
+    margin-bottom: 0 !important;
+    .tg-logo{
+      display: block !important;
+    }
+    .tg-logo-inverse{
+      display: none !important;
+    }
+    .navbar-nav > li > a{
+      color: #777777;
+    }
+
+    .navbar-nav > li.active a,
+    .navbar-nav > li a:hover{
+      background-color: transparent;
+      color: #fff;
+    }
+
+  }
+}
