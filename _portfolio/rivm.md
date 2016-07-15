@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Sustainability method selection tool
 thumb: rivm.jpg
 date: 2016-01-01

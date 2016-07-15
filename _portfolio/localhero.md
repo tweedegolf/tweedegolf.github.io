@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 12
 title: Local Hero Travel
 thumb: localhero.png
 date: 2015-01-01

@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 7
 title: Biblio-shop
 thumb: op-stats.png
 date: 2016-01-01

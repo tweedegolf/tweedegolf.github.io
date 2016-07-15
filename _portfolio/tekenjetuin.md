@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Tekenjetuin
 thumb: tjt.png
 date: 2016-01-01
