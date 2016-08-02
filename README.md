@@ -13,6 +13,14 @@ docker-compose up
 
 The website is served on `http://localhost:4000`.
 
+### Compiling styles (workaround)
+
+As of now, styles won't be compiled automagically in the Vagrant/Docker setup. You'll need to compile styles locally which means you'll need Ruby and Bower installed. Then run:
+
+```
+sass css/main.scss css/main.css
+```
+
 ## Serving the website locally with Bower and Bundle
 
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
