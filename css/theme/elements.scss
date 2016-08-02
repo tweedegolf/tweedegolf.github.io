@@ -335,17 +335,6 @@ video, iframe {
   }
 }
 
-@media (max-width: 990px) {
-  .post-info {
-    #post-content & {
-      float: left;
-      min-width: 290px;
-      height: 180px;
-      padding-top: 70px;
-    }
-  }
-}
-
 section#cases {
     padding: 200px 0 100px 0;
     .star-primary {
