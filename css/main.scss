@@ -1,5 +1,18 @@
-@import "_variables.scss"; // set before all other imports
+// NOTE: The order of these imports is crucial.
+
+// Vars
+@import "./theme/variables.scss";
+
+// Libs
 @import "../vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap.scss";
 @import "../vendor/fontawesome/scss/font-awesome.scss";
 @import "../vendor/mdi/scss/materialdesignicons.scss";
-@import "_theme.scss";
+
+// Theme
+@import "./theme/mixins";
+@import "./theme/defaults";
+@import "./theme/layout";
+@import "./theme/elements";
+@import "./theme/sections";
+@import "./theme/pages";
+@import "./theme/responsive";
