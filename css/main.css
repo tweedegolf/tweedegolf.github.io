@@ -10707,39 +10707,6 @@ p a {
   font-weight: 400;
   text-decoration: underline; }
 
-article h2, article h3, article h4, article h5, article h6 {
-  text-transform: none; }
-article h2, article h3 {
-  margin-top: 32px;
-  margin-bottom: 16px; }
-article p, article li {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 20px; }
-article li {
-  margin-bottom: 12px; }
-article pre {
-  margin: 24px 0; }
-article img {
-  display: block;
-  margin: 48px auto; }
-article iframe, article video {
-  margin: 36px 0 24px; }
-article .with-caption {
-  margin-bottom: 12px; }
-  article .with-caption + em, article .with-caption + p {
-    color: #888;
-    display: block;
-    font-size: 13px;
-    margin-bottom: 36px;
-    text-align: center; }
-article .footnotes {
-  font-size: 13px;
-  font-style: italic; }
-
-#comments {
-  padding-top: 60px; }
-
 a,
 a:hover,
 a:focus,
@@ -10873,117 +10840,6 @@ video, iframe {
       position: absolute;
       z-index: 99;
       font-size: 13px; }
-
-header {
-  text-align: center;
-  background-image: url("/img/kantoor.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  position: relative; }
-  header .container {
-    padding-top: 100px;
-    padding-bottom: 50px; }
-  header img {
-    display: block;
-    margin: 0 auto 20px; }
-  header .intro-text .name img {
-    width: 250px; }
-  header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300; }
-  header .intro-desc {
-    bottom: 50px;
-    position: relative;
-    text-align: center;
-    z-index: 2; }
-    header .intro-desc a, header .intro-desc a:active, header .intro-desc a:visited {
-      color: #fff;
-      outline: none;
-      text-decoration: underline; }
-      header .intro-desc a:hover, header .intro-desc a:active:hover, header .intro-desc a:visited:hover {
-        text-decoration: none; }
-    header .intro-desc p {
-      font-size: 20px; }
-    header .intro-desc p .research {
-      display: inline-block;
-      font-size: 14px;
-      line-height: 1.5em; }
-    header .intro-desc .separator {
-      margin: 24px auto; }
-    header .intro-desc .icon-research {
-      background-image: url("/img/research.png");
-      background-repeat: no-repeat;
-      display: block;
-      height: 150px;
-      margin: 0 auto;
-      width: 150px; }
-  header:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(31, 18, 10, 0.85);
-    -moz-transition: background .3s linear;
-    -webkit-transition: background .3s linear;
-    -o-transition: background .3s linear;
-    transition: background .3s linear; }
-  header.blog {
-    background-image: none;
-    overflow: hidden;
-    height: 410px; }
-    header.blog .leadimg {
-      position: absolute;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%; }
-      @media (min-width: 1300px) {
-        header.blog .leadimg {
-          top: -20%; } }
-    header.blog .article-heading {
-      position: absolute;
-      bottom: 40px;
-      z-index: 2; }
-      header.blog .article-heading .tags {
-        font-size: 14px;
-        font-weight: 300;
-        text-align: left;
-        text-transform: uppercase; }
-        header.blog .article-heading .tags .fa {
-          font-size: 22px;
-          margin-right: 4px; }
-      header.blog .article-heading h1 {
-        margin-left: 12px;
-        font-size: 50px;
-        font-weight: 500;
-        text-align: left;
-        text-transform: none; }
-      header.blog .article-heading .nerd {
-        padding-left: 14px; }
-        header.blog .article-heading .nerd.protip:hover:after {
-          bottom: 4em;
-          left: 1; }
-        header.blog .article-heading .nerd.protip:hover:before {
-          bottom: 3.6em;
-          left: 2em; }
-    header.blog:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: transparent;
-      background-image: linear-gradient(rgba(65, 99, 117, 0.8), rgba(65, 99, 117, 0.8));
-      -moz-transition: background .3s linear;
-      -webkit-transition: background .3s linear;
-      -o-transition: background .3s linear;
-      transition: background .3s linear;
-      z-index: 1; }
 
 @media (min-width: 768px) {
   header .container {
@@ -12249,5 +12105,148 @@ div.truncate-2-lines {
     body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header .navbar-nav > li a:hover {
       background-color: transparent;
       color: #fff; } }
+article h2, article h3, article h4, article h5, article h6 {
+  text-transform: none; }
+article h2, article h3 {
+  margin-top: 32px;
+  margin-bottom: 16px; }
+article p, article li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+article li {
+  margin-bottom: 12px; }
+article pre {
+  margin: 24px 0; }
+article img {
+  display: block;
+  margin: 48px auto; }
+article iframe, article video {
+  margin: 36px 0 24px; }
+article .with-caption {
+  margin-bottom: 12px; }
+  article .with-caption + em, article .with-caption + p {
+    color: #888;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 36px;
+    text-align: center; }
+article .footnotes {
+  font-size: 13px;
+  font-style: italic; }
+
+#comments {
+  padding-top: 60px; }
+
+header {
+  text-align: center;
+  background-image: url("/img/kantoor.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative; }
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 50px; }
+  header img {
+    display: block;
+    margin: 0 auto 20px; }
+  header .intro-text .name img {
+    width: 250px; }
+  header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300; }
+  header .intro-desc {
+    bottom: 50px;
+    position: relative;
+    text-align: center;
+    z-index: 2; }
+    header .intro-desc a, header .intro-desc a:active, header .intro-desc a:visited {
+      color: #fff;
+      outline: none;
+      text-decoration: underline; }
+      header .intro-desc a:hover, header .intro-desc a:active:hover, header .intro-desc a:visited:hover {
+        text-decoration: none; }
+    header .intro-desc p {
+      font-size: 20px; }
+    header .intro-desc p .research {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1.5em; }
+    header .intro-desc .separator {
+      margin: 24px auto; }
+    header .intro-desc .icon-research {
+      background-image: url("/img/research.png");
+      background-repeat: no-repeat;
+      display: block;
+      height: 150px;
+      margin: 0 auto;
+      width: 150px; }
+  header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(31, 18, 10, 0.85);
+    -moz-transition: background .3s linear;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
+    transition: background .3s linear; }
+  header.blog {
+    background-image: none;
+    overflow: hidden;
+    height: 410px; }
+    header.blog .leadimg {
+      position: absolute;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%; }
+      @media (min-width: 1300px) {
+        header.blog .leadimg {
+          top: -20%; } }
+    header.blog .article-heading {
+      position: absolute;
+      bottom: 40px;
+      z-index: 2; }
+      header.blog .article-heading .tags {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        text-transform: uppercase; }
+        header.blog .article-heading .tags .fa {
+          font-size: 22px;
+          margin-right: 4px; }
+      header.blog .article-heading h1 {
+        margin-left: 12px;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: left;
+        text-transform: none; }
+      header.blog .article-heading .nerd {
+        padding-left: 14px; }
+        header.blog .article-heading .nerd.protip:hover:after {
+          bottom: 4em;
+          left: 1; }
+        header.blog .article-heading .nerd.protip:hover:before {
+          bottom: 3.6em;
+          left: 2em; }
+    header.blog:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      background-image: linear-gradient(rgba(65, 99, 117, 0.8), rgba(65, 99, 117, 0.8));
+      -moz-transition: background .3s linear;
+      -webkit-transition: background .3s linear;
+      -o-transition: background .3s linear;
+      transition: background .3s linear;
+      z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */
