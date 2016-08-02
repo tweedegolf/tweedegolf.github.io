@@ -369,3 +369,63 @@ section.success {
 section#static {
     padding: 200px 100px 100px 100px;
 }
+
+section#portfolio {
+  h2 {
+    text-transform: uppercase;
+  }
+  * {
+    z-index: 2;
+  }
+}
+
+section#about {
+  padding-bottom: 0;
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+  }
+  .cubes {
+    position: relative;
+    top: 60px;
+    border: 1px solid #eee;
+  }
+  .cube {
+    background-color: white;
+    //border: 1px solid #eee;
+    height: 300px;
+    padding: 0;
+    overflow: hidden;
+    p {
+      color: #666;
+    }
+    .number {
+      font-family: monospace;
+      font-size: 44px;
+      font-weight: bold;
+      color: $brand-success;
+      display: inline-block;
+      line-height: 2em;
+      margin-top: 50px;
+      .large {
+        font-size: 88px;
+        line-height: 44px;
+      }
+    }
+    img {
+      height: 100%;
+      width: auto;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+section#team {
+  padding-top: 160px;
+  padding-bottom: 0;
+  h2 {
+    text-transform: uppercase;
+  }
+}
