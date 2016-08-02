@@ -210,3 +210,127 @@ header {
       }
     }
 }
+
+.navbar {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  a:focus {
+    outline: none;
+  }
+  .navbar-nav {
+    letter-spacing: 1px;
+    li {
+      a:focus {
+        outline: none;
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      width: 120px;
+      margin-top: -5px
+    }
+  }
+}
+
+
+
+.navbar.navbar-fixed-top.navbar-inverse {
+    //background-color: #222;
+    background-color: transparent;
+    border: none;
+    .page-scroll.active a{
+      background-color: transparent;
+    }
+}
+
+// navbar overrides
+.navbar.navbar-fixed-top.navbar-inverse.navbar-shrink{
+  background-color: #222;
+  .page-scroll.active a{
+    background-color: #090909;
+  }
+}
+.navbar-fixed-top .navbar-brand img {
+  opacity: .5 !important;
+}
+.navbar-shrink {
+  background-color: #222;
+  .navbar-brand {
+    opacity: initial;
+  }
+}
+//
+
+
+.tg-logo-inverse{
+  display: none;
+}
+
+
+//different menu styling for blog
+.navbar.navbar-inverse.blog .navbar-nav > li > a {
+  color: #fff;
+  &:hover{
+    color: #ddd;
+  }
+}
+.navbar-inverse.blog ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #fff;
+}
+
+
+//different menu styling for 3d framework
+.navbar-inverse.framework{
+  .tg-logo-inverse{
+    display: block;
+  }
+  .tg-logo{
+    display: none;
+  }
+}
+.navbar-inverse.framework .navbar-nav > li{
+  > a {
+    color: #bbb;
+    background: none;
+    //color: #fff;
+    &:hover{
+      background: none;
+      color: #000;
+    }
+  }
+  &.active{
+    a{
+      color: #000;
+    }
+  }
+}
+.navbar-inverse.framework ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #bbb;
+}
+
+
+
+//shrink for blog and framework
+.navbar-inverse.framework.navbar-shrink{
+  .tg-logo-inverse{
+    display: none;
+  }
+  .tg-logo{
+    display: block;
+  }
+}
+
+.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
+.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
+  color: #777777;
+  &:hover{
+    background-color: #000;
+  }
+}
+.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
+.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical{
+      border-right: 2px solid #777;
+}
