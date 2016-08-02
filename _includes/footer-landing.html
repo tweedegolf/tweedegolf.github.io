@@ -9,7 +9,8 @@
           {% if member.name == page.contact %}
             <div class="member-card">
               <a class="member-image {{ member.name }} col-xs-2"></a>
-              <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}. Rechtstreeks mailen kan ook: {{ member.email }}.</p>
+              <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}.
+                Rechtstreeks mailen kan ook: <a href="mailto:{{ member.email}}">{{ member.email }}</a>.</p>
             </div>
           {% endif %}
         {% endfor %}

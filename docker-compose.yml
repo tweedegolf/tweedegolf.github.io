@@ -6,7 +6,7 @@ services:
           - "8080:4000"
           - "4000:4000"
           - "80:4000"
-        command: jekyll serve --force_polling --incremental --watch --drafts
+        command: jekyll serve --force_polling --watch --drafts
         volumes:
           - ".:/srv/jekyll"
         networks:

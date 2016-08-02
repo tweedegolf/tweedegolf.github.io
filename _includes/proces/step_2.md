@@ -1,4 +1,4 @@
-###Information &amp; interaction design
+### Information &amp; interaction design
 
 Wat voor een datastructuur hebben we nodig? Welke eindgebruikers mogen straks bij welke data? Heldere antwoorden zijn essentieel voor het *information design*.
 
