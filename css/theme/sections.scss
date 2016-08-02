@@ -334,3 +334,9 @@ header {
 .navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical{
       border-right: 2px solid #777;
 }
+
+.navbar .divider-vertical {
+  height: 30px;
+  margin: 10px 5px;
+  border-right: 2px solid #777;
+}
