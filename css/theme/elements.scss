@@ -174,41 +174,6 @@ video, iframe {
   }
 }
 
-@media (min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        .navbar-brand {
-            img {
-                width: 210px;
-                margin-top: -10px
-            }
-        }
-    }
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-        .navbar-brand {
-            img {
-                width: 140px;
-                margin-top: -5px
-            }
-        }
-    }
-    .navbar-nav > li > a {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-}
-
-@media (min-width:960px) {
-  .navbar-nav > li > a {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
 .navbar .divider-vertical {
   height: 30px;
   margin: 10px 5px;
