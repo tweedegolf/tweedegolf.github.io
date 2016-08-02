@@ -10841,146 +10841,6 @@ video, iframe {
       z-index: 99;
       font-size: 13px; }
 
-@media (min-width: 768px) {
-  header .container {
-    padding: 200px 0 100px; }
-  header .intro-text .name img {
-    width: 468px; }
-  header .intro-text .skills {
-    font-size: 1.75em; } }
-.navbar {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase; }
-  .navbar a:focus {
-    outline: none; }
-  .navbar .navbar-nav {
-    letter-spacing: 1px; }
-    .navbar .navbar-nav li a:focus {
-      outline: none; }
-  .navbar .navbar-brand img {
-    width: 120px;
-    margin-top: -5px; }
-
-.navbar.navbar-fixed-top.navbar-inverse {
-  background-color: transparent;
-  border: none; }
-  .navbar.navbar-fixed-top.navbar-inverse .page-scroll.active a {
-    background-color: transparent; }
-
-.navbar.navbar-fixed-top.navbar-inverse.navbar-shrink {
-  background-color: #222; }
-  .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink .page-scroll.active a {
-    background-color: #090909; }
-
-.navbar-fixed-top .navbar-brand img {
-  opacity: .5 !important; }
-
-.navbar-shrink {
-  background-color: #222; }
-  .navbar-shrink .navbar-brand {
-    opacity: initial; }
-
-.tg-logo-inverse {
-  display: none; }
-
-.navbar.navbar-inverse.blog .navbar-nav > li > a {
-  color: #fff; }
-  .navbar.navbar-inverse.blog .navbar-nav > li > a:hover {
-    color: #ddd; }
-
-.navbar-inverse.blog ul.navbar-nav li.divider-vertical {
-  border-right: 2px solid #fff; }
-
-.navbar-inverse.framework .tg-logo-inverse {
-  display: block; }
-.navbar-inverse.framework .tg-logo {
-  display: none; }
-
-.navbar-inverse.framework .navbar-nav > li > a {
-  color: #bbb;
-  background: none; }
-  .navbar-inverse.framework .navbar-nav > li > a:hover {
-    background: none;
-    color: #000; }
-.navbar-inverse.framework .navbar-nav > li.active a {
-  color: #000; }
-
-.navbar-inverse.framework ul.navbar-nav li.divider-vertical {
-  border-right: 2px solid #bbb; }
-
-.navbar-inverse.framework.navbar-shrink .tg-logo-inverse {
-  display: none; }
-.navbar-inverse.framework.navbar-shrink .tg-logo {
-  display: block; }
-
-.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
-.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
-  color: #777777; }
-  .navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a:hover,
-  .navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a:hover {
-    background-color: #000; }
-
-.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
-.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical {
-  border-right: 2px solid #777; }
-
-@media (min-width: 768px) {
-  .navbar-fixed-top {
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s; }
-    .navbar-fixed-top .navbar-brand img {
-      width: 210px;
-      margin-top: -10px; }
-
-  .navbar-fixed-top.navbar-shrink {
-    padding: 10px 0; }
-    .navbar-fixed-top.navbar-shrink .navbar-brand img {
-      width: 140px;
-      margin-top: -5px; }
-
-  .navbar-nav > li > a {
-    padding-left: 5px;
-    padding-right: 5px; } }
-@media (min-width: 960px) {
-  .navbar-nav > li > a {
-    padding-left: 15px;
-    padding-right: 15px; } }
-.navbar .divider-vertical {
-  height: 30px;
-  margin: 10px 5px;
-  border-right: 2px solid #777; }
-
-@media (max-width: 767px) {
-  .navbar-collapse .nav > .divider-vertical {
-    display: none; } }
-section {
-  padding: 100px 0; }
-  section h2 {
-    margin: 0;
-    font-size: 3em; }
-
-section.success {
-  background: #416375;
-  color: white; }
-  section.success hr.star-light:after {
-    background-color: #416375;
-    color: white; }
-  section.success p a {
-    color: white; }
-
-@media (max-width: 767px) {
-  section {
-    padding: 75px 0; }
-
-  section.first {
-    padding-top: 75px; } }
-section#static {
-  padding: 200px 100px 100px 100px; }
-
 .portfolio-item {
   margin: 0 0 15px;
   right: 0; }
@@ -11017,50 +10877,6 @@ section#static {
         .portfolio-item .portfolio-link .caption .caption-content h3,
         .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
-
-section#portfolio h2 {
-  text-transform: uppercase; }
-section#portfolio * {
-  z-index: 2; }
-
-section#about {
-  padding-bottom: 0;
-  text-align: center; }
-  section#about h2 {
-    text-transform: uppercase; }
-  section#about .cubes {
-    position: relative;
-    top: 60px;
-    border: 1px solid #eee; }
-  section#about .cube {
-    background-color: white;
-    height: 300px;
-    padding: 0;
-    overflow: hidden; }
-    section#about .cube p {
-      color: #666; }
-    section#about .cube .number {
-      font-family: monospace;
-      font-size: 44px;
-      font-weight: bold;
-      color: #416375;
-      display: inline-block;
-      line-height: 2em;
-      margin-top: 50px; }
-      section#about .cube .number .large {
-        font-size: 88px;
-        line-height: 44px; }
-    section#about .cube img {
-      height: 100%;
-      width: auto; }
-    section#about .cube .btn {
-      margin-top: 20px; }
-
-section#team {
-  padding-top: 160px;
-  padding-bottom: 0; }
-  section#team h2 {
-    text-transform: uppercase; }
 
 .member-card {
   height: 140px; }
@@ -12248,5 +12064,190 @@ header {
       -o-transition: background .3s linear;
       transition: background .3s linear;
       z-index: 1; }
+
+.navbar {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .navbar a:focus {
+    outline: none; }
+  .navbar .navbar-nav {
+    letter-spacing: 1px; }
+    .navbar .navbar-nav li a:focus {
+      outline: none; }
+  .navbar .navbar-brand img {
+    width: 120px;
+    margin-top: -5px; }
+
+.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: transparent;
+  border: none; }
+  .navbar.navbar-fixed-top.navbar-inverse .page-scroll.active a {
+    background-color: transparent; }
+
+.navbar.navbar-fixed-top.navbar-inverse.navbar-shrink {
+  background-color: #222; }
+  .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink .page-scroll.active a {
+    background-color: #090909; }
+
+.navbar-fixed-top .navbar-brand img {
+  opacity: .5 !important; }
+
+.navbar-shrink {
+  background-color: #222; }
+  .navbar-shrink .navbar-brand {
+    opacity: initial; }
+
+.tg-logo-inverse {
+  display: none; }
+
+.navbar.navbar-inverse.blog .navbar-nav > li > a {
+  color: #fff; }
+  .navbar.navbar-inverse.blog .navbar-nav > li > a:hover {
+    color: #ddd; }
+
+.navbar-inverse.blog ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #fff; }
+
+.navbar-inverse.framework .tg-logo-inverse {
+  display: block; }
+.navbar-inverse.framework .tg-logo {
+  display: none; }
+
+.navbar-inverse.framework .navbar-nav > li > a {
+  color: #bbb;
+  background: none; }
+  .navbar-inverse.framework .navbar-nav > li > a:hover {
+    background: none;
+    color: #000; }
+.navbar-inverse.framework .navbar-nav > li.active a {
+  color: #000; }
+
+.navbar-inverse.framework ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #bbb; }
+
+.navbar-inverse.framework.navbar-shrink .tg-logo-inverse {
+  display: none; }
+.navbar-inverse.framework.navbar-shrink .tg-logo {
+  display: block; }
+
+.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
+.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
+  color: #777777; }
+  .navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a:hover,
+  .navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a:hover {
+    background-color: #000; }
+
+.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
+.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical {
+  border-right: 2px solid #777; }
+
+.navbar .divider-vertical {
+  height: 30px;
+  margin: 10px 5px;
+  border-right: 2px solid #777; }
+
+section {
+  padding: 100px 0; }
+  section h2 {
+    margin: 0;
+    font-size: 3em; }
+
+section.success {
+  background: #416375;
+  color: white; }
+  section.success hr.star-light:after {
+    background-color: #416375;
+    color: white; }
+  section.success p a {
+    color: white; }
+
+section#static {
+  padding: 200px 100px 100px 100px; }
+
+section#portfolio h2 {
+  text-transform: uppercase; }
+section#portfolio * {
+  z-index: 2; }
+
+section#about {
+  padding-bottom: 0;
+  text-align: center; }
+  section#about h2 {
+    text-transform: uppercase; }
+  section#about .cubes {
+    position: relative;
+    top: 60px;
+    border: 1px solid #eee; }
+  section#about .cube {
+    background-color: white;
+    height: 300px;
+    padding: 0;
+    overflow: hidden; }
+    section#about .cube p {
+      color: #666; }
+    section#about .cube .number {
+      font-family: monospace;
+      font-size: 44px;
+      font-weight: bold;
+      color: #416375;
+      display: inline-block;
+      line-height: 2em;
+      margin-top: 50px; }
+      section#about .cube .number .large {
+        font-size: 88px;
+        line-height: 44px; }
+    section#about .cube img {
+      height: 100%;
+      width: auto; }
+    section#about .cube .btn {
+      margin-top: 20px; }
+
+section#team {
+  padding-top: 160px;
+  padding-bottom: 0; }
+  section#team h2 {
+    text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  header .container {
+    padding: 200px 0 100px; }
+  header .intro-text .name img {
+    width: 468px; }
+  header .intro-text .skills {
+    font-size: 1.75em; } }
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s; }
+    .navbar-fixed-top .navbar-brand img {
+      width: 210px;
+      margin-top: -10px; }
+
+  .navbar-fixed-top.navbar-shrink {
+    padding: 10px 0; }
+    .navbar-fixed-top.navbar-shrink .navbar-brand img {
+      width: 140px;
+      margin-top: -5px; }
+
+  .navbar-nav > li > a {
+    padding-left: 5px;
+    padding-right: 5px; } }
+@media (min-width: 960px) {
+  .navbar-nav > li > a {
+    padding-left: 15px;
+    padding-right: 15px; } }
+@media (max-width: 767px) {
+  .navbar-collapse .nav > .divider-vertical {
+    display: none; } }
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0; }
+
+  section.first {
+    padding-top: 75px; } }
 
 /*# sourceMappingURL=main.css.map */
