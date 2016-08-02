@@ -1,0 +1,17 @@
+@media(min-width:768px) {
+    header {
+        .container {
+            padding: 200px 0 100px;
+        }
+        .intro-text {
+            .name {
+                img {
+                    width: 468px;
+                }
+            }
+            .skills {
+                font-size: 1.75em;
+            }
+        }
+    }
+}
