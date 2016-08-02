@@ -174,30 +174,6 @@ video, iframe {
   }
 }
 
-section {
-    padding: 100px 0;
-    h2 {
-        margin: 0;
-        font-size: 3em;
-    }
-}
-
-section.success {
-    background: $brand-success;
-    color: white;
-
-    hr.star-light:after {
-        background-color: $brand-success;
-        color: white;
-    }
-
-    p {
-        a {
-            color: white;
-        }
-    }
-}
-
 @media (max-width:767px) {
     section {
         padding: 75px 0;
