@@ -53,3 +53,160 @@ article {
 #comments {
   padding-top: 60px;
 }
+
+header {
+    text-align: center;
+    background-image: url('/img/kantoor.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .intro-text {
+        .name {
+            img {
+                width: 250px;
+            }
+        }
+        .skills {
+            font-size: 1.25em;
+            font-weight: 300;
+        }
+    }
+    .intro-desc {
+      bottom: 50px;
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      a, a:active, a:visited {
+        color: #fff;
+        outline: none;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      p {
+        font-size: 20px;
+      }
+      p .research {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.5em;
+      }
+      .separator {
+        margin: 24px auto;
+      }
+      .icon-research {
+        background-image: url("/img/research.png");
+        background-repeat: no-repeat;
+        display: block;
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+      }
+    }
+
+    &:before {
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	//background: rgba(118, 53, 34, 0.8);
+      background: rgba(31, 18, 10, 0.85);
+    	-moz-transition: background .3s linear;
+    	-webkit-transition: background .3s linear;
+    	-o-transition: background .3s linear;
+    	transition: background .3s linear;
+    }
+
+    &.blog {
+      background-image: none;
+      overflow: hidden;
+      height: 410px;
+
+      .leadimg {
+        position: absolute;
+        left: 0;
+        @media (min-width: 1300px) {
+          top: -20%;
+        }
+        min-width: 100%;
+        min-height: 100%;
+      }
+
+      .article-heading {
+        position: absolute;
+        bottom: 40px;
+        z-index: 2;
+
+        .tags {
+          font-size: 14px;
+          font-weight: 300;
+          text-align: left;
+          text-transform: uppercase;
+
+          .fa {
+            font-size: 22px;
+            margin-right: 4px;
+          }
+        }
+
+        h1 {
+          margin-left: 12px;
+          font-size: 50px;
+          font-weight: 500;
+          text-align: left;
+          text-transform: none;
+        }
+
+        .nerd {
+
+          padding-left: 14px;
+
+          &.protip {
+
+            &:hover {
+
+              &:after {
+                bottom: 4em;
+                left: 1;
+              }
+
+              &:before {
+                bottom: 3.6em;
+                left: 2em;
+              }
+            }
+          }
+        }
+      }
+
+      &:before {
+      	content: "";
+      	display: block;
+      	position: absolute;
+      	top: 0;
+      	bottom: 0;
+      	left: 0;
+      	right: 0;
+        background-color: transparent;
+        background-image: linear-gradient(rgba(65, 99, 117, 0.8), rgba(65, 99, 117, 0.8));
+      	-moz-transition: background .3s linear;
+      	-webkit-transition: background .3s linear;
+      	-o-transition: background .3s linear;
+      	transition: background .3s linear;
+        z-index: 1;
+      }
+    }
+}
