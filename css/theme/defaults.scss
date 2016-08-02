@@ -14,3 +14,34 @@
 //   font: normal normal normal 24px/1 MaterialDesignIcons;
 //   content: mdi('account');
 // }
+
+// Palettes
+
+
+.pallette-light-brown {
+  background-color: #F6F4EF;
+  p, li {
+    color: #554C45;
+  }
+}
+
+.palette-light-blue {
+  background-color: #E7E7E7;
+  p, li {
+    color: #2D477F;
+  }
+}
+
+.palette-dark-blue {
+  background-color: #233864;
+  p, li {
+    color: white;
+  }
+}
+
+.palette-dark-blue-alt {
+  background-color: #2D477F;
+  p, li {
+    color: white;
+  }
+}
