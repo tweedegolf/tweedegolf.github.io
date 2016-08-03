@@ -62,7 +62,7 @@ Note: if you want to be able to see drafts, instead of the last command run this
 
 The website is served on `http://localhost:4000`.
 
-## Updates
+### Updates
 
 To install updates to [bootstrap](http://getbootstrap.com/) or [fontawesome](http://fortawesome.github.io/Font-Awesome/), update the `.bowerrc` file and run:
 
