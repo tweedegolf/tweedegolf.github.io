@@ -256,3 +256,303 @@ footer.landing {
     }
   }
 }
+
+.master.process {
+  h1, h2, h3, h4, h5, h6, p, li {
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    line-height: 1.7em;
+    strong {
+      font-weight: 500;
+    }
+  }
+  // navbar overrides
+  .navbar-inverse {
+    background-color: transparent;
+  }
+  .navbar-fixed-top .navbar-brand img {
+    opacity: .5;
+  }
+  .navbar-shrink {
+    background-color: #222;
+    .navbar-brand {
+      opacity: initial;
+    }
+  }
+  header {
+    .icon-process {
+      background-image: url("/img/icon-process.png");
+      background-repeat: no-repeat;
+      display: block;
+      height: 86px;
+      margin: 0 auto;
+      width: 96px;
+    }
+    h1 {
+      font-size: 48px;
+      text-transform: none;
+    }
+    p {
+      font-size: 18px;
+    }
+    &::before { // colourised overlay
+      background-color: rgba(31,18,10,.85);
+    }
+  }
+  #billing {
+    background-color: #E7E7E7;
+    padding: 60px 0 60px;
+  }
+  #intro {
+    background-color: #F6F4EF;
+    padding: 80px 0;
+    p {
+      color: #554C45;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  #examples {
+    background-color: #E7E7E7;
+    padding: 60px 0 60px;
+    span[class^="icon-"], span[class*="icon-"] {
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    .icon-draw {
+      background-image: url("/img/icon-appdraw.png");
+      height: 108px;
+      width: 95px;
+    }
+    .icon-flow {
+      background-image: url("/img/icon-appflow.png");
+      height: 108px;
+      width: 84px;
+    }
+    .icon-chart {
+      background-image: url("/img/icon-appchart.png");
+      height: 108px;
+      width: 91px;
+    }
+    p {
+      color: #2D477F;
+      font-size: 16px;
+      text-align: center;
+      a {
+        background-color: rgba(45,71,127,.1);
+        border-bottom: 1px dotted #2D477F;
+        color: #2D477F;
+        &:hover {
+          background-color: rgba(45,71,127,.2);
+          text-decoration: none;
+        }
+        .fa {
+          font-size: 12px;
+        }
+      }
+    }
+    .type {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 12px 0;
+      text-transform: uppercase;
+    }
+    .example {
+      display: inline-block;
+      font-style: italic;
+      float: right;
+    }
+  }
+  .explanatory {
+    background-color: #233864;
+    padding: 80px 0 48px;
+    a {
+      color: #fff;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+  #phases {
+    background-color: #2D477F;
+    padding: 0;
+    position: relative;
+    &:after { // wrap with explanatory, space for indicators
+      background-color: #233864;
+      content: "";
+      display: block;
+      height: 60px;
+      width: 100%;
+    }
+    a {
+      color: #fff;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .carousel {
+      .carousel-inner {
+        height: 420px;
+        .item {
+          height: 100%;
+        }
+      }
+      .carousel-visual {
+        @extend .clearfix;
+        position: relative;
+        height: 100%;
+        width: 45%;
+        .phase {
+          background-color: #59759E;
+          color: white;
+          font-size: 70px;
+          height: 110px;
+          left: 0;
+          line-height: 110px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 140px;
+        }
+        .icon {
+          bottom: 0;
+          height: 328px;
+          position: absolute;
+          right: 0;
+          text-align: right;
+          width: 100%;
+          &:after {
+            color: #59759E;
+            content: "";
+            font: normal normal normal 380px/1 "MaterialDesignIcons";
+          }
+          &.discovery:after {
+            bottom: -20px;
+            content: mdi('compass');
+            position: relative;
+            right: -20px;
+          }
+          &.design:after {
+            content: mdi('code-not-equal-variant');
+          }
+          &.development:after {
+            content: mdi('rotate-right');
+          }
+          &.release:after {
+            content: mdi('arrow-up-bold-circle');
+          }
+          &.improvements:after {
+            content: mdi('plus-circle');
+          }
+        }
+      }
+      .carousel-caption {
+        left: 53%;
+        right: 10%;
+        text-align: left;
+        text-shadow: none;
+        top: 2%;
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .carousel-control {
+        background-image: none;
+        .button {
+          background-color: white;
+          border-radius: 50%;
+          color: #233864;
+          font: normal normal lighter 20px/1 "MaterialDesignIcons";
+          height: 50px;
+          line-height: 50px;
+          margin-top: -25px;
+          position: absolute;
+          text-shadow: none;
+          top: 50%;
+          width: 50px;
+        }
+        &.left {
+          left: -25px;
+          .button {
+            left: 0;
+            &:after {
+              content: mdi('arrow-left');
+            }
+          }
+        }
+        &.right {
+          right: -25px;
+          .button {
+            right: 0;
+            &:after {
+              content: mdi('arrow-right');
+            }
+          }
+        }
+      }
+      .carousel-indicators {
+        bottom: -50px;
+      }
+    }
+  }
+  .info {
+    background-color: #F6F4EE;
+    color: #554C45;
+    padding: 100px 0;
+    .main {
+      margin-right: 40px;
+      h2 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 26px;
+      }
+      p {
+        font-size: 20px;
+      }
+      ul {
+        margin-top: 30px;
+      }
+      li {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2em;
+      }
+    }
+    .extra {
+      margin-bottom: 26px;
+      h3 {
+        margin-top: 0px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    [class*="content-min"] {
+      @extend .row;
+      .extra:nth-of-type(1) { // first paragraph
+        margin-top: 140px; // double indent
+      }
+    }
+    [class*="content-rap"] {
+      @extend .row;
+      margin-top: 60px;
+      .extra:nth-of-type(1) { // first paragraph
+        margin-top: 86px; // single indent
+      }
+    }
+  }
+  .info#billing .extra:nth-of-type(1) {
+    margin-top: 79px;
+  }
+}
