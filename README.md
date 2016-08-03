@@ -26,6 +26,26 @@ sass css/main.scss css/main.css
 
 (Or `sudo bower install --allow-root` if your OS is feeling particularly rebellious today.)
 
+### Troubleshooting
+
+When running `vagrant up` you might run into the following error:
+
+```
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+stdin: is not a tty
+mount.nfs: access denied by server while mounting
+```
+
+It's something to do with Vagrant still running. You fix it by running:
+
+```
+vagrant reload --provision
+```
+
+This quickly restarts the VM. The provision flag instructs Vagrant to run the provisioners, which normally only happens on the very first `vagrant up`.
+
 ## Serving the website locally with Bower and Bundle
 
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
