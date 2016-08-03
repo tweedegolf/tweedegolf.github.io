@@ -8,6 +8,10 @@ permalink: pretty
 
 # Server
 destination: ./_site
+
+include:
+    - _pages
+
 exclude:
     - .gitignore
     - README.md
