@@ -556,3 +556,94 @@ footer.landing {
     margin-top: 79px;
   }
 }
+
+#web-wens-2016 {
+  header{
+    background-image: url('../img/wish/fireworks.jpg');
+    #wish{
+      background-image: url('../img/wish/beste-wensen.png');
+      width: 90%;
+      max-width: 760px;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+    }
+  }
+  section {
+    padding: 50px 0 0 0;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .alert {
+    display: none;
+  }
+  .row.intro {
+    margin-bottom: 50px;
+    text-align: left;
+    .text{
+      margin-bottom: 50px;
+    }
+    #tg-logo {
+      margin-top: 30px;
+      max-width: 60%;
+    }
+    .send-wish{
+      background-color: #eee;
+      padding: 20px 15px;
+
+      #subject-group {
+        margin: 20px 0px 9px 0px;
+      }
+
+      .floating-label-form-group {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $gray-lighter;
+        input,
+        textarea {
+            z-index: 1;
+            position: relative;
+            padding-right: 0;
+            padding-left: 0;
+            border: none;
+            font-size: 1.5em;
+            box-shadow: none !important;
+            resize: none;
+            background-color: #fff;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding-left: 7px;
+            height: 48px;
+        }
+        textarea {
+          min-height: 100px;
+        }
+
+        &:not(:first-child) {
+          padding-left: 14px;
+          border-left: 1px solid $gray-lighter;
+        }
+      }
+
+      #subject {
+        height: 48px;
+        font-size: 1.3em;
+      }
+    }
+  }
+  .row.inspiration{
+    a {
+      float: left;
+    }
+    img{
+      float: left;
+      cursor: pointer;
+      max-width: 100%;
+    }
+  }
+}
