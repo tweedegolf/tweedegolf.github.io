@@ -1,4 +1,4 @@
-###Custom tagging in Google Drive
+### Custom tagging in Google Drive
 
 Hoe maak je korte, overzichtelijke rapporten uit een berg van duizenden documenten? Hoe zorg je dat een team van redacteurs effici&euml;nt kan samenwerken?
 Voor het project [Blok voor Blok](/#portfolio-blok-voor-blok) (opdrachtgever Rijksdienst voor Ondernemend Nederland) realiseerden we een gebalanceerde oplossing met Google for Work:
