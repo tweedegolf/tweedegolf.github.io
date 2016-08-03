@@ -2184,7 +2184,7 @@ div.truncate-2-lines {
   // This is an (ugly) override to make the mobile menu consistent
 
   body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header{
-    position: static !important;
+    position: fixed !important;
     background-color: rgba(31, 18, 10, 1) !important;
     margin-bottom: 0 !important;
     .tg-logo{
