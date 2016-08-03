@@ -46,6 +46,8 @@ vagrant reload --provision
 
 This quickly restarts the VM. The provision flag instructs Vagrant to run the provisioners, which normally only happens on the very first `vagrant up`.
 
+If everything fails, remove the VM and start all over with `vagrant up`. Then wait 20 minutes :D
+
 ## Serving the website locally with Bower and Bundle
 
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
