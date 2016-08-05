@@ -7,6 +7,7 @@ sass:
   load_paths:
     - _sass
     - vendor/bootstrap-sass-twbs/assets/stylesheets
+  style: compressed
 
 exclude:
   - .bowerrc
