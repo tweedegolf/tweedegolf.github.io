@@ -21,6 +21,11 @@ exclude:
     - Vagrantfile
     - .jekyll-metadata
 
+sass:
+  load_paths:
+      - _sass
+      - vendor/bootstrap-sass-twbs/assets/stylesheets
+
 collections:
     portfolio:
         output: false
