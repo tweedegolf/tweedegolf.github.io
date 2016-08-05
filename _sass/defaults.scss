@@ -6,9 +6,9 @@
 
 // Material design icons
 
-@function mdi($name) {
-  @return char(nth($hexes, index($names, $name)));
-}
+//@function mdi($name) {
+//  @return char(nth($hexes, index($names, $name)));
+//}
 // usage:
 // .custom:before {
 //   font: normal normal normal 24px/1 MaterialDesignIcons;

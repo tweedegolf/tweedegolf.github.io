@@ -26,7 +26,7 @@ article {
   img { // include images as html instead of md if custom styling is required
     display: block;
     margin: 48px auto;
-    @extend .img-responsive;
+    // @extend .img-responsive;
   }
 
   iframe, video {

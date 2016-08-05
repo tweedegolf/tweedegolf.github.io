@@ -1,17 +1,12 @@
-// NOTE: The order of these imports is crucial.
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
 
-// Vars
-@import "./theme/variables.scss";
-
-// Libs
-@import "../vendor/bootstrap-sass-twbs/assets/stylesheets/bootstrap.scss";
-@import "../vendor/fontawesome/scss/font-awesome.scss";
-@import "../vendor/mdi/scss/materialdesignicons.scss";
-
-// Theme
-@import "./theme/defaults";
-@import "./theme/layout";
-@import "./theme/elements";
-@import "./theme/sections";
-@import "./theme/pages";
-@import "./theme/responsive";
+// NOTE: The order of these imports is crucial
+@import "variables";
+@import "defaults";
+@import "layout";
+@import "elements";
+@import "sections";
+@import "pages";
+@import "responsive";

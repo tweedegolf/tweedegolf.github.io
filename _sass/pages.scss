@@ -185,7 +185,7 @@ header.landing {
     }
   }
   .testimonial {
-    @include clearfix;
+    // @include clearfix;
     background-color: #f8f8f8;
     color: #666;
     margin-top: 50px;
@@ -406,7 +406,7 @@ footer.landing {
         }
       }
       .carousel-visual {
-        @extend .clearfix;
+        // @extend .clearfix;
         position: relative;
         height: 100%;
         width: 45%;
@@ -539,13 +539,13 @@ footer.landing {
       }
     }
     [class*="content-min"] {
-      @extend .row;
+      // @extend .row;
       .extra:nth-of-type(1) { // first paragraph
         margin-top: 140px; // double indent
       }
     }
     [class*="content-rap"] {
-      @extend .row;
+      // @extend .row;
       margin-top: 60px;
       .extra:nth-of-type(1) { // first paragraph
         margin-top: 86px; // single indent
