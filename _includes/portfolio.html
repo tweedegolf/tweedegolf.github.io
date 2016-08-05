@@ -16,7 +16,7 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="/img/portfolio/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
+          <img src="/assets/img/portfolio/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
         </a>
       </div>
     {% endfor %}
@@ -84,7 +84,7 @@
             {% assign screens = item.screens | split: "," %}
             {% for screen in screens %}
               <div class="screen {% if item.noborders %}noborders{% endif %}" id="screen-{{ screen|downcase|replace:' ','-' }}">
-                <img class="lazy" data-original="/img/portfolio/{{ screen}}" class="img-responsive img-centered" alt="{{ item.title }} screenshot 1">
+                <img class="lazy" data-original="/assets/img/portfolio/{{ screen}}" class="img-responsive img-centered" alt="{{ item.title }} screenshot 1">
               </div>
             {% endfor %}
             {% if item.website %}

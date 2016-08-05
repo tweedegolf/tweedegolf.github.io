@@ -5,8 +5,8 @@ Articles are added by creating .md files in the `/_posts` folder. For unpublishe
 Start by providing the following variables, enclosing them in three dashes `---` above and below:
 
 + `layout: post` (always the same)
-+ `thumb: my-image.jpg` (located in /img/blog/thumbs/; size 720x360)
-+ `leadimg: my-image.jpg` (located in /img/blog/; ideally landscape oriented and large)
++ `thumb: my-image.jpg` (located in /assets/img/blog/thumbs/; size 720x360)
++ `leadimg: my-image.jpg` (located in /assets/img/blog/; ideally landscape oriented and large)
 + `tags: tag, tag, tag` (try to provide 2 - 6 tags; order by relevance)
 + `author: Daniel` (an employee's first name; info is pulled from `/data/members`)
 + `description: Lorem ipsum dolor ...` (meta description; max 155 chars)
@@ -17,11 +17,11 @@ After closing the variables section with three dashes `---`, you may just start 
 
 Inserting an image:
 
-    ![Left and right handed system](/img/blog/left-and-right-handed-system.gif)
+    ![Left and right handed system](/assets/img/blog/left-and-right-handed-system.gif)
 
 Inserting an image with caption:
 
-    ![YGA verlichting](/img/blog/light-yga-verlichting.png){: .with-caption}
+    ![YGA verlichting](/assets/img/blog/light-yga-verlichting.png){: .with-caption}
     *Screen from the garden prototype. Spot light support only...*
 
 Custom images may be added in the repo directly.

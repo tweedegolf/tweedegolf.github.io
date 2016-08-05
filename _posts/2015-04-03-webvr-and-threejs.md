@@ -45,7 +45,7 @@ The detected VR devices can be instances of `PositionSensorVRDevice` or instance
 
 `HMDVRDevice` instances are objects that contain information such as the distance between the lenses, the distance between the lenses and the displays, the resolution of the displays and so on. This information is needed for the browser to render the scene in stereo with barrel distortion, like so:
 
-![ThreeJS barrel distortion](/img/blog/threejs-barrel-distortion.jpg)
+![ThreeJS barrel distortion](/assets/img/blog/threejs-barrel-distortion.jpg)
 
 To get the rotation and position data from the `PositionSensorVRDevice` we need to call its `getState()` method as frequently as we want to update the scene.
 
@@ -115,7 +115,7 @@ You can try it yourself with the [live version](http://data.tweedegolf.nl/vr-tes
 
 In Threejs a non-rotated 3D object faces towards the positive z-axis and the top of a 3D object is in the direction of the positive y-axis. In the image below the red line is the x-axis, the green line the y-axis and the blue line the z-axis. A dotted line indicates a negative axis.
 
-<img src="/img/blog/threejs-axis.jpg" width="65%">
+<img src="/assets/img/blog/threejs-axis.jpg" width="65%">
 
 According to Threejs, the arrow in the picture above has a rotation of 0° on the z-axis (and on the other 2 axes as well for that matter). However in trigonometry a 0° rotation over the z-axis is a vector in the direction of the positive x-axis, so the real rotation of the arrow in the picture is 90°.
 
@@ -177,5 +177,5 @@ To distinguish between mobile devices and the Oculus Rift (or other HMD's), we p
 
 If no VR device is detected and the application is not running on a mobile device, the scene is rendered by the default WebGL renderer of Threejs. Otherwise we render the scene using the `StereoEffect` that comes with Threejs: this effect renders the scene in stereo.
 
-<img src="/img/blog/threejs-barrel-distortion.jpg" width="65%">
+<img src="/assets/img/blog/threejs-barrel-distortion.jpg" width="65%">
 -->

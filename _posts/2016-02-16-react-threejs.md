@@ -123,7 +123,7 @@ React-three has only 17 components, but react-three-renderer strives to create c
 
 The following example is a Minecraft character configurator that we can use to change the sizes of all the cubes that the character consists of.
 
-![Minecraft character configurator](/img/blog/minecraft_configurator_screen.png){: .with-caption}
+![Minecraft character configurator](/assets/img/blog/minecraft_configurator_screen.png){: .with-caption}
 *Screenshot of the Minecraft character configurator*
 
 It shows you how easy it is to create 3D components with both libraries and how your code benefits from using React both in terms of being well-organised and maintainable.

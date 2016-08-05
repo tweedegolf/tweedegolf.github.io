@@ -18,7 +18,7 @@ We decided to give it a go during a two-day programming contest. Our team's idea
 
 As could be expected, 48 hours later we found out we had been overly ambitious. There really was no game experience to speak of. However, we did manage to create a 3D world with basic physics. Hopefully, our experiences will give you some insight into using physics in 3D. 
 
-![ΔV](/img/blog/physics-dv.png){:.with-caption}*Image taken from our simplified 3d representation of the city of Nijmegen*
+![ΔV](/assets/img/blog/physics-dv.png){:.with-caption}*Image taken from our simplified 3d representation of the city of Nijmegen*
 
 ###Making a game with Physijs
 
@@ -30,7 +30,7 @@ The next step is to create a Physijs.Scene and call the simulate function of tha
 
 After having done the basic setup, we needed to add physics objects. To do this we needed to create Physijs meshes instead of the default Three.Meshes. There are a couple of Physijs meshes but the most useful, lightweight meshes are Physijs.BoxMesh, which uses the bounding box as physics object, and Physijs.SphereMesh, which uses the bounding sphere.
 
-![Physijs demo](/img/blog/physics-physijs-demo.png){:.with-caption}*Check out [demo of Physijs] to get a feel of what is possible. For more demos check out [Physijs]*
+![Physijs demo](/assets/img/blog/physics-physijs-demo.png){:.with-caption}*Check out [demo of Physijs] to get a feel of what is possible. For more demos check out [Physijs]*
 
 ###Crashing cars
 
