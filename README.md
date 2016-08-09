@@ -58,7 +58,3 @@ To install updates to [bootstrap](http://getbootstrap.com/) or [fontawesome](htt
 To install the new fontawesome fonts run:
 
     cp -r vendor/fontawesome/fonts/ fonts
-
-After updating the [sass](http://sass-lang.com/) stylesheet in the folder `css`, or after updating *bootstrap* or *fontawesome*, run the following command to generate the stylesheet:
-
-    sass css/main.scss css/main.css
