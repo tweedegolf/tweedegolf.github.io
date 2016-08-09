@@ -13,19 +13,6 @@ docker-compose up
 
 The website is served on `http://localhost:4000`.
 
-### Compiling styles (workaround)
-
-As of now, styles won't be compiled automagically in the Vagrant/Docker setup. You'll need to compile styles locally which means you'll need Ruby, Bower and Sass installed. Then run:
-
-```
-#Generate /vendor folder
-bower install
-#Compile styles
-sass css/main.scss css/main.css
-```
-
-(Or `sudo bower install --allow-root` if your OS is feeling particularly rebellious today.)
-
 ### Troubleshooting
 
 When running `vagrant up` you might run into the following error:
@@ -48,6 +35,8 @@ This quickly restarts the VM. The provision flag instructs Vagrant to run the pr
 
 If everything fails, remove the VM and start all over with `vagrant up`. Then wait 20 minutes :D
 
+If problems persist, just serve the website locally.
+
 ## Serving the website locally with Bower and Bundle
 
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
@@ -56,9 +45,7 @@ To serve this website locally, install [bower](http://bower.io/) and [bundler](h
     bundle install
     bundle exec jekyll serve --watch
 
-Note: if you want to be able to see drafts, instead of the last command run this one:
-
-    bundle exec jekyll serve --watch --draft
+(Or `sudo bower install --allow-root` if your OS is feeling particularly rebellious today.)
 
 The website is served on `http://localhost:4000`.
 
