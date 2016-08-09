@@ -5,11 +5,9 @@ Public website of tweede golf
 
 ## Serving the website locally with Vagrant and Docker
 
-```
-vagrant up
-vagrant ssh
-docker-compose up
-```
+    vagrant up
+    vagrant ssh
+    docker-compose up
 
 The website is served on `http://localhost:4000`.
 
