@@ -30,18 +30,18 @@ The first approach - dividing a larger texture into smaller viewports - proved t
 The GLSL shader language requires all of the for loops to be unrollable, as the shaders can then be divided into small chunks of work for each of the stream processors of the GPU.
 When handling an assortment of textures, some of which have this subdivision of smaller textures, it is a pretty complex task to write it in such a way that it is unrollable without making two separate loops for the two types of textures. Which in turn makes maintaining the shader code quite a hassle.
 
-![viewports](/assets/img/blog/light2-viewports-grid.png){:.thumbnail}{:.with-caption}
+![viewports](/img/blog/light2-viewports-grid.png){:.thumbnail}{:.with-caption}
 *Image from the internal rendering in Three.js. The grid is added to clarify what happens. The grid locations correspond with +x, &minus;x, +y, &minus;y, +z and &minus;z axis, going from top left to bottom right.*
 
 The second approach, the cube texture, was scrapped halfway through development. While the solution seemed obvious and also is used in the industry, it was very hard to debug.
 Both Firefox' native canvas debugger and Chrome's WebGL debugger, called the [WebGL Inspector], did not render the cube texture properly. We could observe the switching of framebuffers (which are like internal screens to draw on) but they stayed blank while the draw calls proceeded. This means Three.js did not cull them and they should have shown up on the framebuffer. With no way to debug this step and no output it would be ill-advised to continue to develop this method.
 
-![cube depth map](/assets/img/blog/light2-shadow-cube.png){:.thumbnail}{:.with-caption}
+![cube depth map](/img/blog/light2-shadow-cube.png){:.thumbnail}{:.with-caption}
 *Image taken from [devmaster.net] explaining shadow mapping using cube maps.*
 
 The final approach is the dual-paraboloid shadow mapping. This approach takes two textures per point light. The [previous blog post] talked about one, but this proved to be incorrect. This fact would make it less ideal than the other two approaches. On top of that, the implementation is rather complex. If we had complete control over the OpenGL code this could be a solution, but figuring out where to adapt the Three.js code and the shaders would probably turn out to be a struggle. As it would also involve a transformation to paraboloid space it would be really hard to debug. All this would be required for a lesser effect than the other - hopefully more simple - methods, like the larger texture with viewports. 
 
-![paraboloid transformation](/assets/img/blog/light2-paraboloid-transformation.png){:.thumbnail}{:.with-caption}*Image taken from [gamedevelop.eu] explaining the paraboloid transformation.*
+![paraboloid transformation](/img/blog/light2-paraboloid-transformation.png){:.thumbnail}{:.with-caption}*Image taken from [gamedevelop.eu] explaining the paraboloid transformation.*
 
 ### The most favorable approach
 In conclusion the best way to make point light shadows work, without going over the texture-sampler limit or spending too much time, is the "large texture with viewports" approach. This means we have to duplicate some code in the shader and implement two loops to do shadow calculation: one calculating shadows for all the spot lights and one for all the point lights.

@@ -12,14 +12,14 @@ nerd: 4
 
 For a research and development project we created a small garden environment in which you can place lights. The objective was to visualise what your garden would look like during the night, beautifully lit according to your personal light design. Of course objects in your garden cast shadows and influence the look and feel of the lighting: we needed to include shadow casting in our demos. That seemed doable, but it turned out the WebGL framework we use for our WebGL development, Three.js, only supports shadow casting for spot lights. Unfortunately not all lights in our gardens are spot lights... We needed to find a way to cast shadows from point lights in Three.js.
 
-![YGA verlichting](/assets/img/blog/light-yga-verlichting.png){: .with-caption}
+![YGA verlichting](/img/blog/light-yga-verlichting.png){: .with-caption}
 *Screen from the garden prototype. Spot light support only...*
 
 The first step was understanding how shadow casting works for spot lights and understanding why this would not work for point lights. The process of shadow casting is quite elegant. It takes an extra render pass one comparison per object and light to determine if a fragment should be shaded.
 
 The extra render pass is rendering the distance of an object to every light to a separate texture. This is called the depth pass. You can do this by applying the inverse View matrix, which represents the position and rotation of the camera, to the current object and applying the model matrix of the current light you want to calculate shadows for.
 
-![Shadowpass](/assets/img/blog/light-shadowpass.png)
+![Shadowpass](/img/blog/light-shadowpass.png)
 
 The above picture shows a color representation of the depth value. Each color corresponds with a 32 bit integer indicating where its z-position lies between Z-Near and Z-Far. So a the maximum value of the 32 bit integer would correspond with Z-Far and the 0 value would correspond with Z-Near.
 
@@ -32,7 +32,7 @@ The next step is to calculate the distance between the point and the light, if t
 
 But this only works well for spot lights because of the how perspective works in OpenGL. Perspective mapping in OpenGL works with frustums, which is a pyramid with the top cut off. The new plane that is created by removing the top of the pyramid is called the near plane and this is what you see on screen. All other pixels are coloured by ray tracing to the far plane from the eye through the pixel you want to color to the far plane (which is the bottom of the pyramid). This works for small angles, but the maximum angle you can approach is 180 degrees. At which your near plane will be very small and very close to the camera position, which will cause weird distortions in the rendering. For point lights we would need a 360 degree field of view as it is called, and this is simply impossible.
 
-![Frustum](/assets/img/blog/light-frustum.png)
+![Frustum](/img/blog/light-frustum.png)
 
 So what do we do? Instead of doing 1 depth pass we do 6. One for every unit direction of the space we are in. so one in +x, -x, +y, -y, +z and -z direction. All with a horizontal and vertical field of view of 90 degrees. This covers the whole space. But where do we render them to? We can't use 1 texture for all of them, as they would simply override the previous depth pass. There are four solutions:
 

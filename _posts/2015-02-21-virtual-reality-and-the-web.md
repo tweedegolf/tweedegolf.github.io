@@ -23,7 +23,7 @@ Mozilla and Google are working on one and the same API for WebVR, unlike what ha
 
 Google also created an open source hardware VR device, the [Google Cardboard](https://www.google.com/get/cardboard/). This is a device made of cardboard that turns a mobile device into a standalone VR headset. The mobile device's gyroscope, accelerometer and magnetometer are used to track the rotation and position, and the 3D content is rendered by the device itself. The Google Cardboard combined with the WebVR API and web technologies for generating the 3D scene makes creating VR application achievable for a large audience.
 
-![Google Cardboard](/assets/img/blog/google-cardboard2.jpg)
+![Google Cardboard](/img/blog/google-cardboard2.jpg)
 
 The WebVR API is able to detect a connected VR device, or if the browser is running on a device that can be used as a standalone VR device such as a mobile phone or a tablet. A single physical VR device shows up as a HMDVRDevice object and as a PositionSensorVRDevice object, but both objects share the same hardware id so you know they are linked. The first object contains information related to the display and the lenses such as the resolution, the distance between the lenses and the distance from your eyes to the lenses. The latter object contains information about the position, rotation and velocity of movement of the device.
 

@@ -45,7 +45,7 @@ The detected VR devices can be instances of `PositionSensorVRDevice` or instance
 
 `HMDVRDevice` instances are objects that contain information such as the distance between the lenses, the distance between the lenses and the displays, the resolution of the displays and so on. This information is needed for the browser to render the scene in stereo with barrel distortion, like so:
 
-![ThreeJS barrel distortion](/assets/img/blog/threejs-barrel-distortion.jpg)
+![ThreeJS barrel distortion](/img/blog/threejs-barrel-distortion.jpg)
 
 To get the rotation and position data from the `PositionSensorVRDevice` we need to call its `getState()` method as frequently as we want to update the scene.
 

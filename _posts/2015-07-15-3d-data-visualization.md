@@ -17,7 +17,7 @@ Following that philosophy, we recently held a programming contest. We gave ourse
 
 Now is the time to look back: what are the benefits of 3D data visualization? Read on and find out. 
 
-![The Skauti prototype](/assets/img/blog/skauti.png){:.with-caption}
+![The Skauti prototype](/img/blog/skauti.png){:.with-caption}
 *The Skauti prototype*
 
 We all like to base our decisions on data. However, just having a data sheet containing a lot of numbers will often not help you much, especially when the data set is very large. Graphs and visualizations are typcially used to obtain a better understanding of data. When it comes to presenting geospatial data (i.e. data which is dependent on some location) a 2D map is often the preferred solution.
@@ -27,7 +27,7 @@ We all like to base our decisions on data. However, just having a data sheet con
 For centuries, cartographers (map-makers) have used projections and symbolism
 to create a 2D interpretation of the actual world. Nowadays, 2D maps are still widely used, as are traditional tools like adding colour, using markers and higlighting areas to indicate special points of interest with the goal of providing as much insight into the data as possible. 
 
-![City size in Devon, England](/assets/img/blog/circle_map.png){:.with-caption}
+![City size in Devon, England](/img/blog/circle_map.png){:.with-caption}
 
 ###  2D vs 3D
 
@@ -43,10 +43,10 @@ the data.
 What about the use of colour? Sometimes color is used to indicate
 some value (for example in a heatmap). But what does green signify and how should we interpret red? If we compare the two maps of Mount Taranaki in New Zealand we can find below (one a traditional 2D height map, one a 3D representation), it is immediately apparent that the 3D version gives us more detailed information and it presents us with a more intuitive understanding of the mountain.
 
-![Mt. Taranaki, New Zealand](/assets/img/blog/mt-taranaki-colors.png){:.with-caption}
+![Mt. Taranaki, New Zealand](/img/blog/mt-taranaki-colors.png){:.with-caption}
 *&copy; CC BY-SA [Koordinates](https://koordinates.com)*
 
-![Mt. Taranaki, New Zealand](/assets/img/blog/mt-taranaki-3d.png){:.with-caption}
+![Mt. Taranaki, New Zealand](/img/blog/mt-taranaki-3d.png){:.with-caption}
 *&copy; CC BY-SA*
 
 3D visualizations can be run in your webbrowser using WebGL with vector based approaches

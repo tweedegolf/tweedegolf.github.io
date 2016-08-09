@@ -12,40 +12,40 @@ nerd: 2
 
 The history of virtual reality (VR) dates back to the 1950's. Since then, a lot of - sometimes quite exotic - devices have been developed. For instance, take a look at this VR cabinet called "sensorama" developed by Morton Heilig in 1962:
 
-![Morton Heilig Sensorama](/assets/img/blog/sensorama.jpg)
+![Morton Heilig Sensorama](/img/blog/sensorama.jpg)
 
 Nowadays, most VR devices take the form of head mounted devices (HMD). Probably the best known example of such a device is the [Oculus Rift](https://www.oculus.com/rift/). The device looks a bit like safety goggles. Let's dive into some technical details of the Oculus Rift.
 
-![Oculus Rift and positional tracker](/assets/img/blog/oculus-rift-and-positional-tracker.jpg){: .with-caption}
+![Oculus Rift and positional tracker](/img/blog/oculus-rift-and-positional-tracker.jpg){: .with-caption}
 *The Oculus Rift Developer Kit 2 and positional tracker*
 
 ###Displays and lenses
 
 For each eye the Oculus has a full hd display on which the 3D content (for instance a game or a video) is rendered. The content has to be rendered in stereo which means that the image for the left display is taken from a slightly different angle compared to the image on the right display. This difference is analogous to the distance between our two eyes.
 
-![Early stereo image](/assets/img/blog/early-stereo-image.jpg){: .with-caption}
+![Early stereo image](/img/blog/early-stereo-image.jpg){: .with-caption}
 *Example of an early stereo image*
 
-![Early stereo image, different camera positions](/assets/img/blog/early-stereo-image.gif){: .with-caption}
+![Early stereo image, different camera positions](/img/blog/early-stereo-image.gif){: .with-caption}
 *This shows this different camera positions of the photo*
 
 We look at the image through a set of specially shaped lenses; these lenses distort the image in such a way that the field of view (FOV) becomes larger than the actual size of the displays in the Oculus. In the image below the letter X (in the red box) indicates the size of the real screen, the letter X' (X-prime) is the size of the screen you think you see because you look through the lenses:
 
-![Oculus lenses](/assets/img/blog/oculus-lenses.jpg)
+![Oculus lenses](/img/blog/oculus-lenses.jpg)
 
 The distortion of the image caused by the lenses is called pinch distortion and looks like this:
 
-![Pinch distortion](/assets/img/blog/pinch-distortion.jpg)
+![Pinch distortion](/img/blog/pinch-distortion.jpg)
 
 To cancel out the pinch distortion, the image is rendered with barrel distortion which looks like this:
 
-![Barrel distortion](/assets/img/blog/barrel-distortion.jpg)
+![Barrel distortion](/img/blog/barrel-distortion.jpg)
 
 The netto result of the pinch distortion of the lenses and the barrel distortion of the image is that you see a straight image that is bigger than the screen size of the Oculus.
 
 As you can see in the image, a side effect of barrel distortion is that the image is stretched out towards the edges. This means that the pixel density is less in the outer regions of the image. This is not a problem, because it is much like how our own vision works in real life: the objects we see in our peripheral vision are not as sharp as the objects we see right in front of us. Shown in the image below: the red cone is the FOV that we can really focus on, and objects in the green and blue cones are increasingly more blurry.
 
-![FOV human eye](/assets/img/blog/FOV-human-eye.jpg)
+![FOV human eye](/img/blog/FOV-human-eye.jpg)
 
 ###Tracking rotation, movement and position
 
@@ -66,7 +66,7 @@ Because the Oculus Rift blocks your vision on the real world and the fact that y
 
 Therefore, other devices have been developed that transfer physically walking movements to the computer as well, see images below. On the other hand, it is very likely that in the near future the on-board processor of the Oculus will be fast enough to render the 3D content and thus the Oculus Rift would become a standalone device, like Microsoft's Hololens.
 
-![VR treadmill](/assets/img/blog/VR-treadmill.jpg)
+![VR treadmill](/img/blog/VR-treadmill.jpg)
 
 This device (currently on Kickstarter) takes it even further:
 

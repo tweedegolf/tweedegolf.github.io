@@ -29,7 +29,7 @@ Every 3D object inherits the `toJSON()` method from the class Object3D, so you c
 
 So we made an online converter. There are 2 versions; a version that shows the model as Collada and as JSON, and a 'headless' version that just converts the Collada. The first version is suitable if you want to convert only a few models and check the models side by side for possible conversion errors, a [Collada to JSON checker](http://data.tweedegolf.nl/collada2json/). If you want to convert a large number of Colladas you'd better use the second version, a headless [Collada to JSON converter](http://data.tweedegolf.nl/collada2json_headless/).
 
-![Teapots](/assets/img/blog/teapots-json-collada.jpg){: .with-caption}
+![Teapots](/img/blog/teapots-json-collada.jpg){: .with-caption}
 *All great teapots are alike*
 
 #### How it works
