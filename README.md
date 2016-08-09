@@ -13,30 +13,6 @@ docker-compose up
 
 The website is served on `http://localhost:4000`.
 
-### Troubleshooting
-
-When running `vagrant up` you might run into the following error:
-
-```
-The following SSH command responded with a non-zero exit status.
-Vagrant assumes that this means the command failed!
-
-stdin: is not a tty
-mount.nfs: access denied by server while mounting
-```
-
-It's something to do with Vagrant still running. You fix it by running:
-
-```
-vagrant reload --provision
-```
-
-This quickly restarts the VM. The provision flag instructs Vagrant to run the provisioners, which normally only happens on the very first `vagrant up`.
-
-If everything fails, remove the VM and start all over with `vagrant up`. Then wait 20 minutes :D
-
-If problems persist, just serve the website locally.
-
 ## Serving the website locally with Bower and Bundle
 
 To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
