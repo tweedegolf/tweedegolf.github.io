@@ -34,7 +34,7 @@ description: Een online productconfigurator of een ontwerp- of teken-app? Visual
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="/assets/img/cases/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
+          <img src="/img/cases/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
         </a>
         <h3>{{ item.title }}</h3>
         <p class="intro">{{ item.intro }} <a href="#{{ item.title|downcase|replace:' ','-' }}" data-toggle="modal"> {{ item.introlinkname }}</a></p>
@@ -76,7 +76,7 @@ description: Een online productconfigurator of een ontwerp- of teken-app? Visual
               <iframe src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.vimeo }}" frameborder="0"></iframe>" width="100%" height="400" frameborder="0"></iframe>
             {% endif %}
             {% if item.img %}
-                <img src="/assets/img/cases/{{ item.img }}" class="img-responsive img-centered" alt="{{ item.title }}">
+                <img src="/img/cases/{{ item.img }}" class="img-responsive img-centered" alt="{{ item.title }}">
             {% endif %}
             {{ item.output }}
             {% if item.website %}

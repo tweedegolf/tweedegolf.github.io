@@ -43,7 +43,7 @@ permalink: web-wens-2016/
             Denk groot en verras ons!
           </p>
 
-          <img src="/assets/img/tg_logo_small.jpg" alt="Logo tweede golf" id="tg-logo">
+          <img src="/img/tg_logo_small.jpg" alt="Logo tweede golf" id="tg-logo">
         </div>
 
         <div class="col-md-5 col-md-offset-1 send-wish">
@@ -111,7 +111,7 @@ permalink: web-wens-2016/
         <div class="col-md-12">
           <h3>Inspiratie nodig?</h3>
           <a href="/#portfolio">
-            <img src="/assets/img/wish/inspiration.gif" />
+            <img src="/img/wish/inspiration.gif" />
           </a>
         </div>
       </div>
