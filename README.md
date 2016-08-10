@@ -13,22 +13,33 @@ The website is served on `http://localhost:4000`.
 
 ## Serving the website locally with Bower and Bundle
 
-To serve this website locally, install [bower](http://bower.io/) and [bundler](http://bundler.io/) and run the following sequence of commands in the project root:
+To serve this website locally, install [bower](http://bower.io/) and
+[bundler](http://bundler.io/) and run the following sequence of commands in the
+project root:
 
     bower install
     bundle install
     bundle exec jekyll serve --watch --incremental --drafts
 
-(Or `sudo bower install --allow-root` if your OS is feeling particularly rebellious today.)
+(Or `sudo bower install --allow-root` if your OS is feeling particularly
+rebellious today.)
 
 The website is served on `http://localhost:4000`.
 
-### Updates
+## Frontend updates
 
-To install updates to [bootstrap](http://getbootstrap.com/) or [fontawesome](http://fortawesome.github.io/Font-Awesome/), update the `.bowerrc` file and run:
+If you want to make styling changes you'll need Sass and compile styles
+manually:
+
+    sass sass/main.scss assets/css/main.css
+
+Jekyll does have its own Sass support, but GitHub Pages runs in safe mode and
+won't allow multiple Sass load paths, making it impossible to include Bootstrap.
+
+To install new frontend assets, update the `.bowerrc` file and run:
 
     bower update
 
-To install the new fontawesome fonts run:
+To use new assets, copy them manually to the assets folder, e.g.:
 
-    cp -r vendor/fontawesome/fonts/ fonts
+    cp -r vendor/fontawesome/fonts/ assets/fonts
