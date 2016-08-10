@@ -2,7 +2,7 @@
   "name": "tweedegolf.github.io",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-twbs": "3.2.0",
+    "bootstrap-sass-twbs": "3.3.7",
     "fontawesome": "4.1.0",
     "jquery.lazyload": "~1.9.5",
     "mdi": "~1.2.65"

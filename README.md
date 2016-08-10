@@ -36,9 +36,9 @@ manually:
 Jekyll does have its own Sass support, but GitHub Pages runs in safe mode and
 won't allow multiple Sass load paths, making it impossible to include Bootstrap.
 
-To install new frontend assets, update the `.bowerrc` file and run:
+To install new frontend assets, update the `bower.json` file and run:
 
-    bower update
+    bower install
 
 To use new assets, copy them manually to the assets folder, e.g.:
 
