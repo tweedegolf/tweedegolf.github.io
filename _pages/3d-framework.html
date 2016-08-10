@@ -1,5 +1,5 @@
 ---
-permalink: "/3d-framework/"
+permalink: /3d-framework/
 layout: default
 title: 3D Framework
 description: Een online productconfigurator of een ontwerp- of teken-app? Visualisatie in 3D? Met ons 3D Framework en onze expertise zetten we ideeën razendsnel om in succesvolle web apps.
@@ -7,7 +7,7 @@ description: Een online productconfigurator of een ontwerp- of teken-app? Visual
 
 {% include sections/navbar.html page-class="framework"%}
 
-
+<!-- Cases -->
 <section id="cases">
   <div class="container">
     <div class="row">
@@ -53,8 +53,9 @@ description: Een online productconfigurator of een ontwerp- of teken-app? Visual
     </div>
   </div>
 </section>
-{% for item in site.cases %}
+
 <!-- Cases Modals -->
+{% for item in site.cases %}
 <div class="portfolio-modal modal fade" id="{{ item.title|downcase|replace:' ','-' }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal" onclick="stopVideos()">
