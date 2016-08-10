@@ -1,0 +1,46 @@
+<!-- Navigation -->
+<!-- page-class is passed into this include to changed the menu styling for the blog & 3d framework pages -->
+<nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header {{include.page-class}}">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Navigatie</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% unless page.homepage %}/{% endunless %}#page-top">
+        <img class=tg-logo src="/assets/img/tg.png" alt="{{ site.name }}">
+        <img class=tg-logo-inverse src="/assets/img/tg-inverse.png" alt="{{ site.name }}">
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="{% unless page.homepage %}/{% endunless %}#portfolio">Portfolio</a>
+        </li>
+        <li class="page-scroll">
+          <a href="{% unless page.homepage %}/{% endunless %}#over-ons">Over ons</a>
+        </li>
+        <li class="page-scroll">
+          <a href="{% unless page.homepage %}/{% endunless %}#contact">Contact</a>
+        </li>
+        <li class="divider-vertical"></li>
+        <li class="{% if page.permalink == 'proces/' %}active{% endif %}">
+          <a href="/proces">Proces</a>
+        </li>
+        <li class="{% if page.permalink == '3d-framework/' %}active{% endif %}">
+          <a href="/3d-framework">3D Framework</a>
+        </li>
+        <li class="{% if page.permalink == 'blog/' %}active{% endif %}">
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
