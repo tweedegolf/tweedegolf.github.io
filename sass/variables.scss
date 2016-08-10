@@ -5,21 +5,29 @@ $gray-lighter: lighten(#000, 93.5%);
 $fa-font-path: "../fonts";
 
 // Colors
-$gold:          #FFD400; // luminous vivid gold
-$turqoise:      #00A17B; // strong turquoise
-$gray:          #8E8D96; // persian bluish gray
-$lightGray:     #EDEDF2; // ligh bluish gray
-$white:         #FFFFFF; // white
+$gold:                #FFD400; // luminous vivid gold
+$turqoise:            #00A17B; // strong turquoise
+$gray:                #8E8D96; // persian bluish gray
+$lightGray:           #EDEDF2; // ligh bluish gray
+$white:               #FFFFFF; // white
 
 // Font defaults
-$baseFont:      "Poppins, sans-serif";
-$hugeFont:      60px;
-$bigFont:       40px;
-$largeFont:     24px;
-$mediumFont:    20px;
-$smallFont:     16px;
-$tinyFont:      12px;
+$baseFont:            "Poppins, sans-serif";
+$hugeFont:            60px;
+$massiveFont:         40px;
+$largeFont:           24px;
+$mediumFont:          20px;
+$smallFont:           16px;
+$tinyFont:            12px;
 
 // Headings
+$largeHeading:        $hugeFont;
+$mediumHeading:       $massiveFont;
+$smallHeading:        $largeFont;
+$tinyHeading:         $mediumFont;
 
 // Paragraphs
+$largeText:           $largeFont;
+$mediumText:          $mediumFont;
+$smallText:           $smallFont;
+$tinyText:            $tinyFont;
