@@ -1,0 +1,45 @@
+<div class="blog-item {{ post.author }} {% if post.nerd %} technology {% else %} business {% endif %}">
+    {% if post.nerd %}
+      <span class="label-blog-type label-technology">Technology</span>
+    {% else %}
+      <span class="label-blog-type label-business">Business</span>
+    {% endif %}
+    <a href="{{ post.url }}" class="blog-link">
+      <h3>{{ post.title }}</h3>
+    </a>
+    <p class="date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
+    <a href="{{ post.url }}">
+      <div class="previmg">
+        {% if post.thumb %}
+          <img src="/assets/img/blog/thumbs/{{ post.thumb }}" class="img-responsive" />
+        {% else %}
+          <img src="/assets/img/blog/thumbs/oculus.jpg" class="img-responsive" />
+        {% endif %}
+        <div class="infobar">
+          {% if post.tags.size > 0 %}
+          <div class="tags">
+            <span class="fa fa-tags"></span>
+            <strong>{{ post.tags | join: ' ' }}</strong>
+          </div>
+          {% endif %}
+          {% if post.nerd %}
+          <div class="nerd protip" title="Nerd rating: {{ post.nerd }}">
+            {% for i in (1..{{post.nerd}}) %}
+              <span class="icon-nerd-xs"></span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </a>
+    <div class="blog-item-sidebar">
+      <p class="excerpt">
+        {{ post.content | strip_html | truncatewords: 30 }}
+        {% if post.nerd %}
+        <a href="{{ post.url }}">Read more...</a>
+        {% else %}
+        <a href="{{ post.url }}">Lees meer...</a>
+        {% endif %}
+      </p>
+    </div>
+</div>
