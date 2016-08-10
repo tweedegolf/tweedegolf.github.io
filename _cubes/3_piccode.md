@@ -1,3 +1,0 @@
----
-image: pointcloud.jpg
----

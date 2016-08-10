@@ -1,3 +1,0 @@
----
-image: oculus.jpg
----

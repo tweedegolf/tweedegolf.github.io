@@ -22,7 +22,5 @@ collections:
     output: true
   cases:
     output: false
-  cubes:
-    output: false
   members:
     output: false
