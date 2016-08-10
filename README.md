@@ -31,7 +31,7 @@ The website is served on `http://localhost:4000`.
 If you want to make styling changes you'll need Sass and compile styles
 manually:
 
-    sass sass/main.scss assets/css/main.css
+    sass --watch sass/main.scss:assets/css/main.css --style compressed
 
 Jekyll does have its own Sass support, but GitHub Pages runs in safe mode and
 won't allow multiple Sass load paths, making it impossible to include Bootstrap.
