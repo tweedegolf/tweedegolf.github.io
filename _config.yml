@@ -4,9 +4,6 @@ permalink: pretty
 destination: ./_site
 
 exclude:
-  - .bowerrc
-  - .jekyll-metadata
-  - .gitignore
   - bower.json
   - docker-compose.yml
   - Gemfile
