@@ -31,7 +31,7 @@ Note that JSARToolKit is published under a [GPLv3](http://www.gnu.org/licenses/g
 
 Three.js works very well with both JSAruco and JSARToolkit and I made 2 simple examples that show you how to use the libraries with Three.js, the code and some markers are available at [Github](https://github.com/tweedegolf/web-ar).
 
-![AR](/img/blog/jsaruco.jpg){: .with-caption}
+![AR](/assets/img/blog/jsaruco.jpg){: .with-caption}
 *3D model rendered on a marker*
 
 
@@ -54,7 +54,7 @@ For instance I made this small test using multiple markers:
 
 In the process of analyzing, the image is turned into an inverted plain black and white image. This means that a pixel is either white or black and this makes it very easy to detect a marker. For the best results, good bright lighting is mandatory. Also putting the marker on a surface with a plain color is recommended. If possible, using backlighting is ideal. In general you should turn off auto focus on your webcam.
 
-![Marker detection](/img/blog/inverted.jpg){: .with-caption}
+![Marker detection](/assets/img/blog/inverted.jpg){: .with-caption}
 *Marker detection*
 
 

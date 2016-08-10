@@ -17,7 +17,7 @@ To serve this website locally, install [bower](http://bower.io/) and [bundler](h
 
     bower install
     bundle install
-    bundle exec jekyll serve --watch
+    bundle exec jekyll serve --watch --incremental --drafts
 
 (Or `sudo bower install --allow-root` if your OS is feeling particularly rebellious today.)
 

@@ -17,11 +17,11 @@ After closing the variables section with three dashes `---`, you may just start 
 
 Inserting an image:
 
-    ![Left and right handed system](/img/blog/left-and-right-handed-system.gif)
+    ![Left and right handed system](/assets/img/blog/left-and-right-handed-system.gif)
 
 Inserting an image with caption:
 
-    ![YGA verlichting](/img/blog/light-yga-verlichting.png){: .with-caption}
+    ![YGA verlichting](/assets/img/blog/light-yga-verlichting.png){: .with-caption}
     *Screen from the garden prototype. Spot light support only...*
 
 Custom images may be added in the repo directly.

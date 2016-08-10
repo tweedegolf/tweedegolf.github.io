@@ -16,7 +16,7 @@ In 2014 we won an innovation grant from the province of Gelderland based on our 
 
 In this article we will give you an overview of how we created methods that allow users to design their gardens intelligently. We think these methods could translate nicely to domains outside gardening. We are curious if you feel the same after reading this article.
 
-![Draw Your Garden](/img/blog/tekenjetuin.png){:.with-caption}
+![Draw Your Garden](/assets/img/blog/tekenjetuin.png){:.with-caption}
 *Draw Your Garden / Teken je Tuin*
 
 Partnered with our client we proposed to develop a number of prototypes aimed at assisting users in several areas which hitherto required extensive expert knowledge. Appropriately, we named this project 'Your GardenAssistant'. 
@@ -31,16 +31,16 @@ For the project we focused on three areas of garden design:
 
 The first thing we concluded was that it would be crucial to involve different kinds of experts, gardeners and users in the project. We realized we needed to include them from the very start of the project, and to check back with them regularly to decide how to proceed.
 
-![The Plant Advice Prototype](/img/blog/yga-aanpak.png)
+![The Plant Advice Prototype](/assets/img/blog/yga-aanpak.png)
 
 ###3D design
 
 The preliminary task was to create a suitable 3D design & drawing application based on our [3D Framework](/3d-framework/). Our approach is to use a full 3D environment with an top-down view for drawing. This view, a kind of orthographic projection, provides the advantages of 'flat', easy-to-use interaction during drawing & design, while the full 3D experience is just one camera shift away.
 
-![Design tool](/img/blog/tjt-2d.png){:.with-caption}
+![Design tool](/assets/img/blog/tjt-2d.png){:.with-caption}
 *Drawing in full 3D with a top-down perspective.*
 
-![Design tool](/img/blog/tjt-3d.png){:.with-caption}
+![Design tool](/assets/img/blog/tjt-3d.png){:.with-caption}
 *The same garden, but rotated slightly*
 
 ###Watering
@@ -48,10 +48,10 @@ The preliminary task was to create a suitable 3D design & drawing application ba
 To be able to give advice about watering a garden we created a 'provided graph' and a 'moisture graph', to store how much water the sprinklers provided, and how much water different parts of the garden required.
 We used these to create a wizard designed to help the user choose both the right type of sprinker and a water source, and to connect these two, all in a few easy steps.
 
-![The Plant Advice Prototype](/img/blog/water2.png){:.with-caption}
+![The Plant Advice Prototype](/assets/img/blog/water2.png){:.with-caption}
 *Provided graph: how much water is provided. Note that the sprinkler on the bottom-right is not connected to a water source.*
 
-![The Plant Advice Prototype](/img/blog/water1.png){:.with-caption}
+![The Plant Advice Prototype](/assets/img/blog/water1.png){:.with-caption}
 *Moisture graph: green areas receive enough water, red areas too little or possibly too much (if they do not require water, like the terrace).*
 
 ###Sunlight and shadows
@@ -70,7 +70,7 @@ Giving intelligent advice about which plants to use in your garden, and where be
 
 Based on feedback from our focus groups and surveys we decided to adopt an approach inspired by knowledge-based systems. We created a modular system of multiple 'Advisors', all of which provide advice or warnings based on a simple rule. For instance, we created a GrowthAdvisor based on the simple rule that fast-growing plants should not be placed too close together. This way we could easily create many more advisors based on all sorts of simple rules.
 
-![Advice](/img/blog/Assistant.jpg){:.with-caption}
+![Advice](/assets/img/blog/Assistant.jpg){:.with-caption}
 *An early mockup of the advice UI*
 
 In addition to our conceptual and technical efforts we also put a lot of thought into UI approaches, i.e. how to best present the most relevant advice. We hope to come back to this in a future blog.
