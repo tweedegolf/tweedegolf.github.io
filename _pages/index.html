@@ -7,16 +7,201 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
 
 {% include sections/navbar.html %}
 
-{% include header.html %}
+<!-- Landing -->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="logo img-responsive" src="/assets/img/logo.png" alt="">
+        <div class="intro-text">
+          <span class="name">
+            <img src="/assets/img/tg.png" alt="{{ site.name }}">
+          </span>
+          <hr class="separator">
+          <span class="skills">Serious web development</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-{% include portfolio.html %}
+<!-- Portfolio -->
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Portfolio</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+    {% assign items = site.portfolio | sort: 'order' %}
+    {% for item in items %}
+      <div class="col-sm-4 portfolio-item">
+        <a href="#portfolio-{{ item.title|downcase|replace:' ','-' }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="/assets/img/portfolio/thumbs/{{ item.thumb }}" class="img-responsive" alt="{{ item.title }}" />
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
 
-{% include about.html %}
+<!-- Portfolio Modals -->
+{% for item in site.portfolio %}
+<div class="portfolio-modal modal fade" id="portfolio-{{ item.title|downcase|replace:' ','-' }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal" onclick="stopVideos()">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="modal-body">
+            <h2>{{ item.title }}</h2>
+            <hr class="star-success">
+            <ul class="list-inline item-details">
+              {% if item.date %}
+              <li>
+                <span>Datum: </span>
+                <strong>{{ item.date | date: '%Y'}}</strong>
+              </li>
+              {% endif %}
+              {% if item.client %}
+              <li>
+                <span>Klant: </span>
+                <strong>{{ item.client }}</strong>
+              </li>
+              {% endif %}
+              {% if item.partner %}
+              <li>
+                <span>Partner: </span>
+                <strong>{{ item.partner }}</strong>
+                {% if item.partnerurl %}<a href="{{ item.partnerurl }}"><span class="fa fa-external-link"></span></a>{% endif %}
+              </li>
+              {% endif %}
+            </ul>
+            {% if item.tags %}
+            <div class="item-details tags">
+                <span class="fa fa-tags"></span>
+                <strong>{{ item.tags }}</strong>
+                {% if item.case %}
+                <span class="case">
+                  <span class="separator"> | </span>
+                  <span class="fa fa-paperclip"></span>
+                  Case: <strong>Interesse opwekkende titel</strong>
+                  {% if item.caseurl %}<a href="{{ item.caseurl }}" target="_blank"><span class="fa fa-external-link"></span></a>{% endif %}
+                </span>
+                {% endif %}
+            </div>
+            {% endif %}
+            {{ item.output }}
+            {% if item.vimeo %}
+              <iframe src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0" width="100%" height="400" frameborder="0"></iframe>
+            {% endif %}
+            {% if item.youtube %}
+              <iframe src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.youtube }}" frameborder="0"></iframe>" width="100%" height="400" frameborder="0"></iframe>
+            {% endif %}
+            {% assign screens = item.screens | split: "," %}
+            {% for screen in screens %}
+              <div class="screen {% if item.noborders %}noborders{% endif %}" id="screen-{{ screen|downcase|replace:' ','-' }}">
+                <img class="lazy" data-original="/assets/img/portfolio/{{ screen}}" class="img-responsive img-centered" alt="{{ item.title }} screenshot 1">
+              </div>
+            {% endfor %}
+            {% if item.website %}
+            <a href="{{ item.website }}" class="btn btn-success" target="_blank">
+              <span class="fa fa-external-link"></span>
+              Ga naar {{ item.title }}
+            </a>
+            {% endif %}
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <span class="fa fa-times"></span>
+              Sluiten
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<!-- About -->
+<div id="over-ons">
+  <section class="success" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Over ons</h2>
+          <hr class="star-light">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+          {% capture profile %}{% include /about/profile.md %}{% endcapture %}
+          {{ profile|markdownify }}
+        </div>
+      </div>
+      <div class="row cubes">
+        {% for item in site.cubes %}
+          <div class="col-sm-6 col-md-4 cube">
+            {% if item.image %}
+              <img src="/assets/img/about/{{ item.image }}"></assets/img>
+            {% else %}
+              {% if item.number %}
+                <span class="number">{{ item.number }}</span>
+              {% endif %}
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+              {% if item.link %}
+                <a class="btn btn-lg btn-success" href="{{ item.link }}">Meer research...</a>
+              {% endif %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Team</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row members">
+        {% for member in site.data.members %}
+        {% if member.employed == true %}
+          <div class="col-sm-6 col-md-4">
+            <div class="member-card">
+              <a href="#" class="member-image {{ member.name }}"></a>
+              <span class="name">{{ member.name }}</span>
+              <span class="job">{{ member.job }}</span>
+              <span class="email">{{ member.email }}</span>
+            </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
 
 {% include sections/contact.html %}
 
 {% include sections/footer.html %}
 
+<!-- Scroll to top on narrow devices -->
 <div class="scroll-top page-scroll visible-xs visble-sm">
     <a class="btn btn-primary" href="#page-top">
         <i class="fa fa-chevron-up"></i>
