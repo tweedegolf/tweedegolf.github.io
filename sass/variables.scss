@@ -27,8 +27,8 @@ $smallText:           $smallFont;
 $tinyText:            $tinyFont;
 
 // Bootstrap
-$brand-primary:       #763522;
-$brand-success:       #416375;
-$brand-dark-success:  #02151F;
+$brand-primary:       $turqoise;
+$brand-success:       $turqoise;
+$brand-dark-success:  darken($turqoise, 90%);
 $gray-lighter:        lighten(#000, 93.5%);
 $fa-font-path:        "../fonts";
