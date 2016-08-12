@@ -368,8 +368,16 @@ section {
 
   h1, h2, h3, h4, h5, h6 {
     color: $brand-primary;
-    font-size: $hugeFont;
+    font-size: $largeHeading;
     text-transform: lowercase;
+  }
+
+  &.small {
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: $brand-primary;
+      font-size: $smallHeading;
+    }
   }
 }
 
@@ -630,6 +638,7 @@ footer {
     }
     .footer-logos {
         background-color: $lightGray;
+        padding: 40px 0;
         a {
             display: inline-block;
             margin: 20px;
@@ -651,14 +660,14 @@ footer {
         }
     }
     .footer-above {
-        padding-top: 50px;
+        padding: 40px 0;
         background-color: $brand-primary;
     }
     .footer-col {
         margin-bottom: 50px;
     }
     .footer-below {
-        padding: 25px 0;
+        padding: 40px 0;
         background-color: darken($brand-primary, 5%);
     }
 }
