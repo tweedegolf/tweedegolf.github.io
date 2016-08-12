@@ -201,29 +201,16 @@ header.landing {
   }
 }
 #contact.personal {
-  background-color: #f8f8f8;
-  h5 {
-    color: #666;
-    font-size: 24px;
-    text-transform: none;
-  }
   .member-card {
     height: auto;
     float: none;
     .desc {
-      color: #666;
-      font-size: 16px;
-      line-height: 24px;
       padding-left: 30px;
       padding-top: 20px;
     }
   }
   .floating-label-form-group {
     border-bottom: 1px solid #ddd;
-  }
-  .btn {
-    background-color: #0af !important;
-    border-color: #0af !important;
   }
   .floating-label-form-group-with-focus label {
     color: #0af !important;
