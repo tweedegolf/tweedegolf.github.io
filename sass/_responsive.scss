@@ -84,7 +84,7 @@
 
   body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header{
     position: fixed !important;
-    background-color: $turqoise !important;
+    background-color: $brand-primary !important;
     margin-bottom: 0 !important;
     .tg-logo{
       display: block !important;
@@ -106,9 +106,9 @@
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form,
   .navbar-inverse .navbar-toggle,
   .navbar-inverse .navbar-toggle:hover {
-    border-color: $turqoise !important;
+    border-color: $brand-primary !important;
   }
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: $turqoise;
+    background-color: $brand-primary;
   }
 }

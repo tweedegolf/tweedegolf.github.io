@@ -123,7 +123,7 @@ header {
     	bottom: 0;
     	left: 0;
     	right: 0;
-      background: $turqoise;
+      background: $brand-primary;
     	-moz-transition: background .3s linear;
     	-webkit-transition: background .3s linear;
     	-o-transition: background .3s linear;
@@ -264,13 +264,13 @@ header.home {
 
 // navbar overrides
 .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink{
-  background-color: $turqoise;
+  background-color: $brand-primary;
   .page-scroll.active a{
     background-color: $white;
   }
 }
 .navbar-shrink {
-  background-color: $turqoise;
+  background-color: $brand-primary;
   .navbar-brand {
     opacity: initial;
   }
@@ -366,7 +366,7 @@ section {
   .section-heading {
 
     h1, h2, h3, h4, h5, h6 {
-      color: $turqoise;
+      color: $brand-primary;
       font-size: $hugeFont;
       text-transform: lowercase;
     }
@@ -374,11 +374,11 @@ section {
 }
 
 section.success {
-    background: $brand-success;
+    background: $brand-primary;
     color: white;
 
     hr.star-light:after {
-        background-color: $brand-success;
+        background-color: $brand-primary;
         color: white;
     }
 
@@ -423,7 +423,7 @@ section#about {
       font-family: monospace;
       font-size: 44px;
       font-weight: bold;
-      color: $brand-success;
+      color: $brand-primary;
       display: inline-block;
       line-height: 2em;
       margin-top: 50px;
@@ -556,7 +556,7 @@ section#cases {
     }
     .fa {
       font-size: 15px;
-      color: $brand-success;
+      color: $brand-primary;
       margin-right: 2px;
     }
   }
@@ -732,7 +732,7 @@ footer {
             text-transform: uppercase;
             .fa {
                 font-size: 15px;
-                color: $brand-success;
+                color: $brand-primary;
                 margin-right: 2px;
             }
         }

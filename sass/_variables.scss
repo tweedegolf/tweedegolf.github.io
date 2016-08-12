@@ -1,6 +1,6 @@
 // Colors
-$gold:                #FFD400; // luminous vivid gold
-$turqoise:            #00A17B; // strong turquoise
+$brand-accent:                #FFD400; // luminous vivid gold
+$brand-primary:            #00A17B; // strong turquoise
 $gray:                #8E8D96; // persian bluish gray
 $lightGray:           #EDEDF2; // ligh bluish gray
 $white:               #FFFFFF; // white
@@ -27,8 +27,9 @@ $smallText:           $smallFont;
 $tinyText:            $tinyFont;
 
 // Bootstrap
-$brand-primary:       #763522;
-$brand-success:       #416375;
-$brand-dark-success:  #02151F;
+$brand-primary:       $brand-primary;
+$brand-primary:       $brand-primary;
+$brand-accent:        $brand-accent;
+$brand-dark-success:  darken($brand-primary, 95%);
 $gray-lighter:        lighten(#000, 93.5%);
 $fa-font-path:        "../fonts";
