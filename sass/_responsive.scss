@@ -84,7 +84,7 @@
 
   body #wrapper nav.navbar.navbar-inverse.navbar-fixed-top.cbp-af-header{
     position: fixed !important;
-    background-color: rgba(31, 18, 10, 1) !important;
+    background-color: $turqoise !important;
     margin-bottom: 0 !important;
     .tg-logo{
       display: block !important;
@@ -93,14 +93,22 @@
       display: none !important;
     }
     .navbar-nav > li > a{
-      color: #777777;
+      color: $white;
     }
 
     .navbar-nav > li.active a,
     .navbar-nav > li a:hover{
       background-color: transparent;
-      color: #fff;
+      color: $white;
     }
+  }
 
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form,
+  .navbar-inverse .navbar-toggle,
+  .navbar-inverse .navbar-toggle:hover {
+    border-color: $turqoise !important;
+  }
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: $turqoise;
   }
 }
