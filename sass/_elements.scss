@@ -174,7 +174,7 @@ video, iframe {
             -moz-transition: all ease 0.5s;
             &:hover {
                 opacity: 1;
-                background: fade-out($brand-primary, 0.1);
+                background: fade-out($brand-accent, 0.1);
             }
             .caption-content {
                 position: absolute;
