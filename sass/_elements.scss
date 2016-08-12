@@ -1,15 +1,17 @@
 body {
   color: $gray;
+  font-size: $mediumFont;
+  font-weight: 200;
 }
 
 p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.7em;
+  font-size: $mediumFont;
+  font-weight: 200;
+  line-height: 1.5em;
 }
 
 p.small {
-  font-size: 16px;
+  font-size: $smallFont;
 }
 
 p a {
@@ -295,19 +297,7 @@ video, iframe {
   }
 
   .name {
-    font-size: 18px;
-    color: #333;
     padding-top: 24px;
-  }
-
-  .job {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .email {
-    font-size: 14px;
-    color: #666;
   }
 
   @media (max-width: 990px) {
