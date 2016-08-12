@@ -1,3 +1,7 @@
+body {
+  color: $gray;
+}
+
 p {
   font-size: 20px;
   font-weight: 300;
@@ -9,7 +13,11 @@ p.small {
 }
 
 p a {
-  font-weight: 400;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
   text-decoration: underline;
 }
 
@@ -18,9 +26,9 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    //color: $brand-primary;
-    color: #0074b3;
+    color: $brand-primary;
     outline: none;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {

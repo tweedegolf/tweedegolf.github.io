@@ -359,8 +359,8 @@ header.home {
 section {
     padding: 100px 0;
     h2 {
-        margin: 0;
-        font-size: 3em;
+      margin: 0;
+      font-size: 3em;
     }
 
   .section-heading {
@@ -374,19 +374,7 @@ section {
 }
 
 section.success {
-    background: $brand-primary;
-    color: white;
-
-    hr.star-light:after {
-        background-color: $brand-primary;
-        color: white;
-    }
-
-    p {
-        a {
-            color: white;
-        }
-    }
+  background: $brightGray;
 }
 
 section#static {
@@ -401,10 +389,7 @@ section#portfolio {
 
 section#about {
   padding-bottom: 0;
-  text-align: center;
-  h2 {
-    text-transform: uppercase;
-  }
+
   .cubes {
     position: relative;
     top: 60px;
@@ -412,10 +397,10 @@ section#about {
   }
   .cube {
     background-color: white;
-    //border: 1px solid #eee;
     height: 300px;
     padding: 0;
     overflow: hidden;
+    text-align: center;
     p {
       color: #666;
     }
