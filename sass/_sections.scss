@@ -401,19 +401,16 @@ section#about {
     padding: 0;
     overflow: hidden;
     text-align: center;
-    p {
-      color: #666;
-    }
     .number {
       font-family: monospace;
-      font-size: 44px;
+      font-size: $massiveFont;
       font-weight: bold;
       color: $brand-primary;
       display: inline-block;
       line-height: 2em;
       margin-top: 50px;
       .large {
-        font-size: 88px;
+        font-size: $hugeFont;
         line-height: 44px;
       }
     }
