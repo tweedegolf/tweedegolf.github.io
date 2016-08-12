@@ -211,6 +211,25 @@ header {
     }
 }
 
+header.home {
+  height: 100vh;
+  position: relative;
+
+  .scroller {
+    background-image: url("/assets/img/scroller.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    display: block;
+    font-size: 0;
+    height: 100px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    width: 40px;
+  }
+}
+
 .navbar {
   font-size: $smallFont;
   font-weight: 300;
