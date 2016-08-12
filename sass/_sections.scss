@@ -122,12 +122,12 @@ header {
     	bottom: 0;
     	left: 0;
     	right: 0;
-    	//background: rgba(118, 53, 34, 0.8);
-      background: rgba(31, 18, 10, 0.85);
+      background: $turqoise;
     	-moz-transition: background .3s linear;
     	-webkit-transition: background .3s linear;
     	-o-transition: background .3s linear;
     	transition: background .3s linear;
+      opacity: 0.85;
     }
 
     &.blog {
@@ -234,10 +234,7 @@ header {
   }
 }
 
-
-
 .navbar.navbar-fixed-top.navbar-inverse {
-    //background-color: #222;
     background-color: transparent;
     border: none;
     .page-scroll.active a{
@@ -247,22 +244,20 @@ header {
 
 // navbar overrides
 .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink{
-  background-color: #222;
+  background-color: $turqoise;
   .page-scroll.active a{
-    background-color: #090909;
+    background-color: $white;
   }
 }
-.navbar-fixed-top .navbar-brand img {
-  opacity: .5 !important;
-}
 .navbar-shrink {
-  background-color: #222;
+  background-color: $turqoise;
   .navbar-brand {
     opacity: initial;
   }
 }
-//
-
+.navbar-inverse .navbar-nav>li>a {
+  color: $white;
+}
 
 .tg-logo-inverse{
   display: none;
@@ -271,13 +266,13 @@ header {
 
 //different menu styling for blog
 .navbar.navbar-inverse.blog .navbar-nav > li > a {
-  color: #fff;
+  color: $white;
   &:hover{
-    color: #ddd;
+    color: $white;
   }
 }
 .navbar-inverse.blog ul.navbar-nav li.divider-vertical{
-      border-right: 2px solid #fff;
+      border-right: 1px solid #fff;
 }
 
 
@@ -307,7 +302,7 @@ header {
   }
 }
 .navbar-inverse.framework ul.navbar-nav li.divider-vertical{
-      border-right: 2px solid #bbb;
+      border-right: 1px solid #bbb;
 }
 
 
@@ -331,13 +326,13 @@ header {
 }
 .navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
 .navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical{
-      border-right: 2px solid #777;
+      border-right: 1px solid $white;
 }
 
 .navbar .divider-vertical {
   height: 30px;
   margin: 10px 5px;
-  border-right: 2px solid #777;
+  border-right: 1px solid $white;
 }
 
 
