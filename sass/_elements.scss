@@ -8,10 +8,10 @@ p {
   font-size: $mediumFont;
   font-weight: 200;
   line-height: 1.5em;
-}
 
-p.small {
-  font-size: $smallFont;
+  &.small {
+    font-size: $smallFont;
+  }
 }
 
 p a {
@@ -297,7 +297,12 @@ video, iframe {
   }
 
   .name {
+    font-weight: 300;
     padding-top: 24px;
+  }
+
+  .job, .email {
+    font-size: $smallFont;
   }
 
   @media (max-width: 990px) {
