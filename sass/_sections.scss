@@ -212,9 +212,9 @@ header {
 }
 
 .navbar {
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-size: $smallFont;
+  font-weight: 300;
+  text-transform: lowercase;
   a:focus {
     outline: none;
   }
