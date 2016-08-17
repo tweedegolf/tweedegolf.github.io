@@ -106,9 +106,10 @@ header {
       .icon-research {
         background-image: url("/assets/img/research.png");
         background-repeat: no-repeat;
+        background-size: 100px;
         display: block;
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
       }
     }
 
@@ -132,6 +133,12 @@ header {
       background-image: none;
       overflow: hidden;
       height: 410px;
+
+      .intro-desc {
+        .separator {
+          margin: 24px 14px;
+        }
+      }
 
       .leadimg {
         position: absolute;
