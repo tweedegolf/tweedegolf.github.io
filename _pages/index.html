@@ -75,9 +75,11 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="modal-body">
-            <h2>{{ item.title }}</h2>
-            <hr class="star-success">
-            <ul class="list-inline item-details">
+            <div class="section-heading">
+              <h2>{{ item.title }}</h2>
+              <hr class="star-success">
+            </div>
+            <ul class="item-details">
               {% if item.date %}
               <li>
                 <span>Datum: </span>
@@ -149,13 +151,13 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
             {% if item.website %}
             <a
               href="{{ item.website }}"
-              class="btn btn-success"
+              class="btn btn-primary"
               target="_blank">
               <span class="fa fa-external-link"></span>
               Ga naar {{ item.title }}
             </a>
             {% endif %}
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
               <span class="fa fa-times"></span>
               Sluiten
             </button>
