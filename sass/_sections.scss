@@ -82,9 +82,7 @@ header {
         }
     }
     .intro-desc {
-      bottom: 50px;
-      position: relative;
-      text-align: center;
+      text-align: left;
       z-index: 2;
       a, a:active, a:visited {
         color: #fff;
@@ -109,9 +107,8 @@ header {
         background-image: url("/assets/img/research.png");
         background-repeat: no-repeat;
         display: block;
-        height: 150px;
-        margin: 0 auto;
-        width: 150px;
+        height: 60px;
+        width: 60px;
       }
     }
 
@@ -142,8 +139,6 @@ header {
         @media (min-width: 1300px) {
           top: -20%;
         }
-        min-width: 100%;
-        min-height: 100%;
       }
 
       .article-heading {
@@ -163,12 +158,12 @@ header {
           }
         }
 
-        h1 {
+        h1, h2, h3, h4, h5, h6 {
           margin-left: 12px;
-          font-size: 50px;
+          font-size: $largeHeading;
           font-weight: 500;
           text-align: left;
-          text-transform: none;
+          text-transform: lowercase;
         }
 
         .nerd {
@@ -201,12 +196,8 @@ header {
       	bottom: 0;
       	left: 0;
       	right: 0;
-        background-color: transparent;
-        background-image: linear-gradient(rgba(65, 99, 117, 0.8), rgba(65, 99, 117, 0.8));
-      	-moz-transition: background .3s linear;
-      	-webkit-transition: background .3s linear;
-      	-o-transition: background .3s linear;
-      	transition: background .3s linear;
+        background-color: $brand-primary;
+        opacity: .85;
         z-index: 1;
       }
     }
@@ -281,18 +272,6 @@ header.home {
 
 .tg-logo-inverse{
   display: none;
-}
-
-
-//different menu styling for blog
-.navbar.navbar-inverse.blog .navbar-nav > li > a {
-  color: $white;
-  &:hover{
-    color: $white;
-  }
-}
-.navbar-inverse.blog ul.navbar-nav li.divider-vertical{
-      border-right: 1px solid #fff;
 }
 
 
