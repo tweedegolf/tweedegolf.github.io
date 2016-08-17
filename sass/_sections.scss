@@ -281,60 +281,6 @@ header.home {
   display: none;
 }
 
-
-//different menu styling for 3d framework
-.navbar-inverse.framework{
-  .tg-logo-inverse{
-    display: block;
-  }
-  .tg-logo{
-    display: none;
-  }
-}
-.navbar-inverse.framework .navbar-nav > li{
-  > a {
-    color: #bbb;
-    background: none;
-    //color: #fff;
-    &:hover{
-      background: none;
-      color: #000;
-    }
-  }
-  &.active{
-    a{
-      color: #000;
-    }
-  }
-}
-.navbar-inverse.framework ul.navbar-nav li.divider-vertical{
-      border-right: 1px solid #bbb;
-}
-
-
-
-//shrink for blog and framework
-.navbar-inverse.framework.navbar-shrink{
-  .tg-logo-inverse{
-    display: none;
-  }
-  .tg-logo{
-    display: block;
-  }
-}
-
-.navbar.navbar-inverse.blog.navbar-shrink .navbar-nav > li > a,
-.navbar.navbar-inverse.framework.navbar-shrink .navbar-nav > li > a {
-  color: #777777;
-  &:hover{
-    background-color: #000;
-  }
-}
-.navbar-inverse.blog.navbar-shrink ul.navbar-nav li.divider-vertical,
-.navbar-inverse.framework.navbar-shrink ul.navbar-nav li.divider-vertical{
-      border-right: 1px solid $white;
-}
-
 .navbar .divider-vertical {
   height: 30px;
   margin: 10px 5px;
