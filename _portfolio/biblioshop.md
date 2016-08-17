@@ -9,4 +9,3 @@ screens: op-shops.png,op-edu.png,op-projecten.png,op-stats-big.png,op-activiteit
 website: https://biblio-shop.nl/
 ---
 Voor startup Olifantenpaadje ontwikkelden we de cloudapplicatie service biblio-shop.nl, inmiddels in gebruik bij vele bibliotheken, onder meer Delft, Arnhem en Den Bosch.
-{: style="text-align: center"}

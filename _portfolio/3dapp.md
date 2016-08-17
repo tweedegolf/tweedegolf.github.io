@@ -9,4 +9,3 @@ noborders: 1
 ---
 
 3D Model Viewer: iOS app met Dropbox-integratie voor het delen en presenteren van 3D-modellen (COLLADA)  
-{: style="text-align: center"}

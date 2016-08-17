@@ -14,4 +14,3 @@ Hoe maak je korte, overzichtelijke rapporten uit een berg van duizenden document
 
 Voor opdrachtgever [Rijksdienst voor Ondernemend Nederland](http://www.rvo.nl) (RVO) realiseerden we een gebalanceerde oplossing geïntegreerd met Google for Work. Met de tool kunnen vijf soorten korte rapportages worden gemaakt, die makkelijk op externe sites ge-embed kunnen worden.
 Lees meer over de [Google for Work integratie](/google-for-work/#custom-tagging-in-google-drive) binnen deze case.
-{: style="text-align: center"}
