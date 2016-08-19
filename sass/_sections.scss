@@ -385,6 +385,10 @@ section#cases {
       color: $brand-primary;
     }
 
+    p.intro {
+      font-size: $smallText;
+    }
+
     @media (max-width: 766px) {
         p.intro {
             max-width: 360px;
