@@ -370,34 +370,19 @@ section#team {
 
 section#cases {
     padding: 200px 0 100px 0;
-    .star-primary {
-        margin-bottom: 0;
-    }
     .cases-body {
         max-width: 820px;
-        margin-top: 60px;
+        margin-top: 120px;
         margin-bottom: 60px;
         &.one-liner p {
             margin-bottom: 22px;
-            font-size: 20px;
+            font-size: $largeText;
         }
     }
-    h1, h2 {
-      text-transform: uppercase;
-    }
     h3 {
-      color: #333;
-      font-size: 20px;
-      font-weight: 500;
+      font-size: $smallHeading;
       margin: 30px 0 12px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    p {
-      text-align: center;
-      &.intro {
-        font-size: 16px;
-      }
+      color: $brand-primary;
     }
 
     @media (max-width: 766px) {
@@ -405,6 +390,10 @@ section#cases {
             max-width: 360px;
             margin: 0 auto 60px;
         }
+    }
+
+    .cases.row {
+      margin-top: 60px;
     }
 }
 
