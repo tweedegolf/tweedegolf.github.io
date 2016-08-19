@@ -267,7 +267,7 @@ header.home {
     background-color: $white;
   }
 }
-.navbar-shrink {
+.navbar-shrink, .navbar.navbar-fixed-top.framework {
   background-color: $brand-primary;
   .navbar-brand {
     opacity: initial;
