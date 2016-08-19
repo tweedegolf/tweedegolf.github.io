@@ -84,6 +84,7 @@ header {
     .intro-desc {
       text-align: left;
       z-index: 2;
+      width: 100%;
       a, a:active, a:visited {
         color: #fff;
         outline: none;
@@ -143,6 +144,7 @@ header {
       .leadimg {
         position: absolute;
         left: 0;
+        width: 100%;
         @media (min-width: 1300px) {
           top: -20%;
         }
@@ -151,6 +153,7 @@ header {
       .article-heading {
         position: absolute;
         bottom: 40px;
+        width: 100%;
         z-index: 2;
 
         .tags {
