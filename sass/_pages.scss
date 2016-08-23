@@ -1,18 +1,4 @@
-// landing page
-#nav-landing {
-  .navbar-inverse {
-    background-color: transparent;
-  }
-  .navbar-brand {
-    opacity: 0.5;
-  }
-  .navbar-shrink {
-    background-color: #222;
-    .navbar-brand {
-      opacity: initial;
-    }
-  }
-}
+
 header.landing {
   @media (min-width: 1300px) {
     background-position: center -50px;
@@ -22,7 +8,7 @@ header.landing {
     padding-bottom: 0;
   }
   &:before {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba($brand-primary, 0.95);
   }
   .icon-header {
     background-repeat: no-repeat;
@@ -72,6 +58,7 @@ header.google.landing {
     display: block;
     height: 56px;
     width: 56px;
+    opacity: .5; // Turn em gray
     &.calendar {
       background-image: url("/assets/img/icon-calendar.png");
     }
@@ -224,28 +211,6 @@ header.google.landing {
     width: 16px;
   }
 }
-footer.landing {
-  .footer-above {
-    background-color: #333;
-    .footer-col {
-      opacity: 0.5;
-      &:hover p, &:hover a {
-        opacity: 1;
-      }
-    }
-    h6 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-  }
-  .footer-below {
-    background-color: #222;
-    p {
-      font-size: 13px;
-      opacity: 0.5;
-    }
-  }
-}
 
 .master.process {
   h1, h2, h3, h4, h5, h6, p, li {
@@ -271,7 +236,7 @@ footer.landing {
       font-size: 18px;
     }
     &::before { // colourised overlay
-      background-color: rgba(31,18,10,.85);
+      background-color: rgba($brand-primary,.85);
     }
   }
   #billing {
