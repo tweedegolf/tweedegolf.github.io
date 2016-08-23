@@ -49,9 +49,6 @@ header.google.landing, header.symfony.landing {
 }
 
 .landing, .case, .testimonials {
-  p a, p a:hover, p a:focus, p a:active, p a.active {
-    color: #0af; // symfony blue
-  }
   .icon {
     background-repeat: no-repeat;
     background-size: contain;
@@ -171,7 +168,7 @@ header.google.landing, header.symfony.landing {
       line-height: 28px;
     }
     .more {
-      color: #0af; // symfony blue
+      color: $brand-primary; // symfony blue
       cursor: pointer;
       display: inline-block;
       float: right;
