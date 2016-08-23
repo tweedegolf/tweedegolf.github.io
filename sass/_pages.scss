@@ -256,19 +256,34 @@ header.process {
       display: inline-block;
     }
     .icon-draw {
-      background-image: url("/assets/img/icon-appdraw.png");
+      // background-image: url("/assets/img/icon-appdraw.png");
       height: 108px;
       width: 95px;
+      &:before {
+        color: $brand-primary;
+        font: normal normal normal 100px/1 "MaterialDesignIcons";
+        content: mdi('pencil');
+      }
     }
     .icon-flow {
-      background-image: url("/assets/img/icon-appflow.png");
+      // background-image: url("/assets/img/icon-appflow.png");
       height: 108px;
       width: 84px;
+      &:before {
+        color: $brand-primary;
+        font: normal normal normal 100px/1 "MaterialDesignIcons";
+        content: mdi('cloud');
+      }
     }
     .icon-chart {
-      background-image: url("/assets/img/icon-appchart.png");
+      // background-image: url("/assets/img/icon-appchart.png");
       height: 108px;
       width: 91px;
+      &:before {
+        color: $brand-primary;
+        font: normal normal normal 100px/1 "MaterialDesignIcons";
+        content: mdi('file-document-box');
+      }
     }
     p {
       text-align: center;
