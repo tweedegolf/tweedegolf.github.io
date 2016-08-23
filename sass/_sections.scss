@@ -265,7 +265,7 @@ header.home {
 .navbar.navbar-fixed-top.navbar-inverse.navbar-shrink{
   background-color: $brand-primary;
   .page-scroll.active a{
-    background-color: $white;
+    background-color: transparent;
   }
 }
 .navbar-shrink, .navbar.navbar-fixed-top.framework {
