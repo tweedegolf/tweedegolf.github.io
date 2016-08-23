@@ -56,6 +56,12 @@ header.landing {
   }
 }
 
+header.google.landing {
+  .intro-desc {
+    text-align: center;
+  }
+}
+
 .landing, .case, .testimonials {
   p a, p a:hover, p a:focus, p a:active, p a.active {
     color: #0af; // symfony blue
