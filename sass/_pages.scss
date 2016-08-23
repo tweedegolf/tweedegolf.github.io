@@ -290,6 +290,7 @@ header.process {
     }
   }
   .explanatory {
+    background-color: darken($brand-primary, .85);
     padding: 80px 0 48px;
     a {
       color: #fff;
@@ -308,11 +309,11 @@ header.process {
     }
   }
   #phases {
-    background-color: #2D477F;
+    background-color: $brand-primary;
     padding: 0;
     position: relative;
     &:after { // wrap with explanatory, space for indicators
-      background-color: #233864;
+      background-color: darken($brand-primary, .85);
       content: "";
       display: block;
       height: 60px;
@@ -336,7 +337,7 @@ header.process {
         height: 100%;
         width: 45%;
         .phase {
-          background-color: #59759E;
+          background-color: lighten($brand-primary, .85);
           color: white;
           font-size: 70px;
           height: 110px;
