@@ -249,6 +249,7 @@ header.process {
       text-align: center;
     }
   }
+
   #examples {
     background-color: $brightGray;
     padding: 60px 0 60px;
@@ -451,7 +452,12 @@ header.process {
     }
   }
   .info {
-    padding: 100px 0;
+    padding: 60px 0;
+
+    &.second {
+      background-color: $brightGray;
+    }
+
     .main {
       margin-right: 40px;
       h2 {
