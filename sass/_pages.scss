@@ -290,7 +290,6 @@ header.process {
     }
   }
   .explanatory {
-    background-color: darken($brand-primary, .7);
     padding: 80px 0 48px;
     a {
       color: #fff;
@@ -433,7 +432,7 @@ header.process {
     }
   }
   .info {
-    background-color: #F6F4EE;
+    background-color: $brightGray;
     color: #554C45;
     padding: 100px 0;
     .main {
