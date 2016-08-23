@@ -249,7 +249,6 @@ header.process {
     }
   }
   #examples {
-    background-color: $brightGray;
     padding: 60px 0 60px;
     span[class^="icon-"], span[class*="icon-"] {
       background-repeat: no-repeat;
@@ -291,6 +290,7 @@ header.process {
     }
   }
   .explanatory {
+    background-color: darken($brand-primary, .7);
     padding: 80px 0 48px;
     a {
       color: #fff;
