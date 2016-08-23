@@ -154,6 +154,27 @@ header {
         z-index: 2;
         max-width: 700px;
 
+        &.overview {
+          left: 50%;
+          margin-left: -350px;
+
+          h1, h2, h3 {
+            text-align: center;
+          }
+
+          .intro-desc {
+            text-align: center;
+
+            .separator {
+              margin: 24px auto;
+            }
+
+            .icon-research {
+              margin: 0 auto;
+            }
+          }
+        }
+
         .tags {
           font-size: 14px;
           font-weight: 300;
