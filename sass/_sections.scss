@@ -142,6 +142,7 @@ header {
         position: absolute;
         left: 0;
         width: 100%;
+        min-width: 700px; // Prevent it from getting too small on mobile
         @media (min-width: 1300px) {
           top: -20%;
         }
