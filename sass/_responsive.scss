@@ -114,34 +114,34 @@
 
 
   .sectionHeading {
-    font-size: $largeHeading * $mobileMultiplier;
+    font-size: $largeHeading * $mobileHeadingMultiplier;
   }
 
   .textHeading {
-    font-size: $mediumHeading * $mobileMultiplier;
+    font-size: $mediumHeading * $mobileHeadingMultiplier;
   }
 
   .textSubHeading {
-    font-size: $smallHeading * $mobileMultiplier;
+    font-size: $smallHeading * $mobileHeadingMultiplier;
   }
 
   .smallestHeading {
-    font-size: $tinyHeading * $mobileMultiplier;
+    font-size: $tinyHeading * $mobileHeadingMultiplier;
   }
 
   .introText {
-    font-size: $largeText * $mobileMultiplier;
+    font-size: $largeText * $mobileTextMultiplier;
   }
 
   .paragraphText {
-    font-size: $mediumText * $mobileMultiplier;
+    font-size: $mediumText * $mobileTextMultiplier;
   }
 
   .metaText {
-    font-size: $smallText * $mobileMultiplier;
+    font-size: $smallText * $mobileTextMultiplier;
   }
 
   .metaSubText {
-    font-size: $tinyText * $mobileMultiplier;
+    font-size: $tinyText * $mobileTextMultiplier;
   }
 }
