@@ -111,4 +111,37 @@
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: $brand-primary;
   }
+
+
+  .sectionHeading {
+    font-size: $largeHeading * $mobileMultiplier;
+  }
+
+  .textHeading {
+    font-size: $mediumHeading * $mobileMultiplier;
+  }
+
+  .textSubHeading {
+    font-size: $smallHeading * $mobileMultiplier;
+  }
+
+  .smallestHeading {
+    font-size: $tinyHeading * $mobileMultiplier;
+  }
+
+  .introText {
+    font-size: $largeText * $mobileMultiplier;
+  }
+
+  .paragraphText {
+    font-size: $mediumText * $mobileMultiplier;
+  }
+
+  .metaText {
+    font-size: $smallText * $mobileMultiplier;
+  }
+
+  .metaSubText {
+    font-size: $tinyText * $mobileMultiplier;
+  }
 }
