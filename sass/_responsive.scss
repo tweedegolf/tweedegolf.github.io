@@ -144,4 +144,10 @@
   .metaSubText {
     font-size: $tinyText * $mobileTextMultiplier;
   }
+
+  // Hotfix for process slider
+  .master.process #phases .carousel .carousel-caption {
+    left: 0;
+    top: 13%;
+  }
 }
