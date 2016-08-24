@@ -281,6 +281,7 @@ header.process {
       // background-image: url("/assets/img/icon-appchart.png");
       height: 108px;
       width: 91px;
+      transform: rotate(-90deg);
       &:before {
         color: $brand-primary;
         font: normal normal normal 100px/1 "MaterialDesignIcons";
