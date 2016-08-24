@@ -58,6 +58,10 @@
   font-size: $smallHeading;
 }
 
+.smallestHeading {
+  font-size: $tinyHeading;
+}
+
 .introText {
   font-size: $largeText;
 }
@@ -68,4 +72,8 @@
 
 .metaText {
   font-size: $smallText;
+}
+
+.metaSubText {
+  font-size: $tinyText;
 }

@@ -1,7 +1,7 @@
 article {
 
   h2, h3, h4, h5, h6 {
-    font-size: $smallHeading;
+    @extend .textSubHeading;
     margin-top: 32px;
     margin-bottom: 16px;
     text-transform: none;
@@ -35,14 +35,14 @@ article {
     & + em, & + p { // nearest following em or p which should contain caption text
       color: #888;
       display: block;
-      font-size: 13px;
+      @extend .metaSubText;
       margin-bottom: 36px;
       text-align: center;
     }
   }
 
   .footnotes {
-    font-size: 13px;
+    @extend .metaSubText;
     font-style: italic;
   }
 }
@@ -91,7 +91,7 @@ header {
         }
       }
       p {
-        font-size: 20px;
+        @extend .paragraphText;
       }
       p .research {
         display: inline-block;
@@ -189,7 +189,7 @@ header {
 
         h1, h2, h3, h4, h5, h6 {
           margin-left: 12px;
-          font-size: $largeHeading;
+          @extend .sectionHeading;
           font-weight: 500;
           text-align: left;
           text-transform: lowercase;
@@ -325,7 +325,7 @@ section {
 
   h1, h2, h3, h4, h5, h6 {
     color: $brand-primary;
-    font-size: $largeHeading;
+    @extend .sectionHeading;
     text-transform: lowercase;
   }
 
@@ -333,7 +333,7 @@ section {
 
     h1, h2, h3, h4, h5, h6 {
       color: $brand-primary;
-      font-size: $mediumHeading;
+      @extend .textHeading;
     }
   }
 }
@@ -368,7 +368,7 @@ section#about {
     text-align: center;
     .number {
       font-family: monospace;
-      font-size: $massiveFont;
+      @extend .textHeading;
       font-weight: bold;
       color: $brand-primary;
       display: inline-block;
@@ -652,7 +652,7 @@ footer {
                 font-size: $smallText;
             }
             .separator {
-                font-size: 13px;
+                @extend .metaSubText;
                 margin: 0 6px 0 12px;
             }
             a .fa {
