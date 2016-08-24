@@ -95,7 +95,7 @@ header {
       }
       p .research {
         display: inline-block;
-        font-size: 14px;
+        @extend .metaText;
         line-height: 1.5em;
       }
       .separator {
@@ -176,7 +176,7 @@ header {
         }
 
         .tags {
-          font-size: 14px;
+          @extend .metaText;
           font-weight: 300;
           text-align: left;
           text-transform: uppercase;
@@ -252,7 +252,7 @@ header.home {
 }
 
 .navbar {
-  font-size: $smallFont;
+  @extend .metaText;
   font-weight: 300;
   text-transform: lowercase;
   a:focus {
@@ -401,18 +401,18 @@ section#cases {
         margin-bottom: 60px;
         &.one-liner p {
             margin-bottom: 22px;
-            font-size: $largeText;
+            @extend .introText;
         }
     }
     h3 {
-      font-size: $smallHeading;
+      @extend .textSubHeading;
       margin: 30px 0 12px;
       color: $brand-primary;
       max-width: 360px;
     }
 
     p.intro {
-      font-size: $smallText;
+      @extend .paragraphText;
     }
 
     @media (max-width: 766px) {
@@ -474,7 +474,7 @@ section#contact {
 
   .tags {
     float: left;
-    font-size: 11px;
+    @extend .metaSubText;
     font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -501,7 +501,7 @@ section#contact {
 
   h3 {
     text-transform: none;
-    font-size: 26px;
+    @extend .textSubHeading;
     font-weight: bold;
     margin: 0;
     padding: 6px 0;
@@ -627,17 +627,17 @@ footer {
             list-style-type: none;
             padding-left: 0;
             li {
-                font-size: $smallText;
+                @extend .metaText;
                 span {
                     text-transform: lowercase;
-                    font-size: $smallText;
+                    @extend .metaText;
                 }
             }
         }
         .item-details.tags {
             position: relative;
             margin: 20px 0 40px;
-            font-size: $smallText;
+            @extend .metaText;
             text-transform: lowercase;
             .fa {
                 font-size: 15px;
@@ -646,10 +646,10 @@ footer {
             }
         }
         .case {
-            font-size: $smallText;
+            @extend .metaText;
             strong {
                 text-transform: none;
-                font-size: $smallText;
+                @extend .metaText;
             }
             .separator {
                 @extend .metaSubText;

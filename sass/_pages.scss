@@ -358,7 +358,7 @@ header.process {
         .phase {
           background-color: lighten($brand-primary, 2%);
           color: white;
-          font-size: 70px;
+          @extend .sectionHeading;
           height: 110px;
           left: 0;
           line-height: 110px;
@@ -410,7 +410,7 @@ header.process {
           @extend .metaText;
         }
         p {
-          font-size: 16px;
+          @extend .metaText;
         }
       }
       .carousel-control {
@@ -462,7 +462,7 @@ header.process {
     .main {
       margin-right: 40px;
       h2 {
-        font-size: 48px;
+        @extend .sectionHeading;
         line-height: 56px;
         margin-bottom: 26px;
       }
@@ -484,7 +484,7 @@ header.process {
         margin-top: 0px;
       }
       p {
-        font-size: 16px;
+        @extend .metaText;
       }
     }
     [class*="content-min"] {
