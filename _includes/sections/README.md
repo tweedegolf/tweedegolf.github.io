@@ -11,7 +11,10 @@ You could include a call to action (`call-to-action.html`) with your own custom 
 {% capture cta-btn-text %}Contact us{% endcapture %}
 {% capture cta-btn-link %}/#contact{% endcapture %}
 
-{% include sections/call-to-action.html cta-text=page.cta-text cta-btn-text=page.cta-btn-text %}
+{% include sections/call-to-action.html
+  cta-text=page.cta-text
+  cta-btn-text=page.cta-btn-text
+  cta-btn-link=page.cta-btn-text %}
 ```
 
 ## Call to action
