@@ -5,25 +5,25 @@
         <span class="icon">
           <img />
         </span>
-        {% capture main %}{% include texts/google-for-work/power_of_google_apps.md %}{% endcapture %}
+        <h2>{{ title }}</h2>
         {{ main|markdownify }}
       </div>
       <div class="col-sm-6">
         <div class="text1">
           <span class="icon">
-            <img />
+            <img src="{{ img1 }}" />
           </span>
           {{ text1|markdownify }}
         </div>
         <div class="text2">
           <span class="icon">
-            <img />
+            <img src="{{ img2 }}" />
           </span>
           {{ text2|markdownify }}
         </div>
         <div class="text3">
           <span class="icon">
-            <img />
+            <img src="{{ img3 }}" />
           </span>
           {{ text3|markdownify }}
         </div>

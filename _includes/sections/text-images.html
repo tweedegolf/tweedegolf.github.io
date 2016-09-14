@@ -1,21 +1,25 @@
-<section class="text-images">
+<section class="case">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <span class="icon">
-          <img />
-        </span>
-        {{ intro|markdownify }}
+        <div class="main" name="main">
+          <div><strong>Case 1:</strong> Blok voor Blok</div>
+          {% capture case_1_intro %}{% include texts/google-for-work/case_1_intro.md %}{% endcapture %}
+          {{ case_1_intro|markdownify }}
+        </div>
       </div>
       <div class="col-sm-6">
-        <div class="img1">
-          <img />
+        <!-- todo: put in relevant screens -->
+        <div class="screen" id="screen-bvb-1">
+          <img src="/assets/img/google-for-work/bvb_comment.png" class="img-responsive img-centered" alt="Screenshot 1 Blok voor Blok"/>
         </div>
-        <div class="img2">
-          <img />
+
+        <div class="screen" id="screen-bvb-2">
+          <img src="/assets/img/google-for-work/bvb_fragmenten.png" class="img-responsive img-centered" alt="Screenshot 2 Blok voor Blok"/>
         </div>
-        <div class="img3">
-          <img />
+
+        <div class="screen" id="screen-bvb-3">
+          <img src="/assets/img/google-for-work/bvb_report.png" class="img-responsive img-centered" alt="Screenshot 3 Blok voor Blok" />
         </div>
       </div>
     </div>

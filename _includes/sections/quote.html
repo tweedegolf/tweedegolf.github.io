@@ -1,9 +1,13 @@
 <section class="quote">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        {{ quote|markdownify }}
-        <span class="author">{{ author }}</span>
+      <div class="col-md-8 col-md-offset-2">
+        <blockquote class="testimonial">
+          <span class="icon quote"></span>
+          {{ quote|markdownify }}
+          <span class="author">{{ author }}</span>
+        </blockquote>
+        </div>
       </div>
     </div>
   </div>
