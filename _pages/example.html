@@ -5,4 +5,25 @@ title: Example generic landing page
 intro: With a great intro.
 ---
 
-{% include sections/images.html %}
+{% capture intro %}
+  {% include texts/google-for-work/power_of_google_apps.md %}
+{% endcapture %}
+
+{% capture text1 %}
+  You could also just capture a plain string of text.
+{% endcapture %}
+
+{% capture text2 %}
+  You could also just capture a plain string of text.
+{% endcapture %}
+
+{% capture text3 %}
+  You could also just capture a plain string of text.
+{% endcapture %}
+
+{% include sections/dual-text.html
+  intro=page.intro
+  text1=page.text1
+  text2=page.text2
+  text3=page.text3
+%}

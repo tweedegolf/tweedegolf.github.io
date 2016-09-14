@@ -5,6 +5,10 @@
         <span class="icon">
           <img />
         </span>
+        {% capture my_include %}
+          {{ intro }}
+        {% endcapture %}
+        {{ my_include | markdownify }}
         {{ intro|markdownify }}
       </div>
       <div class="col-sm-6">
