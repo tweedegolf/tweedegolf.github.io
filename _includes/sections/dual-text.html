@@ -5,11 +5,8 @@
         <span class="icon">
           <img />
         </span>
-        {% capture my_include %}
-          {{ intro }}
-        {% endcapture %}
-        {{ my_include | markdownify }}
-        {{ intro|markdownify }}
+        {% capture main %}{% include texts/google-for-work/power_of_google_apps.md %}{% endcapture %}
+        {{ main|markdownify }}
       </div>
       <div class="col-sm-6">
         <div class="text1">
