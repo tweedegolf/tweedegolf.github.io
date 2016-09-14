@@ -1,0 +1,84 @@
+<section class="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="carousel-phases" class="carousel slide" data-interval="false">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-phases" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-phases" data-slide-to="1"></li>
+            <li data-target="#carousel-phases" data-slide-to="2"></li>
+            <li data-target="#carousel-phases" data-slide-to="3"></li>
+            <li data-target="#carousel-phases" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-visual">
+                <span class="phase">1/5</span>
+                <span class="icon discovery"></span>
+              </div>
+              <div class="carousel-caption">
+                {% capture step_1 %}{% include /texts/proces/step_1.md %}{% endcapture %}
+                {{ step_1|markdownify }}
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-visual">
+                <span class="phase">2/5</span>
+                <span class="icon design"></span>
+              </div>
+              <div class="carousel-caption">
+                {% capture step_2 %}{% include /texts/proces/step_2.md %}{% endcapture %}
+                {{ step_2|markdownify }}
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-visual">
+                <span class="phase">3/5</span>
+                <span class="icon development"></span>
+              </div>
+              <div class="carousel-caption">
+                {% capture step_3 %}{% include /texts/proces/step_3.md %}{% endcapture %}
+                {{ step_3|markdownify }}
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-visual">
+                <span class="phase">4/5</span>
+                <span class="icon release"></span>
+              </div>
+              <div class="carousel-caption">
+                {% capture step_4 %}{% include /texts/proces/step_4.md %}{% endcapture %}
+                {{ step_4|markdownify }}
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-visual">
+                <span class="phase">5/5</span>
+                <span class="icon improvements"></span>
+              </div>
+              <div class="carousel-caption">
+                {% capture step_5 %}{% include /texts/proces/step_5.md %}{% endcapture %}
+                {{ step_5|markdownify }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-phases" role="button" data-slide="prev">
+            <span class="previous button" aria-hidden="true"></span>
+            <span class="sr-only">Vorige</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-phases" role="button" data-slide="next">
+            <span class="next button" aria-hidden="true"></span>
+            <span class="sr-only">Volgende</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
