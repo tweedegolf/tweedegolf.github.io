@@ -5,7 +5,9 @@
         <span class="icon">
           test: {{ page.swag }}<br />
           test: {{ page.arraytest.title }}<br />
-          test: {{ include.includetest.title }}
+          test dot: {{ include.includetest.title }}<br />
+          test bracket: {{ include[includetest].title }}<br />
+          include: {{ include }}
         </span>
         <h2>{{ include.dual-text.title }}</h2>
         {{ include.dual-text.lead }}
