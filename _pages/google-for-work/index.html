@@ -8,13 +8,11 @@ permalink: google-for-work/
 contact: Hugo
 about: Google for Work bij tweede golf
 contact_ok_link: //tweedegolf.nl/google-for-work/#contact-ok
-
-lead1: this is a lead
 ---
 
 {% assign text1-title = "De kracht van Google's Apps benutten" %}
 
-{% capture sometext %}
+{% capture lead2 %}
   {% include_relative texts/text1-intro.md %}
 {% endcapture %}
 
@@ -30,14 +28,13 @@ lead1: this is a lead
   {% include texts/google-for-work/integration_advantage_3.md %}
 {% endcapture %}
 
-{{ page.lead1 }}
-
 {% include sections/dual-text.html
   title=page.text1-title
-  lead=page.lead1
+  lead=page.lead2
   text1=page.text1
   text2=page.text2
   text3=page.text3
+  test="ohaider"
 %}
 
 
