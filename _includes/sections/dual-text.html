@@ -5,28 +5,27 @@
         <span class="icon">
 
         </span>
-        <h2>{% if title %}{{ title }}{% endif %}</h2>
-        {% if lead %}{{ lead|markdownify }}{% endif %}
+        <h2>{{ include.title }}</h2>
+        {{ include.lead|markdownify }}
       </div>
       <div class="col-sm-6">
         <div class="text1">
           <span class="icon">
 
           </span>
-          TEST: {{ include.test }}
-          {% if text1 %}{{ text1|markdownify }}{% endif %}
+          {{ include.text1|markdownify }}
         </div>
         <div class="text2">
           <span class="icon">
 
           </span>
-          {% if text2 %}{{ text2|markdownify }}{% endif %}
+          {{ include.text2|markdownify }}
         </div>
         <div class="text3">
           <span class="icon">
 
           </span>
-          {% if text3 %}{{ text3|markdownify }}{% endif %}
+          {{ include.text3|markdownify }}
         </div>
       </div>
     </div>
