@@ -10,6 +10,32 @@ about: Google for Work bij tweede golf
 contact_ok_link: //tweedegolf.nl/google-for-work/#contact-ok
 ---
 
+{% capture intro %}
+  {% include texts/google-for-work/power_of_google_apps.md %}
+{% endcapture %}
+
+{% capture text1 %}
+  {% include texts/google-for-work/integration_advantage_1.md %}
+{% endcapture %}
+
+{% capture text2 %}
+  {% include texts/google-for-work/integration_advantage_2.md %}
+{% endcapture %}
+
+{% capture text3 %}
+  {% include texts/google-for-work/integration_advantage_3.md %}
+{% endcapture %}
+
+{% include sections/dual-text.html
+  intro=page.intro
+  text1=page.text1
+  text2=page.text2
+  text3=page.text3
+%}
+
+
+
+
 <section id="landing" class="landing">
   <div class="container">
     <div class="row">
