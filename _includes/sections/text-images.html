@@ -9,6 +9,9 @@
               <img src="{{ include.text-images.icon }}" alt="icon" />
             </span>
           {% endif %}
+          {% if include.text-images.subtitle %}
+            {{ include.text-images.subtitle|markdownify }}
+          {% endif %}
           {% capture lead %}
             {% include {{ include.text-images.lead }} %}
           {% endcapture %}
@@ -17,9 +20,6 @@
       </div>
 
       <div class="col-sm-6">
-        {% if include.text-images.subtitle %}
-          {{ include.text-images.subtitle|markdownify }}
-        {% endif %}
         {% if include.text-images.img1 %}
           <div class="img">
             <img

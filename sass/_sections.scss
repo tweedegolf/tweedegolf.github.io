@@ -428,7 +428,7 @@ section#contact {
   background-color: $brightGray;
 }
 
-.landing, .case, .testimonials, .dual-text {
+.landing, .case, .testimonials, .dual-text, .text-images {
   .icon {
     background-repeat: no-repeat;
     background-size: contain;
@@ -570,6 +570,12 @@ section#contact {
     }
     cite {
       float: right;
+    }
+  }
+  div.img {
+    margin-bottom: 40px;
+    img {
+      max-width: 100%;
     }
   }
 }

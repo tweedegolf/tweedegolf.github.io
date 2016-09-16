@@ -9,6 +9,9 @@
               <img src="{{ include.dual-text.icon }}" alt="icon" />
             </span>
           {% endif %}
+          {% if include.dual-text.subtitle %}
+            {{ include.dual-text.subtitle|markdownify }}
+          {% endif %}
           {% capture lead %}
             {% include {{ include.dual-text.lead }} %}
           {% endcapture %}
@@ -17,9 +20,6 @@
       </div>
 
       <div class="col-sm-6">
-        {% if include.dual-text.subtitle %}
-          {{ include.dual-text.subtitle|markdownify }}
-        {% endif %}
         {% if include.dual-text.text1 %}
           <div class="text">
             <span class="icon">
