@@ -5,27 +5,27 @@
         <span class="icon">
 
         </span>
-
-        {{ intro|markdownify }}
+        <h2>{% if title %}{{ title }}{% endif %}</h2>
+        {% if lead %}{{ lead|markdownify }}{% endif %}
       </div>
       <div class="col-sm-6">
         <div class="text1">
           <span class="icon">
 
           </span>
-          {{ text1|markdownify }}
+          {% if text1 %}{{ text1|markdownify }}{% endif %}
         </div>
         <div class="text2">
           <span class="icon">
 
           </span>
-          {{ text2|markdownify }}
+          {% if text2 %}{{ text2|markdownify }}{% endif %}
         </div>
         <div class="text3">
           <span class="icon">
 
           </span>
-          {{ text3|markdownify }}
+          {% if text3 %}{{ text3|markdownify }}{% endif %}
         </div>
       </div>
     </div>
