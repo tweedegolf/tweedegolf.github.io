@@ -29,16 +29,22 @@ header.landing {
     background-image: url("/assets/img/apps-for-work-social-icon.png");
   }
 
-  .img-header {
-    max-width: 200px;
-    max-height: 200px;
+  .img-header img {
+    max-width: 150px;
+    max-height: 150px;
   }
 
   h1, h2, h3 {
     text-transform: none;
+    text-align: center;
+    @extend .textHeading;
   }
-  .desc p {
-    @extend .metaText;
+  p.intro {
+    @extend .introText;
+    text-align: center;
+  }
+  .page-scroll {
+    text-align: center;
   }
   .tocontent {
     display: inline-block;
