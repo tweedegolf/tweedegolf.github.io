@@ -35,7 +35,7 @@ call-to-action1:
 text-images1:
   class: dark-bg
   subtitle: "**Case 1:** Blok voor Blok"
-  title: Custom taggin in Google Drive
+  title: Custom tagging in Google Drive
   lead: texts/google-for-work/lead2.md
   img1:
     src: /assets/img/google-for-work/bvb_comment.png
@@ -46,6 +46,17 @@ text-images1:
   img3:
     src: /assets/img/google-for-work/bvb_report.png
     alt: "Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand"
+
+text-images2:
+  subtitle: "**Case 2:** Askja Prijsbeheer"
+  title: Google Sheets integratie voor prijsbeheer
+  lead: texts/google-for-work/lead3.md
+  img1:
+    src: /assets/img/google-for-work/askja_addon.png
+    alt: "Koppeling tussen het door ons ontwikkelde back-office systeem en Google Sheets"
+  img2:
+    src: /assets/img/google-for-work/askja-2016.jpg
+    alt: "Automatische controle en validatie van de data uit de sheets; met één druk op de knop importeren"
 ---
 
 {% include sections/dual-text.html
@@ -60,55 +71,6 @@ text-images1:
   text-images=page.text-images1
 %}
 
-<section class="case">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="main" name="main">
-          <div><strong>Case 1:</strong> Blok voor Blok</div>
-          {% capture case_1_intro %}{% include texts/google-for-work/case_1_intro.md %}{% endcapture %}
-          {{ case_1_intro|markdownify }}
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <!-- todo: put in relevant screens -->
-        <div class="screen" id="screen-bvb-1">
-          <img src="/assets/img/google-for-work/bvb_comment.png" class="img-responsive img-centered" alt="Screenshot 1 Blok voor Blok"/>
-        </div>
-
-        <div class="screen" id="screen-bvb-2">
-          <img src="/assets/img/google-for-work/bvb_fragmenten.png" class="img-responsive img-centered" alt="Screenshot 2 Blok voor Blok"/>
-        </div>
-
-        <div class="screen" id="screen-bvb-3">
-          <img src="/assets/img/google-for-work/bvb_report.png" class="img-responsive img-centered" alt="Screenshot 3 Blok voor Blok" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="case">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="main" name="main">
-          <div><strong>Case 2:</strong> Askja Prijsbeheer</div>
-          {% capture case_2_intro %}{% include texts/google-for-work/case_2_intro.md %}{% endcapture %}
-          {{ case_2_intro|markdownify }}
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <!-- todo: put in relevant screens -->
-        <div class="screen" id="askja-screen-1">
-          <img src="/assets/img/google-for-work/askja_addon.png" class="img-responsive img-centered" alt="Screenshot 1 Askja" />
-        </div>
-
-        <!-- todo: put in relevant screens -->
-        <div class="screen" id="askja-screen-2">
-          <img src="/assets/img/google-for-work/askja-2016.jpg" class="img-responsive img-centered" alt="Screenshot 2 Askja" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/text-images.html
+  text-images=page.text-images2
+%}
