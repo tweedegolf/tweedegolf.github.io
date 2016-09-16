@@ -880,3 +880,9 @@ footer {
         text-style: justify;
     }
 }
+
+.cta {
+  &.lightweight {
+    padding-top: 0;
+  }
+}

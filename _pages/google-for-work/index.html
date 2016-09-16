@@ -1,6 +1,7 @@
 ---
 permalink: /google-for-work/
 layout: landing
+pageclass: google-for-work
 image: /assets/img/apps-for-work-social-icon.png
 title: Integratie met Google for Work
 intro: Een custom web app die de kracht van Google Drive benut? Wij bouwen naadloze integraties met onder andere Google Drive, Sheets en Calendar.
@@ -25,10 +26,19 @@ dual-text1:
     icon: /assets/img/icon-scale.png
     title: Lichtgewicht software
     text: "De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. Dit betekent minder complexiteit, gemakkelijker onderhoud en lagere kosten."
+
+call-to-action1:
+  class: lightweight
+  button-link: ./#contact-ok
+  button-text: Neem contact op
 ---
 
 {% include sections/dual-text.html
   dual-text=page.dual-text1
+%}
+
+{% include sections/call-to-action.html
+  cta=page.call-to-action1
 %}
 
 <section class="case">

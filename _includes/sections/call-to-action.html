@@ -1,10 +1,18 @@
-<section class="cta">
+<section class="cta {% if include.cta.class %}{{ include.cta.class }}{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <div class="cases-body center-block one-liner">
-            <p>{{ quote|markdownify }}</p>
-          <a class="btn btn-lg btn-primary" href="/#contact">{{ author }}</a>
+        <div class="center-block">
+          {% if include.cta.text %}
+            <p>{{ include.cta.text|markdownify }}</p>
+          {% endif %}
+          {% if include.cta.button-link %}
+            <a
+              class="btn btn-lg btn-primary"
+              href="{{ include.button-link }}">
+              {{ include.cta.button-text }}
+            </a>
+          {% endif %}
         </div>
       </div>
     </div>

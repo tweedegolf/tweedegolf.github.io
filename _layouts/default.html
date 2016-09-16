@@ -34,7 +34,7 @@
       }
     </script>
   </head>
-  <body id="page-top" class="index">
+  <body id="page-top" class="index {% if page.pageclass %}{{ page.pageclass }}{% endif %}">
     <div id="wrapper">
 
       {{ content }}
