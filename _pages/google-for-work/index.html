@@ -4,44 +4,27 @@ layout: landing
 image: /assets/img/apps-for-work-social-icon.png
 title: Integratie met Google for Work
 intro: Een custom web app die de kracht van Google Drive benut? Wij bouwen naadloze integraties met onder andere Google Drive, Sheets en Calendar.
-permalink: google-for-work/
 contact: Hugo
 about: Google for Work bij tweede golf
 contact_ok_link: //tweedegolf.nl/google-for-work/#contact-ok
 
-swag: "swag"
-
-arraytest:
-  title: "title"
-  lead: "lead"
-  text1: "text1"
-  text2: "text2"
-  text3: "text3"
+dual-text1:
+  title: De kracht van Google's Apps benutten
+  lead: ""
+  text1: "De kracht van Google Apps - *samenwerken en delen* - benutten binnen een custom web app, zonder het wiel opnieuw uit te vinden."
+  text2: "Gebruikers doen een deel van hun werkzaamheden binnen de bekende Google Apps omgeving: de leercurve voor het werken met de custom web app is minder steil."
+  text3: "De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. Dit betekent minder complexiteit, gemakkelijker onderhoud en lagere kosten."
 ---
 
-{% assign text1-title = "De kracht van Google's Apps benutten" %}
-
-{% capture lead2 %}
+{% capture dual-text1-lead %}
   {% include_relative texts/text1-intro.md %}
 {% endcapture %}
 
-{% capture text1 %}
-  {% include texts/google-for-work/integration_advantage_1.md %}
-{% endcapture %}
-
-{% capture text2 %}
-  {% include texts/google-for-work/integration_advantage_2.md %}
-{% endcapture %}
-
-{% capture text3 %}
-  {% include texts/google-for-work/integration_advantage_3.md %}
-{% endcapture %}
+{% assign dual-text1[lead] = dual-text1-lead %}
 
 {% include sections/dual-text.html
-  includetest=page.arraytest
+  dual-text=page.dual-text1
 %}
-
-
 
 
 <section id="landing" class="landing">
