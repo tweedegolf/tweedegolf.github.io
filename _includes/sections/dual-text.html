@@ -20,24 +20,15 @@
       </div>
 
       <div class="col-sm-6">
-        <div class="text1">
-          <span class="icon">
+        {% for text in include.dual-text.texts %}
+          <div class="text">
+            <span class="icon">
 
-          </span>
-
-        </div>
-        <div class="text2">
-          <span class="icon">
-
-          </span>
-
-        </div>
-        <div class="text3">
-          <span class="icon">
-
-          </span>
-
-        </div>
+            </span>
+            full var: {{ text }} <br />
+            print title: {{ text.title }}
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
