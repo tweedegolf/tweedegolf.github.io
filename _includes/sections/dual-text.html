@@ -15,6 +15,9 @@
       </div>
 
       <div class="col-sm-6">
+        {% if include.dual-text.subtitle %}
+          {{ include.dual-text.subtitle|markdownify }}
+        {% endif %}
         {% if include.dual-text.text1 %}
           <div class="text">
             <span class="icon">
