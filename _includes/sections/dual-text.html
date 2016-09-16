@@ -1,22 +1,22 @@
-<section class="dual-text
-  {% if include.dual-text.class %}
-    {{ include.dual-text.class }}
-  {% endif %}">
+<section class="dual-text {% if include.dual-text.class %}{{ include.dual-text.class }}{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <span class="icon">
-          <img src="{{ include.dual-text.icon }}" alt="icon" />
-        </span>
-        {% capture lead %}
-          {% include {{ include.dual-text.lead }} %}
-        {% endcapture %}
-        {{ lead|markdownify }}
+
+        <div class="main">
+          <span class="icon">
+            <img src="{{ include.dual-text.icon }}" alt="icon" />
+          </span>
+          {% capture lead %}
+            {% include {{ include.dual-text.lead }} %}
+          {% endcapture %}
+          {{ lead|markdownify }}
+        </div>
       </div>
 
       <div class="col-sm-6">
         {% if include.dual-text.text1 %}
-          <div class="text1">
+          <div class="text">
             <span class="icon">
               <img src="{{ include.dual-text.text1.icon }}" alt="icon" />
             </span>
@@ -25,7 +25,7 @@
           </div>
         {% endif %}
         {% if include.dual-text.text2 %}
-          <div class="text1">
+          <div class="text">
             <span class="icon">
               <img src="{{ include.dual-text.text2.icon }}" alt="icon" />
             </span>
@@ -34,7 +34,7 @@
           </div>
         {% endif %}
         {% if include.dual-text.text3 %}
-          <div class="text1">
+          <div class="text">
             <span class="icon">
               <img src="{{ include.dual-text.text3.icon }}" alt="icon" />
             </span>
