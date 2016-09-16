@@ -3,31 +3,40 @@
     <div class="row">
       <div class="col-sm-6">
         <span class="icon">
-
+          --- <br />
+          {{ include.dual-text }}<br /><br />
+          --- <br />
+          {{ include.dual-text.texts }}<br /><br />
+          --- <br />
+          {{ include.dual-text.texts.text1 }} <br />
+          --- <br />
+          {{ include.dual-text.texts.text1.text }} <br />
+          ---
         </span>
         {% capture lead %}
           {% include {{ include.dual-text.lead }} %}
         {% endcapture %}
         {{ lead|markdownify }}
       </div>
+
       <div class="col-sm-6">
         <div class="text1">
           <span class="icon">
 
           </span>
-          {{ include.dual-text.text1|markdownify }}
+
         </div>
         <div class="text2">
           <span class="icon">
 
           </span>
-          {{ include.dual-text.text2|markdownify }}
+
         </div>
         <div class="text3">
           <span class="icon">
 
           </span>
-          {{ include.dual-text.text3|markdownify }}
+
         </div>
       </div>
     </div>
