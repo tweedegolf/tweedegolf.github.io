@@ -21,7 +21,7 @@
               <img src="{{ include.dual-text.text1.icon }}" alt="icon" />
             </span>
             <h3>{{ include.dual-text.text1.title }}</h3>
-            {{ include.dual-text.text1.text }}
+            <p>{{ include.dual-text.text1.text|markdownify }}</p>
           </div>
         {% endif %}
         {% if include.dual-text.text2 %}
@@ -30,7 +30,7 @@
               <img src="{{ include.dual-text.text2.icon }}" alt="icon" />
             </span>
             <h3>{{ include.dual-text.text2.title }}</h3>
-            {{ include.dual-text.text2.text }}
+            <p>{{ include.dual-text.text2.text|markdownify }}</p>
           </div>
         {% endif %}
         {% if include.dual-text.text3 %}
@@ -39,7 +39,7 @@
               <img src="{{ include.dual-text.text3.icon }}" alt="icon" />
             </span>
             <h3>{{ include.dual-text.text3.title }}</h3>
-            {{ include.dual-text.text3.text }}
+            <p>{{ include.dual-text.text3.text|markdownify }}</p>
           </div>
         {% endif %}
       </div>
