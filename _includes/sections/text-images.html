@@ -1,26 +1,49 @@
-<section class="case">
+<section class="text-images {% if include.text-images.class %}{{ include.text-images.class }}{% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <div class="main" name="main">
-          <div><strong>Case 1:</strong> Blok voor Blok</div>
-          {% capture case_1_intro %}{% include texts/google-for-work/case_1_intro.md %}{% endcapture %}
-          {{ case_1_intro|markdownify }}
+
+        <div class="main">
+          {% if include.text-images.icon %}
+            <span class="icon">
+              <img src="{{ include.text-images.icon }}" alt="icon" />
+            </span>
+          {% endif %}
+          {% capture lead %}
+            {% include {{ include.text-images.lead }} %}
+          {% endcapture %}
+          {{ lead|markdownify }}
         </div>
       </div>
+
       <div class="col-sm-6">
-        <!-- todo: put in relevant screens -->
-        <div class="screen" id="screen-bvb-1">
-          <img src="/assets/img/google-for-work/bvb_comment.png" class="img-responsive img-centered" alt="Screenshot 1 Blok voor Blok"/>
-        </div>
-
-        <div class="screen" id="screen-bvb-2">
-          <img src="/assets/img/google-for-work/bvb_fragmenten.png" class="img-responsive img-centered" alt="Screenshot 2 Blok voor Blok"/>
-        </div>
-
-        <div class="screen" id="screen-bvb-3">
-          <img src="/assets/img/google-for-work/bvb_report.png" class="img-responsive img-centered" alt="Screenshot 3 Blok voor Blok" />
-        </div>
+        {% if include.text-images.subtitle %}
+          {{ include.text-images.subtitle|markdownify }}
+        {% endif %}
+        {% if include.text-images.img1 %}
+          <div class="img">
+            <img
+              alt="{{ include.text-images.img1.alt }}"
+              src="{{ include.text-images.img1.src }}"
+            />
+          </div>
+        {% endif %}
+        {% if include.text-images.img2 %}
+          <div class="img">
+            <img
+              alt="{{ include.text-images.img2.alt }}"
+              src="{{ include.text-images.img2.src }}"
+            />
+          </div>
+        {% endif %}
+        {% if include.text-images.img3 %}
+          <div class="img">
+            <img
+              alt="{{ include.text-images.img3.alt }}"
+              src="{{ include.text-images.img3.src }}"
+            />
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

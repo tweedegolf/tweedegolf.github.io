@@ -4,9 +4,11 @@
       <div class="col-sm-6">
 
         <div class="main">
-          <span class="icon">
-            <img src="{{ include.dual-text.icon }}" alt="icon" />
-          </span>
+          {% if include.dual-text.icon %}
+            <span class="icon">
+              <img src="{{ include.dual-text.icon }}" alt="icon" />
+            </span>
+          {% endif %}
           {% capture lead %}
             {% include {{ include.dual-text.lead }} %}
           {% endcapture %}

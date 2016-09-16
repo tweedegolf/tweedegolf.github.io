@@ -31,6 +31,21 @@ call-to-action1:
   class: lightweight
   button-link: "#contact"
   button-text: Neem contact op
+
+text-images1:
+  class: dark-bg
+  subtitle: "*Case 1:* Blok voor Blok"
+  title: Custom taggin in Google Drive
+  lead: texts/google-for-work/lead2.md
+  img1:
+    src: /assets/img/google-for-work/bvb_comment.png
+    alt: "Google Drive en Docs om de documenten op te slaan en te delen"
+  img2:
+    src: /assets/img/google-for-work/bvb_fragmenten.png
+    alt: "Integratie van Google Docs in een custom web app om supersnel fragmenten te taggen"
+  img3:
+    src: /assets/img/google-for-work/bvb_report.png
+    alt: "Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand"
 ---
 
 {% include sections/dual-text.html
@@ -39,6 +54,10 @@ call-to-action1:
 
 {% include sections/call-to-action.html
   cta=page.call-to-action1
+%}
+
+{% include sections/text-images.html
+  text-images=page.text-images1
 %}
 
 <section class="case">
