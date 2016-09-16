@@ -1,17 +1,12 @@
-<section class="dual-text">
+<section class="dual-text
+  {% if include.dual-text.class %}
+    {{ include.dual-text.class }}
+  {% endif %}">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
         <span class="icon">
-          --- <br />
-          {{ include.dual-text }}<br /><br />
-          --- <br />
-          {{ include.dual-text.texts }}<br /><br />
-          --- <br />
-          {{ include.dual-text.texts.text1 }} <br />
-          --- <br />
-          {{ include.dual-text.texts.text1.text }} <br />
-          ---
+          <img src="{{ include.dual-text.icon }}" alt="icon" />
         </span>
         {% capture lead %}
           {% include {{ include.dual-text.lead }} %}
@@ -20,24 +15,33 @@
       </div>
 
       <div class="col-sm-6">
-        <div class="text1">
-          <span class="icon">
-
-          </span>
-
-        </div>
-        <div class="text2">
-          <span class="icon">
-
-          </span>
-
-        </div>
-        <div class="text3">
-          <span class="icon">
-
-          </span>
-
-        </div>
+        {% if include.dual-text.text1 %}
+          <div class="text1">
+            <span class="icon">
+              <img src="{{ include.dual-text.text1.icon }}" alt="icon" />
+            </span>
+            <h3>{{ include.dual-text.text1.title }}</h3>
+            {{ include.dual-text.text1.text }}
+          </div>
+        {% endif %}
+        {% if include.dual-text.text2 %}
+          <div class="text1">
+            <span class="icon">
+              <img src="{{ include.dual-text.text2.icon }}" alt="icon" />
+            </span>
+            <h3>{{ include.dual-text.text2.title }}</h3>
+            {{ include.dual-text.text2.text }}
+          </div>
+        {% endif %}
+        {% if include.dual-text.text3 %}
+          <div class="text1">
+            <span class="icon">
+              <img src="{{ include.dual-text.text3.icon }}" alt="icon" />
+            </span>
+            <h3>{{ include.dual-text.text3.title }}</h3>
+            {{ include.dual-text.text3.text }}
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
