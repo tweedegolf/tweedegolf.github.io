@@ -4,8 +4,8 @@
       <div class="col-md-8 col-md-offset-2">
         <blockquote class="testimonial">
           <span class="icon quote"></span>
-          {{ quote|markdownify }}
-          <span class="author">{{ author }}</span>
+          {{ include.quote.text|markdownify }}
+          <span class="author">{{ include.quote.author|markdownify }}</span>
         </blockquote>
         </div>
       </div>
