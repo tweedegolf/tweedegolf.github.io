@@ -1,0 +1,81 @@
+---
+permalink: /symfony/
+layout: landing
+pageclass: symfony
+image: /assets/img/symfony-logo.png
+title: Symfony
+intro: "Wij ontwikkelen **state of the art** web apps met het PHP-framework Symfony."
+contact: Marlon
+about: Symfony development bij tweede golf
+contact_ok_link: //tweedegolf.nl/symfony/#contact-ok
+
+dual-text1:
+  class: google-apps
+  title: De kracht van Google's Apps benutten
+  lead: texts/google-for-work/lead1.md
+  icon: /assets/img/icon-google.png
+  text1:
+    icon: /assets/img/icon-share.png
+    title: Samenwerken en delen
+    text: "De kracht van Google Apps - samenwerken en delen - benutten binnen een custom web app, zonder het wiel opnieuw uit te vinden."
+  text2:
+    icon: /assets/img/icon-head.png
+    title: Minder steile leercurve
+    text: "Gebruikers doen een deel van hun werkzaamheden binnen de bekende Google Apps omgeving: de leercurve voor het werken met de custom web app is minder steil."
+  text3:
+    icon: /assets/img/icon-scale.png
+    title: Lichtgewicht software
+    text: "De resulterende web app is lichtgewicht: alleen wat custom moet zijn, bouwen we custom. Dit betekent minder complexiteit, gemakkelijker onderhoud en lagere kosten."
+
+call-to-action1:
+  class: lightweight
+  button-link: "#contact"
+  button-text: Neem contact op
+
+text-images1:
+  class: dark-bg
+  subtitle: "**Case 1:** Blok voor Blok"
+  title: Custom tagging in Google Drive
+  lead: texts/google-for-work/lead2.md
+  img1:
+    src: /assets/img/google-for-work/bvb_comment.png
+    alt: "Screenshot"
+    description: "Google Drive en Docs om de documenten op te slaan en te delen"
+  img2:
+    src: /assets/img/google-for-work/bvb_fragmenten.png
+    alt: "Screenshot"
+    description: "Integratie van Google Docs in een custom web app om supersnel fragmenten te taggen"
+  img3:
+    src: /assets/img/google-for-work/bvb_report.png
+    alt: "Screenshot"
+    description: "Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand"
+
+text-images2:
+  subtitle: "**Case 2:** Askja Prijsbeheer"
+  title: Google Sheets integratie voor prijsbeheer
+  lead: texts/google-for-work/lead3.md
+  img1:
+    src: /assets/img/google-for-work/askja_addon.png
+    alt: "Screenshot"
+    description: "Koppeling tussen het door ons ontwikkelde back-office systeem en Google Sheets"
+  img2:
+    src: /assets/img/google-for-work/askja-2016.jpg
+    alt: "Screenshot"
+    description: "Automatische controle en validatie van de data uit de sheets; met één druk op de knop importeren"
+---
+
+{% include sections/dual-text.html
+  dual-text=page.dual-text1
+%}
+
+{% include sections/call-to-action.html
+  cta=page.call-to-action1
+%}
+
+{% include sections/text-images.html
+  text-images=page.text-images1
+%}
+
+{% include sections/text-images.html
+  text-images=page.text-images2
+%}
