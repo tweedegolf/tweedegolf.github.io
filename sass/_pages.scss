@@ -39,7 +39,7 @@ header.landing {
     text-align: center;
     @extend .textHeading;
   }
-  p.intro {
+  .intro p {
     @extend .introText;
     text-align: center;
   }
