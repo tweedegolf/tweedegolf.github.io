@@ -1,2 +1,0 @@
-### World class support ###
-Het Franse [SensioLabs](https://sensiolabs.com/) en een wereldwijde community werken dagelijks aan Symfony. Symfony's release cycle is volwassen en bevat **long term support versions**, waardoor we jarenlang ondersteuning kunnen bieden voor de apps die we ontwikkelen. We dragen actief bij aan Symfony, door zogenaamde **bundles** die we intern ontwikkeld hebben met anderen  te delen op [GitHub](https://github.com/tweedegolf).

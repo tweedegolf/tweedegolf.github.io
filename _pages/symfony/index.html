@@ -10,6 +10,7 @@ about: Symfony development bij tweede golf
 contact_ok_link: //tweedegolf.nl/symfony/#contact-ok
 
 dual-text1:
+  class: dark-bg
   lead: texts/symfony/development/main.md
   text1:
     icon: /assets/img/icon-award.png
@@ -25,38 +26,29 @@ dual-text1:
     text: "Het Franse [SensioLabs](https://sensiolabs.com/) en een wereldwijde community werken dagelijks aan Symfony. Symfony’s release cycle is volwassen en bevat **long term support versions**, waardoor we jarenlang ondersteuning kunnen bieden voor de apps die we ontwikkelen. We dragen actief bij aan Symfony, door zogenaamde **bundles** die we intern ontwikkeld hebben met anderen te delen op [GitHub](https://github.com/tweedegolf)."
 
 call-to-action1:
-  class: lightweight
+  class: lightweight dark-bg
   button-link: "#contact"
   button-text: Neem contact op
 
-text-images1:
-  class: dark-bg
-  subtitle: "**Case 1:** Blok voor Blok"
-  lead: texts/google-for-work/lead2.md
-  img1:
-    src: /assets/img/google-for-work/bvb_comment.png
-    alt: "Screenshot"
-    description: "Google Drive en Docs om de documenten op te slaan en te delen"
-  img2:
-    src: /assets/img/google-for-work/bvb_fragmenten.png
-    alt: "Screenshot"
-    description: "Integratie van Google Docs in een custom web app om supersnel fragmenten te taggen"
-  img3:
-    src: /assets/img/google-for-work/bvb_report.png
-    alt: "Screenshot"
-    description: "Een custom web app voor het samenstellen van rapportages op basis van voorgedefinieerde templates, met alle getagde fragmenten bij de hand"
+dual-text2:
+  lead: texts/symfony/in_house/main.md
+  text1:
+    icon: /assets/img/icon-team.png
+    title: Hire a team
+    text: "In een team zit altijd een senior developer die beschikt over diepgaande kennis van Symfony en (mede) de architectuur van grote projecten bij tweede golf heeft bepaald. Onze teams zijn goed op elkaar ingespeeld, gemotiveerd en in staat om dagelijks meters te maken."
+  text2:
+    icon: /assets/img/icon-money.png
+    title: Investering
+    text: "Team rates varieren van €1200,- tot €1400,- per dag. Afhankelijk van de samenstelling van het team en het type en de duur van de werkzaamheden. Voorafgaand aan de werkzaamheden spreken we de verwachtingen en doelen door. Tijdens de werkzaamheden evalueren we de voortgang wekelijks en schakelen we snel, mochten er knelpunten ontstaan."
+  text3:
+    icon: /assets/img/icon-info.png
+    title: Meer informatie
+    text: "Neem vrijblijvend contact op voor meer informatie over de beschikbaarheid, mogelijkheden en voorwaarden. Meteen geïnteresseerd? Dan nodigen we u graag uit voor een kennismakingsgesprek."
 
-text-images2:
-  subtitle: "**Case 2:** Askja Prijsbeheer"
-  lead: texts/google-for-work/lead3.md
-  img1:
-    src: /assets/img/google-for-work/askja_addon.png
-    alt: "Screenshot"
-    description: "Koppeling tussen het door ons ontwikkelde back-office systeem en Google Sheets"
-  img2:
-    src: /assets/img/google-for-work/askja-2016.jpg
-    alt: "Screenshot"
-    description: "Automatische controle en validatie van de data uit de sheets; met één druk op de knop importeren"
+call-to-action2:
+  class: lightweight
+  button-link: "#contact"
+  button-text: Neem contact op
 ---
 
 {% include sections/dual-text.html
@@ -67,10 +59,10 @@ text-images2:
   cta=page.call-to-action1
 %}
 
-{% include sections/text-images.html
-  text-images=page.text-images1
+{% include sections/dual-text.html
+  dual-text=page.dual-text2
 %}
 
-{% include sections/text-images.html
-  text-images=page.text-images2
+{% include sections/call-to-action.html
+  cta=page.call-to-action2
 %}
