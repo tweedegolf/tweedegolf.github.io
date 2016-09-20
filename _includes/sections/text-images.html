@@ -23,25 +23,40 @@
         {% if include.text-images.img1 %}
           <div class="img">
             <img
-              alt="{{ include.text-images.img1.alt }}"
+              alt="{% if include.text-images.img1.alt %}{{ include.text-images.img1.alt }}{% endif %}"
               src="{{ include.text-images.img1.src }}"
             />
+            {% if include.text-images.img1.description %}
+              <div class="description">
+                <p>{{ include.text-images.img1.description }}
+              </div>
+            {% endif %}
           </div>
         {% endif %}
         {% if include.text-images.img2 %}
           <div class="img">
             <img
-              alt="{{ include.text-images.img2.alt }}"
+              alt="{% if include.text-images.img2.alt %}{{ include.text-images.img2.alt }}{% endif %}"
               src="{{ include.text-images.img2.src }}"
             />
+            {% if include.text-images.img2.description %}
+              <div class="description">
+                <p>{{ include.text-images.img2.description }}
+              </div>
+            {% endif %}
           </div>
         {% endif %}
         {% if include.text-images.img3 %}
           <div class="img">
             <img
-              alt="{{ include.text-images.img3.alt }}"
+              alt="{% if include.text-images.img3.alt %}{{ include.text-images.img3.alt }}{% endif %}"
               src="{{ include.text-images.img3.src }}"
             />
+            {% if include.text-images.img3.description %}
+              <div class="description">
+                <p>{{ include.text-images.img3.description }}
+              </div>
+            {% endif %}
           </div>
         {% endif %}
       </div>

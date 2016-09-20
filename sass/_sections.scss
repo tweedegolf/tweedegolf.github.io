@@ -312,10 +312,11 @@ header.home {
 
 
 section {
-    padding: 100px 0;
-    h2 {
-      margin: 0;
-    }
+  background-color: $white;
+  padding: 100px 0;
+  h2 {
+    margin: 0;
+  }
 }
 
 .section-heading {
@@ -574,9 +575,6 @@ section#contact {
   }
   div.img {
     margin-bottom: 40px;
-    img {
-      max-width: 100%;
-    }
   }
 }
 

@@ -90,6 +90,20 @@ hr.separator {
   }
 }
 
+div.img {
+  img {
+    max-width: 100%;
+  }
+  .description {
+    background-color: #FFF;
+    padding: 14px 20px;
+    p {
+      @extend .metaText;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .icon-nerd {
   background-image: url('/assets/img/icon-nerd.png');
   display: inline-block;
