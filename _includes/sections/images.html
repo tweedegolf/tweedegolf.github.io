@@ -1,9 +1,92 @@
-<section class="images">
+<section class="images {% if include.images.class %}{{ include.images.class }}{% endif %}">
   <div class="container">
     <div class="row">
-      // TODO: Class depends on amount of images (?)
-      <div class={{col class}}>
-        {{ img1 }}
+
+        {% if include.images.img3 %}
+          <div class="col-sm-4">
+            <div class="img">
+              <img
+                alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
+                src="{{ include.images.img1.src }}"
+              />
+              {% if include.images.img1.description %}
+                <div class="description">
+                  <p>{{ include.images.img1.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="img">
+              <img
+                alt="{% if include.images.img2.alt %}{{ include.images.img2.alt }}{% endif %}"
+                src="{{ include.images.img2.src }}"
+              />
+              {% if include.images.img2.description %}
+                <div class="description">
+                  <p>{{ include.images.img2.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="img">
+              <img
+                alt="{% if include.images.img3.alt %}{{ include.images.img3.alt }}{% endif %}"
+                src="{{ include.images.img3.src }}"
+              />
+              {% if include.images.img3.description %}
+                <div class="description">
+                  <p>{{ include.images.img3.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+        {% elsif include.images.img2 %}
+          <div class="col-sm-6">
+            <div class="img">
+              <img
+                alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
+                src="{{ include.images.img1.src }}"
+              />
+              {% if include.images.img1.description %}
+                <div class="description">
+                  <p>{{ include.images.img1.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="img">
+              <img
+                alt="{% if include.images.img2.alt %}{{ include.images.img2.alt }}{% endif %}"
+                src="{{ include.images.img2.src }}"
+              />
+              {% if include.images.img2.description %}
+                <div class="description">
+                  <p>{{ include.images.img2.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+        {% else %}
+          <div class="col-sm-8">
+            <div class="img">
+              <img
+                alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
+                src="{{ include.images.img1.src }}"
+              />
+              {% if include.images.img1.description %}
+                <div class="description">
+                  <p>{{ include.images.img1.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
       </div>
     </div>
   </div>
