@@ -43,3 +43,7 @@ To install new frontend assets, update the `bower.json` file and run:
 To use new assets, copy them manually to the assets folder, e.g.:
 
     cp -r vendor/fontawesome/fonts/ assets/fonts
+
+## Adding/editing a page
+
+## Adding/editing blog articles
