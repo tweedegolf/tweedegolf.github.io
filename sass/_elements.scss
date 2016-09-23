@@ -90,7 +90,7 @@ hr.separator {
   }
 }
 
-div.img {
+div.img, a.img {
   img {
     max-width: 100%;
   }
@@ -99,6 +99,7 @@ div.img {
     padding: 14px 20px;
     p {
       @extend .metaText;
+      color: $gray;
       margin-bottom: 0;
     }
   }

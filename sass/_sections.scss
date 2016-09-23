@@ -820,7 +820,11 @@ footer {
 
 .images {
 
-  .img img {
+  .img {
+    display: block;
+  }
+
+  img {
     width: 100%;
   }
 }
