@@ -22,9 +22,11 @@
       <div class="col-sm-6">
         {% if include.dual-text.text1 %}
           <div class="text">
-            <span class="icon">
-              <img src="{{ include.dual-text.text1.icon }}" alt="icon" />
-            </span>
+            {% if include.dual-text.text1.icon %}
+              <span class="icon">
+                <img src="{{ include.dual-text.text1.icon }}" alt="icon" />
+              </span>
+            {% endif %}
             {% if include.dual-text.text1.title %}
               <h3>{{ include.dual-text.text1.title }}</h3>
             {% endif %}
@@ -33,9 +35,11 @@
         {% endif %}
         {% if include.dual-text.text2 %}
           <div class="text">
-            <span class="icon">
-              <img src="{{ include.dual-text.text2.icon }}" alt="icon" />
-            </span>
+            {% if include.dual-text.text2.icon %}
+              <span class="icon">
+                <img src="{{ include.dual-text.text2.icon }}" alt="icon" />
+              </span>
+            {% endif %}
             {% if include.dual-text.text2.title %}
               <h3>{{ include.dual-text.text2.title }}</h3>
             {% endif %}
@@ -44,9 +48,11 @@
         {% endif %}
         {% if include.dual-text.text3 %}
           <div class="text">
-            <span class="icon">
-              <img src="{{ include.dual-text.text3.icon }}" alt="icon" />
-            </span>
+            {% if include.dual-text.text3.icon %}
+              <span class="icon">
+                <img src="{{ include.dual-text.text3.icon }}" alt="icon" />
+              </span>
+            {% endif %}
             {% if include.dual-text.text3.title %}
               <h3>{{ include.dual-text.text3.title }}</h3>
             {% endif %}
@@ -55,9 +61,11 @@
         {% endif %}
         {% if include.dual-text.text4 %}
           <div class="text">
-            <span class="icon">
-              <img src="{{ include.dual-text.text4.icon }}" alt="icon" />
-            </span>
+            {% if include.dual-text.text4.icon %}
+              <span class="icon">
+                <img src="{{ include.dual-text.text4.icon }}" alt="icon" />
+              </span>
+            {% endif %}
             {% if include.dual-text.text4.title %}
               <h3>{{ include.dual-text.text4.title }}</h3>
             {% endif %}

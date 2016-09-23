@@ -24,6 +24,35 @@ dual-text1:
     icon: /assets/img/icon-chart.png
     title: Visualisation apps
     text: "Web apps die data tot leven brengen, zoals <a href='/#portfolio-online-beleidsmonitor' data-toggle='modal'>Online beleidsmonitor</a>"
+
+quote1:
+  class: dark-bg
+  text: "Tweede golf is al ruim vijf jaar onze technische partner waarmee we ons backoffice systeem en de sites voor Askja en VNC hebben ontwikkeld. De grondige inventarisatie die we bij de start uitvoerden was een eye-opener en was cruciaal voor het succes van het project."
+  author: "– **Sander van Opstal**, directeur Askja Reizen & VNC Asia Travel"
+
+dual-text2:
+  lead: /texts/proces/mv-product/intro.md
+  text1:
+    title: Lean softwaredevelopment
+    text: "Streven naar een minimum viable product past in het veel bredere **lean softwaredevelopment**, dat we een warm hart toedragen. Bekijk hier de principes die daaraan ten grondslag liggen."
+  text2:
+    title: Betere investeringsbeslissingen
+    text: "Door zo snel mogelijk een minimum viable product “in het wild los te laten”, krijg je direct inzicht in welke features het meest gebruikt worden. Dit helpt bij het **beslissen over investeringen** in de software."
+  text3:
+    title: Korte time to market
+    text: "Starten met een minimum viable product resulteert in een zo kort mogelijke **time to market**. En snelheid is essentieel voor succes op het web."
+
+dual-text3:
+  lead: /texts/proces/mv-product/intro.md
+  text1:
+    title: Lean softwaredevelopment
+    text: "Streven naar een minimum viable product past in het veel bredere **lean softwaredevelopment**, dat we een warm hart toedragen. Bekijk hier de principes die daaraan ten grondslag liggen."
+  text2:
+    title: Betere investeringsbeslissingen
+    text: "Door zo snel mogelijk een minimum viable product “in het wild los te laten”, krijg je direct inzicht in welke features het meest gebruikt worden. Dit helpt bij het **beslissen over investeringen** in de software."
+  text3:
+    title: Korte time to market
+    text: "Starten met een minimum viable product resulteert in een zo kort mogelijke **time to market**. En snelheid is essentieel voor succes op het web."
 ---
 
 {% include sections/dual-text.html
@@ -125,3 +154,15 @@ dual-text1:
     </div>
   </div>
 </section>
+
+{% include sections/quote.html
+  quote=page.quote1
+%}
+
+{% include sections/dual-text.html
+  dual-text=page.dual-text2
+%}
+
+{% include sections/dual-text.html
+  dual-text=page.dual-text3
+%}
