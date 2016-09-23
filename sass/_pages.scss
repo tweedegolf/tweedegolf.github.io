@@ -80,7 +80,7 @@ header.process {
   }
 }
 
-.master.process {
+.body.process {
   h1, h2, h3, h4, h5, h6, p, li {
     strong {
       font-weight: 500;
@@ -479,6 +479,155 @@ body.framework {
 
     .description {
       min-height: 76px;
+    }
+  }
+}
+
+body.process {
+
+  .explanatory {
+    background-color: darken($brand-primary, 5%);
+    padding: 80px 0 48px;
+    a {
+      color: #fff;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      color: #fff;
+      @extend .paragraphText;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+
+  .phases {
+    background-color: $brand-primary;
+    padding: 0;
+    position: relative;
+    &:after { // wrap with explanatory, space for indicators
+      background-color: darken($brand-primary, 5%);
+      content: "";
+      display: block;
+      height: 60px;
+      width: 100%;
+    }
+    a {
+      color: #fff;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .carousel {
+      .carousel-inner {
+        height: 420px;
+        .item {
+          height: 100%;
+        }
+      }
+      .carousel-visual {
+        // @extend .clearfix;
+        position: relative;
+        height: 100%;
+        width: 45%;
+        .phase {
+          background-color: lighten($brand-primary, 2%);
+          color: white;
+          @extend .sectionHeading;
+          height: 110px;
+          left: 0;
+          line-height: 110px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 140px;
+        }
+        .icon {
+          bottom: 0;
+          height: 328px;
+          position: absolute;
+          right: 0;
+          text-align: right;
+          width: 100%;
+          opacity: .2;
+          &:after {
+            color: lighten($brand-primary, 20%);
+            content: "";
+            font: normal normal normal 380px/1 "MaterialDesignIcons";
+          }
+          &.discovery:after {
+            bottom: -20px;
+            content: mdi('compass');
+            position: relative;
+            right: -20px;
+          }
+          &.design:after {
+            content: mdi('code-not-equal-variant');
+          }
+          &.development:after {
+            content: mdi('rotate-right');
+          }
+          &.release:after {
+            content: mdi('arrow-up-bold-circle');
+          }
+          &.improvements:after {
+            content: mdi('plus-circle');
+          }
+        }
+      }
+      .carousel-caption {
+        left: 53%;
+        right: 10%;
+        text-align: left;
+        text-shadow: none;
+        top: 2%;
+        h3 {
+          @extend .metaText;
+        }
+        p {
+          @extend .metaText;
+        }
+      }
+      .carousel-control {
+        background-image: none;
+        .button {
+          background-color: white;
+          border-radius: 50%;
+          color: darken($brand-primary, 20%);
+          font: normal normal lighter 20px/1 "MaterialDesignIcons";
+          height: 50px;
+          line-height: 50px;
+          margin-top: -25px;
+          position: absolute;
+          text-shadow: none;
+          top: 50%;
+          width: 50px;
+        }
+        &.left {
+          left: -25px;
+          .button {
+            left: 0;
+            &:after {
+              content: mdi('arrow-left');
+            }
+          }
+        }
+        &.right {
+          right: -25px;
+          .button {
+            right: 0;
+            &:after {
+              content: mdi('arrow-right');
+            }
+          }
+        }
+      }
+      .carousel-indicators {
+        bottom: -50px;
+      }
     }
   }
 }
