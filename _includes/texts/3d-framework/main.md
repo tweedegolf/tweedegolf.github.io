@@ -1,5 +1,5 @@
 
-# Snel een web app ontwikkelen met het 3D Framework
+# Snel online dankzij ons 3D Framework
 
 Dankzij onze ruime ervaring met het ontwikkelen van 3D web apps zijn wij in staat om de meest uiteenlopende maatwerkprojecten met 3D-functionaliteit te ontwikkelen.
 
