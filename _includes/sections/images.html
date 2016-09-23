@@ -4,7 +4,7 @@
 
         {% if include.images.img3 %}
           <div class="col-sm-4">
-            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href}}"{% endif %}>
+            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href}}"{% endif %} {% if include.images.img1.extras %}{{ include.images.img1.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
                 src="{{ include.images.img1.src }}"
@@ -17,7 +17,7 @@
             </a>
           </div>
           <div class="col-sm-4">
-            <a class="img" {% if include.images.img2.href %}href="{{ include.images.img2.href }}"{% endif %}>
+            <a class="img" {% if include.images.img2.href %}href="{{ include.images.img2.href }}"{% endif %} {% if include.images.img2.extras %}{{ include.images.img2.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img2.alt %}{{ include.images.img2.alt }}{% endif %}"
                 src="{{ include.images.img2.src }}"
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div class="col-sm-4">
-            <a class="img" {% if include.images.img3.href %}href="{{ include.images.img3.href }}"{% endif %}>
+            <a class="img" {% if include.images.img3.href %}href="{{ include.images.img3.href }}"{% endif %} {% if include.images.img3.extras %}{{ include.images.img3.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img3.alt %}{{ include.images.img3.alt }}{% endif %}"
                 src="{{ include.images.img3.src }}"
@@ -45,7 +45,7 @@
 
         {% elsif include.images.img2 %}
           <div class="col-sm-6">
-            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href }}"{% endif %}>
+            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href }}"{% endif %} {% if include.images.img1.extras %}{{ include.images.img1.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
                 src="{{ include.images.img1.src }}"
@@ -58,7 +58,7 @@
             </a>
           </div>
           <div class="col-sm-6">
-            <a class="img" {% if include.images.img2.href %}href="{{ include.images.img2.href }}"{% endif %}>
+            <a class="img" {% if include.images.img2.href %}href="{{ include.images.img2.href }}"{% endif %} {% if include.images.img2.extras %}{{ include.images.img2.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img2.alt %}{{ include.images.img2.alt }}{% endif %}"
                 src="{{ include.images.img2.src }}"
@@ -73,7 +73,7 @@
 
         {% else %}
           <div class="col-sm-8 col-sm-offset-2">
-            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href }}"{% endif %}>
+            <a class="img" {% if include.images.img1.href %}href="{{ include.images.img1.href }}"{% endif %} {% if include.images.img1.extras %}{{ include.images.img1.extras }}{% endif %}>
               <img
                 alt="{% if include.images.img1.alt %}{{ include.images.img1.alt }}{% endif %}"
                 src="{{ include.images.img1.src }}"
