@@ -24,8 +24,91 @@ dual-text1:
     icon: /assets/img/icon-3d.png
     title: 3D simulatie
     text: "Combineer real world data met een virtuele wereld tot 3D simulaties die inzicht geven in toekomstige situaties en producten. [Lees verder...](/3d-framework/#3d-simulatie)"
+
+call-to-action1:
+  text: Creëer, ontwerp, configureer. Krachtige 3D ervaring.
+  button-link: "#contact"
+  button-text: Meer informatie
+
+images1:
+  class: dark-bg
+  img1:
+    src: /assets/img/cases/thumbs/tjt.jpg
+    alt: Tekenjetuin screenshot
+    description: "Ontwerpen bekijken in 3D in **Tekenjetuin**"
+  img2:
+    src: /assets/img/cases/thumbs/burglaralarm.png
+    alt: Burglar alarm screenshot
+    description: "Gamification en virtual reality in **Burglar Alarm**"
+  img3:
+    src: /assets/img/cases/thumbs/heatmap.png
+    alt: 3D simulatie screenshot
+    description: "3D simulator op basis van real world data in onze **Zonne-simulator**"
 ---
 
 {% include sections/dual-text.html
   dual-text=page.dual-text1
 %}
+
+{% include sections/images.html
+  images=page.images1
+%}
+
+{% include sections/call-to-action.html
+  cta=page.call-to-action1
+%}
+
+<!-- Modals -->
+{% for item in site.cases %}
+<div
+  class="portfolio-modal modal fade"
+  id="{{ item.title|downcase|replace:' ','-' }}"
+  tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal" onclick="stopVideos()">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="modal-body">
+            <h2>{{ item.title }}</h2>
+            <hr class="star-success">
+            {% if item.vimeo %}
+              <iframe
+                src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0"
+                width="100%" height="400" frameborder="0">
+              </iframe>
+            {% endif %}
+            {% if item.youtube %}
+              <iframe
+                src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.vimeo }}" frameborder="0"></iframe>"
+                width="100%" height="400" frameborder="0">
+              </iframe>
+            {% endif %}
+            {% if item.img %}
+                <img
+                  src="/assets/img/cases/{{ item.img }}"
+                  class="img-responsive img-centered" alt="{{ item.title }}">
+            {% endif %}
+            {{ item.output }}
+            {% if item.website %}
+            <a href="{{ item.website }}" class="btn btn-success" target="_blank">
+              <span class="fa fa-external-link"></span>
+              Ga naar {{ item.title }}
+            </a>
+            {% endif %}
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              <span class="fa fa-times"></span>
+              Sluiten
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
