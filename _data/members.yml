@@ -13,7 +13,7 @@
   img: /assets/img/members/daniel.jpg
 
 - name: Daniella
-  job: front-end developer
+  job: developer
   email: daniella@tweedegolf.com
   author: false
   employed: true
@@ -58,5 +58,5 @@
   job: front-end developer
   email: rubent@tweedegolf.com
   author: false
-  employed: true
+  employed: false
   img: /assets/img/members/rubent.jpg
