@@ -40,6 +40,13 @@
   employed: true
   img: /assets/img/members/hugo.jpg
 
+- name: Jay
+  job: trainee
+  email: jay@tweedegolf.com
+  author: false
+  employed: true
+  img: /assets/img/members/jay.jpg
+
 - name: Marlon
   job: senior developer & owner
   email: marlon@tweedegolf.com
@@ -60,3 +67,10 @@
   author: false
   employed: false
   img: /assets/img/members/rubent.jpg
+
+- name: Wouter
+  job: developer
+  email: wouter@tweedegolf.com
+  author: false
+  employed: true
+  img: /assets/img/members/wouter.jpg
