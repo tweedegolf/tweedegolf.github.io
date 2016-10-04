@@ -1,7 +1,7 @@
 ---
-order: 1
+order: 2
 title: Hekkelman
-thumb: hekkelman.jpg
+thumb: hekkelman2.png
 date: 2016-01-01
 client: Hekkelman advocaten en notarissen
 partner: LaVerbe
