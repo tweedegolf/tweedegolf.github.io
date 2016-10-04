@@ -1,7 +1,7 @@
 ---
 order: 1
 title: RCT Gelderland
-thumb: askja.png
+thumb: rct.png
 date: 2016-10-04
 client: RCT Gelderland
 partner: LaVerbe (design)
