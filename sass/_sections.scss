@@ -687,6 +687,15 @@ footer {
         padding: 40px 0;
         background-color: darken($brand-primary, 5%);
     }
+
+    .phone, .email, .skype {
+      font-weight: normal;
+
+      .fa {
+        min-width: 20px;
+        text-align: center;
+      }
+    }
 }
 
 
