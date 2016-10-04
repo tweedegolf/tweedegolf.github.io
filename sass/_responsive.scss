@@ -65,6 +65,10 @@
     section.first {
         padding-top: 75px;
     }
+
+    header.blog .article-heading {
+      bottom: 0px;
+    }
 }
 
 @media (max-width: 990px) {
