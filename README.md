@@ -51,8 +51,4 @@ When changing portfolio items `server --watch` might not be enough for changes t
     bundle exec jekyll build
     bundle exec jekyll serve --watch --incremental --drafts
 
-A convenient `portfolio-items.sketch` file is available in Drive for portfolio screenshot additions. 
-
-## Adding/editing a page
-
-## Adding/editing blog articles
+A convenient `portfolio-items.sketch` file is available in Drive for portfolio screenshot additions.

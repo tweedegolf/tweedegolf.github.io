@@ -12,7 +12,7 @@ nerd: 1
 
 The interaction between a human and a computer, also called human-machine interaction (HMI) or human-computer interaction (HCI) has changed quite a lot in the past decades. Virtual reality (VR) and augmented reality (AR) have received a revived interest due to the development of devices like the Oculus Rift and Microsoft's Hololens. This considered, HCI will probably change even more radically in the coming years.
 
-###Short history
+### Short history
 
 HCI has been a topic of active research for decades; researchers and artists have invented the most exotic technologies, for instance, Char Davies' art project [Osmose](http://www.immersence.com/osmose/) whereby the user can navigate by breathing and moving her body.
 
@@ -31,7 +31,7 @@ We have come a long way since the interaction with punched cards in the early da
 ![First mouse](/assets/img/blog/first-mouse.jpg){: .with-caption}
 *First mouse as invented by Douglas Engelbart*
 
-###NUI and gestures
+### NUI and gestures
 
 Speech control became consumer-ready in the 1990's (though very expensive back then). Interesting about speech control is that it is the first appearance of a Natural User Interaction (NUI). NUI roughly means that the interface is so natural that the user hardly notices it. Another example of NUI is touchscreen interaction, though we have to distinguish between using touch events as replacement for mouse clicks, such as tapping on button element in the GUI, and gestures, for instance a pinch gesture to scale a picture. The latter is NUI, the former is a touch-controlled GUI.
 
@@ -39,7 +39,7 @@ Instead of making gestures on a touch screen, you can also perform them in the a
 
 ![Data glove](/assets/img/blog/data-glove.jpg)
 
-###Interaction with brainwaves
+### Interaction with brainwaves
 
 Wearables such as smart watches are usually a mix between a remote controller and an extra monitor of a mobile device. As a remote controller you can send instructions like on a regular touchscreen, but for instance the Apple Watch has a classic rotary button for interaction as well. Wearables can also communicate other types of data coming passively from a human to the computer, like heart rate, skin temperature, blood oxygen and probably a lot more to come when more types of sensors become smaller and cheaper.
 
@@ -48,7 +48,7 @@ Google Glass is a wearable that can be controlled by voice and by brainwaves. By
 ![Google Glass with telekinetic headband](/assets/img/blog/google-glass-with-telekinetic-headband.jpg){: .with-caption}
 *Showing a headband with 3 sensors on the skull and one that clips onto the user's ear*
 
-###AR and VR
+### AR and VR
 
 With AR a digital overlay is superimposed on the real world whereas with VR the real world is completely replaced by a virtual (3D) world. Google Glass and Hololens are examples of AR devices. The Oculus Rift and Google Cardboard are examples of VR devices.
 
@@ -64,7 +64,7 @@ VR is commonly used for immersive experiences such as games, but it can also be 
 ![AR Basketball App Mug](/assets/img/blog/AR-Basketball-App-Mug.jpg){: .with-caption}
 *An example of a RBI: a marker is used to control a 3D scene*
 
-###Researching VR for web
+### Researching VR for web
 
 We will be looking at two VR devices in the near future: the Oculus Rift and Google Cardboard. In the coming blog posts we will share the results with you.
 

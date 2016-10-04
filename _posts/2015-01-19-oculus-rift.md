@@ -19,7 +19,7 @@ Nowadays, most VR devices take the form of head mounted devices (HMD). Probably 
 ![Oculus Rift and positional tracker](/assets/img/blog/oculus-rift-and-positional-tracker.jpg){: .with-caption}
 *The Oculus Rift Developer Kit 2 and positional tracker*
 
-###Displays and lenses
+### Displays and lenses
 
 For each eye the Oculus has a full hd display on which the 3D content (for instance a game or a video) is rendered. The content has to be rendered in stereo which means that the image for the left display is taken from a slightly different angle compared to the image on the right display. This difference is analogous to the distance between our two eyes.
 
@@ -47,7 +47,7 @@ As you can see in the image, a side effect of barrel distortion is that the imag
 
 ![FOV human eye](/assets/img/blog/FOV-human-eye.jpg)
 
-###Tracking rotation, movement and position
+### Tracking rotation, movement and position
 
 The Oculus has sensors that track rotation and the velocity of your movements; in the device you find a gyroscope, an accelerometer and a magnetometer.
 
@@ -56,7 +56,7 @@ Furthermore, the Oculus has 40 leds that are tracked by the separate positional 
 The data coming from all sensors and trackers gets combined in a process called [sensor fusion](http://en.wikipedia.org/wiki/Sensor_fusion). Sensor fusion roughly means that you combine data coming from different sources to calculate data that is more accurate than the data that comes from each individual source.
 
 
-###Generating the 3D scene
+### Generating the 3D scene
 
 The Oculus has to be connected to a computer; an HDMI cable for the displays and a USB cable that attaches the connector box. The connector box receives both a cable from the positional tracker and from the HMD itself.
 

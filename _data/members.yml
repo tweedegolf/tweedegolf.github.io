@@ -3,48 +3,63 @@
   email: bram@tweedegolf.com
   author: true
   employed: true
+  img: /assets/img/members/bram.jpg
 
 - name: Daniel
   job: researcher
   email: daniel@tweedegolf.com
   author: true
   employed: true
+  img: /assets/img/members/daniel.jpg
 
 - name: Daniella
-  job: front-end developer
+  job: developer
   email: daniella@tweedegolf.com
   author: false
   employed: true
+  img: /assets/img/members/daniella.jpg
 
 - name: Dennis
   job: researcher
   email: dennis@tweedegolf.com
   author: false
   employed: false
+  img: /assets/img/members/dennis.jpg
 
 - name: Erik
   job: business analyst & owner
   email: erik@tweedegolf.com
   author: false
   employed: true
+  img: /assets/img/members/erik.jpg
 
 - name: Hugo
   job: developer & business analyst
   email: hugo@tweedegolf.com
   author: false
   employed: true
+  img: /assets/img/members/hugo.jpg
+
+- name: Jay
+  job: trainee
+  email: jay@tweedegolf.com
+  author: false
+  employed: true
+  img: /assets/img/members/jay.jpg
 
 - name: Marlon
   job: senior developer & owner
   email: marlon@tweedegolf.com
   author: false
   employed: true
+  img: /assets/img/members/marlon.jpg
 
 - name: RubenN
   job: senior developer
   email: ruben@tweedegolf.com
   author: true
   employed: true
+  img: /assets/img/members/ruben.jpg
 
 - name: Wouter
   job: developer
@@ -56,4 +71,12 @@
   job: stagair
   email: jay@tweedegolf.com
   author: false
+  employed: false
+  img: /assets/img/members/rubent.jpg
+
+- name: Wouter
+  job: developer
+  email: wouter@tweedegolf.com
+  author: false
   employed: true
+  img: /assets/img/members/wouter.jpg

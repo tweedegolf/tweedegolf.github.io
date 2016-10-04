@@ -149,14 +149,15 @@ header {
       }
 
       .article-heading {
-        position: absolute;
-        bottom: 40px;
-        width: 90%;
+        position: relative;
+        bottom: 60px;
+        width: 100%;
         z-index: 2;
 
         &.overview {
 
           h1, h2, h3 {
+            color: white;
             text-align: center;
           }
 
@@ -186,6 +187,7 @@ header {
         }
 
         h1, h2, h3, h4, h5, h6 {
+          color: white;
           margin-left: 12px;
           @extend .sectionHeading;
           font-weight: 500;
@@ -522,6 +524,7 @@ section#contact {
 
   img {
     margin-bottom: 6px;
+    width: 100%;
   }
 
   .previmg {
@@ -684,6 +687,19 @@ footer {
         padding: 40px 0;
         background-color: darken($brand-primary, 5%);
     }
+
+    .phone, .email, .skype {
+      font-weight: normal;
+
+      .fa {
+        min-width: 20px;
+        text-align: center;
+      }
+    }
+
+    .expertises a {
+      font-weight: normal;
+    }
 }
 
 
@@ -734,9 +750,10 @@ footer {
             }
         }
         .screen {
-            border: 8px solid #CCC;
+            border: 2px solid $brightGray;
             padding: 8px;
             margin: 30px 0;
+            text-align: center;
             img {
                 max-width: 100%;
             }

@@ -35,6 +35,7 @@ header.landing {
   }
 
   h1, h2, h3 {
+    color: white;
     text-transform: none;
     text-align: center;
     @extend .textHeading;
