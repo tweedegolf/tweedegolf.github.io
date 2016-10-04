@@ -61,12 +61,6 @@
   employed: true
   img: /assets/img/members/ruben.jpg
 
-- name: Wouter
-  job: developer
-  email: wouter@tweedegolf.com
-  author: false
-  employed: true
-
 - name: Jay
   job: stagair
   email: jay@tweedegolf.com
