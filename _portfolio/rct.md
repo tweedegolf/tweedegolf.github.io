@@ -10,7 +10,7 @@ client: RCT Gelderland
 partner: LaVerbe (design)
 partnerurl: /partners
 tags: tag
-screens: askja-screen1.png,askja-screen2.png,askja-screen3.png,askja-brochure.png,askja-offerte.png,askja-browse-beeldbank3.png
+screens: rct-screen1.png,rct-screen2.png,rct-screen3.png,rct-screen4.png
 website: https://www.rctgelderland.nl/
 ---
 RCT tekst.
