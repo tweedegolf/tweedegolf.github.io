@@ -42,7 +42,7 @@ What we can learn from this picture, is that a 3D object without translation and
 
 And as far as rotation is concerned: a 3D object that has no rotation on any of the three axes stands perpendicular to our line of sight and has its upside in the direction of the positive y-axis.
 
-###Creating a floor
+### Creating a floor
 
 If we want to create a floor, or a ground for our 3D scene we have to rotate a plane -90° over the x-axis, play the following video to see how that works out:
 
@@ -58,7 +58,7 @@ What we could do as well, is to apply the rotation to the root scene as a whole;
 
 Both solutions are equally valid, but there is one caveat: if you choose to rotate the root scene, please make sure that you do *not* add the camera to the scene because that would cancel out the rotations, see this [post](/2015/04/03/webvr-and-threejs/#camera).
 
-###Moving over a floor
+### Moving over a floor
 
 Now lets create a proper floor and add the arrow object to the floor:
 
@@ -97,7 +97,7 @@ We fix this in the arrow object itself by rotating the texture 90° which makes 
 You might think this is a dirty trick, but it isn't; Threejs has chosen to make the top of a 0° rotated object in the direction of the positive y-axis which is a very understandable decision because the y-axis is usually the vertical/upright axis.
 -->
 
-###Conclusion
+### Conclusion
 
 If we rotate the root scene (or the floor) -90° over the x-axis, the y-axis becomes the 'away into the distance' axis, the natural axis that we want to move along when moving straight forward.
 

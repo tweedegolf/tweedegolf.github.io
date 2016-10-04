@@ -14,13 +14,13 @@ nerd: 3
 
 We all want our 3D visualisations to be as real as possible. A basic premise seems to be that they adhere to the laws of physics. No small feat! Or is it?
 
-We decided to give it a go during a two-day programming contest. Our team's idea was to develop a web-based game where the user cycles around and has to avoid crashing into cars. To create the game, we needed a physics engine. 
+We decided to give it a go during a two-day programming contest. Our team's idea was to develop a web-based game where the user cycles around and has to avoid crashing into cars. To create the game, we needed a physics engine.
 
-As could be expected, 48 hours later we found out we had been overly ambitious. There really was no game experience to speak of. However, we did manage to create a 3D world with basic physics. Hopefully, our experiences will give you some insight into using physics in 3D. 
+As could be expected, 48 hours later we found out we had been overly ambitious. There really was no game experience to speak of. However, we did manage to create a 3D world with basic physics. Hopefully, our experiences will give you some insight into using physics in 3D.
 
 ![ΔV](/assets/img/blog/physics-dv.png){:.with-caption}*Image taken from our simplified 3d representation of the city of Nijmegen*
 
-###Making a game with Physijs
+### Making a game with Physijs
 
 Our goal was to make a small game in which you cycle through Nijmegen and have to avoid being run over by cars.
 We first looked into some frameworks that offer physics simulation in the browser. We found [Physijs] which integrates with [Three.js] and uses [ammo.js], which is a javascript port of [bullet].
@@ -32,7 +32,7 @@ After having done the basic setup, we needed to add physics objects. To do this 
 
 ![Physijs demo](/assets/img/blog/physics-physijs-demo.png){:.with-caption}*Check out [demo of Physijs] to get a feel of what is possible. For more demos check out [Physijs]*
 
-###Crashing cars
+### Crashing cars
 
 For our little game prototype we used Physijs.BoxMesh for the cars, the surfaces and the bicycle. For the buildings we used the Physisjs.ConcaveMesh, because multiple buildings needed to be grouped together in chunks and this would cause collisions otherwise. We must note Physisjs.ConcaveMesh is a very costly physics object to have in your simulation, but luckily the performance turned out to be reasonable.
 
@@ -40,9 +40,9 @@ In our final demo we managed to get cars moving as physics objects, following th
 
 <iframe src="https://player.vimeo.com/video/133123676" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-###Room for improvement
+### Room for improvement
 
-As you can see in the movie the cars behave a bit strangely when tipped over. This is because the Physijs.BoxMesh allows cars to slide on their front as the physics mesh is flat at that location. Also note that not all roads match up perfectly, because of inaccuracies in the data set. Even though the demo mainly looks funny in this state, it does show correct car/house, car/car, and car/surface interaction as far as physics is concerned. It just requires more tweaking to make the cars behave in a more realistic way. Given an extra day or two, we *surely* would've succeeded in making a mind-blowing game! 
+As you can see in the movie the cars behave a bit strangely when tipped over. This is because the Physijs.BoxMesh allows cars to slide on their front as the physics mesh is flat at that location. Also note that not all roads match up perfectly, because of inaccuracies in the data set. Even though the demo mainly looks funny in this state, it does show correct car/house, car/car, and car/surface interaction as far as physics is concerned. It just requires more tweaking to make the cars behave in a more realistic way. Given an extra day or two, we *surely* would've succeeded in making a mind-blowing game!
 
 [demo of Physijs]: http://chandlerprall.github.io/Physijs/examples/vehicle.html/
 [Physijs]: http://chandlerprall.github.io/Physijs/

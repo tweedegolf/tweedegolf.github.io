@@ -22,7 +22,7 @@ When wearing an Oculus, you are positioned in the middle of this orientation cub
 A real world analogy would be when a camera is mounted on a small cart that you can drive around in a miniature world, and this miniature world is placed inside a room that has the axis directions printed in large letters on all four walls, on the floor and on the ceiling.
 -->
 
-###The API
+### The API
 
 To get the rotation and position data of the Oculus using javascript, we first query for VR devices:
 
@@ -73,7 +73,7 @@ function vrRenderLoop(){
 }
 ~~~
 
-###Putting it together
+### Putting it together
 
 For our first application we only use the orientation data of the Oculus. We use this data to set the rotation of the camera which is rather straightforward:
 
@@ -141,7 +141,7 @@ Instead of rotating the arrow to make a floor, you could also choose to rotate t
 If you choose to rotate the scene, please make sure that you do not add the camera to the scene, see next section.
 -->
 
-###About the camera in Threejs
+### About the camera in Threejs
 
 The camera in Threejs is on the same hierarchical level as the root scene by default. Which is like a cameraman who is filming a play on a stage while standing in the audience; theoretically both the stage and the cameraman can move, independently of each other.
 
@@ -158,7 +158,7 @@ This is comes in handy, since we have applied rotations to the root scene (see i
 Note that in most Threejs examples you find online it does not make any difference whether or not the camera is added to the root scene, but in our case it is very important.
 
 
-###The result
+### The result
 
 We have made two screencasts of the result from the output rendered to the Oculus:
 
