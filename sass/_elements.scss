@@ -312,12 +312,19 @@ video, iframe {
 .member-card {
   height: 140px;
 
-  img {
+  .image {
     border-radius: 50%;
+    display: inline-block;
     height: 70px;
     margin-top: 20px;
+    overflow: hidden;
     vertical-align: top;
     width: 70px;
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
   }
 
   .info {
