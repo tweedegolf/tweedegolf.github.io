@@ -235,10 +235,12 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
         {% if member.employed == true %}
           <div class="col-sm-6 col-md-4">
             <div class="member-card">
-              <a href="#" class="member-image {{ member.name }}"></a>
-              <span class="name">{{ member.name }}</span>
-              <span class="job">{{ member.job }}</span>
-              <span class="email">{{ member.email }}</span>
+              <img class="member-image {{ member.name }}" src="{{ member.img }}" />
+              <span class="info">
+                <span class="name">{{ member.name }}</span>
+                <span class="job">{{ member.job }}</span>
+                <span class="email">{{ member.email }}</span>
+              </span>
             </div>
           </div>
         {% endif %}

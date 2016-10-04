@@ -312,6 +312,19 @@ video, iframe {
 .member-card {
   height: 140px;
 
+  img {
+    border-radius: 50%;
+    height: 70px;
+    margin-top: 20px;
+    vertical-align: top;
+    width: 70px;
+  }
+
+  .info {
+    display: inline-block;
+    padding-left: 12px;
+  }
+
   a.member-image {
     background-image: url('/assets/img/team.jpg');
     background-size: 480px 320px;
