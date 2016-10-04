@@ -1,5 +1,8 @@
 ---
-order: 9
+homepage: true
+home-order: 6
+portfolio: true
+port-order: 6
 title: B-Slash
 thumb: bslash.png
 date: 2015-01-01

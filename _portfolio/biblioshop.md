@@ -1,5 +1,8 @@
 ---
-order: 7
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 11
 title: Biblio-shop
 thumb: op-stats.png
 date: 2016-01-01

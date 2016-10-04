@@ -1,5 +1,8 @@
 ---
-order: 13
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 12
 title: 3D model viewer
 thumb: 3dapp01.png
 date: 2015-01-01

@@ -1,5 +1,8 @@
 ---
-order: 14
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 10
 title: Blok voor Blok
 thumb: bvb01.png
 date: 2014-01-01

@@ -1,5 +1,8 @@
 ---
-order: 11
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 11
 title: Map editor
 thumb: askjamaps.jpg
 client: Askja Reizen

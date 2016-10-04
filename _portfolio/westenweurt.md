@@ -1,5 +1,8 @@
 ---
-order: 5
+homepage: true
+home-order: 8
+portfolio: true
+port-order: 8
 title: West en Weurt
 thumb: nww-meetwaarden.jpg
 date: 2014-01-01

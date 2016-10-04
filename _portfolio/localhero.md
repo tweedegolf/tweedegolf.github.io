@@ -1,5 +1,8 @@
 ---
-order: 12
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 14
 title: Local Hero Travel
 thumb: localhero.png
 date: 2015-01-01

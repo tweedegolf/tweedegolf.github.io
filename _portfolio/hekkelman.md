@@ -1,5 +1,8 @@
 ---
-order: 2
+homepage: true
+home-order: 2
+portfolio: true
+port-order: 2
 title: Hekkelman
 thumb: hekkelman2.png
 date: 2016-01-01

@@ -1,5 +1,8 @@
 ---
-order: 4
+homepage: true
+home-order: 6
+portfolio: true
+port-order: 6
 title: Tekenjetuin
 thumb: tjt.png
 date: 2016-01-01

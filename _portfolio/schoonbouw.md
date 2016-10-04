@@ -1,5 +1,8 @@
 ---
-order: 8
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 8
 title: Schoonbouw 3D ontwerptool
 thumb: schoonbouw.jpg
 date: 2016-01-01

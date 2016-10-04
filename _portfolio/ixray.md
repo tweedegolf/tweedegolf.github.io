@@ -1,5 +1,8 @@
 ---
-order: 6
+homepage: true
+home-order: 4
+portfolio: true
+port-order: 4
 title: iX-ray
 thumb: ixp.png
 date: 2015-01-01

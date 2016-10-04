@@ -1,5 +1,8 @@
 ---
-order: 15
+homepage: false
+home-order: 0
+portfolio: true
+port-order: 7
 title: Tulsie
 thumb: tulsie.png
 date: 2015-01-01
