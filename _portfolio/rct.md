@@ -1,5 +1,8 @@
 ---
-order: 1
+homepage: true
+home-order: 1
+portfolio: true
+port-order: 1
 title: RCT Gelderland
 thumb: rct.png
 date: 2016-10-04

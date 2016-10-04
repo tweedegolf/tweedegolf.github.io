@@ -39,7 +39,7 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
       </div>
     </div>
     <div class="row">
-    {% assign items = site.portfolio | sort: 'order' %}
+    {% assign items = site.portfolio | where: 'portfolio', true | sort: 'port-order' %}
     {% for item in items %}
       <div class="col-sm-4 portfolio-item">
         <a
@@ -61,7 +61,7 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
 </section>
 
 <!-- Portfolio Modals -->
-{% for item in site.portfolio %}
+{% for item in site.portfolio| where: 'portfolio', true | sort: 'port-order' %}
 <div class="portfolio-modal modal fade"
   id="portfolio-{{ item.title|downcase|replace:' ','-' }}"
   tabindex="-1" role="dialog" aria-hidden="true">
