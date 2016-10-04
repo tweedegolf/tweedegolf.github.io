@@ -59,113 +59,113 @@ description: Webbureau Tweede golf bouwt state-of-the-art web apps en webapplica
 </section>
 
 <!-- Portfolio Modals -->
-{% for item in site.portfolio| where: 'portfolio', true | sort: 'port-order' %}
-<div class="portfolio-modal modal fade"
-  id="portfolio-{{ item.title|downcase|replace:' ','-' }}"
-  tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal" onclick="stopVideos()">
-      <div class="lr">
-        <div class="rl">
+{% for item in site.portfolio| where: 'homepage', true | sort: 'home-order' %}
+  <div class="portfolio-modal modal fade"
+    id="portfolio-{{ item.title|downcase|replace:' ','-' }}"
+    tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal" onclick="stopVideos()">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="modal-body">
-            <div class="section-heading">
-              <h2>{{ item.title }}</h2>
-              <hr class="star-success">
-            </div>
-            <ul class="item-details">
-              {% if item.date %}
-              <li>
-                <span>Datum: </span>
-                <strong>{{ item.date | date: '%Y'}}</strong>
-              </li>
-              {% endif %}
-              {% if item.client %}
-              <li>
-                <span>Klant: </span>
-                <strong>{{ item.client }}</strong>
-              </li>
-              {% endif %}
-              {% if item.partner %}
-              <li>
-                <span>Partner: </span>
-                <strong>{{ item.partner }}</strong>
-                {% if item.partnerurl %}
-                  <a href="{{ item.partnerurl }}">
-                    <span class="fa fa-external-link"></span>
-                  </a>
-                {% endif %}
-              </li>
-              {% endif %}
-            </ul>
-            {% if item.tags %}
-            <div class="item-details tags">
-              <span class="fa fa-tags"></span>
-              <strong>{{ item.tags }}</strong>
-              {% if item.case %}
-              <span class="case">
-                <span class="separator"> | </span>
-                <span class="fa fa-paperclip"></span>
-                Case: <strong>Interesse opwekkende titel</strong>
-                {% if item.caseurl %}
-                  <a
-                    href="{{ item.caseurl }}"
-                    target="_blank">
-                    <span class="fa fa-external-link"></span>
-                  </a>
-                {% endif %}
-              </span>
-              {% endif %}
-            </div>
-            {% endif %}
-            {{ item.output }}
-            {% if item.vimeo %}
-              <iframe
-                src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0"
-                width="100%" height="400" frameborder="0">
-              </iframe>
-            {% endif %}
-            {% if item.youtube %}
-              <iframe
-                src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.youtube }}" frameborder="0"></iframe>"
-                width="100%" height="400" frameborder="0">
-              </iframe>
-            {% endif %}
-            {% assign screens = item.screens | split: "," %}
-            {% for screen in screens %}
-              <div
-                class="screen {% if item.noborders %}noborders{% endif %}"
-                id="screen-{{ screen|downcase|replace:' ','-' }}">
-                <img class="lazy"
-                  data-original="/assets/img/portfolio/{{ screen}}"
-                  class="img-responsive img-centered"
-                  alt="{{ item.title }} screenshot 1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="modal-body">
+              <div class="section-heading">
+                <h2>{{ item.title }}</h2>
+                <hr class="star-success">
               </div>
-            {% endfor %}
-            {% if item.website %}
-            <a
-              href="{{ item.website }}"
-              class="btn btn-primary"
-              target="_blank">
-              <span class="fa fa-external-link"></span>
-              Ga naar {{ item.title }}
-            </a>
-            {% endif %}
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              <span class="fa fa-times"></span>
-              Sluiten
-            </button>
+              <ul class="item-details">
+                {% if item.date %}
+                <li>
+                  <span>Datum: </span>
+                  <strong>{{ item.date | date: '%Y'}}</strong>
+                </li>
+                {% endif %}
+                {% if item.client %}
+                <li>
+                  <span>Klant: </span>
+                  <strong>{{ item.client }}</strong>
+                </li>
+                {% endif %}
+                {% if item.partner %}
+                <li>
+                  <span>Partner: </span>
+                  <strong>{{ item.partner }}</strong>
+                  {% if item.partnerurl %}
+                    <a href="{{ item.partnerurl }}">
+                      <span class="fa fa-external-link"></span>
+                    </a>
+                  {% endif %}
+                </li>
+                {% endif %}
+              </ul>
+              {% if item.tags %}
+              <div class="item-details tags">
+                <span class="fa fa-tags"></span>
+                <strong>{{ item.tags }}</strong>
+                {% if item.case %}
+                <span class="case">
+                  <span class="separator"> | </span>
+                  <span class="fa fa-paperclip"></span>
+                  Case: <strong>Interesse opwekkende titel</strong>
+                  {% if item.caseurl %}
+                    <a
+                      href="{{ item.caseurl }}"
+                      target="_blank">
+                      <span class="fa fa-external-link"></span>
+                    </a>
+                  {% endif %}
+                </span>
+                {% endif %}
+              </div>
+              {% endif %}
+              {{ item.output }}
+              {% if item.vimeo %}
+                <iframe
+                  src="//player.vimeo.com/video/{{ item.vimeo }}?portrait=0&title=0&badge=0&byline=0"
+                  width="100%" height="400" frameborder="0">
+                </iframe>
+              {% endif %}
+              {% if item.youtube %}
+                <iframe
+                  src="<iframe width="420" height="315" src="//www.youtube.com/embed/{{ item.youtube }}" frameborder="0"></iframe>"
+                  width="100%" height="400" frameborder="0">
+                </iframe>
+              {% endif %}
+              {% assign screens = item.screens | split: "," %}
+              {% for screen in screens %}
+                <div
+                  class="screen {% if item.noborders %}noborders{% endif %}"
+                  id="screen-{{ screen|downcase|replace:' ','-' }}">
+                  <img class="lazy"
+                    data-original="/assets/img/portfolio/{{ screen}}"
+                    class="img-responsive img-centered"
+                    alt="{{ item.title }} screenshot 1">
+                </div>
+              {% endfor %}
+              {% if item.website %}
+              <a
+                href="{{ item.website }}"
+                class="btn btn-primary"
+                target="_blank">
+                <span class="fa fa-external-link"></span>
+                Ga naar {{ item.title }}
+              </a>
+              {% endif %}
+              <button type="button" class="btn btn-default" data-dismiss="modal">
+                <span class="fa fa-times"></span>
+                Sluiten
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 {% endfor %}
 
 <!-- About -->
