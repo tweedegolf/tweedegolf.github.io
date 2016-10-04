@@ -26,7 +26,7 @@ rebellious today.)
 
 The website is served on `http://localhost:4000`.
 
-## Frontend updates
+## Styling and assets
 
 If you want to make styling changes you'll need Sass and compile styles
 manually:
@@ -43,6 +43,15 @@ To install new frontend assets, update the `bower.json` file and run:
 To use new assets, copy them manually to the assets folder, e.g.:
 
     cp -r vendor/fontawesome/fonts/ assets/fonts
+
+## Portfolio items
+
+When changing portfolio items `server --watch` might not be enough for changes to come through. Instead, build the site from scratch once, then reserve:
+
+    bundle exec jekyll build
+    bundle exec jekyll serve --watch --incremental --drafts
+
+A convenient `portfolio-items.sketch` file is available in Drive for portfolio screenshot additions. 
 
 ## Adding/editing a page
 
