@@ -101,12 +101,16 @@ layout: default
         {% for member in site.data.members %}
           {% if member.name == page.author %}
             <div class="member-card">
-              <a class="member-image {{ member.name }}"></a>
-              <span class="name">by <strong>{{ member.name }}</strong></span>
-              <span class="job">{{ member.job }}</span>
-              {% if member.employed %}
-              <span class="email">{{ member.email }}</span>
-              {% endif %}
+              <span class="image">
+                <img class="member-image {{ member.name }}" src="{{ member.img }}" data-pixelate data-value="0.15" />
+              </span>
+              <span class="info">
+                <span class="name">by {{ member.name }}</span>
+                <span class="job">{{ member.job }}</span>
+                {% if member.employed %}
+                  <span class="email">{{ member.email }}</span>
+                {% endif %}
+              </span>
             </div>
           {% endif %}
         {% endfor %}

@@ -32,12 +32,16 @@ description: tweede golf blog
         <h3>Authors</h3>
         {% for member in site.data.members %}
           {% if member.author %}
-            <div class="member-card">
-              <a class="member-image {{ member.name }} blog" href="/blog/?author={{ member.name }}"></a>
-              <span class="name"><strong>{{ member.name }}</strong></span>
-              <span class="job">{{ member.job }}</span>
-              <span class="email">{{ member.email }}</span>
-            </div>
+            <a class="member-card" href="/blog/?author={{ member.name }}">
+              <span class="image">
+                <img class="member-image {{ member.name }}" src="{{ member.img }}" data-pixelate data-value="0.15" />
+              </span>
+              <span class="info">
+                <span class="name">{{ member.name }}</span>
+                <span class="job">{{ member.job }}</span>
+                <span class="email">{{ member.email }}</span>
+              </span>
+            </a>
           {% endif %}
         {% endfor %}
       </div>

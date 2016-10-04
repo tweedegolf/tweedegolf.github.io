@@ -310,6 +310,8 @@ video, iframe {
 }
 
 .member-card {
+  color: $gray;
+  display: block;
   height: 140px;
 
   .image {
