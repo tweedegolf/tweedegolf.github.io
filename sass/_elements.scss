@@ -678,3 +678,7 @@ div.truncate-2-lines {
     max-width: 100%;
   }
 }
+
+iframe[name="google_conversion_frame"] {
+  position:fixed;
+}
