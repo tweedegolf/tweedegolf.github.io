@@ -10,9 +10,13 @@
           {% for member in site.data.members %}
             {% if member.name == page.contact %}
               <div class="member-card">
-                <a class="member-image {{ member.name }} col-xs-2"></a>
-                <p class="desc col-xs-8">Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}.
-                  Rechtstreeks mailen kan ook: <a href="mailto:{{ member.email}}">{{ member.email }}</a>.</p>
+                <span class="image">
+                  <img class="member-image {{ member.name }}" src="{{ member.img }}" data-pixelate data-value="0.15" />
+                </span>
+                <span class="info">
+                  Meer weten? Onze <strong>{{ member.job }} {{ member.name }}</strong> kan je alles vertellen over {{ page.about }}.
+                  Rechtstreeks mailen kan ook: <a href="mailto:{{ member.email}}">{{ member.email }}</a>
+                </span>
               </div>
             {% endif %}
           {% endfor %}
