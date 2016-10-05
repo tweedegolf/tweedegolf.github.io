@@ -55,8 +55,12 @@ layout: default
                 {% for member in site.data.members %}
                   {% if member.name == page.contact %}
                     <div class="member-card">
-                      <a class="member-image {{ member.name }} col-xs-2"></a>
-                      <p class="desc col-xs-8">Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}.</p>
+                      <span class="image">
+                        <img class="member-image {{ member.name }}" src="{{ member.img }}" data-pixelate data-value="0.15" />
+                      </span>
+                      <span class="info">
+                        Want to know more? Our <strong>{{ member.job }} {{ member.name }}</strong> can tell you everything about {{ page.about }}.
+                      </span>
                     </div>
                   {% endif %}
                 {% endfor %}
