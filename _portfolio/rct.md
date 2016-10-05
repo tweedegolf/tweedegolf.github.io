@@ -10,7 +10,7 @@ client: RCT Gelderland
 partner: LaVerbe (design)
 partnerurl: /partners
 tags: tag
-screens: rct1.jpg
+screens: rct-screen1.png,rct-screen2.png,rct-screen5.png
 website: //rctgelderland.nl/
 ---
 Tweede golf ontwikkelde in samenwerking met [LaVerbe](/partners) voor RCT Gelderland de website <a href="//rctgelderland.nl" target="_blank">rctgelderland.nl</a>.
