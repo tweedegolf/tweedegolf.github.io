@@ -9,7 +9,7 @@ date: 2016-01-01
 client: Rijksinstituut voor Volksgezondheid en Milieu
 partner: LaVerbe (vormgeving)
 partnerurl: /partners
-tags:
+tags: web app
 screens: rivm-screen1.jpg,rivm-screen2.jpg,rivm-screen3.jpg,rivm-screen4.jpg
 ---
 Het [Rijksinstituut voor Volksgezondheid en Milieu](http://www.rivm.nl/) (RIVM) zoekt aansluiting bij de industrie om belemmeringen voor groene chemie weg te nemen.

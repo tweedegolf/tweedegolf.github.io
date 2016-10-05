@@ -9,7 +9,7 @@ date: 2016-10-04
 client: RCT Gelderland
 partner: LaVerbe (design)
 partnerurl: /partners
-tags: tag
+tags: Website, mobile first 
 screens: rct-screen1.png,rct-screen2.png,rct-screen5.png
 website: //rctgelderland.nl/
 ---
