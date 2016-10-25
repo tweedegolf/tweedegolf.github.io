@@ -82,6 +82,17 @@
   }
 }
 
+@media (max-width: 1400px) {
+  header.home {
+    img.logo {
+      max-width: 300px;
+    }
+    img.logotext {
+      max-width: 400px;
+    }
+  }
+}
+
 @media (max-width:767px){
 
   // This is an (ugly) override to make the mobile menu consistent
@@ -153,5 +164,14 @@
   .body.process #phases .carousel .carousel-caption {
     left: 0;
     top: 13%;
+  }
+
+  header.home {
+    img.logo {
+      max-width: 200px;
+    }
+    img.logotext {
+      max-width: 300px;
+    }
   }
 }
