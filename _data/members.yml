@@ -16,7 +16,7 @@
   job: developer
   email: daniella@tweedegolf.com
   author: false
-  employed: true
+  employed: false
   img: /assets/img/members/daniella.jpg
 
 - name: Dennis
@@ -44,7 +44,7 @@
   job: trainee
   email: jay@tweedegolf.com
   author: false
-  employed: true
+  employed: false
   img: /assets/img/members/jay.jpg
 
 - name: Marlon
