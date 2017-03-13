@@ -74,3 +74,10 @@
   author: false
   employed: true
   img: /assets/img/members/wouter.jpg
+
+- name: Mert
+  job: stagair
+  email: mert@tweedegolf.com
+  author: false
+  employed: true
+  img: /assets/img/members/mert.jpg  
