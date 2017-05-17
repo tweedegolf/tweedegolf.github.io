@@ -1,6 +1,7 @@
 name: tweede golf
 kvk: "09202176"
 btw: NL820951183B01
+iban: NL27ABNA0551876433
 markdown: kramdown
 permalink: pretty
 destination: ./_site
