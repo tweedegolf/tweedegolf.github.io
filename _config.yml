@@ -5,6 +5,7 @@ iban: NL27ABNA0551876433
 markdown: kramdown
 permalink: pretty
 destination: ./_site
+version: v4.0.1
 
 exclude:
   - bower.json
