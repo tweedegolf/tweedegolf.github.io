@@ -53,7 +53,7 @@ article {
 
 header {
     text-align: center;
-    background-image: url('/assets/img/kantoor.jpg');
+    background-image: url('/assets/img/dev-team.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -829,7 +829,7 @@ footer {
     }
 }
 
-.cta {
+.cta, .quote {
   &.lightweight {
     padding-top: 0;
   }

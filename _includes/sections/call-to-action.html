@@ -10,6 +10,7 @@
             <a
               class="btn btn-lg btn-primary"
               href="{{ include.cta.button-link }}">
+              {% if include.cta.icon %}<span class="fa fa-{{ include.cta.icon }}"></span> {% endif %}
               {{ include.cta.button-text }}
             </a>
           {% endif %}

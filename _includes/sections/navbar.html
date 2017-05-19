@@ -25,13 +25,13 @@
         <li class="page-scroll">
           <a href="{% unless page.homepage %}/{% endunless %}#over-ons">Over ons</a>
         </li>
+        <li class="{% if page.permalink == 'instant-dev-team/' %}active{% endif %}">
+          <a href="/instant-dev-team">Hire a team</a>
+        </li>
         <li class="page-scroll">
           <a href="{% unless page.homepage %}/{% endunless %}#contact">Contact</a>
         </li>
         <li class="divider-vertical"></li>
-        <li class="{% if page.permalink == 'proces/' %}active{% endif %}">
-          <a href="/proces">Proces</a>
-        </li>
         <li class="{% if page.permalink == 'blog/' %}active{% endif %}">
           <a href="/blog">Blog</a>
         </li>

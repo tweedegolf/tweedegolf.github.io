@@ -1,0 +1,1 @@
+Tweede Golf heeft drie development teams op eigen locatie waar we state-of-the-art producten ontwikkelen. Enthousiast, perfect op elkaar ingespeeld, met jarenlange ervaring in allerlei projecten. En, ze kunnen morgen al voor jou aan de slag.
